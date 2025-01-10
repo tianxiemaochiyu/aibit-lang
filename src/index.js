@@ -218,11 +218,43 @@ function findMissingKeys(lossKeyTempObj, sourceData, targetData) {
       }
     })
 
-    const keyfilePath = path.resolve(process.cwd(), './missKeys.js')
     if (Object.keys(lossKeysObj).length > 0) {
+      const keyfilePath = path.resolve(process.cwd(), './missKeys.js')
       writeContentForPath(keyfilePath, `export default ${JSON.stringify(lossKeysObj, null, 2)}`)
     }
   }
+}
+
+function transformFlatten(flattenObj) {
+  const fileStructObj = {}
+
+  Object.keys(flattenObj).map((v) => {
+    const fullKey = v
+    const keyList = fullKey?.split('.')
+    const langName = keyList[0]
+    const fileName = keyList[1]
+
+    if (!fileStructObj[langName]) {
+      fileStructObj[langName] = {}
+    }
+    if (!fileStructObj[langName][fileName]) {
+      fileStructObj[langName][fileName] = {}
+    }
+
+    const contentKeyList = keyList.slice(2)
+    contentKeyList.reduce((currentObj, value, index) => {
+      if (index < contentKeyList.length - 1) {
+        if (!currentObj[value]) {
+          currentObj[value] = {}
+        }
+        return currentObj[value]
+      } else {
+        currentObj[value] = flattenObj[fullKey]
+      }
+    }, fileStructObj[langName][fileName])
+  })
+
+  return fileStructObj;
 }
 
 // 查找缺失的翻译词条
@@ -346,16 +378,20 @@ function generateLangFileBasedLang() {
 
     const sourceText = item[XLSX_ROW_LANG_INDEX_MAP[sourceLang]]
 
+    const trimTargetStr = sourceText?.replace(/^\d[\.|、]/, '')?.replace(/\s+/g, '')
+
     const indexList = sourceDataValues
       .map((v, i) => {
         const trimValueStr = v?.replace(/^\d[\.|、]/, '')?.replace(/\s+/g, '')
-        const trimTargetStr = sourceText?.replace(/^\d[\.|、]/, '')?.replace(/\s+/g, '')
         const cmpResult = trimValueStr == trimTargetStr
 
-        if (findMissingKey && cmpResult && !entryName) {
-          lossKeyTempObj[sourceDataKeys[i]] = trimTargetStr
+        if (findMissingKey && cmpResult) {
+          if (!entryName) {
+            lossKeyTempObj[sourceDataKeys[i]] = trimTargetStr
+          } else if (lossKeyTempObj[sourceDataKeys[i]]){
+            delete lossKeyTempObj[sourceDataKeys[i]]
+          }
         }
-
         return cmpResult ? i : -1
       })
       .filter((v) => v >= 0)
@@ -367,7 +403,7 @@ function generateLangFileBasedLang() {
         const targetText = item[XLSX_ROW_LANG_INDEX_MAP[v]]
         indexList.map((index) => {
           const dataKey = sourceDataKeys[index]
-          targetLangObj[`${v}.${dataKey}`] = targetText ? targetText.replace(/^\s+|\s+$/g, '') : ''
+          targetLangObj[`${v}.${dataKey}`] = targetText ? targetText.replace(/^\s+|\s+$/g, '') : ""
         })
 
       })
@@ -381,7 +417,21 @@ function generateLangFileBasedLang() {
 
   // 查找缺失的词条
   if (findMissingTerm) {
-    findMissingTerms(sourceData, targetLangObj[Object.keys(targetLangObj)[0]])
+    // 反序列化
+    const fileStructObj = transformFlatten(targetLangObj)
+    // 取第一个语言集
+    const itemLangObj = fileStructObj[Object.keys(fileStructObj)[0]]
+    let targetData = merge({}, sourceData)
+    // 覆盖相同词条
+    Object.keys(itemLangObj).map(key => {
+      if (targetData[key] != itemLangObj[key]) {
+        targetData[key] = itemLangObj[key]
+      }
+    })
+    // 再次序列化
+    targetData = flattenObject(targetData)
+    // 对比
+    findMissingTerms(sourceData, targetData)
   }
 
   writeTsToFiles(targetLangObj)

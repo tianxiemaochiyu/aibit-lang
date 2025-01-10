@@ -3,9 +3,9 @@ module.exports = {
   outDir: "./lang",
 
   lang: ['zh', 'kr'],
-  appName: "WEBCO",
+  appName: "H5APP",
 
-  completeLang: ['kr', 'en'],
+  completeLang: ['kr', 'ru'],
   completeBaseLang: 'zh',
 
   findMissingKey: true,
