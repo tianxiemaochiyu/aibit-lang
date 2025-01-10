@@ -11,7 +11,7 @@ function getConfigInfo() {
   if (fs.existsSync(configPath)) {
     config = require(configPath)
   } else {
-    throw new Error('文件不存在：', configPath)
+    throw new Error('配置文件不存在：', configPath)
   }
 
   if (!config.appName || !config.outDir || !config.xlsxPath) {
@@ -219,7 +219,9 @@ function findMissingKeys(lossKeyTempObj, sourceData, targetData) {
     })
 
     const keyfilePath = path.resolve(process.cwd(), './missKeys.js')
-    writeContentForPath(keyfilePath, `export default ${JSON.stringify(lossKeysObj, null, 2)}`)
+    if (Object.keys(lossKeysObj).length > 0) {
+      writeContentForPath(keyfilePath, `export default ${JSON.stringify(lossKeysObj, null, 2)}`)
+    }
   }
 }
 
@@ -270,6 +272,14 @@ function writeTsToFiles(langObj) {
 
 // 生成指定语言文件
 function generateLangFile() {
+  if (!XLSX_ROW_APP_INDEX_MAP[appKey]) {
+    throw new Error(`指定应用的词条不存在：${appKey}`)
+  }
+
+  if (!fs.existsSync(xlsxPath)) {
+    throw new Error('XLSX文件不存在：', xlsxPath)
+  }
+
   const workbook = XLSX.readFile(xlsxPath)
   const sheetName = workbook.SheetNames[0]
   const worksheet = workbook.Sheets[sheetName]
@@ -279,10 +289,6 @@ function generateLangFile() {
   const langObj = {}
 
   data.map((item, index) => {
-
-    if (!XLSX_ROW_APP_INDEX_MAP[appKey]) {
-      throw new Error(`指定应用的词条不存在：${appKey}`)
-    }
     const entryNameTrim = item[XLSX_ROW_APP_INDEX_MAP[appKey]]?.trim()
     const entryName = entryNameTrim ? entryNameTrim.replaceAll(/\s*,\s*/g, ',')?.split(',') : ''
     if (entryName) {
@@ -306,6 +312,10 @@ function generateLangFile() {
 function generateLangFileBasedLang() {
   if (!XLSX_ROW_APP_INDEX_MAP[appKey]) {
     throw new Error(`指定应用的词条不存在：${appKey}`)
+  }
+
+  if (!fs.existsSync(xlsxPath)) {
+    throw new Error('XLSX文件不存在：', xlsxPath)
   }
 
   const fileNameList = runGetDirName()
