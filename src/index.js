@@ -45,6 +45,7 @@ const appKey = config.appName
 // xlsx 中对应的语言名称索引
 const XLSX_ROW_LANG_INDEX_MAP = {
   zh: 11,
+  cn: 11, // old version
   en: 12,
   hk: 13,
   kr: 14,
