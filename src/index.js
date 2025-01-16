@@ -158,7 +158,7 @@ function replaceContent(str) {
         return `\"${key}\": ${value},`
       }
     }).join("")
-    
+
   }
 
   // console.log(regexTrim, match1);
@@ -248,7 +248,7 @@ function readJSONForTs(name) {
     // const replaceStr = getKeyValueContent(matchContent[1])
     const replaceStr = getKeyValueContent(matchContent[1])
     const result = replaceStr.replace(/,\s*\}$/, '}')
-   
+
     // const jsonData = JSON.parse(`${result}`)
     message = result
     // console.log(result, "---- parse ---")
@@ -272,8 +272,14 @@ function readJSONForTs(name) {
 
 function findMissingTerms(sourceObj, targetObj) {
   const sourceKeys = Object.keys(sourceObj)
+  // const targetKeys = Object.keys(targetObj)
 
-  const keys = sourceKeys.filter((v) => sourceObj[v] == targetObj[v])
+  const keys = sourceKeys.filter((v) => {
+    const formatTarget = targetObj[v]?.replace(/^\d[\.|、]/, '')?.replace(/\s+/g, '')?.replaceAll(/(?<!\\)"/g, '\\"')?.replaceAll(/(?<!\\)'/g, '\\"')
+    const formatSource = sourceObj[v]?.replace(/^\d[\.|、]/, '')?.replace(/\s+/g, '')?.replaceAll(/(?<!\\)"/g, '\\"')?.replaceAll(/(?<!\\)'/g, '\\"')
+
+    return formatTarget == formatSource
+  })
 
   if (keys.length > 0) {
     const result = {}
@@ -487,9 +493,9 @@ function generateLangFileBasedLang() {
     const result = flattenObject(jsonData, fileName.slice(0, -3))
     return result
   })
-  
+
   const sourceData = merge({}, ...jsonList)
-  const targetLangObj = {} 
+  const targetLangObj = {}
 
   const sourceDataKeys = Object.keys(sourceData)
   const sourceDataValues = Object.values(sourceData)
@@ -509,6 +515,7 @@ function generateLangFileBasedLang() {
   const lossKeyTempObj = {}
   // throw new Error(debug)
   sourceDataValues.map((v, i) => {
+
     const indexList = data
       .map((item, index) => {
 
@@ -517,9 +524,9 @@ function generateLangFileBasedLang() {
 
         const sourceText = item[XLSX_ROW_LANG_INDEX_MAP[sourceLang]]
 
-        const trimTargetStr = sourceText?.replace(/^\d[\.|、]/, '')?.replace(/\s+/g, '')
+        const trimTargetStr = sourceText?.replace(/^\d[\.|、]/, '')?.replace(/\s+/g, '')?.replaceAll(/(?<!\\)"/g, '\\"')?.replaceAll(/(?<!\\)'/g, '\\"')
 
-        const trimValueStr = v?.replace(/^\d[\.|、]/, '')?.replace(/\s+/g, '')
+        const trimValueStr = v?.replace(/^\d[\.|、]/, '')?.replace(/\s+/g, '')?.replaceAll(/(?<!\\)"/g, '\\"')?.replaceAll(/(?<!\\)'/g, '\\"')
         const cmpResult = trimValueStr?.toLowerCase() == trimTargetStr?.toLowerCase()
 
         if (findMissingKey && cmpResult) {
@@ -535,15 +542,22 @@ function generateLangFileBasedLang() {
         } : undefined
       })
       .filter((k) => !!k)
-    
+
     if (indexList.length > 0) {
 
       targetLang.map(item => {
-        
+
         indexList.map((value) => {
           const {index, rowData} = value
           const targetText = rowData[XLSX_ROW_LANG_INDEX_MAP[item]]
           const dataKey = sourceDataKeys[index]
+
+          // if (sourceData[dataKey] == `<p class=\"title\">首次交易任务说明</p><p class=\"t2\">新手任务有效期内完成首笔合约交易额 ≥{num} USDT 或 首笔现货交易额 ≥{amount} USDT</p>`) {
+          //   // console.log(targetText.replace(/^\s+|\s+$/g, ''), '====')
+          //   console.log(rowData)
+          //   console.log(sourceData[dataKey], '----')
+          //   throw new Error("debug")
+          // }
 
           if (targetText) {
             targetLangObj[`${item}.${dataKey}`] = targetText.replace(/^\s+|\s+$/g, '')
@@ -578,11 +592,11 @@ function generateLangFileBasedLang() {
   //       return cmpResult ? i : -1
   //     })
   //     .filter((v) => v >= 0)
-    
+
   //   if (indexList.length > 0) {
 
   //     targetLang.map(v => {
-        
+
   //       const targetText = item[XLSX_ROW_LANG_INDEX_MAP[v]]
   //       indexList.map((index) => {
   //         const dataKey = sourceDataKeys[index]
@@ -614,10 +628,13 @@ function generateLangFileBasedLang() {
 
       // console.log(Object.keys(itemLangObj), Object.keys(targetData))
 
-      
+
       // 覆盖相同词条
       Object.keys(itemLangObj).map(key => {
-        if (targetData[key] != itemLangObj[key]) {
+        const formatTarget = itemLangObj[key]?.replace(/^\d[\.|、]/, '')?.replace(/\s+/g, '')?.replaceAll(/(?<!\\)"/g, '\\"')?.replaceAll(/(?<!\\)'/g, '\\"')
+        const formatSource = targetData[key]?.replace(/^\d[\.|、]/, '')?.replace(/\s+/g, '')?.replaceAll(/(?<!\\)"/g, '\\"')?.replaceAll(/(?<!\\)'/g, '\\"')
+
+        if (formatSource != formatTarget) {
           targetData[key] = itemLangObj[key]
           // console.log(key)
         }
