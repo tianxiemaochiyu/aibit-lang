@@ -2,7 +2,6 @@ module.exports = {
   xlsxPath: "./data.xlsx",
   outDir: "./lang",
 
-  // lang: ['zh', 'kr'],
   appName: "H5APP",
 
   completeLang: ["tr"],
@@ -10,6 +9,6 @@ module.exports = {
 
   fileType: ".js",
 
-  findMissingKey: true,
+  findMissingKey: false,
   findMissingTerm: true,
 }

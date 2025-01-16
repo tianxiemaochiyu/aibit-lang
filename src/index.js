@@ -119,23 +119,113 @@ function flattenObject(obj, prefix = '') {
   return result
 }
 
+// 是否为嵌套结构
+// function formatNestedContent(str){
+//   const nestedLineRegex = new RegExp(
+//     "(?:(?:'[^']+')|(?:[a-zA-Z_]\\w*))\\s*:\\s*({(?:[^{}]|{[^{}]*})*},)",
+//   )
+//   if (nestedLineRegex.test(str)) {
+//     const subMatch = str.match(nestedLineRegex);
+//     const subResult = subMatch[1].replaceAll(/}\s*,\s*$/g, '}');
+//     return getKeyValueContent(subResult)
+//   } else {
+//     return str
+//   }
+// }
+
 // 捕获 key - value 键值对，转义特殊字符 \' \"
 function replaceContent(str) {
-  const extractPattern = /(?:'([^']+)'|([a-zA-Z_]\w*))\s*:\s*(['"`])((?:(?!\3).)*)\3,/
-  const match = str.match(extractPattern)
+  const regexTrim = str.replace(/\t|\n|\v|\r|\f/g,'')
+  // const extractPattern = /'(?:[^']+)'|(?:[a-zA-Z_]\w*)\s*:\s*(?:{\s*.*})\s*,\s*/g
+  const extractPattern = /'(?:[^']+)'|(?:[a-zA-Z_]\w*)\s*:\s*\{[^}]*\}\s*,/g
+  const match1 = regexTrim.match(extractPattern)
+  // console.log(regexTrim, "--原始替换字符-")
+  // console.log(match1, "--检测是否多个item-")
 
+
+
+  if (match1) {
+    return match1.map(v => {
+      // console.log(v, "--嵌套替换字符-")
+      const itemMatch = v.match(/'([^']+)'|([a-zA-Z_]\w*)\s*:\s*({\s*.*})\s*,\s*/)
+      if (itemMatch && itemMatch[3]) {
+        const key = itemMatch[1] || itemMatch[2]
+        const value = getKeyValueContent(itemMatch[3]);
+        // console.log(key, "--已换嵌套字符key-")
+        // console.log(value, "--已换嵌套字符value-")
+        // console.log(`"${key}": ${value},`, "--已换嵌套字符结果-")
+        // throw new Error("debug")
+        return `\"${key}\": ${value},`
+      }
+    }).join("")
+    
+  }
+
+  // console.log(regexTrim, match1);
+  // console.log(/'([^']+)'|([a-zA-Z_]\w*)\s*:\s*{(.*)}\s*,\s*/g.test(str));
+  // console.log("-- 非嵌套字符 --")
+  const extractPattern2 = /(?:'([^']+)'|([a-zA-Z_]\w*))\s*:\s*(['"`])((?:(?!\3).)*)\3,/g
+  const match = regexTrim.match(extractPattern2)
+  // console.log("before replaceContent: ", regexTrim)
+  // console.log("after replaceContent: ", match)
+  // console.log(22,regexTrim, match)
   if (match) {
-    const key = match[1] || match[2]
-    const value = match[4]?.replaceAll(/("|')/g, '\\$1')
-    return `"${key}": "${value}",`
+    // console.log(match, "--替换字符-")
+    const resultList = match.map(v => {
+      const itemMatch = v.match(/(?:'([^']+)'|([a-zA-Z_]\w*))\s*:\s*(['"`])((?:(?!\3).)*)\3,/)
+      // console.log(itemMatch, "--检测-")
+      const key = itemMatch[1] || itemMatch[2]
+      // console.log("before conver: ", match[4])
+      const value1 = itemMatch[4]?.replaceAll(/(?<!\\)"/g, '\\"')
+      const value2 = value1?.replaceAll(/(?<!\\)'/g, '\\"')
+      // console.log(key, "--已换字符key-")
+      // console.log(value2, "--已换字符value-")
+      // console.log("after conver: ", value2)
+      return `\"${key}\": \"${value2}\",`
+    })
+    return resultList.join("")
+    // const key = match[1] || match[2]
+    // // console.log("before conver: ", match[4])
+    // const value1 = match[4]?.replaceAll(/(?<!\\)"/g, '\\"')
+    // const value2 = value1?.replaceAll(/(?<!\\)'/g, '\\"')
+    // console.log(value2, "--已换字符-")
+    // // console.log("after conver: ", value2)
+    // return `"${key}": "${value2}",`
   }
   return str
+}
+
+// 捕获key: value 形式字符
+function getKeyValueContent(str) {
+  const regexTrim = str.replace(/\t|\n|\v|\r|\f/g,'')
+  const clearCommaStr = regexTrim.replaceAll(/,\s*}/g, '}')
+  const clearEndStr = clearCommaStr.replaceAll(/\s*}$/g, ',}')
+  // console.log("before getKeyValueContent: ", str)
+  // console.log("after getKeyValueContent: ", clearEndStr)
+  // const lineRegex = new RegExp(
+  //   "(?:(?:'[^']+')|(?:[a-zA-Z0-9_]\w*))\s*:\s*(?:(?:\"[^\"].*\")|(?:`[^`].*`)|(?:'[^'].*')|(?:{[^{].*})),",
+  //   // "(?:(?:'[^']+')|(?:[a-zA-Z0-9_]\w*))\s*:\s*\{.*\},",
+  //   'g'
+  // )
+  // const lineRegex = /(?:(?:'[^']+')|(?:[a-zA-Z0-9_]\w*))\s*:\s*\{.*\},/g
+  const lineRegex = /(?:(?:'[^']+')|(?:[a-zA-Z0-9_]\w*))\s*:\s*(?:(?:\"[^\"].*\")|(?:`[^`].*`)|(?:'[^'].*')|(?:{[^{].*})),/g
+  const replaceStr = clearEndStr.replaceAll(lineRegex, (p1) => {
+    // console.log(clearEndStr, "--getKeyValueContent 原始字符-")
+    // console.log(p1, "-- getKeyValueContent 匹配字符-")
+    return replaceContent(p1)
+  })
+  // console.log("replaceStr: ", clearEndStr, clearEndStr.match(lineRegex))
+  const resultEnd = replaceStr.replace(/,}$/, '}')
+  const result = resultEnd.replace(/^\s*{\s*/, '{')
+  // console.log("result: ", result)
+  return result
 }
 
 // 读取TS文件并且序列化为JSON
 function readJSONForTs(name) {
   const filePath = `${langPath}/${sourceLang}/${name}`
-  try {
+  let message = ""
+  // try {
     const file = fs.readFileSync(filePath, 'utf-8')
     const regex = getRegex(fileType);
     if (!regex) {
@@ -144,27 +234,40 @@ function readJSONForTs(name) {
     }
     // const regex = /export\s+default\s*({[\s\S]*})/
     const matchContent = file.match(regex)
-    const clearCommaStr = matchContent[1].replaceAll(/,\s*}/g, '}')
+    // const clearCommaStr = matchContent[1].replaceAll(/,\s*}/g, '}')
 
-    const clearEndStr = clearCommaStr.replaceAll(/\s*}$/g, ',}')
+    // const clearEndStr = clearCommaStr.replaceAll(/\s*}$/g, ',}')
 
-    const lineRegex = new RegExp(
-      "(?:(?:'[^']+')|(?:[a-zA-Z_]\\w*))\\s*:\\s*(?:(?:'[^']*')|(?:`[^`]*`)|(?:\"[^\"]*\")),",
-      'g'
-    )
-    const replaceStr = clearEndStr.replaceAll(lineRegex, (p1) => {
-      return replaceContent(p1)
-    })
-
-    const result = replaceStr.replace(/,\}$/, '}')
+    // const lineRegex = new RegExp(
+    //   "(?:(?:'[^']+')|(?:[a-zA-Z_]\\w*))\\s*:\\s*(?:(?:'[^']*',)|(?:`[^`]*`,)|(?:\"[^\"]*\",)|(?:{[^{]*},))",
+    //   'g'
+    // )
+    // const replaceStr = clearEndStr.replaceAll(lineRegex, (p1) => {
+    //   return replaceContent(p1)
+    // })
+    // const replaceStr = getKeyValueContent(matchContent[1])
+    const replaceStr = getKeyValueContent(matchContent[1])
+    const result = replaceStr.replace(/,\s*\}$/, '}')
+   
+    // const jsonData = JSON.parse(`${result}`)
+    message = result
+    // console.log(result, "---- parse ---")
 
     const jsonData = JSON.parse(result)
+    // console.log(jsonData)
+    // throw new Error("debug")
+
+    // const jsonData = parse(result)
+    // const jsonData = parseJson(result)
+    // const temp = `{"luxuryGifts": "<span \'{num} USDT</span> 豪礼等您领取!"}`
+    // const jsonData = JSON.parse(temp)
     return jsonData
-  } catch (err) {
-    if (err) {
-      throw new Error('Unable to scan file: ' + err)
-    }
-  }
+  // } catch (err) {
+    // if (err) {
+      // console.log(message)
+      // throw new Error(err)
+    // }
+  // }
 }
 
 function findMissingTerms(sourceObj, targetObj) {
@@ -391,6 +494,12 @@ function generateLangFileBasedLang() {
   const sourceDataKeys = Object.keys(sourceData)
   const sourceDataValues = Object.values(sourceData)
 
+  targetLang.map(item => {
+    sourceDataKeys.map(k => {
+      targetLangObj[`${item}.${k}`] = sourceData[k];
+    })
+  })
+
   const workbook = XLSX.readFile(xlsxPath)
   const sheetName = workbook.SheetNames[0]
   const worksheet = workbook.Sheets[sheetName]
@@ -398,17 +507,18 @@ function generateLangFileBasedLang() {
   data.shift()
 
   const lossKeyTempObj = {}
+  // throw new Error(debug)
+  sourceDataValues.map((v, i) => {
+    const indexList = data
+      .map((item, index) => {
 
-  data.map((item, index) => {
+        const entryNameTrim = item[XLSX_ROW_APP_INDEX_MAP[appKey]]?.trim()
+        const entryName = entryNameTrim ? entryNameTrim.replaceAll(/\s*,\s*/g, ',')?.split(',') : ''
 
-    const entryNameTrim = item[XLSX_ROW_APP_INDEX_MAP[appKey]]?.trim()
-    const entryName = entryNameTrim ? entryNameTrim.replaceAll(/\s*,\s*/g, ',')?.split(',') : ''
+        const sourceText = item[XLSX_ROW_LANG_INDEX_MAP[sourceLang]]
 
-    const sourceText = item[XLSX_ROW_LANG_INDEX_MAP[sourceLang]]
+        const trimTargetStr = sourceText?.replace(/^\d[\.|、]/, '')?.replace(/\s+/g, '')
 
-    const trimTargetStr = sourceText?.replace(/^\d[\.|、]/, '')?.replace(/\s+/g, '')
-    const indexList = sourceDataValues
-      .map((v, i) => {
         const trimValueStr = v?.replace(/^\d[\.|、]/, '')?.replace(/\s+/g, '')
         const cmpResult = trimValueStr == trimTargetStr
 
@@ -419,23 +529,69 @@ function generateLangFileBasedLang() {
             delete lossKeyTempObj[sourceDataKeys[i]]
           }
         }
-        return cmpResult ? i : -1
+        return cmpResult ? {
+          index: i,
+          rowData: item
+        } : undefined
       })
-      .filter((v) => v >= 0)
+      .filter((k) => !!k)
     
     if (indexList.length > 0) {
 
-      targetLang.map(v => {
+      targetLang.map(item => {
         
-        const targetText = item[XLSX_ROW_LANG_INDEX_MAP[v]]
-        indexList.map((index) => {
+        indexList.map((value) => {
+          const {index, rowData} = value
+          const targetText = rowData[XLSX_ROW_LANG_INDEX_MAP[item]]
           const dataKey = sourceDataKeys[index]
-          targetLangObj[`${v}.${dataKey}`] = targetText ? targetText.replace(/^\s+|\s+$/g, '') : ""
-        })
 
+          if (targetText) {
+            targetLangObj[`${item}.${dataKey}`] = targetText.replace(/^\s+|\s+$/g, '')
+          }
+        })
       })
     }
   })
+
+  // console.log(targetLangObj)
+  // throw new Error('debug')
+  // data.map((item, index) => {
+
+  //   const entryNameTrim = item[XLSX_ROW_APP_INDEX_MAP[appKey]]?.trim()
+  //   const entryName = entryNameTrim ? entryNameTrim.replaceAll(/\s*,\s*/g, ',')?.split(',') : ''
+
+  //   const sourceText = item[XLSX_ROW_LANG_INDEX_MAP[sourceLang]]
+
+  //   const trimTargetStr = sourceText?.replace(/^\d[\.|、]/, '')?.replace(/\s+/g, '')
+  //   const indexList = sourceDataValues
+  //     .map((v, i) => {
+  //       const trimValueStr = v?.replace(/^\d[\.|、]/, '')?.replace(/\s+/g, '')
+  //       const cmpResult = trimValueStr == trimTargetStr
+
+  //       if (findMissingKey && cmpResult) {
+  //         if (!entryName) {
+  //           lossKeyTempObj[sourceDataKeys[i]] = trimTargetStr
+  //         } else if (lossKeyTempObj[sourceDataKeys[i]]){
+  //           delete lossKeyTempObj[sourceDataKeys[i]]
+  //         }
+  //       }
+  //       return cmpResult ? i : -1
+  //     })
+  //     .filter((v) => v >= 0)
+    
+  //   if (indexList.length > 0) {
+
+  //     targetLang.map(v => {
+        
+  //       const targetText = item[XLSX_ROW_LANG_INDEX_MAP[v]]
+  //       indexList.map((index) => {
+  //         const dataKey = sourceDataKeys[index]
+  //         targetLangObj[`${v}.${dataKey}`] = targetText ? targetText.replace(/^\s+|\s+$/g, '') : ""
+  //       })
+
+  //     })
+  //   }
+  // })
 
   // 查找缺失的 key
   if (findMissingKey) {
@@ -447,18 +603,27 @@ function generateLangFileBasedLang() {
     // 反序列化
     const fileStructObj = transformFlatten(targetLangObj)
     // 取第一个语言集
-    const itemLangObj = fileStructObj[Object.keys(fileStructObj)[0]]
+    let itemLangObj = fileStructObj[Object.keys(fileStructObj)[0]]
 
     if (itemLangObj) {
       let targetData = merge({}, sourceData)
+
+      // 再次序列化
+      targetData = flattenObject(targetData)
+      itemLangObj = flattenObject(itemLangObj)
+
+      // console.log(Object.keys(itemLangObj), Object.keys(targetData))
+
+      
       // 覆盖相同词条
       Object.keys(itemLangObj).map(key => {
         if (targetData[key] != itemLangObj[key]) {
           targetData[key] = itemLangObj[key]
+          // console.log(key)
         }
       })
-      // 再次序列化
-      targetData = flattenObject(targetData)
+
+      // throw new Error("debug")
       // 对比
       findMissingTerms(sourceData, targetData)
     }
