@@ -27,6 +27,10 @@
   - 补全操作的基准语言
   - 可选值：`zh`, `en`, `hk`, `kr`, `ru`, `es`, `pt`, `fa`, `jp`, `tr`
   - 例如：`'zh'`
+- `fileType:`: string
+  - 生成的文件类型
+  - 可选值：`.ts`, `.js`
+  - 例如：`'.ts'`
 - `findMissingKey`: boolean
   - 布尔型，当进行补全语言文件时，开启缺失键检测
   - 以指定基准语言中已有的键名去扫描 XLSX 中缺少的键名

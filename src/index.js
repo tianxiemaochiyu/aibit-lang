@@ -34,6 +34,8 @@ const targetBaseLang = config.completeBaseLang
 const findMissingKey = config.findMissingKey
 const findMissingTerm = config.findMissingTerm
 
+const fileType = config.fileType || ".ts"
+
 const sourceLang = targetBaseLang
 
 const langPath = path.join(process.cwd(), config.outDir)
@@ -135,7 +137,12 @@ function readJSONForTs(name) {
   const filePath = `${langPath}/${sourceLang}/${name}`
   try {
     const file = fs.readFileSync(filePath, 'utf-8')
-    const regex = /export\s+default\s*({[\s\S]*})/
+    const regex = getRegex(fileType);
+    if (!regex) {
+      console.log(fileType)
+      throw new Error(`不支持${fileType}类型文件`)
+    }
+    // const regex = /export\s+default\s*({[\s\S]*})/
     const matchContent = file.match(regex)
     const clearCommaStr = matchContent[1].replaceAll(/,\s*}/g, '}')
 
@@ -296,13 +303,31 @@ function writeTsToFiles(langObj) {
     }, fileStructObj[langName][fileName])
   })
 
+  const fileContentStart = getFileContentStart(fileType);
+
   // 写入目录文件
   Object.keys(fileStructObj).forEach((langFile) => {
     Object.keys(fileStructObj[langFile]).forEach((file) => {
-      const path = `${langPath}/${langFile}/${file}.ts`
-      writeContentForPath(path, `export default ${JSON.stringify(fileStructObj[langFile][file], null, 2)}`)
+      const path = `${langPath}/${langFile}/${file}${fileType}`
+      writeContentForPath(path, `${fileContentStart} ${JSON.stringify(fileStructObj[langFile][file], null, 2)}`)
     })
   })
+}
+
+// 获取文件类型正则表达式
+function getRegex(type) {
+  switch(type) {
+    case '.ts': return /export\s+default\s*({[\s\S]*})/;break;
+    case '.js': return /module\.exports\s*=\s*({[\s\S]*})/;break;
+  }
+}
+
+// 获取文件开头内容
+function getFileContentStart(type) {
+  switch(type) {
+    case '.ts': return 'export default';break;
+    case '.js': return 'module.exports = ';break;
+  }
 }
 
 // 生成指定语言文件
