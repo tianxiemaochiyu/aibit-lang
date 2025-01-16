@@ -148,9 +148,9 @@ function replaceContent(str) {
     return match1.map(v => {
       // console.log(v, "--嵌套替换字符-")
       const itemMatch = v.match(/((?:'[^']+')|(?:[a-zA-Z_0-9]\w*))\s*:\s*(\{[^\{]*\})\s*,\s*/)
-      if (itemMatch && itemMatch[3]) {
-        const key = itemMatch[1] || itemMatch[2]
-        const value = getKeyValueContent(itemMatch[3]);
+      if (itemMatch && itemMatch[2]) {
+        const key = itemMatch[1]
+        const value = getKeyValueContent(itemMatch[2]);
         // console.log(key, "--已换嵌套字符key-")
         // console.log(value, "--已换嵌套字符value-")
         // console.log(`"${key}": ${value},`, "--已换嵌套字符结果-")
