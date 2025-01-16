@@ -137,7 +137,7 @@ function flattenObject(obj, prefix = '') {
 function replaceContent(str) {
   const regexTrim = str.replace(/\t|\n|\v|\r|\f/g,'')
   // const extractPattern = /'(?:[^']+)'|(?:[a-zA-Z_]\w*)\s*:\s*(?:{\s*.*})\s*,\s*/g
-  const extractPattern = /'(?:[^']+)'|(?:[a-zA-Z_]\w*)\s*:\s*\{[^}]*\}\s*,/g
+  const extractPattern = /(?:(?:'[^']+')|(?:[a-zA-Z_0-9]\w*))\s*:\s*\{[^}]*\}\s*,/g
   const match1 = regexTrim.match(extractPattern)
   // console.log(regexTrim, "--原始替换字符-")
   // console.log(match1, "--检测是否多个item-")
@@ -147,7 +147,7 @@ function replaceContent(str) {
   if (match1) {
     return match1.map(v => {
       // console.log(v, "--嵌套替换字符-")
-      const itemMatch = v.match(/'([^']+)'|([a-zA-Z_]\w*)\s*:\s*({\s*.*})\s*,\s*/)
+      const itemMatch = v.match(/(?:(?:'[^']+')|(?:[a-zA-Z_0-9]\w*))\s*:\s*({\s*.*})\s*,\s*/)
       if (itemMatch && itemMatch[3]) {
         const key = itemMatch[1] || itemMatch[2]
         const value = getKeyValueContent(itemMatch[3]);
