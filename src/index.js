@@ -520,7 +520,7 @@ function generateLangFileBasedLang() {
         const trimTargetStr = sourceText?.replace(/^\d[\.|、]/, '')?.replace(/\s+/g, '')
 
         const trimValueStr = v?.replace(/^\d[\.|、]/, '')?.replace(/\s+/g, '')
-        const cmpResult = trimValueStr == trimTargetStr
+        const cmpResult = trimValueStr?.toLowerCase() == trimTargetStr?.toLowerCase()
 
         if (findMissingKey && cmpResult) {
           if (!entryName) {
