@@ -2,10 +2,10 @@ module.exports = {
   xlsxPath: "./data.xlsx",
   outDir: "./lang",
 
-  lang: ['zh', 'kr'],
+  // lang: ['zh', 'kr'],
   appName: "H5APP",
 
-  completeLang: ['kr', 'ru'],
+  completeLang: ["tr"],
   completeBaseLang: 'zh',
 
   findMissingKey: true,

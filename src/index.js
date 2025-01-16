@@ -44,22 +44,24 @@ const appKey = config.appName
 
 // xlsx 中对应的语言名称索引
 const XLSX_ROW_LANG_INDEX_MAP = {
-  zh: 8,
-  en: 9,
-  hk: 10,
-  kr: 11,
-  ru: 12,
-  es: 13,
-  pt: 14,
-  fa: 15
+  zh: 11,
+  en: 12,
+  hk: 13,
+  kr: 14,
+  ru: 15,
+  es: 16,
+  pt: 17,
+  fa: 18,
+  jp: 19,
+  tr: 20
 }
 
 // xlsx 中对应的应用端名称索引
 const XLSX_ROW_APP_INDEX_MAP = {
-  WEBUC: 3,
-  WEBCO: 4,
-  H5WAP: 5,
-  H5APP: 6
+  WEBUC: 6,
+  WEBCO: 7,
+  H5WAP: 8,
+  H5APP: 9
 }
 
 // xlsx 中对应字段索引
@@ -379,7 +381,6 @@ function generateLangFileBasedLang() {
     const sourceText = item[XLSX_ROW_LANG_INDEX_MAP[sourceLang]]
 
     const trimTargetStr = sourceText?.replace(/^\d[\.|、]/, '')?.replace(/\s+/g, '')
-
     const indexList = sourceDataValues
       .map((v, i) => {
         const trimValueStr = v?.replace(/^\d[\.|、]/, '')?.replace(/\s+/g, '')
@@ -395,7 +396,7 @@ function generateLangFileBasedLang() {
         return cmpResult ? i : -1
       })
       .filter((v) => v >= 0)
-
+    
     if (indexList.length > 0) {
 
       targetLang.map(v => {
@@ -421,17 +422,20 @@ function generateLangFileBasedLang() {
     const fileStructObj = transformFlatten(targetLangObj)
     // 取第一个语言集
     const itemLangObj = fileStructObj[Object.keys(fileStructObj)[0]]
-    let targetData = merge({}, sourceData)
-    // 覆盖相同词条
-    Object.keys(itemLangObj).map(key => {
-      if (targetData[key] != itemLangObj[key]) {
-        targetData[key] = itemLangObj[key]
-      }
-    })
-    // 再次序列化
-    targetData = flattenObject(targetData)
-    // 对比
-    findMissingTerms(sourceData, targetData)
+
+    if (itemLangObj) {
+      let targetData = merge({}, sourceData)
+      // 覆盖相同词条
+      Object.keys(itemLangObj).map(key => {
+        if (targetData[key] != itemLangObj[key]) {
+          targetData[key] = itemLangObj[key]
+        }
+      })
+      // 再次序列化
+      targetData = flattenObject(targetData)
+      // 对比
+      findMissingTerms(sourceData, targetData)
+    }
   }
 
   writeTsToFiles(targetLangObj)

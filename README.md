@@ -14,18 +14,18 @@
   - 例如：`"./lang"`
 - `lang`: Array\<string\>
   - 需要生成的语言列表
-  - 可选值：`zh`, `en`, `hk`, `kr`, `ru`, `es`, `pt`, `fa`
+  - 可选值：`zh`, `en`, `hk`, `kr`, `ru`, `es`, `pt`, `fa`, `jp`, `tr`
   - 例如：`['zh', 'en']`
 - `appName`: string
   - 字符串，应用名称
   - 可选值：`WEBUC`, `WEBCO`, `H5WAP`, `H5APP`
 - `completeLang`: Array\<string\>
   - 需要补全的语言列表
-  - 可选值：`zh`, `en`, `hk`, `kr`, `ru`, `es`, `pt`, `fa`
+  - 可选值：`zh`, `en`, `hk`, `kr`, `ru`, `es`, `pt`, `fa`, `jp`, `tr`
   - 例如：`['zh', 'en']`
 - `completeBaseLang`: string
   - 补全操作的基准语言
-  - 可选值：`zh`, `en`, `hk`, `kr`, `ru`, `es`, `pt`, `fa`
+  - 可选值：`zh`, `en`, `hk`, `kr`, `ru`, `es`, `pt`, `fa`, `jp`, `tr`
   - 例如：`'zh'`
 - `findMissingKey`: boolean
   - 布尔型，当进行补全语言文件时，开启缺失键检测
@@ -42,6 +42,7 @@
 2. `npm install aibit-lang`
 3. 确保在项目根目录下存在配置文件 `aibit-lang.config.js`
 4. 在 `package.json` 中添加指令：
+
 ```json
   {
     "scripts": {
@@ -50,4 +51,5 @@
     }
   }
 ```
+
 5. 运行 `npm run generate:lang` , 语言文件将会在 `outDir` 目录下生成
