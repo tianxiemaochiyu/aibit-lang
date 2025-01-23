@@ -22,6 +22,7 @@ function getConfigInfo() {
     lang: ['cn', 'en'],
     findMissingKey: false,
     findMissingTerm: false,
+    singleFile: '',
     ...config
   })
 }
@@ -487,7 +488,11 @@ function generateLangFileBasedLang() {
     throw new Error('XLSX文件不存在：', xlsxPath)
   }
 
-  const fileNameList = runGetDirName()
+  let fileNameList = runGetDirName()
+  if (config.singleFile) {
+    fileNameList = [config.singleFile]
+  }
+  console.log(fileNameList)
   const jsonList = fileNameList.map((fileName) => {
     const jsonData = readJSONForTs(fileName)
     const result = flattenObject(jsonData, fileName.slice(0, -3))

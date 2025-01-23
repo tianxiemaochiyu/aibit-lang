@@ -5,9 +5,10 @@ module.exports = {
   appName: "H5APP",
 
   completeLang: ["tr"],
-  completeBaseLang: 'cn',
+  completeBaseLang: 'zh',
 
-  fileType: ".js",
+  fileType: ".ts",
+  singleFile: '',
 
   findMissingKey: false,
   findMissingTerm: true,
