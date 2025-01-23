@@ -57,6 +57,7 @@ const XLSX_ROW_LANG_INDEX_MAP = {
   pt: 17,
   fa: 18,
   jp: 19,
+  ja: 19,
   tr: 20
 }
 
