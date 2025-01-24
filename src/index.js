@@ -51,6 +51,7 @@ const XLSX_ROW_LANG_INDEX_MAP = {
   cn: 11, // old version
   en: 12,
   hk: 13,
+  tc: 13,
   kr: 14,
   ru: 15,
   es: 16,
