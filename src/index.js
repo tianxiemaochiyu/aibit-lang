@@ -3,6 +3,100 @@ const XLSX = require('xlsx')
 const merge = require('lodash.merge')
 const path = require('path')
 
+
+function parseCustomString(str) {
+  str = str.trim();
+  const result = [];
+  let i = 0;
+  
+  function parseValue() {
+      let value = '';
+      let braceCount = 0;
+      let inQuote = false;
+      let quoteChar = '';
+      
+      while (i < str.length) {
+          const char = str[i];
+          
+          // 处理引号（包括双引号、单引号和反引号）
+          if ((char === '"' || char === "'" || char === '`') && str[i-1] !== '\\') {
+              if (!inQuote) {
+                  inQuote = true;
+                  quoteChar = char;
+              } else if (char === quoteChar) {
+                  inQuote = false;
+              }
+              value += char;
+              i++;
+              continue;
+          }
+          
+          // 处理花括号
+          if (!inQuote) {
+              if (char === '{') braceCount++;
+              if (char === '}') braceCount--;
+              if (braceCount < 0) break;
+              if (char === ',' && braceCount === 0) break;
+          }
+          
+          value += char;
+          i++;
+      }
+      
+      // 处理不同类型的值
+      let cleanValue = value.trim();
+      if (cleanValue.startsWith('{')) {
+          // 处理对象
+          return parseCustomString(cleanValue.slice(1, -1))
+      } else if (cleanValue.startsWith('"') || cleanValue.startsWith('`')) {
+        // return `"${cleanValue.slice(1, -1).replaceAll(/(?<!\\)"/g, '\\"')?.replaceAll(/(?<!\\)'/g, '\'')}"`
+        const finalValue = cleanValue.replaceAll(/\\"/g, "\"").replaceAll(/\\'/g, "'")
+        return JSON.stringify(finalValue.slice(1, -1))
+      } else if (cleanValue.startsWith("'")) {
+        const finalValue = cleanValue.replaceAll(/\\'/g, "'")
+        return JSON.stringify(finalValue.slice(1, -1))
+      } else {
+          // 其他情况
+          return JSON.stringify(cleanValue.slice(1, -1))
+      }
+  }
+  
+  while (i < str.length) {
+      // 跳过空白
+      while (i < str.length && /\s/.test(str[i])) i++;
+      if (i >= str.length) break;
+      
+      // 解析键
+      let key = '';
+      while (i < str.length && str[i] !== ':') {
+          key += str[i++];
+      }
+      
+      // 清理键名
+      key = key.trim().replace(/^["'`]|["'`]$/g, '');
+      i++; // 跳过冒号
+      
+      // 跳过冒号后的空白
+      while (i < str.length && /\s/.test(str[i])) i++;
+      
+      // 解析值
+      const value = parseValue();
+      // result[key] = value;
+      result.push(`"${key}": ${value}`);
+      
+      // 跳过逗号和空白
+      while (i < str.length && (str[i] === ',' || /\s/.test(str[i]))) i++;
+  }
+  
+  return `{${result.join(",")}}`;
+}
+
+function parseBraced(content) {
+  const str = content.trim().slice(1, -1);
+  const inner = parseCustomString(str);
+  return inner
+}
+
 // 获取配置文件
 function getConfigInfo() {
   let config = {}
@@ -140,45 +234,43 @@ function flattenObject(obj, prefix = '') {
 function replaceContent(str) {
   const regexTrim = str.replace(/\t|\n|\v|\r|\f/g,'')
   // const extractPattern = /'(?:[^']+)'|(?:[a-zA-Z_]\w*)\s*:\s*(?:{\s*.*})\s*,\s*/g
-  const extractPattern = /(?:(?:'[^']+')|(?:\"[^\"]+\")|(?:[a-zA-Z_0-9]\w*))\s*:\s*\{[^\{]*\}\s*,/g
+  const extractPattern = /(?:(?:'[^']+')|(?:\"[^\"]+\")|(?:[a-zA-Z_0-9]\w*))\s*:\s*\{[^\{]*\}\s*/g
   const match1 = regexTrim.match(extractPattern)
   // console.log(regexTrim, "--原始替换字符-")
   // console.log(match1, "--检测是否多个item-")
 
-
-
   if (match1) {
     return match1.map(v => {
       // console.log(v, "--嵌套替换字符-")
-      const itemMatch = v.match(/((?:'[^']+')|(?:\"[^\"]+\")|(?:[a-zA-Z_0-9]\w*))\s*:\s*(\{[^\{]*\})\s*,\s*/)
+      const itemMatch = v.match(/((?:'[^']+')|(?:\"[^\"]+\")|(?:[a-zA-Z_0-9]\w*))\s*:\s*(\{[^\{]*\})/)
       if (itemMatch && itemMatch[2]) {
         const key = itemMatch[1]
         const value = getKeyValueContent(itemMatch[2]);
+
+        // throw new Error('debug');
         // console.log(key, "--已换嵌套字符key-")
         // console.log(value, "--已换嵌套字符value-")
         // console.log(`"${key}": ${value},`, "--已换嵌套字符结果-")
         // throw new Error("debug")
-        return `\"${key}\": ${value},`
+        return `\"${key}\": ${value}`
       }
     }).join("")
-
   }
 
   // console.log(regexTrim, match1);
   // console.log(/'([^']+)'|([a-zA-Z_]\w*)\s*:\s*{(.*)}\s*,\s*/g.test(str));
   // console.log("-- 非嵌套字符 --")
-  const extractPattern2 = /(?:'([^']+)'|\"([^\"]+)\"|([a-zA-Z_]\w*))\s*:\s*(['"`])((?:(?!\4).)*)\4,/g
+  const extractPattern2 = /(?:'([^']+)'|\"([^\"]+)\"|([a-zA-Z_]\w*))\s*:\s*(['"`])((?:(?!\4).)*)\4/g
   const match = regexTrim.match(extractPattern2)
 
   // console.log("before replaceContent: ", regexTrim)
   // console.log("after replaceContent: ", match)
   // console.log(22,regexTrim, match)
+
   if (match) {
     // console.log(match, "--替换字符-")
     const resultList = match.map(v => {
-      const itemMatch = v.match(/(?:'([^']+)'|\"([^\"]+)\"|([a-zA-Z_]\w*))\s*:\s*(['"`])((?:(?!\4).)*)\4,/)
-
-
+      const itemMatch = v.match(/(?:'([^']+)'|\"([^\"]+)\"|([a-zA-Z_]\w*))\s*:\s*(['"`])((?:(?!\4).)*)\4/)
 
       // console.log(itemMatch, "--检测-")
       const key = itemMatch[1] || itemMatch[2] || itemMatch[3]
@@ -186,15 +278,16 @@ function replaceContent(str) {
 
       // console.log("before conver: ", match[4])
       const value1 = value?.replaceAll(/(?<!\\)"/g, '\\"')
-      const value2 = value1?.replaceAll(/(?<!\\)'/g, '\\"')
+      // const value2 = value1?.replaceAll(/(?<!\\)'/g, '\\'')
 
       // console.log(value)
       // throw new Error("debug")
       // console.log(key, "--已换字符key-")
-      // console.log(value2, "--已换字符value-")
+      // console.log(value1, "--已换字符value-")
       // console.log("after conver: ", value2)
-      return `\"${key}\": \"${value2}\",`
+      return `\"${key}\": \"${value1}\"`
     })
+
     return resultList.join("")
     // const key = match[1] || match[2]
     // // console.log("before conver: ", match[4])
@@ -221,12 +314,43 @@ function getKeyValueContent(str) {
   //   'g'
   // )
   // const lineRegex = /(?:(?:'[^']+')|(?:[a-zA-Z0-9_]\w*))\s*:\s*\{.*\},/g
-  const lineRegex = /(?:(?:'[^']+')|(?:\"[^\"]+\")|(?:[a-zA-Z0-9_]\w*))\s*:\s*(?:(?:\"[^\"].*\")|(?:`[^`].*`)|(?:'[^'].*')|(?:{[^{].*})),/g
-  const replaceStr = clearEndStr.replaceAll(lineRegex, (p1) => {
+  // const str2 = replaceContent(clearEndStr)
+ 
+
+  // const lineRegex = /(['\"`]?)([a-zA-Z0-9_]+)\1\s*:\s*([^\{\},]+|\{[^\{\}]*\}.)/g
+  // const lineRegex2 = /(?:(?:'[^']+')|(?:\"[^\"]+\")|(?:[a-zA-Z0-9_]\w*))\s*:\s*(?:(?:\"[^\"].*\")|(?:`[^`].*`)|(?:'[^'].*')),/g
+
+
+  const lineRegex = /(?:(?:'[^']+')|(?:\"[^\"]+\")|(?:[a-zA-Z0-9_]\w*))\s*:\s*.+,/g
+
+  // const  tempResult = clearEndStr.match(lineRegex)
+  // console.log(tempResult)
+  // const str2 = clearEndStr.replaceAll(lineRegex, (data) => {
+  //   console.log(data);
+  //   throw new Error("debug")
+  //   return 
+  // })
+
+  // console.log(clearEndStr)
+  // console.log(tempResult)
+
+  const list = parseBraced(clearEndStr);
+  // console.log(clearEndStr)
+  // console.log(list)
+  const tempResult = list.map(v => {
+    return replaceContent(v)
+  })
+
+  const replaceStr = `{${tempResult.join(",")}}`
+  // throw new Error("debug")
+
+  // const replaceStr = clearEndStr.replaceAll(lineRegex, (p1) => {
     // console.log(clearEndStr, "--getKeyValueContent 原始字符-")
     // console.log(p1, "-- getKeyValueContent 匹配字符-")
-    return replaceContent(p1)
-  })
+
+    // return replaceContent(p1)
+  // })
+
   // console.log("replaceStr: ", clearEndStr, clearEndStr.match(lineRegex))
   const resultEnd = replaceStr.replace(/,}$/, '}')
   const result = resultEnd.replace(/^\s*{\s*/, '{')
@@ -259,14 +383,17 @@ function readJSONForTs(name) {
     //   return replaceContent(p1)
     // })
     // const replaceStr = getKeyValueContent(matchContent[1])
-    const replaceStr = getKeyValueContent(matchContent[1])
-    const result = replaceStr.replace(/,\s*\}$/, '}')
-
-    // const jsonData = JSON.parse(`${result}`)
-    message = result
-    // console.log(result, "---- parse ---")
+    // console.log(matchContent[1])
+    // throw new Error("debug")
+    const result = parseBraced(matchContent[1])
+    
+    // const result = replaceStr.replace(/,\s*\}$/, '}')
 
     const jsonData = JSON.parse(result)
+    // message = result
+    // console.log(jsonData, "---- parse ---")
+    return jsonData 
+    // const jsonData = JSON.parse(result)
     // console.log(jsonData)
     // throw new Error("debug")
 
@@ -274,7 +401,7 @@ function readJSONForTs(name) {
     // const jsonData = parseJson(result)
     // const temp = `{"luxuryGifts": "<span \'{num} USDT</span> 豪礼等您领取!"}`
     // const jsonData = JSON.parse(temp)
-    return jsonData
+    // return jsonData
   // } catch (err) {
     // if (err) {
       // console.log(message)
@@ -288,8 +415,8 @@ function findMissingTerms(sourceObj, targetObj) {
   // const targetKeys = Object.keys(targetObj)
 
   const keys = sourceKeys.filter((v) => {
-    const formatTarget = targetObj[v]?.replace(/^\d[\.|、]/, '')?.replace(/\s+/g, '')?.replaceAll(/(?<!\\)"/g, '\\"')?.replaceAll(/(?<!\\)'/g, '\\"')
-    const formatSource = sourceObj[v]?.replace(/^\d[\.|、]/, '')?.replace(/\s+/g, '')?.replaceAll(/(?<!\\)"/g, '\\"')?.replaceAll(/(?<!\\)'/g, '\\"')
+    const formatTarget = targetObj[v]?.replace(/^\d[\.|、]/, '')?.replace(/\s+/g, '')?.replace(/(?<!\\)"/g, '\"')?.replaceAll(/(?<!\\)'/g, '\"')
+    const formatSource = sourceObj[v]?.replace(/^\d[\.|、]/, '')?.replace(/\s+/g, '')?.replace(/(?<!\\)"/g, '\"')?.replaceAll(/(?<!\\)'/g, '\"')
 
     return formatTarget == formatSource
   })
@@ -537,13 +664,13 @@ function generateLangFileBasedLang() {
       .map((item, index) => {
 
         const entryNameTrim = item[XLSX_ROW_APP_INDEX_MAP[appKey]]?.trim()
-        const entryName = entryNameTrim ? entryNameTrim.replaceAll(/\s*,\s*/g, ',')?.split(',') : ''
+        const entryName = entryNameTrim ? entryNameTrim.replace(/\s*,\s*/g, ',')?.split(',') : ''
 
         const sourceText = item[XLSX_ROW_LANG_INDEX_MAP[sourceLang]]
 
-        const trimTargetStr = sourceText?.replace(/^\d[\.|、]/, '')?.replace(/\s+/g, '')?.replaceAll(/(?<!\\)"/g, '\\"')?.replaceAll(/(?<!\\)'/g, '\\"')
+        const trimTargetStr = sourceText?.replace(/^\d[\.|、]/, '')?.replace(/\s+/g, '')?.replace(/(?<!\\)"/g, '\"')?.replace(/(?<!\\)'/g, '\"')
 
-        const trimValueStr = v?.replace(/^\d[\.|、]/, '')?.replace(/\s+/g, '')?.replaceAll(/(?<!\\)"/g, '\\"')?.replaceAll(/(?<!\\)'/g, '\\"')
+        const trimValueStr = v?.replace(/^\d[\.|、]/, '')?.replace(/\s+/g, '')?.replace(/(?<!\\)"/g, '\"')?.replace(/(?<!\\)'/g, '\"')
         const cmpResult = trimValueStr?.toLowerCase() == trimTargetStr?.toLowerCase()
 
         if (findMissingKey && cmpResult) {
@@ -648,8 +775,8 @@ function generateLangFileBasedLang() {
 
       // 覆盖相同词条
       Object.keys(itemLangObj).map(key => {
-        const formatTarget = itemLangObj[key]?.replace(/^\d[\.|、]/, '')?.replace(/\s+/g, '')?.replaceAll(/(?<!\\)"/g, '\\"')?.replaceAll(/(?<!\\)'/g, '\\"')
-        const formatSource = targetData[key]?.replace(/^\d[\.|、]/, '')?.replace(/\s+/g, '')?.replaceAll(/(?<!\\)"/g, '\\"')?.replaceAll(/(?<!\\)'/g, '\\"')
+        const formatTarget = itemLangObj[key]?.replace(/^\d[\.|、]/, '')?.replace(/\s+/g, '')?.replace(/(?<!\\)"/g, '\"')?.replace(/(?<!\\)'/g, '\"')
+        const formatSource = targetData[key]?.replace(/^\d[\.|、]/, '')?.replace(/\s+/g, '')?.replace(/(?<!\\)"/g, '\"')?.replace(/(?<!\\)'/g, '\"')
 
         if (formatSource != formatTarget) {
           targetData[key] = itemLangObj[key]

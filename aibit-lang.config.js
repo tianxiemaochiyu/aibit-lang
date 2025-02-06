@@ -7,7 +7,7 @@ module.exports = {
   completeLang: ["tr"],
   completeBaseLang: 'zh',
 
-  fileType: ".ts",
+  fileType: ".js",
   singleFile: '',
 
   findMissingKey: false,
