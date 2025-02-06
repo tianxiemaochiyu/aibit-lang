@@ -140,7 +140,7 @@ function flattenObject(obj, prefix = '') {
 function replaceContent(str) {
   const regexTrim = str.replace(/\t|\n|\v|\r|\f/g,'')
   // const extractPattern = /'(?:[^']+)'|(?:[a-zA-Z_]\w*)\s*:\s*(?:{\s*.*})\s*,\s*/g
-  const extractPattern = /(?:(?:'[^']+')|(?:[a-zA-Z_0-9]\w*))\s*:\s*\{[^\{]*\}\s*,/g
+  const extractPattern = /(?:(?:'[^']+')|(?:\"[^\"]+\")|(?:[a-zA-Z_0-9]\w*))\s*:\s*\{[^\{]*\}\s*,/g
   const match1 = regexTrim.match(extractPattern)
   // console.log(regexTrim, "--原始替换字符-")
   // console.log(match1, "--检测是否多个item-")
@@ -150,7 +150,7 @@ function replaceContent(str) {
   if (match1) {
     return match1.map(v => {
       // console.log(v, "--嵌套替换字符-")
-      const itemMatch = v.match(/((?:'[^']+')|(?:[a-zA-Z_0-9]\w*))\s*:\s*(\{[^\{]*\})\s*,\s*/)
+      const itemMatch = v.match(/((?:'[^']+')|(?:\"[^\"]+\")|(?:[a-zA-Z_0-9]\w*))\s*:\s*(\{[^\{]*\})\s*,\s*/)
       if (itemMatch && itemMatch[2]) {
         const key = itemMatch[1]
         const value = getKeyValueContent(itemMatch[2]);
@@ -167,20 +167,29 @@ function replaceContent(str) {
   // console.log(regexTrim, match1);
   // console.log(/'([^']+)'|([a-zA-Z_]\w*)\s*:\s*{(.*)}\s*,\s*/g.test(str));
   // console.log("-- 非嵌套字符 --")
-  const extractPattern2 = /(?:'([^']+)'|([a-zA-Z_]\w*))\s*:\s*(['"`])((?:(?!\3).)*)\3,/g
+  const extractPattern2 = /(?:'([^']+)'|\"([^\"]+)\"|([a-zA-Z_]\w*))\s*:\s*(['"`])((?:(?!\4).)*)\4,/g
   const match = regexTrim.match(extractPattern2)
+
   // console.log("before replaceContent: ", regexTrim)
   // console.log("after replaceContent: ", match)
   // console.log(22,regexTrim, match)
   if (match) {
     // console.log(match, "--替换字符-")
     const resultList = match.map(v => {
-      const itemMatch = v.match(/(?:'([^']+)'|([a-zA-Z_]\w*))\s*:\s*(['"`])((?:(?!\3).)*)\3,/)
+      const itemMatch = v.match(/(?:'([^']+)'|\"([^\"]+)\"|([a-zA-Z_]\w*))\s*:\s*(['"`])((?:(?!\4).)*)\4,/)
+
+
+
       // console.log(itemMatch, "--检测-")
-      const key = itemMatch[1] || itemMatch[2]
+      const key = itemMatch[1] || itemMatch[2] || itemMatch[3]
+      const value = itemMatch[5] || itemMatch[4]
+
       // console.log("before conver: ", match[4])
-      const value1 = itemMatch[4]?.replaceAll(/(?<!\\)"/g, '\\"')
+      const value1 = value?.replaceAll(/(?<!\\)"/g, '\\"')
       const value2 = value1?.replaceAll(/(?<!\\)'/g, '\\"')
+
+      // console.log(value)
+      // throw new Error("debug")
       // console.log(key, "--已换字符key-")
       // console.log(value2, "--已换字符value-")
       // console.log("after conver: ", value2)
@@ -195,6 +204,7 @@ function replaceContent(str) {
     // // console.log("after conver: ", value2)
     // return `"${key}": "${value2}",`
   }
+
   return str
 }
 
@@ -211,7 +221,7 @@ function getKeyValueContent(str) {
   //   'g'
   // )
   // const lineRegex = /(?:(?:'[^']+')|(?:[a-zA-Z0-9_]\w*))\s*:\s*\{.*\},/g
-  const lineRegex = /(?:(?:'[^']+')|(?:[a-zA-Z0-9_]\w*))\s*:\s*(?:(?:\"[^\"].*\")|(?:`[^`].*`)|(?:'[^'].*')|(?:{[^{].*})),/g
+  const lineRegex = /(?:(?:'[^']+')|(?:\"[^\"]+\")|(?:[a-zA-Z0-9_]\w*))\s*:\s*(?:(?:\"[^\"].*\")|(?:`[^`].*`)|(?:'[^'].*')|(?:{[^{].*})),/g
   const replaceStr = clearEndStr.replaceAll(lineRegex, (p1) => {
     // console.log(clearEndStr, "--getKeyValueContent 原始字符-")
     // console.log(p1, "-- getKeyValueContent 匹配字符-")
