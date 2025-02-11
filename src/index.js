@@ -8,87 +8,133 @@ function parseCustomString(str) {
   str = str.trim();
   const result = [];
   let i = 0;
-  
+
   function parseValue() {
-      let value = '';
-      let braceCount = 0;
-      let inQuote = false;
-      let quoteChar = '';
-      
-      while (i < str.length) {
-          const char = str[i];
-          
-          // 处理引号（包括双引号、单引号和反引号）
-          if ((char === '"' || char === "'" || char === '`') && str[i-1] !== '\\') {
-              if (!inQuote) {
-                  inQuote = true;
-                  quoteChar = char;
-              } else if (char === quoteChar) {
-                  inQuote = false;
-              }
-              value += char;
-              i++;
-              continue;
-          }
-          
-          // 处理花括号
-          if (!inQuote) {
-              if (char === '{') braceCount++;
-              if (char === '}') braceCount--;
-              if (braceCount < 0) break;
-              if (char === ',' && braceCount === 0) break;
-          }
-          
-          value += char;
-          i++;
+    let value = '';
+    let braceCount = 0;
+    let inQuote = false;
+    let quoteChar = '';
+
+    while (i < str.length) {
+      const char = str[i];
+
+      // 处理引号（包括双引号、单引号和反引号）
+      if ((char === '"' || char === "'" || char === '`') && str[i - 1] !== '\\') {
+        if (!inQuote) {
+          inQuote = true;
+          quoteChar = char;
+        } else if (char === quoteChar) {
+          inQuote = false;
+        }
+        value += char;
+        i++;
+        continue;
       }
-      
-      // 处理不同类型的值
-      let cleanValue = value.trim();
-      if (cleanValue.startsWith('{')) {
-          // 处理对象
-          return parseCustomString(cleanValue.slice(1, -1))
-      } else if (cleanValue.startsWith('"') || cleanValue.startsWith('`')) {
-        // return `"${cleanValue.slice(1, -1).replaceAll(/(?<!\\)"/g, '\\"')?.replaceAll(/(?<!\\)'/g, '\'')}"`
-        const finalValue = cleanValue.replaceAll(/\\"/g, "\"").replaceAll(/\\'/g, "'")
-        return JSON.stringify(finalValue.slice(1, -1))
-      } else if (cleanValue.startsWith("'")) {
-        const finalValue = cleanValue.replaceAll(/\\'/g, "'")
-        return JSON.stringify(finalValue.slice(1, -1))
-      } else {
-          // 其他情况
-          return JSON.stringify(cleanValue.slice(1, -1))
+
+      // 处理花括号
+      if (!inQuote) {
+        if (char === '{') braceCount++;
+        if (char === '}') braceCount--;
+        if (char === '[') braceCount++; // 处理数组开始
+        if (char === ']') braceCount--; // 处理数组结束
+        if (braceCount < 0) break;
+        if (char === ',' && braceCount === 0) break;
       }
+
+      value += char;
+      i++;
+    }
+
+    // 处理不同类型的值
+    let cleanValue = value.trim();
+    if (cleanValue.startsWith('{')) {
+      // 处理对象
+      return parseCustomString(cleanValue.slice(1, -1));
+    } else if (cleanValue.startsWith('[')) {
+      // 处理数组
+      return parseArray(cleanValue);
+    } else if (cleanValue.startsWith('"') || cleanValue.startsWith('`')) {
+      // 处理双引号或反引号包裹的字符串
+      const finalValue = cleanValue.replaceAll(/\\"/g, '"').replaceAll(/\\'/g, "'");
+      return JSON.stringify(finalValue.slice(1, -1));
+    } else if (cleanValue.startsWith("'")) {
+      // 处理单引号包裹的字符串
+      const finalValue = cleanValue.replaceAll(/\\'/g, "'");
+      return JSON.stringify(finalValue.slice(1, -1));
+    } else {
+      // 其他情况（未包裹的值）
+      return JSON.stringify(cleanValue);
+    }
   }
   
+
+  function parseArray(arrayStr) {
+    // 去除外层中括号
+    const content = arrayStr.slice(1, -1).trim();
+    if (!content) return '[]'; // 空数组
+
+    const items = [];
+    let start = 0;
+    let inQuote = false;
+    let quoteChar = '';
+
+    for (let i = 0; i < content.length; i++) {
+      const char = content[i];
+
+      // 处理引号
+      if ((char === '"' || char === "'" || char === '`') && content[i - 1] !== '\\') {
+        if (!inQuote) {
+          inQuote = true;
+          quoteChar = char;
+        } else if (char === quoteChar) {
+          inQuote = false;
+        }
+      }
+
+      // 处理逗号分隔
+      if (char === ',' && !inQuote) {
+        const item = content.slice(start, i).trim();
+        items.push(item); // 每一项作为字符串处理
+        start = i + 1;
+      }
+    }
+
+    // 添加最后一个元素
+    if (start < content.length) {
+      const item = content.slice(start).trim();
+      items.push(item);
+    }
+
+    return `[${items.join(',')}]`;
+  }
+
   while (i < str.length) {
-      // 跳过空白
-      while (i < str.length && /\s/.test(str[i])) i++;
-      if (i >= str.length) break;
-      
-      // 解析键
-      let key = '';
-      while (i < str.length && str[i] !== ':') {
-          key += str[i++];
-      }
-      
-      // 清理键名
-      key = key.trim().replace(/^["'`]|["'`]$/g, '');
-      i++; // 跳过冒号
-      
-      // 跳过冒号后的空白
-      while (i < str.length && /\s/.test(str[i])) i++;
-      
-      // 解析值
-      const value = parseValue();
-      // result[key] = value;
-      result.push(`"${key}": ${value}`);
-      
-      // 跳过逗号和空白
-      while (i < str.length && (str[i] === ',' || /\s/.test(str[i]))) i++;
+    // 跳过空白
+    while (i < str.length && /\s/.test(str[i])) i++;
+    if (i >= str.length) break;
+
+    // 解析键
+    let key = '';
+    while (i < str.length && str[i] !== ':') {
+      key += str[i++];
+    }
+
+    // 清理键名
+    key = key.trim().replace(/^["'`]|["'`]$/g, '');
+    i++; // 跳过冒号
+
+    // 跳过冒号后的空白
+    while (i < str.length && /\s/.test(str[i])) i++;
+
+    // 解析值
+    const value = parseValue();
+    result.push(`"${key}": ${value}`);
+
+    // 跳过逗号和空白
+    while (i < str.length && (str[i] === ',' || /\s/.test(str[i]))) i++;
   }
-  
-  return `{${result.join(",")}}`;
+
+  return `{${result.join(',')}}`;
 }
 
 function parseBraced(content) {
@@ -207,7 +253,13 @@ function flattenObject(obj, prefix = '') {
   for (let key in obj) {
     if (obj.hasOwnProperty(key)) {
       const newKey = prefix ? `${prefix}.${key}` : key
-      if (typeof obj[key] === 'object' && obj[key] !== null) {
+      if (Object.prototype.toString.call(obj[key]) === '[object Array]' && obj[key] !== null) {
+        let ArrayValue = {};
+        obj[key].map((v, i) => {
+          ArrayValue[`${newKey}.${i}`] = v;
+        })
+        Object.assign(result, ArrayValue)
+      } else if (typeof obj[key] === 'object' && obj[key] !== null) {
         Object.assign(result, flattenObject(obj[key], newKey))
       } else {
         result[newKey] = obj[key]
@@ -539,11 +591,15 @@ function writeTsToFiles(langObj) {
     if (!fileStructObj[langName][fileName]) {
       fileStructObj[langName][fileName] = {}
     }
-
     const contentKeyList = keyList.slice(2)
     contentKeyList.reduce((currentObj, value, index) => {
       if (index < contentKeyList.length - 1) {
-        if (!currentObj[value]) {
+        if (/^\d$/.test(contentKeyList[index + 1])) {
+          if (!currentObj[value]) {
+            currentObj[value] = []
+          }
+          currentObj[value].push(langObj[fullKey])
+        } else if (!currentObj[value]) {
           currentObj[value] = {}
         }
         return currentObj[value]
@@ -673,12 +729,12 @@ function generateLangFileBasedLang() {
   const lossKeyTempObj = {}
 
   if (singleKeys.length > 0) {
-    sourceDataValues = singleKeys.map(v => sourceData[v]);
+    sourceDataValues = singleKeys.map(v => sourceData[v])
   }
 
   sourceDataValues.map((v, i) => {
-
-    const indexList = data
+    const indexList = []
+    data
       .map((item, index) => {
 
         const entryNameTrim = item[XLSX_ROW_APP_INDEX_MAP[appKey]]?.trim()
@@ -698,20 +754,24 @@ function generateLangFileBasedLang() {
             delete lossKeyTempObj[sourceDataKeys[i]]
           }
         }
-        return cmpResult ? {
-          index: i,
-          rowData: item
-        } : undefined
+        if (cmpResult) {
+          indexList.push({
+            index: i,
+            rowData: item
+          })
+        }
       })
-      .filter((k) => !!k)
-
-    if (indexList.length > 0) {
+    if (indexList.length <= 0) {
+      indexList.push({
+        index: i
+      })
+    }  
+    // if (indexList.length > 0) {
 
       targetLang.map(item => {
-
         indexList.map((value) => {
           const {index, rowData} = value
-          const targetText = rowData[XLSX_ROW_LANG_INDEX_MAP[item]]
+          const targetText = rowData ? rowData[XLSX_ROW_LANG_INDEX_MAP[item]] : v
           const dataKey = singleKeys && singleKeys.length > 0 ? singleKeys[index] : sourceDataKeys[index]
 
           // if (sourceData[dataKey] == `<p class=\"title\">首次交易任务说明</p><p class=\"t2\">新手任务有效期内完成首笔合约交易额 ≥{num} USDT 或 首笔现货交易额 ≥{amount} USDT</p>`) {
@@ -722,13 +782,13 @@ function generateLangFileBasedLang() {
           // }
 
           if (targetText) {
+            
             targetLangObj[`${item}.${dataKey}`] = targetText.replace(/^\s+|\s+$/g, '')
           }
         })
       })
-    }
+    // }
   })
-
   // data.map((item, index) => {
 
   //   const entryNameTrim = item[XLSX_ROW_APP_INDEX_MAP[appKey]]?.trim()

@@ -8,7 +8,7 @@ module.exports = {
   completeBaseLang: "zh",
 
   fileType: ".js",
-  singleFile: "",
+  singleFile: "futures.js",
   singleKeys: [],
   findMissingKey: false,
   findMissingTerm: true,
