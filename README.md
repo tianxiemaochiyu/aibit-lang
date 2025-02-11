@@ -31,6 +31,11 @@
   - 生成的文件类型
   - 可选值：`.ts`, `.js`
   - 例如：`'.ts'`
+- `singleFile:`: string
+  - 只对单个文件生效的文件名
+- `singleKeys:`: Array\<string\>
+  - 只对指定 key 生效
+  - 例如, 只对 `api` 文件下的 `code` 字段生效：["api.code"]
 - `findMissingKey`: boolean
   - 布尔型，当进行补全语言文件时，开启缺失键检测
   - 以指定基准语言中已有的键名去扫描 XLSX 中缺少的键名

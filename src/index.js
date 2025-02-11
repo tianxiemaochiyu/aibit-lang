@@ -117,6 +117,7 @@ function getConfigInfo() {
     findMissingKey: false,
     findMissingTerm: false,
     singleFile: '',
+    singleKeys: [],
     ...config
   })
 }
@@ -359,9 +360,9 @@ function getKeyValueContent(str) {
 }
 
 // 读取TS文件并且序列化为JSON
-function readJSONForTs(name) {
-  const filePath = `${langPath}/${sourceLang}/${name}`
-  let message = ""
+function readJSONForTs(name, lang) {
+  const langName = lang || sourceLang
+  const filePath = `${langPath}/${langName}/${name}`
   // try {
     const file = fs.readFileSync(filePath, 'utf-8')
     const regex = getRegex(fileType);
@@ -631,6 +632,9 @@ function generateLangFileBasedLang() {
   if (config.singleFile) {
     fileNameList = [config.singleFile]
   }
+
+  const singleKeys = config.singleKeys || [];
+
   console.log(fileNameList)
   const jsonList = fileNameList.map((fileName) => {
     const jsonData = readJSONForTs(fileName)
@@ -639,16 +643,26 @@ function generateLangFileBasedLang() {
   })
 
   const sourceData = merge({}, ...jsonList)
-  const targetLangObj = {}
+  let targetLangObj = {}
 
   const sourceDataKeys = Object.keys(sourceData)
-  const sourceDataValues = Object.values(sourceData)
+  let sourceDataValues = Object.values(sourceData)
 
-  targetLang.map(item => {
-    sourceDataKeys.map(k => {
-      targetLangObj[`${item}.${k}`] = sourceData[k];
+  if (singleKeys.length > 0) {
+    targetLang.map(item => {
+      fileNameList.map((fileName) => {
+        const jsonData = readJSONForTs(fileName, item)
+        const result = flattenObject(jsonData, `${item}.${fileName.slice(0, -3)}`)
+        targetLangObj = merge(targetLangObj, result)
+      })
     })
-  })
+  } else {
+    targetLang.map(item => {
+      sourceDataKeys.map(k => {
+        targetLangObj[`${item}.${k}`] = sourceData[k];
+      })
+    })
+  }
 
   const workbook = XLSX.readFile(xlsxPath)
   const sheetName = workbook.SheetNames[0]
@@ -657,7 +671,11 @@ function generateLangFileBasedLang() {
   data.shift()
 
   const lossKeyTempObj = {}
-  // throw new Error(debug)
+
+  if (singleKeys.length > 0) {
+    sourceDataValues = singleKeys.map(v => sourceData[v]);
+  }
+
   sourceDataValues.map((v, i) => {
 
     const indexList = data
@@ -694,7 +712,7 @@ function generateLangFileBasedLang() {
         indexList.map((value) => {
           const {index, rowData} = value
           const targetText = rowData[XLSX_ROW_LANG_INDEX_MAP[item]]
-          const dataKey = sourceDataKeys[index]
+          const dataKey = singleKeys && singleKeys.length > 0 ? singleKeys[index] : sourceDataKeys[index]
 
           // if (sourceData[dataKey] == `<p class=\"title\">首次交易任务说明</p><p class=\"t2\">新手任务有效期内完成首笔合约交易额 ≥{num} USDT 或 首笔现货交易额 ≥{amount} USDT</p>`) {
           //   // console.log(targetText.replace(/^\s+|\s+$/g, ''), '====')
@@ -711,8 +729,6 @@ function generateLangFileBasedLang() {
     }
   })
 
-  // console.log(targetLangObj)
-  // throw new Error('debug')
   // data.map((item, index) => {
 
   //   const entryNameTrim = item[XLSX_ROW_APP_INDEX_MAP[appKey]]?.trim()

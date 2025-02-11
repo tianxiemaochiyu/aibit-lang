@@ -4,12 +4,12 @@ module.exports = {
 
   appName: "H5APP",
 
-  completeLang: ["tr"],
-  completeBaseLang: 'zh',
+  completeLang: ["tr", "en"],
+  completeBaseLang: "zh",
 
   fileType: ".js",
-  singleFile: '',
-
+  singleFile: "",
+  singleKeys: [],
   findMissingKey: false,
   findMissingTerm: true,
 }
