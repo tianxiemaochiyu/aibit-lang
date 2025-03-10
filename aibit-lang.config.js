@@ -2,14 +2,12 @@ module.exports = {
   xlsxPath: "./data.xlsx",
   outDir: "./lang",
 
-  appName: "H5APP",
-
-  completeLang: ["tr", "en"],
+  completeLang: ["vi"],
   completeBaseLang: "zh",
-
+  // clientType: "ios",
   fileType: ".js",
-  singleFile: "futures.js",
-  singleKeys: [],
-  findMissingKey: false,
+  // singleFile: "api.js",
+  // singleKeys: ["title3"],
+  // findMissingKey: false,
   findMissingTerm: true,
 }

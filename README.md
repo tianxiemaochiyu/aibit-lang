@@ -12,24 +12,21 @@
   - 字符串，输出目录路径
   - 生成的语言文件将保存在此目录下
   - 例如：`"./lang"`
-- `lang`: Array\<string\>
-  - 需要生成的语言列表
-  - 可选值：`zh`, `en`, `hk`, `kr`, `ru`, `es`, `pt`, `fa`, `jp`, `tr`
-  - 例如：`['zh', 'en']`
-- `appName`: string
-  - 字符串，应用名称
-  - 可选值：`WEBUC`, `WEBCO`, `H5WAP`, `H5APP`
 - `completeLang`: Array\<string\>
   - 需要补全的语言列表
-  - 可选值：`zh`, `en`, `hk`, `kr`, `ru`, `es`, `pt`, `fa`, `jp`, `tr`
+  - 可选值：`zh`, `en`, `hk`, `kr`, `ru`, `es`, `pt`, `fa`, `jp`, `tr`, `vi`, `fr`
   - 例如：`['zh', 'en']`
 - `completeBaseLang`: string
   - 补全操作的基准语言
-  - 可选值：`zh`, `en`, `hk`, `kr`, `ru`, `es`, `pt`, `fa`, `jp`, `tr`
+  - 可选值：`zh`, `en`, `hk`, `kr`, `ru`, `es`, `pt`, `fa`, `jp`, `tr`, `vi`, `fr`
   - 例如：`'zh'`
+- `clientType:`: string
+  - 客户端类型
+  - 可选值：`browser`, `android`, `ios`
+  - 默认值：`'browser'`
 - `fileType:`: string
   - 生成的文件类型
-  - 可选值：`.ts`, `.js`
+  - 可选值：`.ts`, `.js`, `.xml`, `strings`
   - 例如：`'.ts'`
 - `singleFile:`: string
   - 只对单个文件生效的文件名
@@ -47,6 +44,7 @@
 
 ## Usage
 
+### Web前端
 1. 确保项目根目录下存在 `.xlsx` 后缀表格文件
 2. `npm install aibit-lang`
 3. 确保在项目根目录下存在配置文件 `aibit-lang.config.js`
@@ -62,3 +60,9 @@
 ```
 
 5. 运行 `npm run generate:lang` , 语言文件将会在 `outDir` 目录下生成
+
+### Android/iOS
+1. 安装[NodeJS](https://nodejs.org/en), 版本>=`18.17.1`
+2. 确保项目根目录下存在 `.xlsx` 后缀表格文件
+3. 确保在项目根目录下存在配置文件 `aibit-lang.config.js`
+4. 在项目根目录下执行`npx aibit-lang c`, 语言文件将会在 outDir 目录下生成
