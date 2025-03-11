@@ -720,10 +720,16 @@ function generateLangFile() {
         if (sourceValue ==  xlsxValue) {
           langKeyList.map(langKey => {
             const langObjTargetLangKey = `${langKey}.${v.split(".").splice(1).join(".")}`
-            langObj[langObjTargetLangKey] = item[XLSX_ROW_LANG_INDEX_MAP[targetLang]]?.trim()
+            langObj[langObjTargetLangKey] = item[XLSX_ROW_LANG_INDEX_MAP[langKey]]?.trim()
+            if (!item[XLSX_ROW_LANG_INDEX_MAP[langKey]]) {
+              console.log(item[XLSX_ROW_LANG_INDEX_MAP[langKey]]?.trim())
+              console.log(XLSX_ROW_LANG_INDEX_MAP[langKey])
+              console.log(langKey)
+              throw new Error("debugger")
+            }
           })
+                    
           const id = item[XLSX_ROW_PROP_INDEX_MAP.id]
-          // lossKeysObj[id] = baseLangObj[v].trim();
           lossKeysObj[id] = item[XLSX_ROW_LANG_INDEX_MAP["zh"]]?.trim()
         }
       })
