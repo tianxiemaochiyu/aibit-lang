@@ -199,7 +199,7 @@ function getConfigInfo() {
   }
 
   config = {
-    lang: ['cn', 'en'],
+    lang: ['en'],
     findMissingKey: false,
     findMissingTerm: false,
     singleFile: '',
@@ -234,33 +234,39 @@ const langPath = path.join(process.cwd(), config.outDir)
 const xlsxPath = path.join(process.cwd(), config.xlsxPath)
 
 const langKeyList = config.lang
-const appKey = config.appName
+const appKey = 
+  config.clientType === "browser" 
+    ? config.appName 
+    : config.clientType === "android" 
+      ? "ANDROID"
+      : "IOS"
 
 // xlsx 中对应的语言名称索引
 const XLSX_ROW_LANG_INDEX_MAP = {
-  zh: 11,
-  cn: 11, // old version
-  en: 12,
-  hk: 13,
-  tc: 13,
-  kr: 14,
-  ru: 15,
-  es: 16,
-  pt: 17,
-  fa: 18,
-  jp: 19,
-  ja: 19,
-  tr: 20,
-  fr: 21,
-  vi: 22,
+  zh: 11 + 3,
+  cn: 11 + 3, // old version
+  en: 12 + 3,
+  hk: 13 + 3,
+  tc: 13 + 3,
+  kr: 14 + 3,
+  ru: 15 + 3,
+  es: 16 + 3,
+  fa: 18 + 3,
+  jp: 19 + 3,
+  ja: 19 + 3,
+  tr: 20 + 3,
+  fr: 21 + 3,
+  vi: 22 + 3,
 }
 
 // xlsx 中对应的应用端名称索引
 const XLSX_ROW_APP_INDEX_MAP = {
-  WEBUC: 6,
-  WEBCO: 7,
-  H5WAP: 8,
-  H5APP: 9
+  WEBUC: 6 + 2,
+  WEBCO: 7 + 2,
+  H5WAP: 8 + 2,
+  H5APP: 9 + 2,
+  ANDROID: 6,
+  IOS: 7,
 }
 
 // xlsx 中对应字段索引
@@ -268,6 +274,26 @@ const XLSX_ROW_PROP_INDEX_MAP = {
   id: 0,
   issue: 1,
   isHas: 2
+}
+
+const getClientPlaceHolder = (clientType) => {
+  switch(clientType) {
+    case "android": 
+      return {
+        match: /({.*})|(%@)/g,
+        placeholder: "%s"
+      };
+    case "ios":
+      return {
+        match:  /({.*})|(%s)|(%\d\$s)/g,
+        placeholder: "%@"
+      };
+    case "browser":
+      return {
+        match: /(%s)|(%\d\$s)/g,
+        placeholder: "{a}"
+      };
+  }
 }
 
 function runGetDirName() {
@@ -524,7 +550,6 @@ function writeToFile(contentObj) {
 }
 
 function writetoXML(contentObj) {
-  let xmlContent = "<resources>\n"
   const fileStructObj = {}
   Object.keys(contentObj).map((v) => {
     const fullKey = v
@@ -536,23 +561,21 @@ function writetoXML(contentObj) {
       fileStructObj[langName] = {}
     }
     if (!fileStructObj[langName][fileName]) {
-      fileStructObj[langName][fileName] = {}
+      fileStructObj[langName][fileName] = "<resources>\n"
     }
     const key = keyList.slice(2).join(".")
-    xmlContent += `<string name="${key}">${contentObj[fullKey]}</string>\n`
+    fileStructObj[langName][fileName] += `<string name="${key}">${contentObj[fullKey]}</string>\n`
   })
-  xmlContent += "</resources>"
   // 写入目录文件
   Object.keys(fileStructObj).forEach((langFile) => {
     Object.keys(fileStructObj[langFile]).forEach((file) => {
       const path = `${langPath}/${langFile}/${file}${fileType}`
-      writeContentForPath(path, xmlContent)
+      writeContentForPath(path, fileStructObj[langName][fileName] + "</resources>")
     })
   })
 }
 
 function writetoStrings(contentObj) {
-  let xmlContent = ""
   const fileStructObj = {}
   Object.keys(contentObj).map((v) => {
     const fullKey = v
@@ -564,16 +587,16 @@ function writetoStrings(contentObj) {
       fileStructObj[langName] = {}
     }
     if (!fileStructObj[langName][fileName]) {
-      fileStructObj[langName][fileName] = {}
+      fileStructObj[langName][fileName] = ""
     }
     const key = keyList.slice(2).join(".")
-    xmlContent += `"${key}" = "${contentObj[fullKey]}";\n`
+    fileStructObj[langName][fileName] += `"${key}" = "${contentObj[fullKey]}";\n`
   })
-  // 写入目录文件
+  // 写入目录文件`
   Object.keys(fileStructObj).forEach((langFile) => {
     Object.keys(fileStructObj[langFile]).forEach((file) => {
       const path = `${langPath}/${langFile}/${file}${fileType}`
-      writeContentForPath(path, xmlContent)
+      writeContentForPath(path, fileStructObj[langFile][file])
     })
   })
 }
@@ -648,6 +671,16 @@ function generateLangFile() {
     throw new Error('XLSX文件不存在：', xlsxPath)
   }
 
+  let fileNameList = runGetDirName()
+  let baseLangObj = {}
+  fileNameList.map((fileName) => {
+    const jsonData = readJSONForTs(fileName, sourceLang)
+    const result = flattenObject(jsonData, `${sourceLang}.${fileName.replace(fileType, "")}`)
+    baseLangObj = merge(baseLangObj, result)
+  })
+
+  const baseLangObjKeys = Object.keys(baseLangObj)
+
   const workbook = XLSX.readFile(xlsxPath)
   const sheetName = workbook.SheetNames[0]
   const worksheet = workbook.Sheets[sheetName]
@@ -655,6 +688,8 @@ function generateLangFile() {
   data.shift()
 
   const langObj = {}
+  const lossKeysObj = {}
+  const valueFilterRegex = getClientPlaceHolder(config.clientType);
 
   data.map((item, index) => {
     const entryNameTrim = item[XLSX_ROW_APP_INDEX_MAP[appKey]]?.trim()
@@ -662,17 +697,45 @@ function generateLangFile() {
     if (entryName) {
       langKeyList.map((v) => {
         const indexKey = XLSX_ROW_LANG_INDEX_MAP[v]
+        const fileName = 
+          config.clientType == "android" 
+            ? "strings" 
+            : config.clientType == "ios" 
+              ? "Localizable" 
+              : ""
         entryName.map((entryKey) => {
-          // 转义路径字符
-          const key = `${v.toLowerCase()}.${entryKey.replaceAll('/', '.')}`
-          // 文本内容转义双引号或单引号
-          langObj[key] = item[indexKey] || ''
+          const clientKey = 
+            config.clientType == "android" || config.clientType == "ios" 
+              ? entryKey : entryKey.replaceAll('/', '.')
+
+          const key = `${v.toLowerCase()}${fileName ? `.${fileName}` : ''}.${clientKey}`
+          
+          langObj[key] = item[indexKey]?.trim().replaceAll(valueFilterRegex.match, valueFilterRegex.placeholder) || ''
         })
+      })
+    } else {
+      baseLangObjKeys.map((v) => {
+        const sourceValue = baseLangObj[v].trim();
+        const xlsxValue = item[XLSX_ROW_LANG_INDEX_MAP[sourceLang]]?.trim()
+        if (sourceValue ==  xlsxValue) {
+          langKeyList.map(langKey => {
+            const langObjTargetLangKey = `${langKey}.${v.split(".").splice(1).join(".")}`
+            langObj[langObjTargetLangKey] = item[XLSX_ROW_LANG_INDEX_MAP[targetLang]]?.trim()
+          })
+          const id = item[XLSX_ROW_PROP_INDEX_MAP.id]
+          // lossKeysObj[id] = baseLangObj[v].trim();
+          lossKeysObj[id] = item[XLSX_ROW_LANG_INDEX_MAP["zh"]]?.trim()
+        }
       })
     }
   })
+  
+  writeToFile(langObj)
 
-  writeTsToJS(langObj)
+  if (Object.keys(lossKeysObj).length > 0) {
+    const keyfilePath = path.resolve(process.cwd(), './missKeys.js')
+    writeContentForPath(keyfilePath, `export default ${JSON.stringify(lossKeysObj, null, 2)}`)
+  }
 }
 
 
@@ -785,7 +848,7 @@ function generateLangFileBasedLang() {
   if (findMissingTerm) {
     
     let itemLangObj = {}
-    if (clientType != "android" && clientType != "ios") {
+    if (config.clientType != "android" && config.clientType != "ios") {
     // 反序列化
       const fileStructObj = transformFlatten(targetLangObj)
       // 取第一个语言集

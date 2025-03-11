@@ -1,13 +1,14 @@
 module.exports = {
   xlsxPath: "./data.xlsx",
   outDir: "./lang",
-
-  completeLang: ["vi"],
-  completeBaseLang: "zh",
+  lang: ["vi", "fr"],
+  clientType: "ios",
+  // completeLang: ["vi"],
+  completeBaseLang: "en",
   // clientType: "ios",
-  fileType: ".js",
+  fileType: ".strings",
   // singleFile: "api.js",
   // singleKeys: ["title3"],
   // findMissingKey: false,
-  findMissingTerm: true,
+  // findMissingTerm: true,
 }
