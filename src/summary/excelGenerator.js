@@ -24,7 +24,7 @@ class ExcelGenerator {
     const zhData = normalizedLangData[MASTER_LANGUAGE] || {}
 
     Object.entries(zhData).forEach(([key, zhValue]) => {
-      if (!zhValue || zhValue.trim() === '') return
+      if (!zhValue || zhValue.trim() === '') return;
 
       // 使用标准化后的语言检查
       const matchValues = STRICT_MATCH_LANGUAGES.map((lang) => normalizedLangData[lang]?.[key])
@@ -37,6 +37,7 @@ class ExcelGenerator {
         groupedMap.set(signature, {
           androidKeys: new Set(),
           iosKeys: new Set(),
+          webKeys: new Set(),  // 改为简单的Set存储web keys
           translations: {}
         })
       }
@@ -45,8 +46,10 @@ class ExcelGenerator {
       
       if (keyToClientType[key] === 'android') {
         group.androidKeys.add(key)
-      } else {
+      } else if (keyToClientType[key] === 'ios') {
         group.iosKeys.add(key)
+      } else if (keyToClientType[key] === 'web') {
+        group.webKeys.add(key)  // 直接添加web key
       }
 
       // 保存所有语言翻译
@@ -64,16 +67,27 @@ class ExcelGenerator {
   }
 
   static _createWorksheetData(groupedEntries, allLanguages) {
-    const header = ['Android-key', 'iOS-key', ...allLanguages]
+    const header = [
+      'Android-key', 
+      'iOS-key', 
+      'Web-key',  // 固定一个Web列
+      ...allLanguages
+    ];
     const worksheetData = [header]
 
     groupedEntries.forEach((group) => {
       const androidKeys = Array.from(group.androidKeys).sort()
       const iosKeys = Array.from(group.iosKeys).sort()
-      const maxRows = Math.max(androidKeys.length, iosKeys.length)
+      const webKeys = Array.from(group.webKeys).sort()  // 获取web keys
+      
+      const maxRows = Math.max(androidKeys.length, iosKeys.length, webKeys.length)
 
       for (let i = 0; i < maxRows; i++) {
-        const row = [androidKeys[i] || '', iosKeys[i] || '']
+        const row = [
+          androidKeys[i] || '', 
+          iosKeys[i] || '',
+          webKeys[i] || '',  // 添加web key
+        ]
 
         allLanguages.forEach((lang) => {
           row.push(group.translations[lang] || '')

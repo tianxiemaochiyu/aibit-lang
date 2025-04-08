@@ -26,6 +26,7 @@ async function mergeLocalization(baseDir, outputPath = OUTPUT_FILE) {
   }
 }
 
+// 确保processFiles函数能正确处理web类型
 async function processFiles(files) {
   const langData = {};
   const allKeys = new Set();
@@ -33,7 +34,7 @@ async function processFiles(files) {
   
   await Promise.all(files.map(async (file) => {
     try {
-      const entries = Parser[file.type](file.content);
+      const entries = Parser[file.type === 'web' ? 'web' : file.type](file);
       
       if (!langData[file.lang]) {
         langData[file.lang] = {};

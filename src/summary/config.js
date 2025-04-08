@@ -9,6 +9,11 @@ module.exports = {
       DIR: 'ios',
       FILE_PATTERN: /\.strings$/,
       CLEAN_REGES: [/\/\*[\s\S]*?\*\//g, /\/\/.*/g]
+    },
+    WEB: {
+      DIR: 'web',
+      FILE_PATTERN: /\.(js|ts)$/,
+      CLEAN_REGEX: /\/\/.*|\/\*[\s\S]*?\*\//g
     }
   },
   // VARIABLE_PATTERNS: [
@@ -23,7 +28,7 @@ module.exports = {
     cn: 'zh'   // 中文统一使用zh
   },
   // 需要严格匹配的语言
-  STRICT_MATCH_LANGUAGES: ['zh', 'en', 'fr', 'es', 'hk', 'ja', 'kr', 'pt', 'ru', 'tr', 'vi'],
+  STRICT_MATCH_LANGUAGES: ['zh', 'en', 'fr'],
   MASTER_LANGUAGE: 'zh',
   OUTPUT_FILE: './merged_translations.xlsx'
 };

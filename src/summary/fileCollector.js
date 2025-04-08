@@ -7,7 +7,8 @@ class FileCollector {
     const results = [];
     await Promise.all([
       this._processPlatform(basePath, PLATFORM.ANDROID, results),
-      this._processPlatform(basePath, PLATFORM.IOS, results)
+      this._processPlatform(basePath, PLATFORM.IOS, results),
+      this._processPlatform(basePath, PLATFORM.WEB, results)  // 新增Web平台处理
     ]);
     return results;
   }
@@ -52,11 +53,15 @@ class FileCollector {
           content = content.replace(platform.CLEAN_REGEX, '');
         }
 
+        // 获取文件后缀名
+        const ext = path.extname(file);
+
         results.push({
           path: filePath,
           type: platform.DIR,
           lang: normalizedLang,  // 使用标准化后的语言代码
-          content: content
+          content: content,
+          ext: ext  // 添加文件后缀属性
         });
       } catch (error) {
         console.warn(`[${filePath}] 文件读取跳过:`, error.message);
