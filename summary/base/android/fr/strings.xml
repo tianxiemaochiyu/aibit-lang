@@ -1,0 +1,2811 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="wealth_demand">Flexible</string>
+    <string name="follow_copy_canceled">Copie annulée</string>
+    <string name="follow_copy_successfully">Copie réussie</string>
+    <string name="follow_holding_time">Durée de détention</string>
+    <string name="follow_last_ays180">180J</string>
+    <string name="follow_last_ays30">30J</string>
+    <string name="follow_last_ays7">7J</string>
+    <string name="follow_last_ays90">90J</string>
+    <string name="follow_longest_holding_time">Durée de détention la plus longue</string>
+    <string name="follow_p_and_l">PNL (USDT)</string>
+    <string name="follow_position_distribution">Répartition des positions</string>
+    <string name="follow_position_quantity">Quantité de position</string>
+    <string name="follow_proportion">Proportion</string>
+    <string name="follow_roi_week">ROI par semaine (USDT)</string>
+    <string name="follow_total_ROI">ROI total</string>
+    <string name="follow_total_ROI_short">ROI total</string>
+    <string name="follow_total_performance">Performance</string>
+    <string name="follow_total_pl">P&amp;L total (USDT)</string>
+    <string name="follow_weekly_profit">Profit hebdomadaire (USDT)</string>
+    <string name="memo_deposit_tip_2">Lors d\'un retrait, assurez-vous de remplir le Memo ; sinon,vous perdrez votre cryptomonnaie.
+    </string>
+    <string name="memo_sheet_attention">Attention</string>
+    <string name="memo_sheet_i_know">Je comprends</string>
+    <string name="memo_withdraw_tip">*Une saisie incorrecte peut entraîner une perte d\'actifs.
+    </string>
+    <string name="score_desc">Vos commentaires nous aideront à nous améliorer.</string>
+    <string name="score_feedback">Commentaires</string>
+    <string name="score_goto_score">Noter</string>
+    <string name="score_later">Noter plus tard</string>
+    <string name="score_please_score">Veuillez noter Aibit !</string>
+    <string name="social_apple_account">Apple ID</string>
+    <string name="user_goto_score">Noter Aibit</string>
+    <string name="common_total_new">Total</string>
+    <string name="liqprice_margin_insufficient">La marge requise pour ouvrir cette position doit
+        être ≥ %1$s USDT
+    </string>
+    <string name="common_quantity">Montant</string>
+    <string name="contact_limit_price">Prix limite</string>
+    <string name="common_trading_details">Transactions</string>
+    <string name="market_last_trade_new">Transactions</string>
+    <string name="search_no_data">Aucune donnée</string>
+    <string name="follow_open_price">Prix d\'entrée</string>
+    <string name="common_search_crypto">Rechercher une crypto</string>
+    <string name="spot_market_price">Prix du marché</string>
+    <string name="trade_market_btn">Marché</string>
+    <string name="follow_users_day">Jours</string>
+    <string name="time_unit_d">J</string>
+    <string name="transaction">Marché</string>
+    <string name="market_buy_new">Offre</string>
+    <string name="market_sell_new">Demande</string>
+    <string name="common_market_volume">Vol</string>
+    <string name="Available_funds_account">Disponible (compte de financement)</string>
+    <string name="Available_network">Réseaux disponibles</string>
+    <string name="Back_to_login_page">Retour à la page de connexion</string>
+    <string name="Buy_close_new">Acheter pour clôturer une position longue</string>
+    <string name="Cancel_partial_self_traded_orders">Annulation partielle de l\'auto-négociation
+    </string>
+    <string name="Cancel_self_trade">Annulation de l\'auto-négociation</string>
+    <string name="Changes_24H">24h Chg</string>
+    <string name="Check_the_withdrawal">Voir les détails de retrait</string>
+    <string name="Choose_deposit_network">Sélectionner le réseau de dépôt</string>
+    <string name="Choose_the_deposit_network">Choisissez le même réseau que celui de la plateforme
+        de retrait pour le dépôt, sinon le dépôt ne pourra pas être crédité ou sera retourné.
+    </string>
+    <string name="Choose_withdrawal_network">Sélectionner le réseau de retrait</string>
+    <string name="Copied">Copie réussie</string>
+    <string name="Decrease_self_trade">Réduction de l\'auto-transaction</string>
+    <string name="Deposit_amount">Montant du dépôt</string>
+    <string name="Deposit_confirmation">Confirmation du dépôt</string>
+    <string name="Deposit_credited">Dépôt reçu</string>
+    <string name="Deposit_network">Réseau de dépôt</string>
+    <string name="Deposit_suspended">Dépôt suspendu</string>
+    <string name="Deposit_tips1">* Vous ne pouvez déposer que %s sur cette adresse. Tout autre actif
+        déposé ne pourra pas être récupéré.
+    </string>
+    <string name="Deposit_tips2">Le portefeuille est en maintenance pour améliorer la sécurité.
+    </string>
+    <string name="Deposit_tips3">Veuillez patienter jusqu\'à la fin de la maintenance avant de
+        continuer votre dépôt.
+    </string>
+    <string name="Deposited">Transféré</string>
+    <string name="verification_email">Vérification par e-mail</string>
+    <string name="Fall">Classement des baisses</string>
+    <string name="deposit_memo_need">Ce réseau nécessite la saisie d\'un Memo</string>
+    <string name="Memo_needed_for">Cette cryptomonnaie nécessite la saisie d\'un Memo</string>
+    <string name="Minimum_amount">Montant minimum de retrait</string>
+    <string name="Minimum_deposit_amount">Montant minimum de dépôt</string>
+    <string name="No_data">Vous êtes arrivé à la fin</string>
+    <string name="No_deposit_record">Aucun historique de dépôt pour le moment</string>
+    <string name="No_deposit_record_last">Vous n\'avez aucun historique de dépôt au cours des 90
+        derniers jours
+    </string>
+    <string name="No_premission">Aucune autorisation</string>
+    <string name="Pattern_error">Erreur de mot de passe gestuel, il vous reste %s essais</string>
+    <string name="Picture_saved">Enregistrement de l\'image réussi</string>
+    <string name="Please_correct_email">Veuillez entrer une adresse e-mail valide</string>
+    <string name="Please_ensure_that">Assurez-vous que les informations suivantes sont correctes
+    </string>
+    <string name="Please_enter_GA_code">Veuillez entrer le code de vérification Google</string>
+    <string name="Please_enter_Memo">Veuillez entrer le Memo</string>
+    <string name="Please_enter_SMS_code">Veuillez entrer le code de vérification SMS</string>
+    <string name="Please_enter_address">Veuillez entrer l\'adresse</string>
+    <string name="Please_enter_email_verification_code">Veuillez entrer le code de vérification
+        e-mail
+    </string>
+    <string name="Process">Progression</string>
+    <string name="Referral_rebate">Parrainage et commissions</string>
+    <string name="Request_submitted">Demande soumise</string>
+    <string name="Selective_network">Sélectionner le réseau</string>
+    <string name="Sell_to_long">Vendre pour clôturer une position longue</string>
+    <string name="The_amount_you_entered">Le montant que vous avez saisi dépasse le plafond de
+        retrait disponible
+    </string>
+    <string name="To_know_withdrawal">Pour connaître le statut de votre retrait, cliquez sur les
+        détails de retrait ci-dessous
+    </string>
+    <string name="Trading_pairs">Paire de transactions</string>
+    <string name="TxID">TxID</string>
+    <string name="Update_password">Mettre à jour le mot de passe</string>
+    <string name="User_is_not_logged_in">Cliquez pour vous connecter</string>
+    <string name="Volume">Volume des transactions</string>
+    <string name="Wait_for_confirmation">En attente de confirmation</string>
+    <string name="Welcome_to_Aibit_login">Bienvenue sur Aibit</string>
+    <string name="Welcome_to_Aibit_register">Bienvenue pour vous inscrire sur Aibit</string>
+    <string name="Withdraw_TXID">ID de transaction de bloc</string>
+    <string name="Withdraw_all">Retirer tout</string>
+    <string name="Withdrawal_confirmation">Confirmation de retrait</string>
+    <string name="You_have_no_withdrawal">Vous n\'avez aucun historique de retrait au cours des 90
+        derniers jours
+    </string>
+    <string name="about">À propos</string>
+    <string name="activities_balance_tips1">Solde disponible au comptant = Solde disponible du
+        compte de trading - Bons d\'expérience
+    </string>
+    <string name="activities_experience_asset_tips4">Le transfert de fonds depuis le compte de
+        contrat récupérera tous vos bons d\'expérience actuels (y compris les bons d\'expérience
+        permanents). Confirmez-vous le transfert ?
+    </string>
+    <string name="activities_experience_contract_tips1">Inclut des bons d\'expérience de contrat %s,
+        dont %s expirera après %s et sera automatiquement récupéré. Il peut être activé via des
+        transactions de contrat, et sera valide de manière permanente après activation.
+    </string>
+    <string name="activities_experience_contract_tips2">Inclut des bons d\'expérience de contrat %s
+    </string>
+    <string name="address_error">Erreur de validation du format de l\'adresse, veuillez entrer une
+        adresse correcte
+    </string>
+    <string name="aibit_home_bb">Au comptant</string>
+    <string name="aibit_home_coin_type">Devise</string>
+    <string name="aibit_home_contact">Contrat</string>
+    <string name="all">Tout</string>
+    <string name="common_realized_pnl_title">PNL Réal.</string>
+    <string name="all_coin">Toutes les devises</string>
+    <string name="all_time_high">Prix historique le plus élevé</string>
+    <string name="all_time_low">Prix historique le plus bas</string>
+    <string name="all_type">Tous les types</string>
+    <string name="allready_set">Déjà configuré</string>
+    <string name="asset_allocation">Répartition des actifs</string>
+    <string name="asset_balance">Solde</string>
+    <string name="asset_bill_type">Type de facture</string>
+    <string name="asset_business_type">Opération</string>
+    <string name="asset_buy_sell">Achat/Vente</string>
+    <string name="asset_coin_balance">Solde de la devise</string>
+    <string name="asset_coin_rights">Droits sur la devise</string>
+    <string name="asset_deposit_withdraw">Dépôt/Retrait</string>
+    <string name="withdraw_number">Montant du retrait</string>
+    <string name="asset_details_experience_content">Activé : %s USDT</string>
+    <string name="asset_details_experience_content1">En attente d\'activation : %1$s USDT (dont %2$s
+        USDT expirera dans %3$s jours)
+    </string>
+    <string name="asset_details_fee">Frais de réseau</string>
+    <string name="asset_details_no_position">Aucune position ouverte</string>
+    <string name="asset_details_status0">En attente de vérification</string>
+    <string name="asset_details_status1">Vérifié</string>
+    <string name="asset_details_status2">Refusé</string>
+    <string name="asset_details_verify_hash">Hachage de transaction</string>
+    <string name="asset_empty_desc">Déposez ou achetez des cryptomonnaies\npour commencer votre
+        voyage cryptographique
+    </string>
+    <string name="asset_freeze">Gelé</string>
+    <string name="asset_funds_bill">Relevé des fonds</string>
+    <string name="asset_future_available_title">Solde disponible</string>
+    <string name="asset_future_position_title">Positions détenues</string>
+    <string name="asset_future_tips1">Solde de la marge = Solde du portefeuille + Gains/pertes non
+        réalisés.
+    </string>
+    <string name="asset_future_wallet_title">Solde du portefeuille</string>
+    <string name="asset_hide_min">Masquer les petits actifs</string>
+    <string name="asset_memo">Memo</string>
+    <string name="asset_min_withdraw_amount">Montant minimum de retrait %s</string>
+    <string name="asset_overview">Aperçu</string>
+    <string name="asset_spot_account">Compte au comptant</string>
+    <string name="asset_spot_trade">Transactions au comptant</string>
+    <string name="asset_sub_type_100008">Collecte des frais de financement</string>
+    <string name="asset_sub_type_100009">Distribution des frais de financement</string>
+    <string name="asset_sub_type_100014">Liquidation forcée de la position longue</string>
+    <string name="asset_sub_type_100015">Liquidation forcée de la position courte</string>
+    <string name="asset_sub_type_100016">Réduction automatique de position longue</string>
+    <string name="asset_sub_type_100017">Réduction automatique de position courte</string>
+    <string name="asset_sub_type_120003">Annuler le retrait</string>
+    <string name="asset_sub_type_180001">Transférer depuis le compte de trading</string>
+    <string name="asset_sub_type_180002">Transférer vers le compte de trading</string>
+    <string name="asset_sub_type_180003">Transférer depuis le compte de fonds</string>
+    <string name="asset_sub_type_180004">Transférer vers le compte de fonds</string>
+    <string name="asset_sub_type_190003">Achat C2C</string>
+    <string name="asset_sub_type_190004">Vente C2C</string>
+    <string name="asset_swap_account">Compte de contrat</string>
+    <string name="asset_total_amount">Montant total</string>
+    <string name="asset_trade">Transaction</string>
+    <string name="asset_trade_bill">Relevé des transactions</string>
+    <string name="asset_transaction_history">Relevé des transactions au comptant</string>
+    <string name="asset_transfer_in">Transfert entrant</string>
+    <string name="asset_transfer_out">Transfert sortant</string>
+    <string name="asset_vol_insufficient">Quantité insuffisante</string>
+    <string name="assets_active_experiencia">Activé : %1$s %2$s</string>
+    <string name="assets_experiencia_desc_new">Les bons d\'expérience de contrat peuvent être
+        utilisés comme marge pour les transactions de contrat, prioritairement pour compenser les
+        pertes de position, les frais de transaction et les frais de financement.
+    </string>
+    <string name="assets_experiencia_new">Bons d\'expérience</string>
+    <string name="assets_experiencia_tip_new">*Toute transaction pendant la période de validité
+        activera les bons d\'expérience.
+    </string>
+    <string name="assets_inactive_experiencia">En attente d\'activation : %1$s %2$s (dont %3$s %4$s
+        expirera dans %5$s jours)
+    </string>
+    <string name="common_contine">Continuer</string>
+    <string name="auth_complete_status3">Votre vérification d\'identité n\'a pas été approuvée
+    </string>
+    <string name="auth_complete_status4">Raison :</string>
+    <string name="auth_complete_status5">Re-vérification</string>
+    <string name="auth_complete_status6">Identité vérifiée</string>
+    <string name="auth_country_nonsupport">Non supporté pour le moment</string>
+    <string name="auth_edit_country_label1">Pourquoi dois-je effectuer une vérification d\'identité
+        ?
+    </string>
+    <string name="auth_edit_country_label2">La vérification d\'identité est nécessaire pour se
+        conformer aux régulations financières locales ou aux politiques pertinentes. Elle contribue
+        également à protéger la sécurité de votre compte et à prévenir certaines fraudes. Nous
+        traitons vos informations avec une stricte confidentialité.
+    </string>
+    <string name="auth_edit_country_label3">Quels pays et régions ne sont pas supportés pour le
+        moment ?
+    </string>
+    <string name="auth_edit_country_label4">En raison des exigences de conformité et de régulation,
+        les pays et régions suivants ne sont pas supportés pour le moment : %s
+    </string>
+    <string name="auth_edit_country_subtitle">Région de résidence</string>
+    <string name="auth_edit_info_family_name">Nom</string>
+    <string name="auth_edit_info_name">Prénom</string>
+    <string name="balance24">Montant 24h (%s)</string>
+    <string name="basec_account_input">Veuillez entrer votre identifiant</string>
+    <string name="basec_account_labe37">Veuillez entrer un identifiant valide</string>
+    <string name="basec_account_labe38">Veuillez entrer un code de vérification valide</string>
+    <string name="basec_account_label1">Vous n\'avez pas de compte ?</string>
+    <string name="basec_account_label10">Vous avez déjà un compte ?</string>
+    <string name="basec_account_label11">Connectez-vous maintenant</string>
+    <string name="basec_account_label12">Continuer l\'inscription signifie accepter les</string>
+    <string name="basec_account_label14">et</string>
+    <string name="basec_account_label19">Au moins 8 caractères, incluant des lettres majuscules,
+        minuscules et des chiffres
+    </string>
+    <string name="basec_account_label2">Inscrivez-vous maintenant</string>
+    <string name="common_complete">Terminer</string>
+    <string name="basec_account_label23">Veuillez entrer une adresse e-mail valide</string>
+    <string name="basec_account_label25">Suivant</string>
+    <string name="basec_account_label34">Nouvelle version disponible</string>
+    <string name="basec_account_label35">Mettre à jour maintenant</string>
+    <string name="basec_account_label36">Mettre à jour plus tard</string>
+    <string name="basec_account_label4">Identifiant ou mot de passe incorrect</string>
+    <string name="basec_account_label41">Veuillez saisir à nouveau le mot de passe du fond</string>
+    <string name="basec_account_label42">Inscription avec e-mail</string>
+    <string name="basec_account_label43">Erreur réseau. Veuillez réessayer plus tard</string>
+    <string name="basec_account_label44">Inscription avec numéro de mobile</string>
+    <string name="basec_account_label45">Renvoyer le code de vérification dans %s secondes</string>
+    <string name="basec_account_label46">Lien réussi</string>
+    <string name="basec_account_label48">Vous ne recevez pas le code de vérification ?</string>
+    <string name="basec_account_label49">De %s</string>
+    <string name="basec_account_label50">Veuillez entrer le montant du transfert</string>
+    <string name="basec_account_label51">Veuillez sélectionner le compte de transfert</string>
+    <string name="basec_account_label52">Veuillez entrer le montant</string>
+    <string name="basec_account_label8">Veuillez entrer le code de vérification</string>
+    <string name="basec_code_send">Le code de vérification a été envoyé à</string>
+    <string name="basec_code_send_again">Renvoyer</string>
+    <string name="basec_country">Pays/Région</string>
+    <string name="basec_mobile">Numéro de téléphone</string>
+    <string name="basec_mobile_email">Numéro de téléphone/E-mail</string>
+    <string name="basec_mobile_input">Veuillez entrer votre numéro de téléphone</string>
+    <string name="basec_mobile_new_code">Code de vérification du nouveau numéro de téléphone
+    </string>
+    <string name="basec_password">Prix d\'émission</string>
+    <string name="basec_password_input">Veuillez entrer votre mot de passe</string>
+    <string name="basec_recomend">Code d\'invitation</string>
+    <string name="basec_recomend_input">Veuillez entrer le code d\'invitation</string>
+    <string name="common_withdraw_record">Historique des retraits</string>
+    <string name="bind">Lier</string>
+    <string name="c2c_appeal_cancle_sure">Confirmer l\'annulation</string>
+    <string name="c2c_currency_input">Sélectionner la devise</string>
+    <string name="c2c_fund_psw_success">Paramétrage réussi</string>
+    <string name="c2c_home_pay">Paiement</string>
+    <string name="c2c_home_pay_way">Méthode de paiement</string>
+    <string name="c2c_limit">Limite</string>
+    <string name="c2c_order_id">Numéro de commande</string>
+    <string name="c2c_order_trade_time">Heure de la transaction</string>
+    <string name="c2c_pay_way_close">Fermeture réussie</string>
+    <string name="c2c_price">Prix unitaire</string>
+    <string name="c2c_trade">Acheter des cryptomonnaies en C2C</string>
+    <string name="cal_base_price">Base de calcul des prix</string>
+    <string name="calculate">Calculer</string>
+    <string name="calculation_result">Résultat du calcul</string>
+    <string name="calculation_result_reference">Le résultat du calcul est fourni à titre indicatif
+        uniquement
+    </string>
+    <string name="calculator">Calculatrice</string>
+    <string name="calender_fri">Ven</string>
+    <string name="calender_mon">Lun</string>
+    <string name="calender_sat">Sam</string>
+    <string name="calender_sun">Dim</string>
+    <string name="calender_thu">Jeu</string>
+    <string name="calender_tue">Mar</string>
+    <string name="calender_wed">Mer</string>
+    <string name="cancel_entrust">Confirmez-vous l\'annulation de la commande en cours ?</string>
+    <string name="cancle_order">Annuler</string>
+    <string name="ccy_desc">Sélectionnez la devise pour calculer le taux de change</string>
+    <string name="ccy_title">Devise</string>
+    <string name="center_about">À propos de nous</string>
+    <string name="center_authentication">Vérification</string>
+    <string name="center_binded">Lié</string>
+    <string name="center_certificate_type">Type de pièce d\'identité</string>
+    <string name="center_customer">Chat</string>
+    <string name="center_email">E-mail</string>
+    <string name="center_email_bind">Lier un e-mail</string>
+    <string name="center_email_new">Nouvel e-mail</string>
+    <string name="center_email_new_code">Vérification du nouvel e-mail</string>
+    <string name="center_exit">Se déconnecter</string>
+    <string name="center_google_bind">Lier la vérification Google</string>
+    <string name="center_google_label1">1. Copiez la clé Google et utilisez-la dans l\'application
+        Google Authenticator pour créer un nouveau code de vérification dynamique.
+    </string>
+    <string name="center_google_label2">2. Veuillez conserver cette clé en lieu sûr. Si vous
+        réinstallez Google Authenticator ou changez d\'appareil, vous devrez utiliser cette clé pour
+        la configuration initiale.
+    </string>
+    <string name="center_google_label3">3. Nous ne conservons pas et ne pouvons pas vous fournir à
+        nouveau cette clé. Si vous perdez cette clé et ne pouvez pas la récupérer, vous devrez
+        fournir des documents d\'identité ou des preuves pertinentes pour débloquer et procéder à une
+        nouvelle configuration.
+    </string>
+    <string name="center_google_label4">Vous n\'avez pas encore installé Google Authenticator ?
+    </string>
+    <string name="center_google_label5">Téléchargez-le ici</string>
+    <string name="center_google_label6">Ou recherchez "Google Authenticator" sur votre marché
+        d\'applications pour le télécharger vous-même
+    </string>
+    <string name="center_google_label7">Obtenez le dernier code de vérification dynamique depuis
+        votre application Google Authenticator
+    </string>
+    <string name="center_google_next">J\'ai bien enregistré cette clé, étape suivante</string>
+    <string name="center_google_token">Clé Google</string>
+    <string name="center_hand_password">Mot de passe gestuel</string>
+    <string name="center_help">Centre d\'aide</string>
+    <string name="center_invite">Inviter des amis</string>
+    <string name="center_label1">Veuillez choisir</string>
+    <string name="common_take_photo">Prendre une photo</string>
+    <string name="withdraw_reviewing">En cours d\'examen</string>
+    <string name="center_label12">Non approuvé</string>
+    <string name="center_label13">Soumettre</string>
+    <string name="center_label14">Déjà certifié</string>
+    <string name="center_label15">Carte d\'identité</string>
+    <string name="center_label16">Passeport</string>
+    <string name="center_label18">Certification à nouveau</string>
+    <string name="center_label19">Les deux dessins ne correspondent pas, veuillez redessiner
+    </string>
+    <string name="center_label2">Veuillez entrer</string>
+    <string name="center_label20">Veuillez définir au moins 4 points</string>
+    <string name="center_label21">Redessiner le mot de passe gestuel</string>
+    <string name="center_label22">Définir le mot de passe gestuel</string>
+    <string name="center_label23">Veuillez dessiner le motif de déverrouillage</string>
+    <string name="center_label26">Vérification du mot de passe gestuel</string>
+    <string name="center_label27">Passer à la connexion par mot de passe</string>
+    <string name="center_label9">Album photo</string>
+    <string name="center_language">Langue</string>
+    <string name="center_language_set">Paramètres de langue</string>
+    <string name="center_modify_assets_password">Réinitialiser le mot de passe des fonds</string>
+    <string name="center_modify_email">Changer d\'e-mail</string>
+    <string name="center_modify_password">Modifier le mot de passe de connexion</string>
+    <string name="center_modify_phone">Changer de numéro de téléphone</string>
+    <string name="center_name">Nom</string>
+    <string name="center_new_version">Déjà à la dernière version</string>
+    <string name="center_not_certified">Non certifié</string>
+    <string name="center_old_password">Ancien mot de passe</string>
+    <string name="center_password_assets">Mot de passe des fonds</string>
+    <string name="center_password_login">Mot de passe de connexion</string>
+    <string name="center_security">Centre de sécurité</string>
+    <string name="center_set_password_assets">Définir le mot de passe des fonds</string>
+    <string name="center_trans_account_label">Mot de passe des fonds à 6 chiffres</string>
+    <string name="center_unbind">Non lié</string>
+    <string name="center_update_version">Mise à jour de version</string>
+    <string name="center_work">Soumettre un ticket</string>
+    <string name="change_pw_suc">Mot de passe modifié avec succès</string>
+    <string name="circulating_supply_value">Capitalisation boursière</string>
+    <string name="claim_package">Profitez du cadeau de bienvenue</string>
+    <string name="close_google_auth">Désactiver la vérification Google</string>
+    <string name="closed_profit">Gains de clôture</string>
+    <string name="closing_price">Prix de clôture</string>
+    <string name="code_sent_successfully">Code de vérification envoyé avec succès</string>
+    <string name="common_adl">Réduction automatique de position</string>
+    <string name="common_amount">Quantité</string>
+    <string name="common_application_criteria">Conditions de candidature</string>
+    <string name="common_asset_total_new">Solde de la marge</string>
+    <string name="common_assets">Actif</string>
+    <string name="common_available_assets">Actif disponible</string>
+    <string name="common_average_entry_price">Prix moy. ouv.</string>
+    <string name="common_avg_closing_price">Prix moy. clôture</string>
+    <string name="common_avg_price">Prix moy. rempli</string>
+    <string name="common_basec_password_forget">Mot de passe oublié</string>
+    <string name="common_bill_other">Autres enregistrements</string>
+    <string name="common_cancel">Annuler</string>
+    <string name="common_cancel_all">Annulation groupée</string>
+    <string name="common_cancel_all_orders">Confirmez-vous l\'annulation de toutes les commandes ?
+    </string>
+    <string name="common_cancel_order">Annuler la commande</string>
+    <string name="common_canceled_content">Annulé</string>
+    <string name="common_changed_success">Modification réussie</string>
+    <string name="common_char_length_tip">Longueur de 8 à 30 caractères</string>
+    <string name="common_choose_service_provider">Sélectionner un fournisseur de services</string>
+    <string name="common_closed_vol_title">Volume clôturé</string>
+    <string name="common_closing_time">Heure de clôture</string>
+    <string name="common_symbol_list">Liste des devises</string>
+    <string name="common_completed_content">Terminé</string>
+    <string name="common_conditional_order">Ordre conditionnel</string>
+    <string name="common_confirm">Confirmer</string>
+    <string name="common_contact_long">Long</string>
+    <string name="common_contract_canceled">Commande annulée</string>
+    <string name="common_contract_cant_switch_position">Le type de position ne peut pas être modifié
+        lorsqu\'une position de contrat est détenue ou qu\'un ordre est en attente
+    </string>
+    <string name="common_contract_close">Clôture</string>
+    <string name="common_contract_index_price">Prix de l\'indice</string>
+    <string name="common_contract_order_stop_tis">En raison de la volatilité rapide du marché, le
+        prix de déclenchement du stop-loss ne doit pas être trop proche du prix estimé de
+        liquidation pour éviter un échec de déclenchement
+    </string>
+    <string name="common_contracts_piece">Contrat</string>
+    <string name="common_copy_position">Position de copie</string>
+    <string name="common_copy_trading_settings">Paramètres du copy trading</string>
+    <string name="common_copy_trading_title">Copy trading de contrats à terme</string>
+    <string name="common_deposit">Dépôt</string>
+    <string name="common_deposit_address">Adresse</string>
+    <string name="common_deposit_details">Détails du dépôt</string>
+    <string name="common_deposit_record">Historique des dépôts</string>
+    <string name="common_desc_average_price">Prix moyen d\'exécution à l\'ouverture</string>
+    <string name="common_edit">Modifier</string>
+    <string name="common_email_verification_code">Code de vérification par e-mail</string>
+    <string name="common_enter_correct_mobile">Veuillez entrer un numéro de mobile valide</string>
+    <string name="common_enter_email">Veuillez entrer une adresse e-mail</string>
+    <string name="common_estimated_liquidation_price">Prix de liquidation</string>
+    <string name="common_exceeds_maximum_order_limit">Dépasse la limite maximale de commande
+    </string>
+    <string name="common_faild">Échec</string>
+    <string name="common_filled_volume_title">Exécuté</string>
+    <string name="common_follow_roi">Rendement</string>
+    <string name="common_full_position">Cross (Marge croisée)</string>
+    <string name="common_funding_account">Compte de financement</string>
+    <string name="common_funding_fee">Frais de financement</string>
+    <string name="common_future_unrealized">PNL non réalisé</string>
+    <string name="common_ga">GA</string>
+    <string name="common_ga_code">Code GA</string>
+    <string name="common_get_code">Obtenir le code</string>
+    <string name="common_history_record">Historique</string>
+    <string name="common_holdings">Ordres ouverts</string>
+    <string name="common_hot_symbol">Pièces populaires</string>
+    <string name="common_id_no">Numéro d\'identification</string>
+    <string name="common_input_not_match">Les deux mots de passe ne correspondent pas</string>
+    <string name="common_input_withdrawal_address">Veuillez entrer l\'adresse de retrait</string>
+    <string name="common_isolated">Isolé</string>
+    <string name="common_last_price">Dernier prix</string>
+    <string name="common_leverage_multiple">Multiple de levier</string>
+    <string name="common_limit_market_new">Limite | Marché</string>
+    <string name="common_limit_price_new">Limite</string>
+    <string name="common_link_mobile">Lier un mobile</string>
+    <string name="common_liquidation_price">Prix de liquidation</string>
+    <string name="common_loading">Chargement...</string>
+    <string name="common_market_price">Prix du marché</string>
+    <string name="common_maybe_later">Peut-être plus tard</string>
+    <string name="common_money_total">Total</string>
+    <string name="common_must_be_an_integer_multiple">Cela doit être un multiple entier de %s et
+        sera automatiquement ajusté à %s.
+    </string>
+    <string name="common_my_copy_trading">Mon Copy Trading</string>
+    <string name="common_my_lead_traders">Mes Traders Leaders</string>
+    <string name="common_net_profit">Profit Net (USDT)</string>
+    <string name="common_nickname">Surnom</string>
+    <string name="common_no_asset">Pas d\'actifs</string>
+    <string name="common_no_data_yet">Aucun enregistrement trouvé</string>
+    <string name="common_no_opponent_price">Aucun prix de contrepartie obtenu</string>
+    <string name="common_notes">Notes</string>
+    <string name="common_number_copy_traders">Nombre de traders copiés</string>
+    <string name="common_occupied_margin">Marge occupée</string>
+    <string name="common_ongoing">Positions copiées</string>
+    <string name="common_opening_price">Prix d\'ouverture</string>
+    <string name="common_opening_time">Ouverture</string>
+    <string name="common_order_book">Carnet d\'ordres</string>
+    <string name="common_order_status">Statut de la commande</string>
+    <string name="common_password_confirm">Confirmer le mot de passe de financement</string>
+    <string name="common_paste">Coller</string>
+    <string name="common_payment_method">Méthode de réception</string>
+    <string name="common_perpetual">Perp</string>
+    <string name="common_perpetual_futures">Futures perpétuels</string>
+    <string name="common_phone_number_verification">Vérification du numéro de mobile</string>
+    <string name="common_phone_number_verification_code">Code de vérification du téléphone mobile
+    </string>
+    <string name="common_privacy_policy">Politique de Confidentialité</string>
+    <string name="common_reduction_margin">Retirer la marge</string>
+    <string name="common_reset">Réinitialiser</string>
+    <string name="common_search_coin">Rechercher des paires de devises</string>
+    <string name="common_security_verification">Vérification de sécurité</string>
+    <string name="common_select_coin">Sélectionner une devise</string>
+    <string name="common_select_coin_pairs">Sélectionner des paires de devises</string>
+    <string name="common_short">Vente à découvert</string>
+    <string name="common_sms_code">Code SMS</string>
+    <string name="common_statement">Historique</string>
+    <string name="common_stop_loss_price">Prix de stop-loss</string>
+    <string name="common_stop_profit_price">Prix de take-profit</string>
+    <string name="common_successful">Succès</string>
+    <string name="common_swap_desc_assets">La marge allouée à la position actuelle.</string>
+    <string name="common_swap_desc_close_tips">Si le prix de marquage des positions longues/courtes
+        est inférieur/supérieur au prix de liquidation, votre position sera liquidée.
+    </string>
+    <string name="common_swap_desc_mark_price_tips">Le prix de marquage en temps réel des contrats à
+        terme. Le prix de marquage sera utilisé pour calculer le PnL non réalisé et la marge, qui
+        peuvent différer du dernier prix de clôture des contrats à terme afin d\'éviter la
+        manipulation des prix.
+    </string>
+    <string name="common_swap_desc_pnl_closed">PNL réalisé de la portion fermée de la position
+        actuelle.
+    </string>
+    <string name="common_third_party_payment">Paiement tiers</string>
+    <string name="common_third_pay_will_receive">Je recevrai</string>
+    <string name="common_time">Temps</string>
+    <string name="common_tip">Invite</string>
+    <string name="common_to_auth">Vérifier</string>
+    <string name="common_to_deposit">Dépôt</string>
+    <string name="common_to_setting">Paramètres</string>
+    <string name="common_to_trade">Commerce</string>
+    <string name="common_total_balance">Solde total (USDT)</string>
+    <string name="common_total_pnl">Copier PNL</string>
+    <string name="common_trade_position">Positions</string>
+    <string name="common_trade_stop">TP/SL</string>
+    <string name="common_trader_apply_waitting">Votre demande a été soumise. Merci de votre
+        patience
+    </string>
+    <string name="common_trader_capital">Capital (USDT)</string>
+    <string name="common_trading_rules">Règles de trading</string>
+    <string name="common_transfer">Transfert</string>
+    <string name="common_transfer_network">Réseau de transfert</string>
+    <string name="common_trigger_price">Prix de déclenchement</string>
+    <string name="common_understand">Je sais</string>
+    <string name="common_unfollow">Ne plus suivre</string>
+    <string name="common_user_agreement">Accord Utilisateur</string>
+    <string name="common_wallet_withdraw">Retirer</string>
+    <string name="common_wallet_withdraw_address">Adresse de retrait</string>
+    <string name="common_wallet_withdraw_net">Réseau de retrait</string>
+    <string name="common_welcome_aibit">Bienvenue sur Aibit</string>
+    <string name="common_withdraw_amount">Quantité (%s)</string>
+    <string name="common_withdrawal_details">Détails du retrait</string>
+    <string name="contact_add_margin_v2">Augmenter la marge</string>
+    <string name="contact_adjust_margin">Ajuster la marge</string>
+    <string name="contact_buy_long">Acheter pour ouvrir une position longue</string>
+    <string name="contact_edit_level_error1">Il y a des ordres à limite de position pour la
+        direction actuelle, veuillez annuler tous les ordres à limite de position de cette direction
+        avant de modifier le levier.
+    </string>
+    <string name="contact_edit_level_error2">Le levier dépasse le levier maximal, veuillez réduire
+        le levier.
+    </string>
+    <string name="contact_edit_level_error3">Après l\'ajustement, %s sera transféré depuis le compte
+        de trading en tant que nouvelle marge (le montant réel transféré prévaut).
+    </string>
+    <string name="contact_edit_level_error4">Le levier est trop faible, il n\'y a pas assez de marge
+        disponible dans le compte pour un ajout, veuillez augmenter le levier.
+    </string>
+    <string name="contact_edit_level_error5">Après l\'ajustement, la marge occupée par la position
+        sera réduite de %s, la partie réduite restera dans la position et pourra être transférée
+        vers le solde du compte.
+    </string>
+    <string name="contact_flat_empty">Fermer la position courte</string>
+    <string name="contact_flat_long">Fermer la position longue</string>
+    <string name="contact_fun_info_1">Taux de financement actuel</string>
+    <string name="contact_fun_info_2">Taux de financement prévu</string>
+    <string name="contact_fun_info_3">Explication du taux de financement</string>
+    <string name="contact_fun_info_4">Le taux de financement est réglé toutes les 8 heures. Lorsque
+        le taux est positif, les positions longues paient des frais de financement aux positions
+        courtes. Lorsque le taux est négatif, les positions courtes paient des frais de financement
+        aux positions longues.
+    </string>
+    <string name="contact_funding_rate">Taux de financement/Compte à rebours</string>
+    <string name="contact_long">Position longue</string>
+    <string name="contact_maker">Ordre en attente</string>
+    <string name="contact_margin">Marge</string>
+    <string name="contact_margin_can_close">Peut être soldé</string>
+    <string name="contact_margin_rate">Taux de marge</string>
+    <string name="contact_most_can_add_margin">Ajout maximal</string>
+    <string name="contact_most_can_add_margin_price">Prix de liquidation après augmentation</string>
+    <string name="contact_most_can_sub_margin">Retrait maximal</string>
+    <string name="contact_most_can_sub_margin_price">Prix de liquidation après réduction de la
+        marge
+    </string>
+    <string name="contact_no_order">Aucun ordre ouvert</string>
+    <string name="contact_open">Ouvrir une position courte</string>
+    <string name="contact_open_more">Ouvrir une position longue</string>
+    <string name="contact_order_confirm">Confirmation de commande</string>
+    <string name="contact_sell_short">Vendre à découvert</string>
+    <string name="contact_short">Court</string>
+    <string name="contact_taker">Taker</string>
+    <string name="contract_14_day">14 jours</string>
+    <string name="contract_24_h">24H</string>
+    <string name="contract_24h_volume">Volume de trading sur 24 heures</string>
+    <string name="contract_30_day">30 jours</string>
+    <string name="contract_7_day">7 jours</string>
+    <string name="contract_add_order_suc">Succès de la commande</string>
+    <string name="contract_billing_cycle">Terme de règlement</string>
+    <string name="contract_can_close_buy">Long maximal</string>
+    <string name="contract_can_close_sell">Court maximal</string>
+    <string name="contract_can_open_buy">Long maximal</string>
+    <string name="contract_can_open_sell">Court maximal</string>
+    <string name="contract_can_position_warn">Montant insuffisant pour la fermeture</string>
+    <string name="contract_cancel_all_loss_order">Annuler toutes les ordres de stop-loss</string>
+    <string name="contract_cancel_all_profit_order">Annuler toutes les ordres de take-profit
+    </string>
+    <string name="contract_cancel_order">Annuler l\'ordre</string>
+    <string name="contract_cancel_time">Heure d\'annulation</string>
+    <string name="contract_cant_switch_margin">Ce futur a actuellement un ordre/position et le type
+        de position ne peut pas être ajusté
+    </string>
+    <string name="contract_condition_order">Ordre conditionnel</string>
+    <string name="contract_contract_code">Code du futur</string>
+    <string name="contract_contract_sign">Actif futur</string>
+    <string name="contract_contract_unit">Unité du futur</string>
+    <string name="contract_cost">Coût</string>
+    <string name="contract_cost_price">Prix de revient</string>
+    <string name="contract_cur_use_margin">Marge occupée par la position actuelle</string>
+    <string name="contract_current_funds_rate">Taux de financement actuel/1H</string>
+    <string name="contract_delivery_date">Date de clôture</string>
+    <string name="contract_double_desc">En mode de couverture, vous pouvez détenir à la fois des
+        positions longues et courtes sur le même futur simultanément, en couvrant les risques dans
+        les deux directions
+    </string>
+    <string name="contract_double_position">Mode de couverture</string>
+    <string name="contract_double_side">Couverture</string>
+    <string name="contract_edit_level">Ajuster le levier</string>
+    <string name="contract_entrust_amount">Montant de l\'ordre</string>
+    <string name="contract_entrust_num">Montant</string>
+    <string name="contract_entrust_time">Heure de l\'ordre</string>
+    <string name="contract_entrust_type">Type d\'ordre</string>
+    <string name="contract_entrust_value">Valeur</string>
+    <string name="contract_error_amount">Le montant ne peut pas être 0</string>
+    <string name="contract_error_price">Le prix ne peut pas être 0</string>
+    <string name="contract_fok">FOK</string>
+    <string name="contract_force">Réduction forcée de position</string>
+    <string name="contract_full_desc">Mode de marge croisée : Toutes les positions croisées sous le
+        même actif de marge partagent le même solde de marge croisée. En cas de liquidation, le
+        solde complet de votre marge d\'actifs ainsi que toutes les positions ouvertes restantes sous
+        cet actif peuvent être perdues.
+    </string>
+    <string name="contract_future_order_details_position">Direction de la liquidité</string>
+    <string name="contract_greatest_market">Fermer au meilleur prix du marché</string>
+    <string name="contract_i_know">Je comprends</string>
+    <string name="contract_in_force">Effectif</string>
+    <string name="contract_income">PnL</string>
+    <string name="contract_index_value">Index</string>
+    <string name="contract_input_open_value">Veuillez entrer le prix d\'entrée</string>
+    <string name="contract_input_trigger_price">Veuillez entrer le prix de déclenchement</string>
+    <string name="contract_insufficient_balance">Solde insuffisant</string>
+    <string name="contract_insufficient_quantity_for_reduction">Quantité insuffisante pour la
+        réduction
+    </string>
+    <string name="contract_ioc">IOC</string>
+    <string name="contract_isolated_desc">Mode de marge isolée : Gérez votre risque sur des
+        positions individuelles en limitant le montant de la marge allouée à chacune. Si le ratio de
+        marge d\'une position atteint 100%, la position sera liquidée. La marge peut être ajoutée ou
+        retirée des positions en utilisant ce mode.
+    </string>
+    <string name="contract_level_max_hold">Limite maximale de position détenue avec le levier
+        actuel
+    </string>
+    <string name="contract_limit_order">Limite</string>
+    <string name="contract_long_position">Position longue : valeur nominale x nombre de contrats x
+        (prix de clôture - prix d\'ouverture)
+    </string>
+    <string name="contract_loss_tip">Le prix de stop-loss doit être supérieur au prix actuel et
+        inférieur au prix de liquidation forcée
+    </string>
+    <string name="contract_loss_tip_2">Le prix de stop-loss doit être inférieur au prix actuel et
+        supérieur au prix de liquidation forcée
+    </string>
+    <string name="contract_margin_coin">Monnaie de la marge</string>
+    <string name="contract_margin_desc">La marge estimée nécessaire pour cet ordre, le montant exact
+        dépendra de la position réelle.
+    </string>
+    <string name="contract_margin_model">Mode de marge</string>
+    <string name="contract_margin_txt">La marge estimée nécessaire pour ouvrir la position, le
+        montant exact dépendra de la commande réelle.
+    </string>
+    <string name="contract_mark_price_desc">Le prix de marquage est utilisé pour calculer les gains
+        et pertes non réalisés ainsi que le prix de liquidation forcée.
+    </string>
+    <string name="contract_mark_value">Marque</string>
+    <string name="contract_market">Marché</string>
+    <string name="contract_market_order">Marché</string>
+    <string name="contract_market_price">Prix du marché au moment</string>
+    <string name="contract_max_level_to_open">Ratio de levier maximal disponible</string>
+    <string name="contract_merge_position">Fusion de position</string>
+    <string name="contract_min_keep_margin_rate">Marge de maintien minimale</string>
+    <string name="contract_min_price_change_unit">Montant minimum de transaction</string>
+    <string name="contract_new_value">Dernier</string>
+    <string name="contract_next_funds_rate">Taux de financement estimé pour la prochaine période
+    </string>
+    <string name="contract_num_not_null">La quantité ne peut pas être vide</string>
+    <string name="contract_only_maker">Maker seulement</string>
+    <string name="contract_only_reduce_position">Réduction uniquement</string>
+    <string name="contract_open_high_first">Votre prix d\'achat actuel est 1% plus élevé que le
+        meilleur prix demandé. Confirmer la commande ?
+    </string>
+    <string name="contract_open_limit_buy">Le prix de votre commande a déclenché un prix limite.
+        Veuillez confirmer pour passer votre commande au prix de l\'offre la plus élevée actuellement
+        autorisé %1$s%2$s.
+    </string>
+    <string name="contract_open_limit_sell">Le prix de votre commande a déclenché un prix limite.
+        Veuillez confirmer pour passer votre commande au prix de l\'offre la plus basse actuellement
+        autorisé %1$s%2$s.
+    </string>
+    <string name="contract_open_low_first">Votre prix de vente actuel est 1% plus bas que le
+        meilleur prix de l\'offre. Confirmer la commande ?
+    </string>
+    <string name="contract_open_position">Ouvrir</string>
+    <string name="contract_open_value">Valeur d\'ouverture</string>
+    <string name="contract_oppener_price">Prix de la contrepartie</string>
+    <string name="contract_order_can_close">Montant disponible pour la clôture</string>
+    <string name="contract_order_validity_period">Période de validité de l\'ordre
+        conditionnel/\nordre de take-profit/stop-loss
+    </string>
+    <string name="contract_out_limit">Hors de la plage de prix</string>
+    <string name="contract_over_close_number">Dépasse les positions disponibles pour la clôture
+    </string>
+    <string name="contract_pk_buy">Acheter</string>
+    <string name="contract_pk_default">Par défaut</string>
+    <string name="contract_pk_sell">Vendre</string>
+    <string name="contract_position_type">Type de position</string>
+    <string name="contract_predict_income">PNL estimé</string>
+    <string name="contract_price_not_null">La quantité ne peut pas être vide</string>
+    <string name="contract_profit_loss_estimate">Lorsque le prix de marquage atteint %1$s, l\'ordre
+        %2$s est déclenché, avec un PnL estimé de %3$s et un ROI estimé de %4$s
+    </string>
+    <string name="contract_profit_loss_estimate_blue">Lorsque le prix de marquage atteint &lt;font
+        color="#040809"&gt;%1$s&lt;/font&gt;, l\'ordre %2$s est déclenché, avec un PnL estimé de &lt;font
+        color="#16BD75"&gt;%3$s&lt;/font&gt; et un ROI estimé de &lt;font color="#16BD75"&gt;%4$s&lt;/font&gt;
+    </string>
+    <string name="contract_profit_loss_estimate_red">Lorsque le prix de marquage atteint &lt;font
+        color="#040809"&gt;%1$s&lt;/font&gt;, l\'ordre %2$s est déclenché, avec un PnL estimé de &lt;font
+        color="#F0515C"&gt;%3$s&lt;/font&gt; et un ROI estimé de &lt;font color="#F0515C"&gt;%4$s&lt;/font&gt;
+    </string>
+    <string name="contract_profit_loss_position">Position/disponible pour la clôture</string>
+    <string name="contract_profit_tip">Le prix de take-profit doit être inférieur au prix de
+        marquage
+    </string>
+    <string name="contract_profit_tip_2">Le prix de take-profit doit être supérieur au dernier
+        prix
+    </string>
+    <string name="contract_real_entrust_count">Nombre réel d\'ordres</string>
+    <string name="contract_real_entrust_price">Prix réel de l\'ordre</string>
+    <string name="contract_select_at_most_input">Dépasse la quantité maximale par ordre. Quantité
+        maximale autorisée
+    </string>
+    <string name="contract_select_at_most_input_amount">Dépasse le montant maximal par ordre.
+        Montant maximal autorisé
+    </string>
+    <string name="contract_select_at_most_order">Vous ne pouvez placer un ordre que jusqu\'à</string>
+    <string name="contract_select_minimum_input">Dépasse la quantité minimale par ordre. Quantité
+        minimale autorisée
+    </string>
+    <string name="contract_select_minimum_input_amount">Dépasse le montant minimal par ordre.
+        Montant minimal autorisé
+    </string>
+    <string name="contract_select_price_too_large">L\'écart de prix est trop important !</string>
+    <string name="contract_short_position">Position courte : valeur nominale x nombre de contrats x
+        (prix moyen d\'ouverture - prix moyen de clôture)
+    </string>
+    <string name="contract_side_type">Modèle unidirectionnel/couverture</string>
+    <string name="contract_single_desc">En mode unidirectionnel, un contrat ne peut avoir de
+        positions que dans une seule direction
+    </string>
+    <string name="contract_single_position">Mode unidirectionnel</string>
+    <string name="contract_single_side">Unidirectionnel</string>
+    <string name="contract_stop_decline">Perte</string>
+    <string name="contract_stop_entrust">Ordre de take-profit/stop-loss</string>
+    <string name="contract_stop_formmat_tips1">Le prix de déclenchement du take-profit ne peut pas
+        être inférieur au dernier prix
+    </string>
+    <string name="contract_stop_formmat_tips10">Le prix de déclenchement du stop-loss ne peut pas
+        être inférieur au dernier prix
+    </string>
+    <string name="contract_stop_formmat_tips11">Le prix du stop-loss ne peut pas être inférieur au
+        prix de l\'indice
+    </string>
+    <string name="contract_stop_formmat_tips12">Le prix du stop-loss ne peut pas être inférieur au
+        prix marqué
+    </string>
+    <string name="contract_stop_formmat_tips13">Le prix de déclenchement du take-profit doit être
+        inférieur au meilleur prix demandé
+    </string>
+    <string name="contract_stop_formmat_tips14">Le prix de déclenchement du take-profit doit être
+        inférieur au meilleur prix de l\'offre
+    </string>
+    <string name="contract_stop_formmat_tips2">Le prix du take-profit ne peut pas être inférieur au
+        prix de l\'indice
+    </string>
+    <string name="contract_stop_formmat_tips3">Le prix du take-profit ne peut pas être inférieur au
+        prix marqué
+    </string>
+    <string name="contract_stop_formmat_tips4">Le prix de déclenchement du take-profit ne peut pas
+        être supérieur au dernier prix
+    </string>
+    <string name="contract_stop_formmat_tips5">Le prix du take-profit ne peut pas être supérieur au
+        prix de l\'indice
+    </string>
+    <string name="contract_stop_formmat_tips6">Le prix du take-profit ne peut pas être supérieur au
+        prix marqué
+    </string>
+    <string name="contract_stop_formmat_tips7">Le prix de déclenchement du stop-loss ne peut pas
+        être supérieur au dernier prix
+    </string>
+    <string name="contract_stop_formmat_tips8">Le prix du stop-loss ne peut pas être supérieur au
+        prix de l\'indice
+    </string>
+    <string name="contract_stop_formmat_tips9">Le prix du stop-loss ne peut pas être supérieur au
+        prix marqué
+    </string>
+    <string name="contract_stop_increase">Gain</string>
+    <string name="contract_stop_level_senior">Avancé</string>
+    <string name="contract_stop_loss">Stop-loss</string>
+    <string name="contract_stop_loss_limit">Ordre de stop-loss</string>
+    <string name="contract_stop_loss_limit_price">Prix de l\'ordre de stop-loss</string>
+    <string name="contract_stop_loss_tips1">Lorsque le prix atteint %s, un ordre de marché sera
+        déclenché avec une perte estimée de %s
+    </string>
+    <string name="contract_stop_loss_tips2">Lorsque le prix atteint %s, un ordre à cours limité sera
+        déclenché avec une perte estimée de %s
+    </string>
+    <string name="contract_stop_loss_trigger">Déclenchement du stop-loss</string>
+    <string name="contract_stop_loss_trigger_price">Prix de déclenchement du stop-loss</string>
+    <string name="contract_stop_profit">Take-profit</string>
+    <string name="contract_stop_profit_limit">Ordre de take-profit</string>
+    <string name="contract_stop_profit_limit_price">Prix de l\'ordre de take-profit</string>
+    <string name="contract_stop_profit_tips1">Lorsque le prix atteint %s, un ordre de marché sera
+        déclenché avec un profit estimé de %s
+    </string>
+    <string name="contract_stop_profit_tips2">Lorsque le prix atteint %s, un ordre à cours limité
+        sera déclenché avec un profit estimé de %s
+    </string>
+    <string name="contract_stop_profit_trigger">Déclenchement du take-profit</string>
+    <string name="contract_stop_profit_trigger_price">Prix de déclenchement du take-profit</string>
+    <string name="contract_stop_tips1">Vous pouvez activer le paramètre de take-profit/stop-loss
+        pour l\'ordre actuel, qui prendra effet après l\'ouverture de la position
+    </string>
+    <string name="contract_sustainable_format">%s Perpétuel</string>
+    <string name="contract_to_login">Connectez-vous pour trader</string>
+    <string name="contract_to_take_effect">En attente</string>
+    <string name="contract_toast_tips1">Le montant doit être un multiple entier de %s</string>
+    <string name="contract_trade_price_max">Le prix ne peut pas dépasser 100 000 000</string>
+    <string name="contract_trigger_side">Direction réelle du déclenchement</string>
+    <string name="currency_overview">Info</string>
+    <string name="daily_lucky_draw">Tirage au sort quotidien</string>
+    <string name="common_day">jours</string>
+    <string name="day_count_down">%1$s jours %2$s:%3$s:%4$s</string>
+    <string name="deposit_address_to">Adresse</string>
+    <string name="deposit_chain_name">Réseau</string>
+    <string name="deposit_memo_need_text">Pour recharger, vous devez remplir un Memo (étiquette) sur
+        la plateforme de retrait, sinon la recharge ne sera pas créditée ou remboursée
+    </string>
+    <string name="deposit_share_to">Partager sur</string>
+    <string name="deposit_status_unavailable">Indisponible</string>
+    <string name="deposit_verify_hash">ID de la transaction</string>
+    <string name="depth_price_margin">Plage</string>
+    <string name="depth_total_amount">Montant</string>
+    <string name="enter_6_email_code">Veuillez entrer le code de vérification par e-mail à 6
+        chiffres
+    </string>
+    <string name="enter_6_ga_code">Veuillez entrer le code Google Authenticator à 6 chiffres
+    </string>
+    <string name="enter_6_sms_code">Veuillez entrer le code de vérification SMS à 6 chiffres
+    </string>
+    <string name="errorCode5">Votre solde est insuffisant</string>
+    <string name="experiencia_desc_new">À propos du bonus d\'essai</string>
+    <string name="follow_apply_status1">Votre demande a été soumise. Merci de votre patience.
+    </string>
+    <string name="follow_apply_status2">Demande approuvée.</string>
+    <string name="follow_apply_trader">Devenir un trader principal</string>
+    <string name="follow_apply_trader_btn">Soumettre la demande</string>
+    <string name="follow_close_volume">Volume clôturé</string>
+    <string name="follow_dialog_cancel_content">Si vous ne suivez plus ce trader, les positions que
+        vous avez copiées ne seront pas fermées immédiatement. Vous pouvez aller sur la page des
+        futures pour les fermer manuellement.
+    </string>
+    <string name="follow_follow_users">Copy Traders</string>
+    <string name="follow_message_history">Messages historiques</string>
+    <string name="follow_message_title">Notifications</string>
+    <string name="follow_now_price">Prix</string>
+    <string name="follow_orders_now_history">Fermé</string>
+    <string name="follow_orders_now_order">Positions copiées</string>
+    <string name="follow_orders_realized_amount_new">PnL de la position</string>
+    <string name="follow_orders_traders_follow_amount">Montant total copié (USDT)</string>
+    <string name="follow_orders_traders_profit_amount">PnL (USDT)</string>
+    <string name="follow_orders_volume">(Contrats)</string>
+    <string name="follow_regist_term_1">Fonds du compte à terme ≥ 100 USDT.</string>
+    <string name="follow_regist_term_2">Complétez la vérification KYC LV1.</string>
+    <string name="follow_regist_term_3">Il n\'y a pas de positions de trading copiées.</string>
+    <string name="follow_regist_term_4">Le futur actuel est en mode isolé.</string>
+    <string name="follow_right_now">Copier</string>
+    <string name="follow_setting_amount">Limites</string>
+    <string name="follow_setting_amount_to_rate">Passer à un ratio fixe</string>
+    <string name="follow_setting_amount_to_rate_tips">Chaque fois que le trader passe une commande,
+        vous copierez sa direction de trading à une limite fixe. Le total par trading copié =
+        limites fixes.
+    </string>
+    <string name="follow_setting_follow_contact_type">Paires de trading</string>
+    <string name="follow_setting_follow_type">Modes</string>
+    <string name="follow_setting_input_error1">Veuillez entrer la limite de trading copié</string>
+    <string name="follow_setting_input_error2">Veuillez entrer le ratio de trading copié</string>
+    <string name="follow_setting_input_error3">Veuillez entrer le montant maximal de trading copié
+    </string>
+    <string name="follow_setting_leverage_multiple_trader">Levier du trader principal</string>
+    <string name="follow_setting_loss_ratio">Ratio de stop-loss</string>
+    <string name="follow_setting_loss_ratio_tips">Une fois que vous avez complété les réglages, les
+        positions que vous copiez de ce trader seront fermées automatiquement en fonction de votre
+        réglage de stop-loss. Après l\'ouverture de la position, vous pouvez modifier les paramètres
+        de stop-loss dans la prise de bénéfices et le stop-loss de la position.
+    </string>
+    <string name="follow_setting_max_follow_amount">Montant maximal de trading copié</string>
+    <string name="follow_setting_max_follow_amount_tips">La marge maximale de la position que vous
+        copiez du trader pour ce contrat. La position ne sera pas ouverte lorsque la somme de la
+        marge requise pour la nouvelle position et la marge de maintien pour vos positions
+        existantes dépasse le montant maximal de trading copié.
+    </string>
+    <string name="follow_setting_off_ratio">Ratio de take-profit</string>
+    <string name="follow_setting_off_ratio_tips">Une fois que vous avez complété les réglages, les
+        positions que vous copiez de ce trader seront fermées automatiquement en fonction de votre
+        réglage de take-profit. Après l\'ouverture de la position, vous pouvez modifier les
+        paramètres de take-profit dans la prise de bénéfices et le stop-loss de la position.
+    </string>
+    <string name="follow_setting_rate_to_amount">Passer à un montant fixe</string>
+    <string name="follow_setting_rate_to_amount_tips">Chaque fois que le trader passe une commande,
+        vous copierez sa direction de trading à un ratio fixe. Quantité par ordre de trading copié =
+        nombre de positions ouvertes par le trader * ratio fixe.
+    </string>
+    <string name="follow_setting_risk_control">Contrôle des risques</string>
+    <string name="follow_setting_trader_asset_amount">Solde total (USDT)</string>
+    <string name="follow_setting_trader_bonus_rate">Ratio de partage des bénéfices</string>
+    <string name="follow_taum">AUM</string>
+    <string name="follow_term_1">J\'ai lu attentivement et accepté</string>
+    <string name="follow_term_2">l\'Accord du Trader</string>
+    <string name="follow_total_close_time">Fermé</string>
+    <string name="follow_trader_checkin_day">Cela fait %s jours que je suis ici</string>
+    <string name="follow_trader_follower">Trader copié</string>
+    <string name="follow_trader_go_change">Transférer</string>
+    <string name="follow_trader_go_close">Fermer</string>
+    <string name="follow_trader_go_setting_new">Passer en mode marge isolée</string>
+    <string name="follow_trader_history_bring">Fermé</string>
+    <string name="follow_trader_intro">Profil</string>
+    <string name="follow_trader_intro_condition">Exigences de profil</string>
+    <string name="follow_trader_message_intro">Ce trader n\'a pas écrit de bio.</string>
+    <string name="follow_trader_new">Trader</string>
+    <string name="follow_traders_list_follow_limit">Complet</string>
+    <string name="follow_traders_list_follow_profit_amount">PnL</string>
+    <string name="follow_traders_list_key2">PnL total</string>
+    <string name="follow_traders_list_key4">MDD</string>
+    <string name="follow_traders_message_no_data">Aucun rappel de trading copié</string>
+    <string name="follow_users_follow">Copier</string>
+    <string name="follow_users_following">En cours de copie</string>
+    <string name="follow_users_profit_total">Profit/Montant total copié (USDT)</string>
+    <string name="follow_users_rank">Rang</string>
+    <string name="follow_users_roi_close">ROI (Fermé)</string>
+    <string name="follow_users_roi_open">ROI (Positions ouvertes)</string>
+    <string name="follow_users_top10">Seuls les 10 premiers copieurs sont affichés</string>
+    <string name="follow_users_trades">Transactions</string>
+    <string name="follow_users_users">Utilisateurs</string>
+    <string name="follower_times">%</string>
+    <string name="forceClose">Liquidation</string>
+    <string name="funding_rate_history">Historique des taux de financement</string>
+    <string name="funding_rate_settled">Taux de financement réglé</string>
+    <string name="ga_explanation">Instructions</string>
+    <string name="hight24">24H Haut</string>
+    <string name="home_affiliate">Affilié</string>
+    <string name="home_aibit_academy">Académie Aibit</string>
+    <string name="home_bulletin">Annonce</string>
+    <string name="home_buy_crypto">Acheter des cryptos</string>
+    <string name="home_c2c_desc">Choix flexible à un meilleur prix</string>
+    <string name="home_chat">Chat</string>
+    <string name="home_customer_service">Support client</string>
+    <string name="home_deposit">Dépôt</string>
+    <string name="home_dialog_register_button">Inscrivez-vous maintenant</string>
+    <string name="home_dialog_register_slogan">Inscrivez-vous pour profiter d\'un bonus de %1$s
+    </string>
+    <string name="home_event">Événement</string>
+    <string name="home_futures_trading">Trading de contrats à terme</string>
+    <string name="home_gif_dialog_desc">Vous avez reçu un pack de bienvenue exclusif pour les
+        nouveaux utilisateurs
+    </string>
+    <string name="home_gift_signup">Inscrivez-vous</string>
+    <string name="home_gold_card_collecting">Jeu de chasse</string>
+    <string name="home_more_bulletin">Voir plus</string>
+    <string name="home_new_user_bonuses">Bonus</string>
+    <string name="home_others">Autres</string>
+    <string name="home_quick_desc">Méthodes diverses pour des transactions rapides</string>
+    <string name="home_quick_pay">Paiement rapide</string>
+    <string name="home_rank_add_optional">Ajouter aux favoris</string>
+    <string name="home_register_tip">Jusqu\'à %1$s USDT\n Bonus : Inscrivez-vous pour obtenir
+    </string>
+    <string name="home_to_login">Se connecter/S\'inscrire</string>
+    <string name="home_total_balance">Solde total</string>
+    <string name="hour">H</string>
+    <string name="idx_price">Prix de déclenchement du mark</string>
+    <string name="ieo_price">Prix de l\'offre initiale</string>
+    <string name="ieo_time">Heure de l\'offre initiale</string>
+    <string name="information">Informations</string>
+    <string name="invite_friend_desc_2">Réclamer %s USDT de récompense de trading</string>
+    <string name="k_12h">12h</string>
+    <string name="k_15m">15m</string>
+    <string name="k_1d">1d</string>
+    <string name="k_1h">1h</string>
+    <string name="k_1m">1m</string>
+    <string name="k_1mon">1M</string>
+    <string name="k_1week">1sem</string>
+    <string name="k_2h">2h</string>
+    <string name="k_30m">30m</string>
+    <string name="k_3m">3m</string>
+    <string name="k_4h">4h</string>
+    <string name="k_5m">5m</string>
+    <string name="k_6h">6h</string>
+    <string name="k_8h">8h</string>
+    <string name="k_time_sharing">Ligne</string>
+    <string name="kline_a">Txn</string>
+    <string name="kline_c">Fermer</string>
+    <string name="kline_chart">Graphique</string>
+    <string name="kline_comming_soon">À venir</string>
+    <string name="kline_h">Haut</string>
+    <string name="kline_l">Bas</string>
+    <string name="kline_new_spot_desc">Pour des informations détaillées, veuillez consulter
+        l\'annonce officielle
+    </string>
+    <string name="kline_o">Ouvrir</string>
+    <string name="kline_online_delay">Restez à l\'écoute !</string>
+    <string name="kline_online_warn">Le calendrier de trading pour ce projet a été retardé. Veuillez
+        consulter les annonces Aibit pour les dernières mises à jour.
+    </string>
+    <string name="kline_p">Chg</string>
+    <string name="kline_percent_180">180 jours</string>
+    <string name="kline_percent_365">1 an</string>
+    <string name="kline_percent_90">90 jours</string>
+    <string name="kline_percent_today">Aujourd\'hui</string>
+    <string name="kline_time">Heure&#160;&#160;&#160;</string>
+    <string name="kline_v">Changement de prix</string>
+    <string name="kline_value">Vol</string>
+    <string name="kline_will_online">Ouverture prochaine !</string>
+    <string name="kyc1_county_desc">Sélectionnez votre pays ou région de résidence actuelle. Vous
+        n\'avez besoin de répondre qu\'aux questions requises par les réglementations locales.
+    </string>
+    <string name="kyc1_driver_card">Permis de conduire</string>
+    <string name="kyc1_edit_info_title">Vérification d\'identité</string>
+    <string name="kyc1_success">Vérification réussie</string>
+    <string name="kyc1_success_desc">Vérification d\'identité complète \n Passez à la vérification
+        avancée Lv 2 pour augmenter la limite de transaction
+    </string>
+    <string name="kyc2_dialog_limit">Vos informations de vérification précédentes seront renvoyées,
+        et vous devrez recommencer depuis "Lv 1". Il vous reste %s tentatives. Vous ne pourrez pas
+        recommencer la vérification si vous épuiser vos tentatives.
+    </string>
+    <string name="kyc2_dialog_limit_warn">Les informations de la vérification avancée doivent
+        correspondre à la vérification de base. Vous ne pouvez vérifier que trois fois.
+    </string>
+    <string name="kyc2_exceed_times">Vous avez épuisé vos tentatives de vérification. Veuillez
+        contacter le support client.
+    </string>
+    <string name="kyc2_limit_title">La vérification redémarrera depuis Lv 1</string>
+    <string name="kyc_again_lv1">Re-vérifier Lv 1</string>
+    <string name="kyc_chose_card_hint">Sélectionnez le type de pièce d\'identité</string>
+    <string name="kyc_kyc2_review_warn">Votre pièce d\'identité est en cours d\'examen et la plupart
+        des vérifications seront effectuées en moins de 1 minute.
+    </string>
+    <string name="kyc_kyc2_start_title">Vérifiez les informations avant de commencer</string>
+    <string name="kyc_msg_is_right">Les informations ne correspondent pas à votre pièce d\'identité?
+    </string>
+    <string name="kyc_nationality">Nationalité</string>
+    <string name="kyc_otc">Transaction OTC</string>
+    <string name="kyc_start_high">Effectuer une vérification avancée</string>
+    <string name="kyc_start_kyc2">Les informations ont été vérifiées. Vérification commencée
+    </string>
+    <string name="kyc_title_1">Disponible après vérification</string>
+    <string name="kyc_title_2">Vérifier l\'identité personnelle</string>
+    <string name="kyc_verify_tip_1">Veuillez confirmer que vos informations de "Vérification de base
+        Lv 1" correspondent à votre pièce d\'identité personnelle ; sinon, la vérification échouera.
+    </string>
+    <string name="limit_ip_desc">En raison des exigences légales et politiques, les produits et
+        services de ce site Web ne sont pas disponibles dans votre pays ou région. Désolé pour le
+        désagrément !
+    </string>
+    <string name="limit_tips_trade">Dans une commande à cours limité, l\'utilisateur peut définir la
+        quantité de commande et le prix maximum d\'enchère ou le prix minimum de vente. \n Lorsque le
+        prix du marché atteint les attentes de l\'utilisateur, le système exécute au meilleur prix
+        dans la plage de prix limite.
+    </string>
+    <string name="liquidation_price_calculation">Calcul du prix de liquidation</string>
+    <string name="load_more">Charger plus</string>
+    <string name="login_bind_account">Lier votre compte</string>
+    <string name="login_bind_desc">L\'email est déjà enregistré. Vous pouvez vérifier l\'email et le
+        lier à un compte tiers.
+    </string>
+    <string name="login_create_account">Créer un compte</string>
+    <string name="login_error_pwd">8-30 caractères, doit inclure des lettres majuscules et
+        minuscules ainsi que des chiffres
+    </string>
+    <string name="login_forget_pwd">Mot de passe oublié ?</string>
+    <string name="login_please_input_pwd">Veuillez entrer votre mot de passe</string>
+    <string name="login_scan_device">Appareil</string>
+    <string name="login_scan_error_30001">QR Code invalide</string>
+    <string name="login_scan_error_30002">QR Code expiré</string>
+    <string name="login_scan_error_expired">Le QR Code a expiré. Veuillez actualiser la page pour en
+        générer un nouveau.
+    </string>
+    <string name="login_scan_ip_address">Adresse IP</string>
+    <string name="login_scan_location">Emplacement</string>
+    <string name="login_scan_login">Connexion autorisée</string>
+    <string name="login_scan_pc_confirmation">Confirmation de connexion PC</string>
+    <string name="login_scan_success">Connexion réussie</string>
+    <string name="login_scan_tips">Vous êtes sur le point de vous connecter à votre compte Aibit sur
+        un PC. Veuillez confirmer que c\'est bien vous qui effectuez cette opération. Soyez vigilant
+        aux risques de fraude pour éviter toute perte d\'actifs.
+    </string>
+    <string name="login_term_all">En procédant à l\'enregistrement, vous acceptez l\'Accord
+        Utilisateur et la Politique de Confidentialité
+    </string>
+    <string name="login_third_title">Ou connectez-vous avec</string>
+    <string name="lottery_title">Tourner &amp; Gagner : Récompenses quotidiennes en cours !</string>
+    <string name="low24">Bas 24H</string>
+    <string name="main_bottom_home">Page d\'accueil</string>
+    <string name="maker_fee">Frais maker</string>
+    <string name="market_buy">Acheter</string>
+    <string name="market_cap">Capitalisation boursière</string>
+    <string name="market_currency">Crypto de règlement</string>
+    <string name="market_currency_swap">Valeur nominale des futures</string>
+    <string name="market_depth">Profondeur</string>
+    <string name="market_price">Prix</string>
+    <string name="market_mark_price">Prix de marquage</string>
+    <string name="market_min_price">Taille de variation</string>
+    <string name="market_name">Nom</string>
+    <string name="market_sell">Vendre</string>
+    <string name="market_tips_trade">Les ordres au marché permettent aux utilisateurs de passer des
+        ordres au meilleur prix du marché actuel pour une clôture rapide. Vous pouvez passer un
+        ordre au marché avec la quantité ou le montant souhaité, mais la quantité et le prix
+        d\'exécution dépendront de la transaction réelle.
+    </string>
+    <string name="memo_tips2">Veuillez confirmer si le destinataire doit remplir un mémo (également
+        appelé tag). Si c\'est le cas, veuillez vous assurer que toutes les informations sont
+        correctes pour éviter la perte d\'actifs.
+    </string>
+    <string name="min_amount_to_order">Le montant minimum de commande est de %s</string>
+    <string name="min_num_to_order">La quantité minimale de commande est de %s</string>
+    <string name="minute">minute</string>
+    <string name="mobile_or_email_error_tip">Veuillez entrer une adresse email ou un numéro de
+        mobile valide
+    </string>
+    <string name="modify_condition_title">Modifier l\'ordre conditionnel</string>
+    <string name="modify_limit_title">Modifier l\'ordre limite</string>
+    <string name="modify_modification_completed">Modification terminée</string>
+    <string name="modify_number_less_than_traded_coin">Le nombre de commandes doit être supérieur à
+        %1$s qui a été échangé
+    </string>
+    <string name="modify_number_less_than_traded_piece">Le nombre de commandes doit être supérieur à
+        %1$s contrats qui ont été échangés
+    </string>
+    <string name="more">Plus</string>
+    <string name="msg_center_title">Centre de notifications</string>
+    <string name="msg_empty">Aucune notification</string>
+    <string name="msg_open">Voir plus</string>
+    <string name="msg_read_all">Marquer tous les messages comme lus ?</string>
+    <string name="network_android_version">Système d\'exploitation</string>
+    <string name="network_api_speed">Vitesse API</string>
+    <string name="network_api_ws_speed">Vitesse de réponse API ws</string>
+    <string name="network_app_version">Version de l\'application</string>
+    <string name="network_confirmation">%s Confirmation</string>
+    <string name="network_connect_error">Échec de la connexion</string>
+    <string name="network_connect_success">Connecté</string>
+    <string name="network_mobile_info">Informations mobiles</string>
+    <string name="network_title">Détection du réseau</string>
+    <string name="network_ws_speed">Vitesse WS</string>
+    <string name="new_year_desc">Partager des récompenses de $%s</string>
+    <string name="no_set">Configuration incomplète</string>
+    <string name="no_withdrawal_record">Aucun historique de retrait</string>
+    <string name="not_allow_permission">Veuillez activer les autorisations pertinentes</string>
+    <string name="nua_first_deposit">Premier dépôt</string>
+    <string name="nua_first_deposit_desc">Déposez ≥%1$s USDT lors de votre première transaction pour
+        recevoir %2$s USDT !
+    </string>
+    <string name="nua_first_trade">Premier trade</string>
+    <string name="nua_first_trade_desc">Complétez un montant de première transaction de futures
+        ≥%1$s USDT
+    </string>
+    <string name="nua_first_trade_desc_plus">Complétez un montant de première transaction de futures
+        ≥%1$s USDT ou un montant de première transaction spot de ≥%2$s USDT
+    </string>
+    <string name="nua_kyc_verification">Vérification KYC</string>
+    <string name="nua_kyc_verification_desc">Complétez KYC pour recevoir %1$s USDT !</string>
+    <string name="nua_kye_verification_do">Vérifier</string>
+    <string name="one_lowercase_letter">1 lettre minuscule</string>
+    <string name="one_number">1 chiffre</string>
+    <string name="one_uppercase_letter">1 lettre majuscule</string>
+    <string name="optional">(optionnel)</string>
+    <string name="order_cancel_time">Heure d\'annulation</string>
+    <string name="order_confirm_tips">Lorsque la confirmation de commande est activée, une fenêtre
+        contextuelle de confirmation apparaîtra chaque fois qu\'une commande est soumise
+    </string>
+    <string name="order_create_time">Heure de création</string>
+    <string name="order_deal_numb">Exécuté</string>
+    <string name="order_effective">Effectif</string>
+    <string name="order_expire_time">Heure d\'expiration</string>
+    <string name="order_filter_side">Direction : %s</string>
+    <string name="order_filter_swap">Futures : %s</string>
+    <string name="order_filter_type">Type : %s</string>
+    <string name="order_force_entrust">Liquidation</string>
+    <string name="order_placed">Succès de la commande</string>
+    <string name="order_preset_price">Prix de la commande</string>
+    <string name="order_reduce_no">Non</string>
+    <string name="order_reduce_yes">Oui</string>
+    <string name="order_role">Rôle</string>
+    <string name="order_trigger_complete">Déclenché</string>
+    <string name="order_trigger_fail">Échec du déclenchement</string>
+    <string name="order_trigger_time">Heure du déclenchement</string>
+    <string name="per_day">Chaque jour</string>
+    <string name="personal_invite_des">Réclamer %s récompense de trading</string>
+    <string name="personal_invite_title">Parrainez des amis pour trader</string>
+    <string name="personal_my_feerate">Frais</string>
+    <string name="personal_newcomer_des">Pack cadeau exclusif pour les nouveaux utilisateurs
+    </string>
+    <string name="personal_register">S\'inscrire</string>
+    <string name="personal_setting">Paramètres</string>
+    <string name="personal_welcome_des">Connectez-vous, votre aventure Web3 commence !</string>
+    <string name="please_input_psw">Veuillez entrer le mot de passe de connexion</string>
+    <string name="position_margin">Marge de position</string>
+    <string name="position_realize_amount">PNL réglé</string>
+    <string name="position_size">Montant</string>
+    <string name="preset_order_total">Volume total des ordres</string>
+    <string name="profit_calculation">Calcul du PNL</string>
+    <string name="profit_loss_estimated_pl">PNL estimé</string>
+    <string name="profit_loss_estimated_pl_desc">Le PNL estimé est le calcul approximatif du profit
+        ou de la perte lors de la fermeture d\'une position. Les frais et la différence entre le prix
+        de déclenchement et le prix d\'exécution peuvent entraîner un écart important entre la valeur
+        estimée et la valeur réelle, ceci est fourni à titre indicatif uniquement.\n\nLes ordres TP
+        et SL au marché estiment le PNL basé sur le prix de déclenchement. Les ordres TP et SL
+        limités estiment le PNL basé sur le prix limite.
+    </string>
+    <string name="profit_loss_exceed_max">Le Take Profit / Stop Loss dépasse le prix maximum
+    </string>
+    <string name="profit_loss_exceed_min">Les ordres TP / SL sont en dessous du prix limite
+        minimum
+    </string>
+    <string name="profit_loss_order_price">Prix</string>
+    <string name="profit_loss_price_change">Changement de prix</string>
+    <string name="profit_loss_tip">Dans un marché en évolution rapide, définir un prix de
+        déclenchement du stop-loss proche du prix de liquidation peut entraîner un échec de
+        l\'exécution de l\'ordre.
+    </string>
+    <string name="profit_loss_trigger_price">Prix de déclenchement</string>
+    <string name="profit_loss_trigger_type">Conditions de déclenchement</string>
+    <string name="quote_add_optional">Ajouter des crypto-monnaies</string>
+    <string name="quote_add_optional_btn">Ajouter aux favoris</string>
+    <string name="quote_add_optional_faile">Favoris supprimés avec succès</string>
+    <string name="quote_add_optional_suc">Favoris ajoutés avec succès</string>
+    <string name="quote_no_optional">Aucune information de marché disponible pour la sélection
+    </string>
+    <string name="quote_optional">Favoris</string>
+    <string name="follow_select_all">Sélectionner tout</string>
+    <string name="quote_optional_del_choose">Supprimer la sélection</string>
+    <string name="quote_optional_edit">Modifier les favoris</string>
+    <string name="quote_optional_market">Marché</string>
+    <string name="quote_optional_move">Faire glisser</string>
+    <string name="quote_optional_top">Épingler en haut</string>
+    <string name="rechage_filter_confirming">Traitement</string>
+    <string name="rechage_filter_failed">Dépôt échoué</string>
+    <string name="rechage_filter_received">Terminé</string>
+    <string name="rechage_tip1">Veuillez vous assurer que le réseau de la plateforme de retrait
+        est
+    </string>
+    <string name="rechage_tip3">Veuillez sélectionner le même réseau que celui de la plateforme de
+        retrait ; sinon, les fonds ne seront pas crédités.
+    </string>
+    <string name="recharge_select_network">Sélectionner le réseau</string>
+    <string name="recharge_share_save_address">Enregistrer et partager l\'adresse</string>
+    <string name="return_home">Retour à la page d\'accueil</string>
+    <string name="reverse_collapse">Voir moins</string>
+    <string name="reverse_confirm_no_tips">Vous pouvez désactiver la fenêtre contextuelle de
+        confirmation inverse dans les "Paramètres de trading."
+    </string>
+    <string name="reverse_confirm_tips">Lorsque la confirmation inverse est activée, une fenêtre
+        contextuelle de confirmation apparaîtra chaque fois qu\'un ordre inverse sera soumis.
+    </string>
+    <string name="reverse_estimated_open">Taille estimée</string>
+    <string name="reverse_estimated_open_tip">La taille estimée de la position inverse dépend des
+        fonds disponibles au moment de l\'exécution. En raison des conditions du marché et des
+        exigences de marge, il n\'y a aucune garantie que la position sera ouverte avec succès.
+    </string>
+    <string name="reverse_expand">Voir plus</string>
+    <string name="reverse_last_price">Dernier prix</string>
+    <string name="reverse_long_to_short">Long à Court</string>
+    <string name="reverse_market_close_long">Fermer Long au prix du marché</string>
+    <string name="reverse_market_close_short">Fermer Short au prix du marché</string>
+    <string name="reverse_market_open_long">Ouvrir Long au prix du marché</string>
+    <string name="reverse_market_open_short">Ouvrir Short au prix du marché</string>
+    <string name="reverse_note">Note : Inverser une position dépend des conditions du marché et des
+        exigences de marge, et par conséquent, nous ne pouvons pas garantir un succès à 100 %.
+    </string>
+    <string name="reverse_reverse">Inverser</string>
+    <string name="reverse_reverse_confirmation">Confirmation d\'inversion</string>
+    <string name="reverse_reverse_successful">Position inversée avec succès</string>
+    <string name="reverse_reverse_to_long">Inverser vers Long</string>
+    <string name="reverse_reverse_to_short">Inverser vers Short</string>
+    <string name="reverse_short_to_long">Short vers Long</string>
+    <string name="reverse_tip">La fonction inverse fermera toutes les positions actuelles au prix du
+        marché et ouvrira une position opposée avec le même mode, levier et quantité. Si la marge
+        est insuffisante, une position inverse plus petite sera ouverte en fonction de la marge
+        disponible. De plus, la taille de la position inverse sera limitée à la quantité maximale
+        d\'ordre de marché pour l\'actif correspondant.
+    </string>
+    <string name="risk_reserve_fund">Fonds d\'assurance</string>
+    <string name="save_picture">Enregistrer l\'image</string>
+    <string name="saved_album">Enregistré dans l\'album</string>
+    <string name="scan_qr_code_down">Scannez le code QR pour télécharger l\'application Aibit et vous
+        inscrire
+    </string>
+    <string name="search_his_market">Historique de recherche</string>
+    <string name="search_hot">Chaud</string>
+    <string name="search_perpetual">USDT Perpétuel</string>
+    <string name="set_new_password">Définir un nouveau mot de passe</string>
+    <string name="share_bottom_desc">Scannez le code pour vous inscrire et vous connecter. Votre
+        voyage Web3 commence ici.
+    </string>
+    <string name="share_bottom_desc_not_login">Scannez le code pour vous inscrire et vous
+        connecter\nVotre voyage Web3 commence ici.
+    </string>
+    <string name="share_download_pic">Télécharger l\'affiche</string>
+    <string name="share_share_pic">Copier le lien</string>
+    <string name="sign_in">Se connecter</string>
+    <string name="spl_number_error">La quantité de positions fermées ne peut pas dépasser la
+        quantité de positions disponibles à fermer.
+    </string>
+    <string name="spl_price_tip1">Le prix de déclenchement du stop-loss doit être supérieur au prix
+        de liquidation.
+    </string>
+    <string name="spl_price_tip2">Le prix de déclenchement du stop-loss doit être inférieur au prix
+        de liquidation.
+    </string>
+    <string name="sport_open_high_first">Le prix actuel de votre ordre d\'achat est supérieur de 5 %
+        au prix de vente le plus bas, êtes-vous sûr de vouloir passer votre commande ?
+    </string>
+    <string name="sport_open_low_first">Le prix actuel de votre ordre de vente est inférieur de 5 %
+        au prix d\'achat le plus élevé, êtes-vous sûr de vouloir passer votre commande ?
+    </string>
+    <string name="spot_20_item">20 Ordres</string>
+    <string name="spot_available">Disponible</string>
+    <string name="spot_cancel_all">Annuler tous les ordres</string>
+    <string name="spot_cancel_reason">Raison</string>
+    <string name="spot_common_function">Fonctionnalités</string>
+    <string name="spot_delegate_confirm">Confirmation de commande</string>
+    <string name="spot_fee">Frais</string>
+    <string name="spot_full_deal">Rempli</string>
+    <string name="spot_history_order">Historique des commandes</string>
+    <string name="spot_input_number">Veuillez entrer la quantité</string>
+    <string name="spot_input_price">Veuillez entrer le prix</string>
+    <string name="spot_limit_order">Limite</string>
+    <string name="spot_market_order">Marché</string>
+    <string name="spot_max_buy">Achat max</string>
+    <string name="spot_max_cancel_numb">Annuler max</string>
+    <string name="spot_max_sell">Vente max</string>
+    <string name="spot_min_amount">La quantité minimale de commande est %1$s%2$s</string>
+    <string name="spot_money_need_less">Le montant total de la commande doit être inférieur à
+        %1$s%2$s
+    </string>
+    <string name="spot_money_need_more">Le montant total de la commande doit être supérieur à
+        %1$s%2$s
+    </string>
+    <string name="spot_not_empty">Ne peut pas être vide</string>
+    <string name="spot_not_enough_amount">Quantité insuffisante pour la vente</string>
+    <string name="spot_offline_title">La paire de trading a été retirée</string>
+    <string name="spot_online_warn">Cette paire de trading est temporairement indisponible. Veuillez
+        consulter l\'annonce officielle
+    </string>
+    <string name="spot_only_show_now">Symbole actuel</string>
+    <string name="spot_over_price">Dépasse la plage de protection des prix</string>
+    <string name="spot_partial_deal">Partiellement rempli</string>
+    <string name="spot_second_confirm">Ne plus afficher cette invite. Vous pouvez réinitialiser cela
+        dans les paramètres du spot
+    </string>
+    <string name="spot_to">Vers</string>
+    <string name="spot_trade_assets">En attente</string>
+    <string name="spot_trade_fee_desc">Frais : maker %1$s%%, taker %2$s%%</string>
+    <string name="spot_trade_pair">Paire : %s</string>
+    <string name="spot_trade_record">Historique</string>
+    <string name="spot_trade_setting">Préférence</string>
+    <string name="spot_type">Type</string>
+    <string name="spot_update_time">Heure de mise à jour</string>
+    <string name="srl_footer_failed">Échec du chargement</string>
+    <string name="srl_footer_finish">Chargement terminé</string>
+    <string name="srl_footer_nothing">Plus de données</string>
+    <string name="srl_footer_pulling">Glissez vers le haut pour charger plus</string>
+    <string name="srl_footer_release">Relâchez pour charger</string>
+    <string name="swap_close_position_vol_limit">Dépasse la quantité minimale de commande par
+        transaction, vous devez entrer au moins %1$s%2$s !
+    </string>
+    <string name="swap_experiencia_tip">%1$s %2$s Bonus d’essai à activer, tradez pour activer
+    </string>
+    <string name="swap_normal_entrust">Ordre standard</string>
+    <string name="swap_open_swap_btn">Confirmer et activer le trading de contrats à terme</string>
+    <string name="swap_open_swap_dialog">I. Lorsque vous effectuez des transactions sur le marché
+        des contrats à terme et que vous subissez des pertes en raison de l\'évolution défavorable du
+        marché, ce qui entraîne un insuffisance de votre marge de position, l\'échange procédera à
+        une liquidation forcée de votre position conformément aux accords du système et divulguera
+        les détails de la liquidation forcée. Veuillez en prendre note.\n II. Veuillez lire
+        attentivement et respecter les règles de l\'échange. Comprendre le mécanisme des contrats et
+        les principes de fonctionnement, comprendre les divers risques du marché et gérer votre
+        capital de manière raisonnable lors de la négociation.\n III. Dans certaines conditions de
+        marché extrêmes, vous pourriez avoir des difficultés ou être incapable de clôturer vos
+        positions ouvertes. Par exemple, si vos gains se classent premiers en termes de PnL à effet
+        de levier effectif sur l\'ensemble du marché des contrats à terme et que le fonds d\'assurance
+        est insuffisant pour couvrir les pertes liées à la liquidation.\n IV. En raison de
+        changements dans les lois, réglementations et politiques locales, de modifications des
+        règles de trading de l\'échange des contrats à terme, ou de l\'introduction de mesures
+        d\'urgence, l\'échange informera à l\'avance si vous ne pouvez pas continuer à détenir vos
+        positions ouvertes, mais la plateforme règlera toujours la marge et le PnL restants !\n V.
+        Pour des raisons échappant au contrôle de cet échange, telles que des catastrophes
+        naturelles (séismes, inondations, incendies) ou des défaillances des systèmes informatiques
+        et de communication, il se pourrait que vos ordres échouent partiellement ou totalement, et
+        vous pourriez être responsable des pertes en résultant.\n VI. Le trading de couverture,
+        comme le trading spéculatif, comporte des risques dus aux fluctuations des prix. Veuillez
+        bien comprendre les mécanismes associés à l\'avance.\n VII. Si vous prêtez votre compte à une
+        autre personne, cela pourrait compromettre la sécurité de votre marge de contrat. Veuillez
+        veiller à la sécurité de votre compte personnel.
+    </string>
+    <string name="swap_open_swap_title">Divulgation des risques de trading de contrats à terme
+    </string>
+    <string name="swap_order_abnormal_order">Erreur de commande</string>
+    <string name="swap_order_all_condition">Tous</string>
+    <string name="swap_order_center">Ordres</string>
+    <string name="swap_order_deal_title">Historique des transactions</string>
+    <string name="swap_order_init_order">Commande initiale</string>
+    <string name="swap_order_new_order">Nouvelle commande</string>
+    <string name="swap_order_stop_loss">Ordre de stop-loss</string>
+    <string name="swap_order_stop_profit">Ordre de take-profit</string>
+    <string name="swap_order_wait_cancle">Annulation en attente</string>
+    <string name="swap_position_amount">Contrats</string>
+    <string name="swap_position_desc_2">Nombre actuel de positions. Soumettre des ordres de clôture
+        ou des ordres de réduction uniquement réduira les positions disponibles pour la clôture
+    </string>
+    <string name="swap_position_desc_new">Plus le ratio de marge est élevé, moins le risque de la
+        position est important. Lorsque le ratio de marge atteint 100 %, la position sera liquidée.
+    </string>
+    <string name="swap_position_vol">Quantité : %1$s %2$s\nDisponible pour la clôture : %3$s %4$s
+    </string>
+    <string name="switch_pnl">Commute ROI</string>
+    <string name="switching_gains">Commute PnL</string>
+    <string name="taker_fee">Frais Taker</string>
+    <string name="target_price_calculation">Calcul du prix cible</string>
+    <string name="third_pay_addr_warn">Adresse du compte Aibit</string>
+    <string name="third_pay_date_filter">Date</string>
+    <string name="third_pay_detail">Détails de la commande</string>
+    <string name="third_pay_expected">%1s-%2s minutes</string>
+    <string name="third_pay_expected_time">Heure d\'arrivée estimée</string>
+    <string name="third_pay_expired">Expiré</string>
+    <string name="third_pay_fialure">Échoué</string>
+    <string name="third_pay_guid_title">Veuillez compléter les paramètres suivants</string>
+    <string name="third_pay_introduction">Introduction</string>
+    <string name="third_pay_kyc">Complétez la vérification KYC2</string>
+    <string name="third_pay_laoding">Redirection vers la page de paiement tiers</string>
+    <string name="third_pay_not_network">Ce réseau n\'est pas pris en charge pour le moment</string>
+    <string name="third_pay_order_list">Historique des commandes</string>
+    <string name="third_pay_pay_warn">Frais du fournisseur de services inclus</string>
+    <string name="third_pay_price_warn">Les prix peuvent fluctuer et s\'écarter du prix unitaire au
+        moment de la commande, le prix unitaire de la transaction terminée sera celui qui fait foi
+    </string>
+    <string name="third_pay_progressing">En cours</string>
+    <string name="third_pay_provider">Fournisseur de services</string>
+    <string name="third_pay_receive_addr">Adresse de réception des fonds</string>
+    <string name="third_pay_receive_warn">Les prix peuvent fluctuer et s\'écarter du prix unitaire au
+        moment de la commande, la quantité de crypto-monnaie reçue sera celle qui fait foi
+    </string>
+    <string name="third_pay_side_buy">Acheter</string>
+    <string name="third_pay_side_sell">Vendre</string>
+    <string name="third_pay_state_filter">Tous les statuts</string>
+    <string name="third_pay_support">Pris en charge :</string>
+    <string name="third_pay_terms">Je comprends que %s est un fournisseur de services tiers. Aibit
+        décline toute responsabilité pour toute perte ou dommage causé par l\'utilisation de ses
+        services.
+    </string>
+    <string name="third_pay_time">%1$s année %2$s mois</string>
+    <string name="third_pay_total_price">Montant total</string>
+    <string name="trade_type">Type de transaction</string>
+    <string name="third_pay_wait_pay">En attente de paiement</string>
+    <string name="third_pay_will_pay">Je vais payer</string>
+    <string name="third_search_ccy_empty">Aucune monnaie fiduciaire trouvée</string>
+    <string name="third_search_coin_empty">Aucune crypto-monnaie trouvée</string>
+    <string name="time_unit_h">H</string>
+    <string name="time_unit_m">M</string>
+    <string name="time_unit_s">S</string>
+    <string name="tologin">Aller à la connexion</string>
+    <string name="total_circulating_supply">Offre en circulation totale</string>
+    <string name="tpsl_modify_order">Modifier le Take Profit et le Stop Loss</string>
+    <string name="trade_7day">7 jours</string>
+    <string name="trade_90day">90 jours</string>
+    <string name="trade_adl_details">Détails de la réduction automatique de levier (ADL)</string>
+    <string name="trade_adl_details_txt">Votre position %1$s a déclenché l\'ADL (réduction
+        automatique de levier), %2$s de votre position a été ADL à un prix de transaction de %3$s.
+    </string>
+    <string name="trade_asset_float_income">PnL flottant</string>
+    <string name="trade_asset_occupy">En commande</string>
+    <string name="trade_calendar_date_title">%1$s-%2$s</string>
+    <string name="trade_cancle_fail">Échec de l\'annulation</string>
+    <string name="trade_cancle_suc">Annulation de la commande réussie</string>
+    <string name="trade_chose_date">Sélectionner la date</string>
+    <string name="trade_cur_asset">Monnaies</string>
+    <string name="trade_date_hide">Masquer les annulés</string>
+    <string name="trade_deal_price">Prix de remplissage</string>
+    <string name="trade_deal_time">Heure de clôture</string>
+    <string name="trade_foce_details_txt">Le prix du contrat à terme perpétuel %1$s atteint %2$s, et
+        votre taux de marge de position %3$s est inférieur à 100%. La liquidation forcée est
+        déclenchée. La position est reprise par le moteur de liquidation au prix de référence %4$s.
+    </string>
+    <string name="trade_force_details">Détails de la liquidation forcée</string>
+    <string name="trade_order_adl_txt">Votre position %s a déclenché l\'ADL (réduction automatique de
+        la position), et %s de votre position a été réduit à la prix de transaction %s.
+    </string>
+    <string name="trade_order_force_txt">Lorsque le prix marqué du contrat %s atteint %s, le taux de
+        marge de votre position %s est inférieur à 100 %, ce qui déclenche une liquidation forcée.
+        La position est entièrement reprise par le moteur de liquidation au prix de liquidation %s
+        afin de limiter les pertes. Le prix de liquidation est le prix marqué qui rend le taux de
+        marge égal à 100 %.
+    </string>
+    <string name="trade_other_asset">Autres actifs</string>
+    <string name="trade_position_amount">Montant</string>
+    <string name="trade_proxy">Ordres ouverts</string>
+    <string name="trade_set_date">Définir la plage horaire</string>
+    <string name="trade_sort1">Fermer par récent</string>
+    <string name="trade_sort2">Rendement le plus élevé</string>
+    <string name="trade_sort3">Rendement le plus bas</string>
+    <string name="trade_sport_order_confirm">Confirmation de l\'ordre au comptant</string>
+    <string name="trade_trade_set">Paramètres</string>
+    <string name="trade_trade_set_no_tips">Plus de notifications. Vous pouvez réinitialiser dans
+        【Paramètres de trading】
+    </string>
+    <string name="trade_wait_deal">À remplir</string>
+    <string name="trader_14_deal">Trades 14 jours</string>
+    <string name="trader_14_income_rate">ROI 14 jours</string>
+    <string name="trader_14_must_cancel">MDD 14 jours</string>
+    <string name="trader_14_win_rate">Taux de victoire 14j</string>
+    <string name="trader_30_income_rate">ROI 30 jours</string>
+    <string name="trader_apply_cancel_trader">Demande d\'annulation du statut de trader principal
+    </string>
+    <string name="trader_cancle_msg">1、Pour annuler le statut de trader, vous devez d\'abord retirer
+        tous vos copy traders. \n2、Après avoir annulé le statut de trader, vous ne pourrez plus voir
+        les informations du trader telles que les bénéfices à régler, mais cela n\'affectera pas
+        votre partage de bénéfices réel pour cette période. Vous pouvez également annuler votre
+        statut de trader après le règlement du partage.
+    </string>
+    <string name="trader_cancle_title">Confirmer l\'annulation du statut de trader</string>
+    <string name="trader_desc_warn_1">Interdiction de renseigner des coordonnées personnelles.
+    </string>
+    <string name="trader_desc_warn_2">Interdiction d\'utiliser des symboles spéciaux.</string>
+    <string name="trader_desc_warn_3">Interdiction de publier des contenus violant les lois et
+        réglementations nationales.
+    </string>
+    <string name="trader_details">Détails du trader</string>
+    <string name="trader_estimate_income">Partage de bénéfices prévu (USDT)</string>
+    <string name="trader_follower_time">Temps de suivi</string>
+    <string name="trader_follower_total_income">Bénéfice total partagé (USDT)</string>
+    <string name="trader_follower_will_income">Bénéfice à partager (USDT)</string>
+    <string name="trader_info_setting_title">Paramètres personnels</string>
+    <string name="trader_position_id">ID des futures : %s</string>
+    <string name="trader_remove_fail">Échec de la suppression</string>
+    <string name="trader_remove_follow_msg">Cet utilisateur a des positions de copy trading,
+        veuillez réessayer après avoir clôturé les positions.
+    </string>
+    <string name="trader_remove_follower">Supprimer</string>
+    <string name="trader_total_deal_day">Jours de trading</string>
+    <string name="trader_total_follow_person">Total des copy traders</string>
+    <string name="trader_total_income">Total du partage de bénéfices (USDT)</string>
+    <string name="trader_total_income_day">Total des jours bénéficiaires</string>
+    <string name="trading_volume_24_hour">Volume de trading sur 24 heures</string>
+    <string name="transfer_deposit">Dépôt</string>
+    <string name="transfer_deposit_tip">Le solde disponible de %1$s dans %2$s est de 0, veuillez
+        d\'abord effectuer un dépôt\n
+    </string>
+    <string name="transfer_excluding_trial_amount">Excluant le montant d\'essai</string>
+    <string name="transfer_insufficient_balance">Solde insuffisant</string>
+    <string name="transfer_min">Min</string>
+    <string name="transfer_not_open_futures">L\'utilisateur n\'a pas activé le trading de futures
+    </string>
+    <string name="transfer_select_currency">Sélectionner la devise</string>
+    <string name="uc_email_ban_withdraw_tip">Pour assurer la sécurité de vos actifs, la fonction de
+        retrait sera suspendue pendant 24 heures après avoir changé votre adresse e-mail.
+    </string>
+    <string name="uc_phone_ban_withdraw_tip">Pour assurer la sécurité de vos actifs, la fonction de
+        retrait sera suspendue pendant 24 heures après avoir changé votre numéro de téléphone.
+    </string>
+    <string name="use_new_pw_tologin">Veuillez vous connecter avec votre nouveau mot de passe
+    </string>
+    <string name="user_center_bind_phone">Veuillez lier votre numéro de téléphone</string>
+    <string name="user_countdown">L\'événement se termine dans :</string>
+    <string name="user_details_account">Compte</string>
+    <string name="user_details_available_avatars">Pour des raisons de sécurité, vous ne pouvez
+        télécharger une nouvelle photo de profil que 3 fois par an. Vous pouvez choisir parmi nos
+        avatars disponibles.
+    </string>
+    <string name="user_details_change_picture">Changer la photo de profil</string>
+    <string name="user_details_choose_album">Choisir dans l\'album</string>
+    <string name="user_details_edit_avatar">Modifier l\'avatar</string>
+    <string name="user_details_edit_nickname">Modifier le surnom</string>
+    <string name="user_details_edit_nickname_tips">1、Vous ne pouvez modifier votre surnom qu\'une
+        fois toutes les 24 heures, veuillez remplir avec prudence. \n2、Lors de la création de votre
+        surnom, veuillez ne pas utiliser de termes inappropriés, de noms officiels d\'Aibit (comme le
+        nom des produits) ou de noms d\'autres plateformes de trading.
+    </string>
+    <string name="user_details_image_size">La taille de l\'image ne doit pas dépasser 10 Mo</string>
+    <string name="user_details_input_nickname">Veuillez entrer un surnom</string>
+    <string name="user_details_nickname_limit">Vous ne pouvez modifier votre surnom qu\'une fois
+        toutes les 24 heures
+    </string>
+    <string name="user_details_select_avatar">Choisir un avatar</string>
+    <string name="user_details_times_tips">Vous pouvez encore télécharger %s avatar public cette
+        année ; vous pouvez également choisir parmi les avatars alternatifs proposés, sans limite de
+        modifications.
+    </string>
+    <string name="user_details_tittle">Profil</string>
+    <string name="user_details_under_review">En cours de révision, veuillez patienter.</string>
+    <string name="user_details_unsupported_image">Format d\'image non pris en charge.</string>
+    <string name="user_details_upload_limit">Limite de téléchargement dépassée.</string>
+    <string name="user_details_upload_picture">Télécharger la photo de profil</string>
+    <string name="user_gift_pack">Bonus de bienvenue</string>
+    <string name="user_join_now">Rejoindre maintenant</string>
+    <string name="user_vip_fee">Taux de frais :</string>
+    <string name="user_vip_level">Niveau de frais :</string>
+    <string name="user_vip_level_more">Voir plus de niveaux</string>
+    <string name="valuation_desc">La base de prix est utilisée pour calculer le PNL non réalisé et
+        le taux de profit. Modifier la base de prix n\'affecte pas le niveau de marge. Le prix de
+        liquidation et les déclencheurs d\'auto-délèvement sont calculés en utilisant le prix de
+        référence.
+    </string>
+    <string name="valuation_sub_title">Veuillez sélectionner la base de prix pour le PNL non
+        réalisé.
+    </string>
+    <string name="valuation_title">Sélectionner la base de prix</string>
+    <string name="verification_change_verification">Passer à une autre méthode de vérification
+    </string>
+    <string name="verification_google_authenticator">Google Authenticator</string>
+    <string name="verification_google_create_date">Ajouté le : %s</string>
+    <string name="verification_google_del_msg">Après la dissociation de la vérification Google, la
+        fonction de retrait sera désactivée pendant 24 heures pour assurer la sécurité de vos
+        actifs.
+    </string>
+    <string name="verification_google_del_title">Êtes-vous sûr de vouloir dissocier Google
+        Authenticator ?
+    </string>
+    <string name="verification_google_edit_msg">Après modification de l\'authentification Google,
+        pour assurer la sécurité de vos actifs, la fonction de retrait sera désactivée pendant 24
+        heures.
+    </string>
+    <string name="verification_google_edit_title">Êtes-vous sûr de vouloir modifier Google
+        Authenticator ?
+    </string>
+    <string name="verification_google_title">Vérification Google</string>
+    <string name="verification_phone">Vérification par téléphone mobile</string>
+    <string name="verification_select_verification">Sélectionner la méthode de vérification</string>
+    <string name="vol24">Volume 24H (%s)</string>
+    <string name="waiting_deal">À remplir</string>
+    <string name="wallet_account_banking">Compte financier</string>
+    <string name="wallet_copy">Copier</string>
+    <string name="wallet_from">De</string>
+    <string name="wallet_go_bind">Lien</string>
+    <string name="wallet_success">Opération réussie</string>
+    <string name="wallet_trans_account">Compte de trading</string>
+    <string name="wallet_trans_out_account">Compte de transfert sortant</string>
+    <string name="wallet_trans_to_account">Compte de transfert entrant</string>
+    <string name="wallet_transfer">Transfert</string>
+    <string name="wallet_transfer_record">Historique des transferts</string>
+    <string name="wallet_withdraw_notice_new">Pour la sécurité de votre compte, vous devez lier
+        votre téléphone, votre e-mail et la vérification Google avant de retirer des tokens.
+    </string>
+    <string name="wallet_withdraw_record_label">Pour vérifier l\'avancement du retrait, appuyez sur
+        l\'historique des retraits.
+    </string>
+    <string name="withdraw_actual_received">Montant reçu</string>
+    <string name="withdraw_add_address">Ajouter une adresse</string>
+    <string name="withdraw_address_book">Carnet d\'adresses</string>
+    <string name="withdraw_address_book_manager">Carnet d\'adresses de retrait</string>
+    <string name="withdraw_address_remark">Remarque sur l\'adresse</string>
+    <string name="withdraw_amount_not_cover_fee">Montant insuffisant pour couvrir les frais</string>
+    <string name="withdraw_change_received_to_input">Changer le montant reçu en montant saisi
+    </string>
+    <string name="withdraw_check_limit">Voir les limites</string>
+    <string name="withdraw_check_limit_tips">Le montant saisi ne peut pas dépasser la limite de
+        retrait
+    </string>
+    <string name="withdraw_complete_methods">Vous devez compléter les méthodes de vérification
+        suivantes
+    </string>
+    <string name="withdraw_confirm_delete_address">Confirmer la suppression de cette adresse ?
+    </string>
+    <string name="withdraw_confirm_withdraw">Confirmer le retrait</string>
+    <string name="withdraw_continue_withdraw">Continuer le retrait</string>
+    <string name="withdraw_delete">Supprimer</string>
+    <string name="withdraw_details_tips">Astuce : Retrait en cours. Le montant sera crédité sur le
+        compte dans les 48 heures
+    </string>
+    <string name="withdraw_edit">Modifier l\'adresse</string>
+    <string name="withdraw_help">Aide</string>
+    <string name="withdraw_limit_available">Votre limite de retrait restante sur 24H pour toutes les
+        devises est de %s
+    </string>
+    <string name="withdraw_limit_level">Niveau de limite de retrait sur 24H :</string>
+    <string name="withdraw_limit_text">La limite de retrait sur 24H pour toutes les devises pour les
+        utilisateurs de %1$s est de %2$s
+    </string>
+    <string name="withdraw_limit_title">Quelle est la limite de retrait sur 24 heures ?</string>
+    <string name="withdraw_manager">Gérer</string>
+    <string name="withdraw_minimum">Minimum</string>
+    <string name="withdraw_modify">Modifier</string>
+    <string name="withdraw_net_tip">Veuillez vous assurer que le réseau de dépôt correspond au
+        réseau de retrait afin d\'éviter toute perte.
+    </string>
+    <string name="withdraw_network_confirmations">%s confirmations de réseau</string>
+    <string name="withdraw_no_address">Aucune adresse</string>
+    <string name="withdraw_no_coin">Aucune devise disponible à retirer sur le compte de
+        financement
+    </string>
+    <string name="withdraw_no_currency_available">Aucune devise disponible à retirer pour le
+        moment
+    </string>
+    <string name="withdraw_order_confirmation">Confirmation de la commande</string>
+    <string name="withdraw_record_status1">Traitement</string>
+    <string name="withdraw_record_status2">Bloc de confirmation</string>
+    <string name="withdraw_record_status3">Transfert terminé</string>
+    <string name="withdraw_records">Historique des retraits</string>
+    <string name="withdraw_remark">Remarque</string>
+    <string name="withdraw_remark_hint">Veuillez entrer une remarque</string>
+    <string name="withdraw_review_failed">Révision échouée</string>
+    <string name="withdraw_risk_warning">Avertissement de risque</string>
+    <string name="withdraw_risk_warning_content">1. Une fois l\'opération terminée, la propriété des
+        actifs correspondants sera transférée au propriétaire de l\'adresse cible. Veuillez vérifier
+        soigneusement les informations de l\'adresse de retrait avant d\'effectuer l\'opération de
+        retrait\n\n2. Aibit ne vous demandera en aucun cas de transférer des fonds vers un compte et
+        ne vous demandera pas de code de vérification\n\n3. Le temps de traitement des retraits est
+        de 30 minutes, le temps final d\'arrivée dépend de la vitesse du réseau blockchain\n\n4.
+        Veuillez ne pas participer à des activités illégales telles que l\'achat par procuration, le
+        blanchiment d\'argent ou la collecte de fonds illégale, et soyez vigilant face aux arnaques
+        en ligne
+    </string>
+    <string name="withdraw_risk_warning_read">J\'ai lu l\'avertissement de risque et je souhaite
+        continuer le retrait
+    </string>
+    <string name="withdraw_save">Sauvegarder</string>
+    <string name="withdraw_save_address">Sauvegarder l\'adresse</string>
+    <string name="withdraw_security_required">Exigences de vérification de sécurité</string>
+    <string name="withdraw_select_coin">Sélectionner la devise de retrait</string>
+    <string name="withdraw_submited">La demande de retrait a été soumise.</string>
+    <string name="withdraw_submited_tip">Après soumission, l\'examen sera effectué dans les 48
+        heures\nAprès approbation, le montant sera déposé sur le compte désigné dans quelques
+        minutes
+    </string>
+    <string name="withdraw_tips">* Les responsables d\'Aibit ne vous demanderont en aucun cas de
+        transférer des actifs vers un compte ni de fournir un code de vérification sous aucune
+        circonstance.\nNe participez à aucune activité illégale telle que l\'achat pour le compte
+        d\'autres personnes, le blanchiment d\'argent ou la collecte de fonds illégale. Soyez vigilant
+        face aux arnaques en ligne.
+    </string>
+    <string name="withdraw_tips2">Votre demande de retrait sera examinée dans les 48 heures. Après
+        approbation, Aibit effectuera le transfert dans les quelques minutes.
+    </string>
+    <string name="withdraw_tips3">Nous traiterons votre demande de retrait dans les 48 heures
+        pendant les jours ouvrables.
+    </string>
+    <string name="withdraw_tips4">Astuce : Veuillez vous assurer que le réseau de retrait
+        sélectionné correspond à celui utilisé pour le dépôt correspondant et qu\'il est pris en
+        charge par la plateforme. Sinon, le retrait ne sera pas crédité ou sera retourné.
+    </string>
+    <string name="withdraw_transaction_id">Numéro de transaction</string>
+    <string name="withdraw_view_records">Voir l\'historique des retraits</string>
+    <string name="withdraw_withdraw_coin">Devise de retrait</string>
+    <string name="withdraw_withdraw_credited">Retrait effectué</string>
+    <string name="withdraw_withdraw_unavailable">La fonction de dépôt et de retrait n\'est pas supportée</string>
+    <string name="withdraw_withdraw_unavailable_desc">Pour garantir la sécurité de votre compte,
+        vous devez lier votre e-mail et la vérification Google avant de commencer le retrait.
+    </string>
+    <string name="withdraw_withdrawal_failed">Échec du retrait</string>
+    <string name="wk_price">Prix :</string>
+    <string name="wk_total_amount2">Quantité :</string>
+    <string name="input_new_password">Veuillez entrer le nouveau mot de passe</string>
+    <string name="input_new_password_again">Veuillez entrer à nouveau le nouveau mot de passe
+    </string>
+    <string name="new_phone_number">Nouveau numéro de téléphone</string>
+    <string name="common_trade_symbol">Symbole actuel</string>
+    <string name="swap_order_pl_title">Historique des positions</string>
+    <string name="contact_fun_info_5">Frais de financement = Valeur de la position * Taux de
+        financement
+    </string>
+    <string name="guide_ok">D\'accord</string>
+    <string name="asset_asset_value">Solde total</string>
+    <string name="swap_single_pos_force_close_price_tip">Calculez le prix de référence de la
+        position sur marge isolée lorsque le ratio de marge basé sur le solde de marge isolée est ≤
+        100 %. Le prix de liquidation estimé de la position isolée est fixe.
+    </string>
+    <string name="swap_full_pos_force_close_price_tip">En fonction du solde actuel de la marge
+        croisée, calculez le prix de référence de l\'ensemble de la position sur marge croisée
+        lorsque le ratio de marge est ≤ 100 %. Le prix de liquidation estimé pour les positions sur
+        marge croisée changera en continu et est donné à titre de référence uniquement. La
+        liquidation réelle et la réduction de position pour les positions sur marge croisée seront
+        déclenchées lorsque le ratio de marge est ≤ 100 %.
+    </string>
+    <string name="contract_position_amount">Montant de la position</string>
+    <string name="exchange_vol_24h">24h Vol</string>
+    <string name="wealth_rule_title1">1. Récompenses</string>
+    <string name="coininfo_cap_rank">Rang</string>
+    <string name="coininfo_circulating_supply">Offre en circulation</string>
+    <string name="coininfo_ico_price">Prix d\'émission</string>
+    <string name="coininfo_max_supply">Offre maximale</string>
+    <string name="coininfo_max_cap">Capitalisation boursière à l\'offre maximale</string>
+    <string name="coininfo_circulation_rate">Taux de circulation</string>
+    <string name="common_depth">Profondeur</string>
+    <string name="hispos_pnl">PnL</string>
+    <string name="new_tp_open_time">Heure d\'ouverture</string>
+    <string name="asset_hide_0">Actif caché 0</string>
+    <string name="common_no_result">Aucun résultat pour le moment</string>
+    <string name="wealth_regularly">Verrouillé</string>
+    <string name="wealth_group_title">Earn</string>
+    <string name="wealth_term">Durées</string>
+    <string name="wealth_apr">APR</string>
+    <string name="wealth_help_prob">FAQ</string>
+    <string name="wealth_date_apr_title">Durée et APR</string>
+    <string name="wealth_step_apr">APR échelonné</string>
+    <string name="wealth_step_apr_desc">L\'APR final est calculé sur la base des règles de taux
+        d\'intérêt échelonnés, qui incluent la détention actuelle dans ce produit financier.
+    </string>
+    <string name="invest_rate_level">Niveau %s :</string>
+    <string name="invest_min_buy">Minimum S %s</string>
+    <string name="invest_mastest">Maximum</string>
+    <string name="wealth_assets_not_enough">Solde disponible insuffisant</string>
+    <string name="wealth_canbuy_not_enough">Quota de souscription restant insuffisant</string>
+    <string name="invest_can_use">Solde disponible :</string>
+    <string name="invest_spot_or_funds">Compte Spot et de Financement</string>
+    <string name="wealth_self_can_buy">Quota de souscription personnel restant</string>
+    <string name="wealth_self_limit">Quota de souscription personnel</string>
+    <string name="wealth_leftover_limit">Votre quota de souscription restant</string>
+    <string name="wealth_can_buy_limit_desc">Votre quota d\'investissement restant dépend du quota de
+        souscription restant du produit.
+    </string>
+    <string name="invest_return_type">Méthode de gains</string>
+    <string name="interest_every_day">Règlement quotidien des intérêts</string>
+    <string name="interest_total_day">Règlement des intérêts à l\'échéance</string>
+    <string name="invest_every_interest">Intérêt par période</string>
+    <string name="invest_total_interest">Intérêt total</string>
+    <string name="invest_start_time">Date de début du calcul des intérêts</string>
+    <string name="invest_next_time">Date de première distribution des intérêts</string>
+    <string name="invest_last_time">Date finale de distribution du capital et des intérêts</string>
+    <string name="invest_tip_1">• Un rachat anticipé entraînera la perte de tous les intérêts
+    </string>
+    <string name="financial_redemption_early_notify">Après avoir sélectionné le rachat anticipé, les
+        actifs seront retournés sur votre compte spot dans %s.
+    </string>
+    <string name="financial_immediately">Immédiat</string>
+    <string name="wealth_soldout_tip">Ce produit est épuisé, veuillez choisir un autre produit.
+    </string>
+    <string name="wealth_delisted_tip">Ce produit a été retiré de la liste, veuillez choisir un
+        autre produit.
+    </string>
+    <string name="wealt_rule_desc1">Le TAEG des produits à terme fixe est fixé après la
+        souscription. Pour les taux par paliers, le TAEG est calculé en fonction du montant total de
+        votre souscription au moment de la souscription. La récompense commence à s\'accumuler à
+        00:00 le jour suivant la souscription. Consultez la page de souscription pour connaître les
+        horaires spécifiques de distribution des intérêts et du capital.
+    </string>
+    <string name="wealth_rule_desc2">Intérêts quotidiens = Montant souscrit * TAEG / 365</string>
+    <string name="financial_redemption">Rachat</string>
+    <string name="wealt_rule_title2">2. Rachat</string>
+    <string name="invest_success">Souscription réussie</string>
+    <string name="invest_prod_type">Type de produit</string>
+    <string name="invest_interest_coin">Pièces d’intérêts</string>
+    <string name="invest_view_hold">Voir la position</string>
+    <string name="financial_interest_received">Intérêts reçus</string>
+    <string name="financial_state">Statut</string>
+    <string name="financial_interest_accrued">Génération d’intérêts</string>
+    <string name="financial_interest_to_be_accrued">Calcul des intérêts en attente</string>
+    <string name="financial_redeeming_on_time">Rachat à échéance</string>
+    <string name="financial_redeeming_in_advance">Rachat anticipé en cours</string>
+    <string name="financial_redemption_early">Rachat anticipé</string>
+    <string name="financial_subscription">Souscription</string>
+    <string name="financial_order_time">Heure de commande</string>
+    <string name="financial_coin_type">Devise du produit</string>
+    <string name="financial_redemption_penalty">Pénalité de rachat</string>
+    <string name="financial_redemption_quantity">Montant du rachat</string>
+    <string name="financial_redemption_apply">Soumettre le rachat</string>
+    <string name="financial_redemption_success">Rachat réussi</string>
+    <string name="financial_redemption_apply_success">Demande de rachat réussie</string>
+    <string name="financial_interst_next_time">Prochaine date de distribution des intérêts</string>
+    <string name="financial_redemption_apply_time">Heure de demande de rachat</string>
+    <string name="financial_redemption_to_spot_account">Racheter sur le compte spot</string>
+    <string name="financial_to">À</string>
+    <string name="financial_interst">Intérêts</string>
+    <string name="financial_account">Compte financier</string>
+    <string name="financial_no_data">Aucun Earn</string>
+    <string name="financial_bill">Relevés Earn</string>
+    <string name="invest_asset_from">Source des fonds</string>
+    <string name="wealth_assets_select_title">Sélectionnez le compte pour les fonds de
+        souscription
+    </string>
+    <string name="wealth_rule_desc3">Le rachat ne peut pas être annulé et tous les intérêts seront
+        perdus. Après avoir sélectionné le rachat anticipé, les actifs seront retournés sur votre
+        compte spot choisi dans un délai de 24 heures.
+    </string>
+    <string name="invest_create_time">Période de souscription</string>
+    <string name="wealth_subscription_balance">Quota de souscription</string>
+    <string name="wealth_subscription">Souscrire</string>
+    <string name="wealth_overview">Aperçu</string>
+    <string name="invest_tip_3">• Après avoir sélectionné le rachat anticipé, les actifs seront
+        immédiatement retournés sur votre compte spot.
+    </string>
+    <string name="financial_asset">Valeur totale estimée</string>
+    <string name="financial_arrival_time">Heure d’arrivée</string>
+    <string name="financial_yesterday_earnings">Gains d’hier</string>
+    <string name="financial_total_earnings">Gains cumulés</string>
+    <string name="financial_detail_title">Détails Earn</string>
+    <string name="financial_revenue_model">Mode de gains</string>
+    <string name="financial_redemption_early_tips_1">Le rachat anticipé entraînera</string>
+    <string name="financial_redemption_early_tips_2">Perte de tous les intérêts</string>
+    <string name="invest_tip_2">• Après avoir sélectionné le rachat anticipé, les actifs seront
+        retournés sur votre compte spot sélectionné dans %s heures.
+    </string>
+    <string name="financial_within_hours">Dans %s heures</string>
+    <string name="back_to_financial_account">Retourner au compte Earn</string>
+    <string name="financial_redemption_on_time">Racheter à l’échéance</string>
+    <string name="invest_prod_rule">Règles du produit</string>
+    <string name="search_coin">Rechercher</string>
+    <string name="wealth_q_1">1. Qu\'est-ce que Aibit Earn ?</string>
+    <string name="wealth_q_2">2. Aibit Earn prend-il en charge le rachat anticipé ?</string>
+    <string name="wealth_q_3">3. Comment les intérêts sont-ils calculés et versés pour les produits
+        Earn à terme fixe avec règlement quotidien des intérêts ?
+    </string>
+    <string name="wealth_q_4">4. Comment les intérêts sont-ils calculés et versés pour les produits
+        Earn à terme fixe avec règlement des intérêts à l’échéance ?
+    </string>
+    <string name="invest_trade_title">%s Souscription</string>
+    <string name="invite_friend_desc_1">Référer pour échanger et</string>
+    <string name="invest_will_arrive">Racheter vers &lt;font color=#040809&gt;Compte Spot&lt;/font&gt;</string>
+    <string name="invest_will_arrive_dark">Racheter vers &lt;font color=#FAFAFA&gt;Compte Spot&lt;/font&gt;</string>
+    <string name="common_feedback">Retour d\'information</string>
+    <string name="common_retry">Réessayer</string>
+    <string name="common_not_network">Pas de réseau</string>
+    <string name="third_login_exist">L\'email est déjà enregistré. Vous pouvez vérifier l\'email et le
+        lier à un compte tiers.
+    </string>
+    <string name="ai_every_num_limit">Limite de questions quotidienne :</string>
+    <string name="ai_hot_coin_rank">Tendances</string>
+    <string name="ai_input_hint">Posez-moi n\'importe quelle question sur les cryptomonnaies !
+    </string>
+    <string name="ai_market_emotion">Sentiment du marché</string>
+    <string name="ai_new_coin_rank">Nouveau listing</string>
+    <string name="ai_tip_ask_limit">Vous pouvez poser jusqu\'à 4 questions par jour à Aibit Chat.
+    </string>
+    <string name="contract_stop_loss_price">Prix de stop loss</string>
+    <string name="contract_stop_profit_price">Prix de take profit</string>
+    <string name="contract_stoplp_adv_tip">Veuillez entrer le prix et la quantité avant d\'utiliser
+        les options avancées de take profit et stop loss.
+    </string>
+    <string name="contract_stoplp_dialog_desc">Vous pouvez définir le take profit et le stop loss
+        avant d\'ouvrir une position ; ils ne prendront effet qu\'après l\'ouverture de la position.
+    </string>
+    <string name="contract_stoplp_loss_price_error">Le prix de déclenchement doit être inférieur au
+        prix d\'entrée.
+    </string>
+    <string name="contract_stoplp_profit_price_error">Le prix de déclenchement doit être supérieur
+        au prix d\'entrée.
+    </string>
+    <string name="contract_unit_number">Par quantité</string>
+    <string name="contract_unit_tip">Après avoir changé l\'unité de quantité, l\'unité utilisée pour
+        entrer les montants des ordres, ainsi que les unités affichées dans le carnet d\'ordres, les
+        ordres ouverts et les positions, seront mises à jour en conséquence.
+    </string>
+    <string name="contract_unit_title">Paramètres unité quantité futures</string>
+    <string name="contract_unit_value">Par valeur</string>
+    <string name="financial_24h_can_redemption">Limite restante de rachat sur 24 heures</string>
+    <string name="financial_can_redemption">Rachetable :</string>
+    <string name="financial_current_auto_subscription_tip">Les actifs de votre portefeuille spot
+        seront automatiquement souscrits à ce produit flexible Earns chaque jour à %1$s.
+    </string>
+    <string name="financial_current_number">Montant actuel</string>
+    <string name="financial_every_24h_redemption_amount">Limite de rachat quotidienne :</string>
+    <string name="financial_group_coin">Par crypto-monnaie</string>
+    <string name="financial_group_prod">Par produit</string>
+    <string name="financial_input_coin_number">Entrez le montant de la cryptomonnaie</string>
+    <string name="financial_now_rate">Taux d\'intérêt en temps réel</string>
+    <string name="financial_off_auto_subscribe">L\'option de souscription automatique a été
+        désactivée.
+    </string>
+    <string name="financial_on_auto_subscribe">L\'option de souscription automatique a été activée.
+    </string>
+    <string name="financial_positions">%d Positions ouvertes</string>
+    <string name="financial_redemption_amount">Limite de rachat</string>
+    <string name="financial_redemption_number_error_1">Montant rachetable insuffisant, veuillez
+        ressaisir.
+    </string>
+    <string name="financial_redemption_number_error_2">La limite restante de rachat sur 24 heures
+        est insuffisante, veuillez ressaisir.
+    </string>
+    <string name="financial_redemption_to">Racheter vers</string>
+    <string name="financial_total_interest">Intérêt accumulé</string>
+    <string name="financial_total_redemption">Total des rachats</string>
+    <string name="financial_total_subscription">Total des souscriptions</string>
+    <string name="financial_your_24h_redemption_amount">Votre limite restante de rachat sur 24
+        heures :
+    </string>
+    <string name="stoplp_block_desc_1">Le prix de déclenchement du take profit doit être supérieur
+        au prix d\'ouverture, sinon il sera déclenché immédiatement. Veuillez le réinitialiser.
+    </string>
+    <string name="stoplp_block_desc_2">Le prix de déclenchement du take profit doit être inférieur
+        au prix d\'ouverture, sinon il sera déclenché immédiatement. Veuillez le réinitialiser.
+    </string>
+    <string name="stoplp_block_desc_3">Le prix de déclenchement du stop loss doit être inférieur au
+        prix d\'ouverture, sinon il sera déclenché immédiatement. Veuillez le réinitialiser.
+    </string>
+    <string name="stoplp_block_desc_4">Le prix de déclenchement du stop loss doit être supérieur au
+        prix d\'ouverture, sinon il sera déclenché immédiatement. Veuillez le réinitialiser.
+    </string>
+    <string name="stoplp_expected_lp_market">Lorsque le prix de &lt;font color="%6$s"&gt;%1$s&lt;/font&gt;
+        est &lt;font color="%6$s"&gt;%2$s%3$sUSDT&lt;/font&gt;, un ordre &lt;font color="%6$s"&gt;au
+        marché&lt;/font&gt; sera déclenché, avec une perte attendue de &lt;font color="%5$s"&gt;%4$sUSDT&lt;/font&gt;
+    </string>
+    <string name="stoplp_expected_lp_price">Lorsque le prix de &lt;font color="%7$s"&gt;%1$s&lt;/font&gt;
+        est &lt;font color="%7$s"&gt;%2$s%3$sUSDT&lt;/font&gt;, un ordre &lt;font color="%7$s"&gt;limite&lt;/font&gt;
+        sera déclenché (prix de l\'ordre : &lt;font color="%7$s"&gt;%4$sUSDT&lt;/font&gt;), avec une
+        perte attendue de &lt;font color="%6$s"&gt;%5$sUSDT&lt;/font&gt;
+    </string>
+    <string name="swap_fok_desc">Remplir ou annuler (FOK)</string>
+    <string name="swap_ioc_desc">Immédiat ou annuler (IOC)</string>
+    <string name="swap_only_maker_desc">L\'ordre ne sera pas immédiatement exécuté en tant qu\'ordre
+        Taker sur le marché ; sinon, il sera annulé.
+    </string>
+    <string name="wealth_auto_buy">Abonnement automatique</string>
+    <string name="wealth_auto_desc">Les actifs de votre portefeuille spot seront automatiquement
+        souscrits à ce produit flexible Earns chaque jour à %1$s (%2$s).
+    </string>
+    <string name="wealth_demand_desc4">Une fois l\'opération de rachat terminée, les actifs du
+        produit flexible Earns seront immédiatement retournés à votre portefeuille spot. Veuillez
+        noter que chaque produit flexible Earns a une limite de rachat quotidienne, et cette limite
+        peut être ajustée.
+    </string>
+    <string name="wealth_demand_desc5">Lorsque l\'abonnement automatique est activé, le produit à
+        terme fixe sera automatiquement renouvelé dans le même produit à terme fixe à l\'échéance. Si
+        cela n\'est pas activé, vos actifs seront rachetés à l\'échéance.
+    </string>
+    <string name="wealth_demand_rule_title1">1. Rendement annualisé en temps réel</string>
+    <string name="wealth_demand_rule_title2">2. Méthode de gains</string>
+    <string name="wealth_demand_rule_title3">3. Rachat</string>
+    <string name="wealth_demand_tip1">• Le rachat ne déduira pas les intérêts déjà gagnés.</string>
+    <string name="wealth_invest_auto_desc">Lorsque l\'abonnement automatique est activé, le produit à
+        terme fixe sera automatiquement renouvelé dans le même produit à terme fixe à l\'échéance.
+        S\'il n\'est pas activé, vos actifs seront rachetés à l\'échéance.
+    </string>
+    <string name="wealth_is_auto">Abonnement automatique activé ou non</string>
+    <string name="wealth_q_5">5. Comment les intérêts sont-ils calculés et payés pour les produits
+        Earn flexibles ?
+    </string>
+    <string name="wealth_real_time_apr">Taux d\'intérêt annuel en temps réel</string>
+    <string name="kline_setting">Paramètres des indicateurs</string>
+    <string name="kline_main_chart">Indicateurs principaux</string>
+    <string name="kline_ma_index">MA</string>
+    <string name="kline_ema_index">EMA</string>
+    <string name="kline_boll_index">BOLL</string>
+    <string name="kline_sub_chart">Indicateurs secondaires</string>
+    <string name="kline_vol_index">VOL</string>
+    <string name="kline_macd_index">MACD</string>
+    <string name="kline_kdj_index">KDJ</string>
+    <string name="kline_index_line">Index</string>
+    <string name="kline_cycle">Valeur</string>
+    <string name="kline_line_width">Largeur</string>
+    <string name="kline_line_color">Couleur</string>
+    <string name="kline_calc_cycle">Période de calcul</string>
+    <string name="kline_bandwidth">Bande passante</string>
+    <string name="kline_vol_column_setting">Paramètres des barres de volume (VOL)</string>
+    <string name="kline_up">Long</string>
+    <string name="kline_down">Court</string>
+    <string name="kline_solid">Solide</string>
+    <string name="kline_hollow">Creux</string>
+    <string name="kline_vol_ma_desc">MAVOL signifie que le volume d\'une certaine période est
+        additionné et moyenné pour former une courbe plus lisse dans l\'histogramme du volume,
+        c\'est-à-dire la ligne de volume moyen.
+    </string>
+    <string name="kline_short_cycle">Période courte</string>
+    <string name="kline_long_cycle">Période longue</string>
+    <string name="kline_move_avg_cycle">Période MA</string>
+    <string name="kline_long_increase">Long (Croissance)</string>
+    <string name="kline_long_decrease">Long (Baisse)</string>
+    <string name="kline_short_increase">Court (Croissance)</string>
+    <string name="kline_short_decrease">Court (Baisse)</string>
+    <string name="kline_move_avg_cycle1">Période MA 1</string>
+    <string name="kline_move_avg_cycle2">Période MA 2</string>
+    <string name="common_copy_trading">Copie de trading</string>
+    <string name="swap_u_tp">USDT-M</string>
+    <string name="force_limit_ip">Votre adresse IP (%s) indique que vous êtes situé dans un
+        pays/région avec des restrictions de service Aibit. Aibit ne peut pas fournir de services
+        dans votre pays/région. Si vous avez des questions, veuillez contacter notre équipe de
+        service client.
+    </string>
+    <string name="follow_only_follow_trader">Copier uniquement les paramètres du trader d\'élite
+    </string>
+    <string name="kline_type">Style</string>
+    <string name="login_failure">Échec de la connexion</string>
+    <string name="new_year_title">Cadeau de Thanksgiving Aibit</string>
+    <string name="coininfo_price">Prix</string>
+    <string name="coininfo_info">Info</string>
+    <string name="common_funds">Fonds</string>
+    <string name="coupon_experience_open">Fonds d\'essai</string>
+    <string name="interest_rate_coupon">Coupon de taux d\'intérêt</string>
+    <string name="wealth_coupon_info">Montant du boost d\'intérêt : %1$s %2$s | Période du boost
+        d\'intérêt : %3$s jours | %4$s
+    </string>
+    <string name="wealth_coupon_tip_swap">Exigence : Le volume de trading des futures doit atteindre
+        %1$s %2$s
+    </string>
+    <string name="wealth_coupon_tip_spot">Exigence : Le volume de trading au comptant doit atteindre
+        %1$s %2$s
+    </string>
+    <string name="wealth_coupon_tip_wealth">Exigence : Le montant total de l\'abonnement aux gains
+        doit atteindre %1$s %2$s (équivalent) pour activer
+    </string>
+    <string name="wealth_coupon_tip_recharge">Exigence : Le montant du dépôt doit atteindre
+        %1$s %2$s
+    </string>
+    <string name="coupon_active_condition_wealth_comp">Le montant total de l\'abonnement à Earn
+        atteint %1$s USDT (équivalent), activé
+    </string>
+    <string name="coupon_active_condition_contract_comp">Le volume total de trading à terme atteint
+        %1$s USDT, activé
+    </string>
+    <string name="coupon_active_condition_spot_comp">Le volume total de trading au comptant atteint
+        %1$s USDT, activé
+    </string>
+    <string name="coupon_active_condition_deposit_comp">Le montant total du dépôt atteint %1$s USDT
+        (équivalent), activé
+    </string>
+    <string name="coupon_active_validity">Période de validité d\'activation</string>
+    <string name="coupon_use_validity">Période de validité</string>
+    <string name="wealth_coupon_use_time">Date d\'utilisation</string>
+    <string name="earn_coupon_recycle">Date de récupération du système</string>
+    <string name="wealth_coupon_dead_time">Date d\'expiration</string>
+    <string name="coupon_useing">En cours d\'utilisation</string>
+    <string name="earn_coupon_empty">Aucun coupon booster disponible</string>
+    <string name="coupon_empty_msg">Aucun coupon d\'essai disponible</string>
+    <string name="coupon_select_contract">Sélectionnez les futures pour ouvrir une position</string>
+    <string name="coupon_select_contract_warn">Seuls les futures compatibles avec le coupon d\'essai
+        sont affichés
+    </string>
+    <string name="common_search">Rechercher</string>
+    <string name="coupon_active_coupon">Activer le coupon</string>
+    <string name="wealth_add_apr">Augmentation des intérêts</string>
+    <string name="wealth_platform_account">Compte de la plateforme</string>
+    <string name="wealth_coupon">Intérêt (Coupon Booster)</string>
+    <string name="wealth_coupon_retract">Intérêt (Coupon Booster) réclamé</string>
+    <string name="wealth_add_apr_amount">Montant réel du boost</string>
+    <string name="wealth_add_apr_interest">Taux de boost d\'intérêt</string>
+    <string name="wealth_add_apr_cycle">Période réelle du boost d\'intérêt</string>
+    <string name="wealth_support_coupon_tip">Les coupons de taux d\'intérêt ne peuvent pas être
+        utilisés plusieurs fois pour les économies flexibles.
+    </string>
+    <string name="wealth_empty_coupon_tip">Les produits Earn avec des taux échelonnés ne supportent
+        pas les coupons de taux d\'intérêt.
+    </string>
+    <string name="common_not_use">Aucun coupon disponible.</string>
+    <string name="wealth_plus_rate">Gains boostés</string>
+    <string name="plus_coupon_amount_title">Confirmation du montant de l\'abonnement</string>
+    <string name="wealth_coupon_desc">Monnaies : %1$s | Montant du boost d\'intérêt : %2$s %3$s | Période du boost d\'intérêt : %4$s jours
+    </string>
+    <string name="plus_coupon_amount_msg">Votre montant d\'abonnement de %1$s %2$s est
+        inférieur à la limite de boost de %3$s %4$s. Le boost inutilisé sera annulé après
+        un abonnement réussi. Veuillez confirmer votre montant d\'abonnement.
+    </string>
+    <string name="plus_coupon_amount_left">Modifier le montant</string>
+    <string name="plus_coupon_amount_right">Continuer l\'abonnement</string>
+    <string name="coupon_center">Centre de coupons</string>
+    <string name="coupon_contract_experience">Coupon d\'essai futures</string>
+    <string name="coupon_financial_interest">Coupon booster</string>
+    <string name="coupon_contract_experience_tip">Vous ne pouvez en utiliser qu\'un à la fois. Fermez
+        les positions de bonus d\'essai existantes pour continuer
+    </string>
+    <string name="coupon_financial_interest_tip">Utilisez les coupons booster pour obtenir des gains
+        supplémentaires !
+    </string>
+    <string name="coupon_wait_active">Activation en attente</string>
+    <string name="coupon_wait_use">Utilisation en attente</string>
+    <string name="coupon_used">Utilisé</string>
+    <string name="coupon_expired">Expiré</string>
+    <string name="coupon_activity_award">Récompenses de l\'événement</string>
+    <string name="coupon_info_1">Fermeture automatique dans %1$s heures | Effet de levier max :
+        %2$sx | Condition d\'activation : %3$s doit atteindre %4$s USDT
+    </string>
+    <string name="coupon_info_2">Fermeture automatique dans %1$s heures | Effet de levier max :
+        %2$sx
+    </string>
+    <string name="coupon_contract_amount">Volume de trading des futures</string>
+    <string name="coupon_spot_amount">Volume de trading au comptant</string>
+    <string name="coupon_deposit_amount">Montant du dépôt</string>
+    <string name="coupon_wealth_amount">Montant des gains</string>
+    <string name="coupon_empty_amount">Aucune condition</string>
+    <string name="coupon_support_variety">Supporté</string>
+    <string name="coupon_auto_close_time">Se fermera automatiquement à %1$s</string>
+    <string name="coupon_expired_time">Expiré à %1$s</string>
+    <string name="coupon_support_title">Futures supportés :</string>
+    <string name="coupon_active_condition_title">Activer le coupon après avoir rempli les
+        conditions
+    </string>
+    <string name="coupon_current_progress">Progrès actuel :</string>
+    <string name="coupon_to_trade">Tradez maintenant</string>
+    <string name="coupon_to_deposit">Déposez maintenant</string>
+    <string name="coupon_to_wealth">Abonnez-vous maintenant</string>
+    <string name="coupon_to_use">Utilisez maintenant</string>
+    <string name="coupon_exper_enter_sign">Essai</string>
+    <string name="coupon_back_order">Passer en mode standard</string>
+    <string name="coupon_can_use_count">%s Disponible</string>
+    <string name="coupon_no_can_use">Non disponible</string>
+    <string name="coupon_no_coupon">Bonus d\'essai non disponible</string>
+    <string name="coupon_how_get">Comment réclamer ?</string>
+    <string name="coupon_no_coupon_tip">Aucun coupon de bonus d\'essai disponible~</string>
+    <string name="coupon_hold_coupon_position">Une position d\'essai est déjà active, le coupon
+        d\'essai ne peut pas être utilisé.
+    </string>
+    <string name="coupon_not_support_coin">Le coupon de bonus d\'essai ne prend pas en charge ce type
+        d\'instrument
+    </string>
+    <string name="coupon_validity">Valide jusqu\'à</string>
+    <string name="coupon_last_active_time">Activer avant %1$s</string>
+    <string name="coupon_exper_position">Position d\'essai -</string>
+    <string name="coupon_can_use">Disponible</string>
+    <string name="coupon_last_use_time">Utiliser avant %1$s</string>
+    <string name="coupon_hold_coupon_position_tip">Une position d\'essai est déjà active, veuillez la
+        fermer pour utiliser un nouveau coupon de bonus d\'essai.
+    </string>
+    <string name="coupon_not_support_coin_tip">Le coupon de bonus d\'essai ne prend pas en charge ce
+        type d\'instrument, veuillez changer et réessayer~
+    </string>
+    <string name="coupon_airdrop">Récompense Airdrop</string>
+    <string name="kyc_advanced">Vérification avancée</string>
+    <string name="kyc_base_auth">Vérification de base</string>
+    <string name="trade_symbol">Type</string>
+    <string name="follow_currency_preference">Préférences d\'actifs</string>
+    <string name="follow_currency">Monnaie</string>
+    <string name="follow_closed_position_time">Temps moyen de détention</string>
+    <string name="follow_total_loss">Perte totale</string>
+    <string name="follow_total_profit">Profit total</string>
+    <string name="follow_select_week">Semaine</string>
+    <string name="memo_withdraw_dialog_msg">Veuillez confirmer si l\'adresse de réception nécessite
+        que vous remplissiez un Memo. Ne pas le remplir ou le remplir incorrectement peut entraîner
+        une perte d\'actifs. D\'autres échanges ou portefeuilles peuvent désigner le Memo sous des
+        termes tels que tag, identifiant numérique, étiquette, remarque, etc.
+    </string>
+    <string name="memo_sheet_tip">Les utilisateurs doivent entrer à la fois le Memo/tag et l\'adresse
+        pour réussir à déposer des actifs sur Aibit.
+    </string>
+    <string name="follow_level_type">Effet de levier et mode de position</string>
+    <string name="third_login_manage_title">Gestion de compte tiers</string>
+    <string name="third_bind_unbind">Déconnecter</string>
+    <string name="third_bind_bind">Connecter</string>
+    <string name="social_google_account">Compte Google</string>
+    <string name="social_bind_success">Connexion réussie</string>
+    <string name="social_unbind_success">Déconnexion réussie</string>
+    <string name="third_login_bind_title">Associer votre compte Aibit</string>
+    <string name="third_login_bind_desc">Si vous avez déjà un compte Aibit, vous pouvez le lier à un
+        compte tiers. Sinon, veuillez d\'abord créer un nouveau compte.
+    </string>
+    <string name="third_login_btn_bind">Lier un compte Aibit existant</string>
+    <string name="third_login_btn_register">Enregistrer un nouveau compte Aibit</string>
+    <string name="ai_chat_market_title">Aperçu du marché</string>
+    <string name="ai_chat_market_desc">Basé sur les données des dernières 24 heures de la plateforme
+        Aibit
+    </string>
+    <string name="Rise">Gagnants</string>
+    <string name="ai_chat_no_chance">Limite de questions quotidienne atteinte. Veuillez réessayer
+        demain.
+    </string>
+    <string name="ai_tip_login">Pour poser plus de questions, veuillez vous connecter ou vous
+        inscrire à un compte Aibit.
+    </string>
+    <string name="ai_chat_warn">Avertissement de risque : Les réponses sont données à titre de
+        référence uniquement et ne constituent pas des conseils en investissement. L\'investissement
+        comporte des risques ; veuillez prendre des décisions avec prudence. Si vous avez des
+        questions sur les produits et services d\'Aibit, veuillez contacter le service client
+        d\'Aibit.
+    </string>
+    <string name="ai_error">Échec du chargement, veuillez réessayer.</string>
+    <string name="ai_loading">Nous analysons votre question...</string>
+    <string name="coupon_total_wealth">Souscription totale des gains</string>
+    <string name="coupon_total_deposit">Dépôt total</string>
+    <string name="coupon_experience">Essai</string>
+    <string name="coupon_auto_close_position">Fermeture automatique après</string>
+    <string name="coupon_total_trade">Volume total des transactions :</string>
+    <string name="user_details_crop_confirm">Confirmer</string>
+    <string name="coupon_contract_experience_gold">Bonus d\'essai pour les futures</string>
+    <string name="coupon_to_active">Activer maintenant</string>
+    <string name="user_details_crop_back">Retour</string>
+    <string name="coupon_manual_close">Fermeture manuelle</string>
+    <string name="coupon_expiry_close">Fermeture à l\'échéance</string>
+    <string name="coupon_system_close">Fermeture système</string>
+    <string name="coupon_liquidation">Liquidation</string>
+    <string name="contract_condition">Condition</string>
+    <string name="tpsl_modify_profit">Modifier TP</string>
+    <string name="tpsl_modify_loss">Modifier SL</string>
+    <string name="common_realized_profit">PNL Réal.</string>
+    <string name="contract_position_profit_desc">Le PNL de la position fait référence au profit ou à
+        la perte totale des positions clôturées. Il est calculé en fonction de la différence entre
+        le prix moyen d’ouverture et le prix moyen de clôture.
+    </string>
+    <string name="contract_realized_profit_desc">Le PNL réalisé reflète les gains ou pertes réels
+        d\'une position clôturée. PNL réalisé = PNL de la position + Frais de trading + Frais de
+        financement.
+    </string>
+    <string name="reverse_buy_to_sell">Achat à Vente</string>
+    <string name="reverse_sell_to_buy">Vente à Achat</string>
+    <string name="recommend">Recommander</string>
+    <string name="device_manager">Appareil</string>
+    <string name="forget_pwd_warn">Pour garantir la sécurité de vos actifs, la fonction de retrait
+        sera désactivée pendant 24 heures après la modification de votre mot de passe.
+    </string>
+    <string name="basec_account_label32">Nouveau mot de passe</string>
+    <string name="basec_account_label18">Confirmer le mot de passe</string>
+    <string name="pleace_input_psw_agin">Veuillez saisir à nouveau votre nouveau mot de passe
+    </string>
+    <string name="warn_edit_mobile">Êtes-vous sûr de vouloir changer votre numéro de téléphone ?
+    </string>
+    <string name="now_device">Appareil actuel</string>
+    <string name="device_time">Connexion récente</string>
+    <string name="device_location">Emplacement de connexion</string>
+    <string name="delete_device_title">Êtes-vous sûr de vouloir supprimer cet appareil ?</string>
+    <string name="delete_device_desc">Appareil :</string>
+    <string name="delete_logout">Cet appareil est actuellement connecté. Le supprimer entraînera une
+        déconnexion forcée.
+    </string>
+    <string name="bind_ga_tip1">Télécharger l\'application Google Authenticator</string>
+    <string name="bind_ga_tip2">Copiez la clé ci-dessous ou scannez le code QR ci-dessous.</string>
+    <string name="wealth_coupon_detail">Détails</string>
+    <string name="wealth_coupon_name">Nom</string>
+    <string name="wealth_empty_coupon">Aucun bon de boost disponible pour %s</string>
+    <string name="invest_buy_numb">Montant</string>
+    <string name="coupon_experience_coupon">Bon d\'essai</string>
+    <string name="wealth_coupon_info_title">Info</string>
+    <string name="invest_tip_4">Les intérêts du bon de boost sont payés en même temps que %s
+    </string>
+    <string name="plus_inverst_day">Durée</string>
+    <string name="wealth_coupon_tip_empty">Exigence : Non</string>
+    <string name="ai_find_chance">Découvrez des opportunités</string>
+    <string name="ai_score_title">Score IA</string>
+    <string name="ai_score_desc">Un indicateur simple et efficace pour vous aider à identifier
+        rapidement les tokens à fort potentiel.
+    </string>
+    <string name="price_limit_24h">24h Chg</string>
+    <string name="avg_price">Prix moyen</string>
+    <string name="address_numb">Nombre d\'adresses</string>
+    <string name="ai_smart_money">Achats intelligents</string>
+    <string name="ai_smart_money_desc">Tokens les plus achetés par les investisseurs avisés au cours
+        des dernières 24 heures.
+    </string>
+    <string name="ai_hot_desc">Narratives populaires</string>
+    <string name="ai_hot_desc_desc">Narratives crypto avec les plus grands gains au cours des
+        dernières 24 heures.
+    </string>
+    <string name="narrative">Narratives</string>
+    <string name="ai_up_sort_today">Classement</string>
+    <string name="ai_vc_change">Mouvements VC</string>
+    <string name="ai_vc_change_desc">Changements dans les portefeuilles on-chain des entreprises de
+        capital-risque (VC) au cours des 7 derniers jours.
+    </string>
+    <string name="ai_money_change">Chg Montant</string>
+    <string name="ai_amount_change_7d">Chg Quantité sur 7 jours</string>
+    <string name="ai_vc_numb">Nombre de détentions VC</string>
+    <string name="account_name">Nom du compte</string>
+    <string name="subscriber">Abonnés</string>
+    <string name="win_rate_24h">Taux de réussite sur 24h</string>
+    <string name="ai_kol_sort">Top KOLs</string>
+    <string name="ai_kol_sort_desc">KOLs les mieux classés en fonction du mouvement des prix sur
+        24h
+    </string>
+    <string name="signal">Signal</string>
+    <string name="signal_type">Type de signal</string>
+    <string name="avg_win_rate_1d">Taux 1j</string>
+    <string name="ai_smart_signal">Signaux intelligents</string>
+    <string name="ai_smart_signal_desc">Voir les derniers signaux de trading pour trouver des
+        opportunités.
+    </string>
+    <string name="ai_max_increase">Top Gagnants</string>
+    <string name="ai_max_increase_desc">Voir les meilleurs gagnants sur le marché des
+        crypto-monnaies au cours des 24 dernières heures.
+    </string>
+    <string name="mood_score">Score</string>
+    <string name="view_count_24h">Vues sur 24h</string>
+    <string name="ai_hot_kol">Appels KOL</string>
+    <string name="ai_hot_kol_desc">Voir les tokens les plus discutés par les KOLs au cours des 24
+        dernières heures.
+    </string>
+    <string name="ai_search_desc">Rechercher des narratifs</string>
+    <string name="please_input_content">Veuillez entrer le contenu de recherche.</string>
+    <string name="price_change_24h">Chg sur 24h</string>
+    <string name="ai_score_dialog_1">Le score AI est basé sur l\'analyse des tendances du marché, des
+        performances historiques, des transactions on-chain, ainsi que du contenu des médias sociaux
+        et des nouvelles. Le score reflète les opportunités et les risques potentiels des
+        investissements sur les prochaines 24-72 heures.
+    </string>
+    <string name="ai_score_dialog_2">Avertissement : Le score AI est à titre indicatif uniquement et
+        ne constitue pas un conseil en investissement. Le marché des crypto-monnaies est très
+        volatile ; les décisions d\'investissement doivent être prises à votre propre discrétion.
+        Cette plateforme n\'est pas responsable des résultats des actions entreprises.
+    </string>
+    <string name="ai_find_chance_sub">Le score AI est basé sur les tendances du marché, les
+        performances historiques, les transactions on-chain et l\'analyse des médias sociaux.
+    </string>
+    <string name="ai_grate">Score AI</string>
+    <string name="wealth_demand_desc1">Le taux annuel en pourcentage (APR) pour les économies
+        flexibles peut fluctuer en fonction des changements du taux d\'intérêt du marché et sera
+        soumis à l\'APR affiché sur la page du produit. Les intérêts sont calculés et crédités sur
+        votre solde d\'épargne flexible chaque heure, avec le rendement annualisé en temps réel mis à
+        jour chaque heure.
+    </string>
+    <string name="wealth_demand_desc2">Intérêt par heure = Solde flexible * APR / (365 * 24)
+    </string>
+    <string name="wealth_demand_desc3">Les intérêts des économies flexibles ne sont pas crédités sur
+        votre compte spot mais restent dans votre solde d\'épargne flexible pour l\'intérêt composé.
+        Lorsque des souscriptions ou des rachats supplémentaires sont effectués, les changements de
+        solde déclencheront un règlement supplémentaire pour garantir un calcul précis des intérêts.
+    </string>
+    <string name="swap_fund_rate">Financement</string>
+    <string name="account_safe">Sécurité du compte</string>
+    <string name="account_manager">Gestion du compte</string>
+    <string name="warn_edit_email">Êtes-vous sûr de vouloir changer votre e-mail ?</string>
+    <string name="email_disable_withdraw">Pour garantir la sécurité de vos fonds, la fonction de
+        retrait sera désactivée pendant 24 heures après la modification de votre e-mail.
+    </string>
+    <string name="bind_ga_tip3">Ouvrez Google Authenticator, cliquez sur +, sélectionnez "Entrer une
+        clé de configuration" et saisissez la clé que vous venez de copier pour ajouter un nouvel
+        authentificateur.
+    </string>
+    <string name="mobile_disable_withdraw">Pour garantir la sécurité de vos fonds, la fonction de
+        retrait sera désactivée pendant 24 heures après la modification de votre numéro de
+        téléphone.
+    </string>
+    <string name="login_time">Heure de connexion</string>
+    <string name="login_address">Adresse de connexion</string>
+    <string name="ga_code_warn">La clé est utilisée pour récupérer Google Authenticator en cas de
+        remplacement ou de perte du téléphone. Veuillez vous assurer de sauvegarder et d’enregistrer
+        la clé ci-dessus avant de lier.
+    </string>
+    <string name="or_search_download_ga">Sinon, recherchez "Google Authenticator" dans votre
+        boutique d\'applications pour le télécharger vous-même.
+    </string>
+    <string name="goto_download_ga">Vous n’avez pas encore installé Google Authenticator ? Téléchargez-le ici.
+    </string>
+    <string name="contract_adv_limit_order">Ordre à cours limité avancé</string>
+    <string name="contract_base_entrust">Ordres de base</string>
+    <string name="contract_limit_desc">Acheter ou vendre à un prix spécifique ou meilleur</string>
+    <string name="contract_market_desc">Acheter ou vendre rapidement au meilleur prix disponible sur
+        le marché actuel.
+    </string>
+    <string name="contract_condition_desc">L\'ordre est automatiquement déclenché lorsque le prix
+        cible prédéfini est atteint.
+    </string>
+    <string name="contract_adv_entrust">Ordres avancés</string>
+    <string name="contract_adv_limit_desc">Inclut trois mécanismes : Post-Only, FOK et IOC</string>
+    <string name="contract_adv_post_only">Post-Only</string>
+    <string name="contract_adv_post_only_desc">Votre ordre sera toujours exécuté en tant que maker.
+        S\'il devait être exécuté en tant que taker, il sera automatiquement annulé.
+    </string>
+    <string name="contract_adv_fok">Fill-or-Kill (FOK)</string>
+    <string name="contract_adv_fok_desc">L\'ordre sera entièrement exécuté immédiatement ou
+        totalement annulé.
+    </string>
+    <string name="contract_adv_ioc">Immediate-or-Cancel (IOC)</string>
+    <string name="contract_adv_ioc_desc">L\'ordre sera exécuté immédiatement autant que possible, et
+        toute partie non exécutée sera annulée.
+    </string>
+    <string name="home_welcome_title">Bonus bienvenue nvx users</string>
+    <string name="more_functions">Plus</string>
+    <string name="commont_countdown">Compte à rebours</string>
+    <string name="stoplp_part">Position partielle</string>
+    <string name="stoplp_all">Position entière</string>
+    <string name="stoplp_profit_hint_1">Le prix de déclenchement du TP doit être &gt; %1$s.
+    </string>
+    <string name="stoplp_loss_hint_1">Le prix de déclenchement du SL doit être &lt; %1$s.
+    </string>
+    <string name="stoplp_profit_hint_2">Le prix de déclenchement du TP doit être &lt; %1$s.
+    </string>
+    <string name="stoplp_loss_hint_2">Le prix de déclenchement du SL doit être &gt; %1$s.
+    </string>
+    <string name="stoplp_all_expected_lp"><![CDATA[Lorsque le <font color="%6$s">%1$s</font>prix<font color="%6$s">%2$s%3$sUSDT</font>，un ordre de marché sera déclenché pour la position entière, avec un bénéfice attendu de<font color="%5$s">%4$sUSDT</font>]]></string>
+    <string name="stoplp_part_desc">Applicable uniquement à la position partielle. Dans ce mode, la
+        quantité des ordres TP/SL ne change pas en fonction de la taille de la position. Plusieurs
+        ordres TP/SL peuvent être configurés.
+    </string>
+    <string name="stoplp_all_desc">Pour la position entière, la quantité des ordres TP/SL s\'ajuste
+        avec les changements de taille de la position. Un seul TP ou SL peut être défini par
+        position. Un ordre de marché sera exécuté lorsque le prix de déclenchement est atteint.
+    </string>
+    <string name="stoplp_profit_error_1">Le prix de déclenchement du TP doit être supérieur à
+        %1$s.
+    </string>
+    <string name="stoplp_loss_error_1">Le prix de déclenchement du SL doit être inférieur à
+        %1$s.
+    </string>
+    <string name="stoplp_profit_error_2">Le prix de déclenchement du TP doit être inférieur à
+        %1$s.
+    </string>
+    <string name="stoplp_loss_error_2">Le prix de déclenchement du SL doit être supérieur à
+        %1$s.
+    </string>
+    <string name="stoplp_order_canceled">Ordre annulé</string>
+    <string name="stoplp_loss_confirm_tip_1">Le prix de déclenchement du SL pour votre position
+        longue est inférieur ou égal au prix de liquidation estimé, ce qui pourrait entraîner une
+        liquidation avant que le SL ne soit déclenché. Veuillez ajuster le prix de déclenchement.
+    </string>
+    <string name="stoplp_loss_confirm_tip_2">Le prix de déclenchement du SL pour votre position
+        courte est supérieur ou égal au prix de liquidation estimé, ce qui pourrait entraîner une
+        liquidation avant que le SL ne soit déclenché. Veuillez ajuster le prix de déclenchement.
+    </string>
+    <string name="stoplp_continue_create_order">Continuer</string>
+    <string name="withdraw_add">Ajouter</string>
+    <string name="ai_score">Score</string>
+    <string name="side">Dir.</string>
+    <string name="stoplp_mark_price">Prix de marquage</string>
+    <string name="contract_all_contract">Symbole</string>
+    <string name="contract_all_type">Type d\'ordre</string>
+    <string name="contract_all_dir">Direction</string>
+    <string name="stoplp_loss_confirm_tip_3">Le prix de déclenchement du SL pour votre position
+        courte est inférieur ou égal au prix de liquidation estimé, ce qui pourrait entraîner une
+        liquidation avant que le SL ne soit déclenché. Veuillez ajuster le prix de déclenchement.
+    </string>
+    <string name="stoplp_loss_confirm_tip_4">Le prix de déclenchement du SL pour votre position
+        longue est supérieur ou égal au prix de liquidation estimé, ce qui pourrait entraîner une
+        liquidation avant que le SL ne soit déclenché. Veuillez ajuster le prix de déclenchement.
+    </string>
+    <string name="time_picker_day1">Dernier jour</string>
+    <string name="time_picker_desc">Les enregistrements historiques ne sont disponibles que pour les
+        6 derniers mois.
+    </string>
+    <string name="lm_title">Effet de levier et marge</string>
+    <string name="fund_rate_his">Historique du taux de financement</string>
+    <string name="min_price_change_unit">Taille du tick</string>
+    <string name="oder_vol">Montant de la transaction</string>
+    <string name="min_order_vol">Montant minimum de la transaction</string>
+    <string name="min_order_money">Prix minimum de l\'ordre</string>
+    <string name="market_max_order_money">Montant maximum de l\'ordre de marché</string>
+    <string name="limit_max_order_vol">Montant maximum de l\'ordre limité</string>
+    <string name="max_condition_order_count">Nombre maximum d\'ordres conditionnels</string>
+    <string name="other_basic_info">Autres informations de base</string>
+    <string name="leverage_range">Plage de levier</string>
+    <string name="expiration_cycle">Cycle d\'expiration</string>
+    <string name="swap_forever_time">Futures perpétuels, sans date d\'expiration</string>
+    <string name="fund_cost_cycle">Cycle des frais de financement</string>
+    <string name="common_view">Voir</string>
+    <string name="closed_profit_desc">Long : Quantité × Prix de clôture - Quantité × Prix d\'entrée
+        Short : Quantité × Prix d\'entrée - Quantité × Prix de clôture
+    </string>
+    <string name="lm_level">Niveau %1$s</string>
+    <string name="lm_notional_value">Valeur notionnelle (USDT)</string>
+    <string name="lm_keep_margin_rate">Taux de marge de maintenance</string>
+    <string name="fund_rate_gap">Intervalle de financement</string>
+    <string name="guide_step1_desc">Cliquez pour sélectionner les paires de trading.</string>
+    <string name="guide_step2_desc">Cela montre la marge disponible. Cliquez pour ajouter de la
+        marge.
+    </string>
+    <string name="guide_step3_desc">Ajustez le levier et le mode de marge.</string>
+    <string name="guide_step4_desc">Sélectionnez le type d\'ordre, y compris les ordres Limit,
+        Market, Conditional et Advanced Limit.
+    </string>
+    <string name="guide_step5_desc">Voir les positions et les ordres.</string>
+    <string name="guide_step6_desc">Consultez ici les données de transactions historiques.</string>
+    <string name="guide_step7_desc">Voir le graphique K-Line ici.</string>
+    <string name="guide_step8_desc">Cliquez ici pour plus de fonctionnalités.</string>
+    <string name="contract_reduce_repeal_title">Les ordres "Reduce-only" ont été annulés.</string>
+    <string name="contract_reduce_repeal_desc">Un ordre existant à un meilleur prix a causé
+        l\'annulation automatique de l\'ordre %1$s à %2$s %3$s %4$s.
+    </string>
+    <string name="asset_today_total_pl">PNL d\'aujourd\'hui</string>
+    <string name="asset_cal_formula">Calculé en fonction du fuseau horaire UTC+0, avec la formule
+        :
+    </string>
+    <string name="asset_today_total_pl_desc">PNL d\'aujourd\'hui = PNL de financement + PNL de spot +
+        PNL de futures + Profit Earn
+    </string>
+    <string name="today_pnl">PNL d\'aujourd\'hui</string>
+    <string name="asset_position_occupy">Marge de position</string>
+    <string name="asset_entrust_occupy">Marge d\'ordre</string>
+    <string name="asset_account_rights_desc">Équité totale = Solde du portefeuille + PNL non
+        réalisé
+    </string>
+    <string name="asset_today_pl_contract_desc">PNL d\'aujourd\'hui = PNL réalisé + Frais nets de
+        financement - Frais de trading + PNL non réalisé + Profit du bonus d\'essai
+    </string>
+    <string name="asset_wallet_balance_desc_1">Le solde du portefeuille est le solde réel du compte
+        de futures, excluant le PNL non réalisé, calculé comme suit :
+    </string>
+    <string name="asset_wallet_balance_desc_2">Solde du portefeuille = Dépôts totaux - Retraits
+        totaux + PNL réalisé total + Frais nets de financement totaux - Frais totaux
+    </string>
+    <string name="asset_unrealized_pl_desc">Le PNL non réalisé total pour les futures USDT-M est
+        calculé en fonction du prix de marquage.
+    </string>
+    <string name="pnl_7d">PNL sur 7 jours</string>
+    <string name="pnl_30d">PNL sur 30 jours</string>
+    <string name="pnl_total">PNL total</string>
+    <string name="swap_pnl_analysis">Analyse du PNL</string>
+    <string name="pnl_calendar">Calendrier du PNL</string>
+    <string name="swap_total_pnl_desc">Le PNL total est calculé à partir de la date d\'activation du
+        compte futures. La date d\'activation du compte futures est %1$s.
+    </string>
+    <string name="dont_have_pnl">Aucun enregistrement de PNL.</string>
+    <string name="pnl_everyday">PNL quotidien</string>
+    <string name="account_equity">Solde total</string>
+    <string name="pnl_rank">Classement PNL</string>
+    <string name="swap_total_pnl">PNL total</string>
+    <string name="pnl_rank_long">PNL de position longue</string>
+    <string name="pnl_rank_short">PNL de position courte</string>
+    <string name="swap_pnl_tip1">Sauf pour le PNL quotidien, toutes les autres métriques de PNL
+        excluent le PNL non réalisé. Formule : PNL réalisé + Frais nets de financement - Frais +
+        Profit du bonus (Bonus d\'essai).
+    </string>
+    <string name="swap_pnl_tip2">Toutes les données de cette page sont calculées en fonction du
+        fuseau horaire UTC+0, et les dates affichées dans les graphiques sont également en fuseau
+        horaire UTC+0.
+    </string>
+    <string name="pnl_analysis">Analyse du PNL</string>
+    <string name="asset_today_pl_spot_desc">PNL d\'aujourd\'hui = Total actuel des actifs - Total
+        initial des actifs d\'aujourd\'hui - Dépôts + Retraits
+    </string>
+    <string name="spot_pnl_analysis">PNL Spot</string>
+    <string name="asset_spot_value">Solde total</string>
+    <string name="fund_pnl_tip1">PNL = Évaluation totale des actifs Spot à la fin - Évaluation
+        totale des actifs Spot au début - Dépôts nets
+    </string>
+    <string name="asset_today_pl_asset_desc">PNL d\'aujourd\'hui = Évaluation totale des actifs de
+        financement actuelle - Évaluation totale des actifs de financement à 00:00 - Dépôts +
+        Retraits
+    </string>
+    <string name="funds_pnl_analysis">Analyse du PNL des actifs</string>
+    <string name="spot_pnl_tip1">PNL = Évaluation totale des actifs de financement à la fin -
+        Évaluation totale des actifs de financement au début - Dépôts nets
+    </string>
+    <string name="asset_today_profit">Profits d\'aujourd\'hui</string>
+    <string name="asset_today_profit_desc">Les profits sont calculés en fonction du fuseau horaire
+        UTC+0, couvrant les intérêts totaux verrouillés et flexibles reçus sur le compte Earn de
+        00h00 (UTC+0) jusqu\'à l\'heure actuelle.
+    </string>
+    <string name="limit_buy_max_rate">Ratio plafond du prix des ordres à cours limité</string>
+    <string name="limit_buy_max_rate_desc">Le prix d’un ordre d\'achat à cours limité doit être
+        inférieur ou égal à (1 + Ratio plafond du prix) × le prix de référence actuel des contrats à
+        terme.
+    </string>
+    <string name="limit_sell_min_rate">Ratio plancher du prix des ordres à cours limité</string>
+    <string name="limit_sell_min_rate_desc">Le prix d’un ordre de vente à cours limité doit être
+        supérieur ou égal à (1 - Ratio plancher du prix) × le prix de référence actuel des contrats
+        à terme.
+    </string>
+    <string name="condition_max_rate">Ratio plafond du prix de déclenchement pour les ordres
+        conditionnels
+    </string>
+    <string name="condition_max_rate_desc">Si le prix de déclenchement est basé sur le dernier prix,
+        celui des ordres conditionnels (y compris TP/SL) doit être inférieur ou égal à Ratio plafond
+        du prix × Dernier prix.
+        Si le prix de déclenchement est basé sur le prix de référence, celui des ordres
+        conditionnels (y compris TP/SL) doit être inférieur ou égal à Ratio plafond du prix × Prix
+        de référence.
+    </string>
+    <string name="condition_min_rate">Ratio plancher du prix de déclenchement pour les ordres
+        conditionnels
+    </string>
+    <string name="condition_min_rate_desc">Si le prix de déclenchement est basé sur le dernier prix,
+        celui des ordres conditionnels (y compris TP/SL) doit être supérieur ou égal à Ratio
+        plancher du prix × Dernier prix.
+        Si le prix de déclenchement est basé sur le prix de référence, celui des ordres
+        conditionnels (y compris TP/SL) doit être supérieur ou égal à Ratio plancher du prix × Prix
+        de référence.
+    </string>
+    <string name="max_condition_order_count_desc">Le nombre maximum d\'ordres conditionnels (y
+        compris TP/SL) pour ce contrat à terme est limité à %1$s ordres, gérés indépendamment selon
+        les différents contrats à terme.
+    </string>
+    <string name="market_buy_max_rate">Ratio plafond du prix des ordres d\'achat au marché</string>
+    <string name="market_buy_max_rate_desc">Sous des conditions de marché extrêmes, si le prix de la
+        contrepartie d\'un ordre d\'achat au marché atteint ou dépasse (1 + Ratio plafond du prix) ×
+        le prix de référence actuel, l\'ensemble de l\'ordre sera annulé.
+    </string>
+    <string name="market_sell_min_rate_desc">Sous des conditions de marché extrêmes, si le prix de
+        la contrepartie d\'un ordre de vente au marché tombe à ou en dessous de (1 - Ratio plancher
+        du prix) × le prix de référence actuel, l\'ensemble de l\'ordre sera annulé.
+    </string>
+    <string name="hispos_revenue_high">PNL élevé</string>
+    <string name="hispos_revenue_low">PNL faible</string>
+    <string name="hispos_part_close_pos">Fermeture partielle</string>
+    <string name="hispos_all_close_pos">Fermé</string>
+    <string name="hispos_realized_yield">ROI réalisé</string>
+    <string name="hispos_max_pos_volume">Max OI</string>
+    <string name="hispos_force_close_detail">Détails de liquidation</string>
+    <string name="hispos_force_close_desc_1">Lorsque le prix de référence des contrats à terme
+        %1$s Perpetual a atteint %2$s, le ratio de marge de votre position %1$s
+        Perpetual-%3$s-%4$s est tombé à %6$s ou moins, déclenchant la liquidation. La position
+        a été entièrement reprise par le moteur de liquidation au prix de faillite de %5$s
+        pour minimiser les pertes.
+    </string>
+    <string name="hispos_force_close_desc_3">Note : Le prix de faillite est le prix de référence
+        auquel le ratio de marge est égal à 0 %.
+    </string>
+    <string name="coupon_active_condition_contract">Le volume cumulé de trading de contrats à terme
+        atteint %1$s USDT pour activer.
+    </string>
+    <string name="coupon_active_condition_spot">Le volume cumulé de trading sur le marché au
+        comptant atteint %1$s USDT pour activer.
+    </string>
+    <string name="coupon_active_condition_wealth">Le montant cumulé d\'abonnement à Earn atteint
+        %1$s USDT (équivalent) pour activer.
+    </string>
+    <string name="coupon_active_condition_deposit">Le montant cumulé du dépôt atteint %1$s USDT
+        (équivalent) pour activer.
+    </string>
+    <string name="New">Nouveau</string>
+    <string name="newrank_onlinetime">Heure de listing :</string>
+    <string name="newrank_countdown">Compte à rebours</string>
+    <string name="price_input_precision">Plafond de prix de vente sur le marché</string>
+    <string name="market_sell_min_rate">Précision des prix</string>
+    <string name="guide_exit">Passer</string>
+    <string name="guide_finish_desc">Guide terminé !</string>
+    <string name="guide_title">Guide opérationnel</string>
+    <string name="market_cap_desc">Capitalisation boursière = Offre en circulation × Dernier prix
+    </string>
+    <string name="coininfo_circulating_supply_desc">Offre en circulation actuelle de la
+        cryptomonnaie
+    </string>
+    <string name="ieo_price_desc">Le prix lors de l\'introduction en bourse (IPO) de la
+        cryptomonnaie
+    </string>
+    <string name="coininfo_max_supply_desc">L\'offre maximale de la cryptomonnaie sur le marché
+    </string>
+    <string name="coininfo_max_cap_desc">Capitalisation boursière à l\'offre maximale = Offre
+        maximale × Dernier prix
+    </string>
+    <string name="coininfo_circulation_rate_desc">Taux de circulation = Offre en circulation / Offre
+        maximale
+    </string>
+    <string name="coininfo_disclaimer">Avertissement : Les données sont fournies par CoinGecko à
+        titre de référence uniquement. Aibit ne garantit pas l\'exactitude, la fiabilité ou
+        l\'applicabilité du contenu.
+    </string>
+    <string name="swap_pnl_tip3">Mises à jour en temps réel pour le PNL d\'aujourd\'hui sans délai ;
+        toutes les autres statistiques sont mises à jour toutes les 10 minutes.
+    </string>
+    <string name="asset_enter_finance">Aller à Earn</string>
+    <string name="hispos_comp_close_time">Clôturé</string>
+    <string name="hispos_trade_fee">Frais de transaction</string>
+    <string name="hispos_force_close_pnl_desc">Les détails de liquidation incluent uniquement le PNL
+        réalisé des ordres liquidés.
+    </string>
+    <string name="share_time">Partagé le %1$s</string>
+    <string name="hispos_force_close_desc_2">Vos contrats à terme perpétuels %1$s — %2$s — %3$s
+        ont vu leur ratio de marge tomber à %4$s ou moins, déclenchant la liquidation. La position a
+        été prise en charge par le moteur de liquidation au prix de faillite afin de minimiser les
+        pertes.
+    </string>
+    <string name="main_try_again_exit">Réessayez pour quitter</string>
+    <string name="coupon_active_tip">Pas de bon, activez d\'abord~</string>
+    <string name="commont_full_screen">Plein écran</string>
+    <string name="share_poster">Partager</string>
+    <string name="commont_y_axis_coordinate" >"Coordonnée de l’axe Y  "</string>
+    <string name="commont_chart_display" >"Affichage de l’icône  "</string>
+    <string name="commont_order_display" >"Affichage des ordres  "</string>
+    <string name="coupon_auto_close_time_2" >Fermé sur %1$s</string>
+    <string name="clear_cache_title" >"Voulez-vous vraiment vider le cache ?  "</string>
+    <string name="clear_cache" >Vider le cache</string>
+    <string name="lm_official_explan">Définition</string>
+    <string name="lm_official_1">Marge de maintenance = Valeur de la position × Taux de marge de
+        maintenance
+    </string>
+    <string name="lm_official_2">Valeur de la position = Taille de la position (quantité) × Prix du
+        marché
+    </string>
+    <string name="lm_official_3">* En mode couverture, Taille de la Position (quantité) = Taille de
+        la Position Longue (quantité) + Taille de la Position Courte (quantité)
+    </string>
+    <string name="lm_tip_start">Veuillez noter qu\'en cas de mouvements de prix anormaux ou de
+        conditions de marché extrêmes, Aibit prendra des mesures de protection supplémentaires, y
+        compris, mais sans s\'y limiter :
+    </string>
+    <string name="lm_tip_1">1. Ajuster l\'effet de levier maximum.</string>
+    <string name="lm_tip_2">2. Réviser les limites de la valeur des positions.</string>
+    <string name="lm_tip_3">3. Modifier les taux de marge de maintenance par paliers.</string>
+    <string name="lm_notional_value_desc">Inclut le total de vos positions longues et courtes.
+    </string>
+    <string name="lm_max_level_desc">Effet de levier maximal disponible dans la plage de valeur
+        notionnelle.
+    </string>
+    <string name="lm_keep_margin_rate_desc">Taux de marge de maintenance pour les positions dans la
+        plage de valeur notionnelle.
+    </string>
+</resources>

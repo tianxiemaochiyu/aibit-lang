@@ -1,0 +1,2432 @@
+<resources>
+    <string name="follow_closed_position_time">مدت زمان نگهداری متوسط</string>
+    <string name="follow_copy_canceled">لغو دنبال کردن</string>
+    <string name="follow_copy_successfully">دنبال کردن موفق</string>
+    <string name="follow_currency">ارز</string>
+    <string name="follow_currency_preference">ترجیح ارز</string>
+    <string name="follow_holding_time">مدت زمان نگهداری</string>
+    <string name="follow_last_ays180">180 روز</string>
+    <string name="follow_last_ays30">30 روز</string>
+    <string name="follow_last_ays7">7 روز</string>
+    <string name="follow_last_ays90">90 روز</string>
+    <string name="follow_longest_holding_time">بیشترین مدت زمان نگهداری</string>
+    <string name="follow_p_and_l">سود و زیان (USDT)</string>
+    <string name="follow_position_distribution">توزیع نگهداری</string>
+    <string name="follow_position_quantity">تعداد موقعیت‌ها</string>
+    <string name="follow_proportion">درصد</string>
+    <string name="follow_roi_week">مقدار سود هفتگی (USDT)</string>
+    <string name="follow_select_week">هفته</string>
+    <string name="follow_total_ROI">نرخ سود انباشته</string>
+    <string name="follow_total_ROI_short">نرخ سود انباشته</string>
+    <string name="follow_total_loss">مجموع زیان</string>
+    <string name="follow_total_performance">عملکرد سیگنال</string>
+    <string name="follow_total_pl">مجموع سود و زیان (USDT)</string>
+    <string name="follow_total_profit">مجموع سود</string>
+    <string name="follow_weekly_profit">مقدار سود هفتگی (USDT)</string>
+    <string name="memo_deposit_tip_2">در هنگام برداشت حتماً Memo را وارد کنید، در غیر این صورت
+        دارایی‌های دیجیتال خود را از دست خواهید داد
+    </string>
+    <string name="memo_sheet_attention">توجه</string>
+    <string name="memo_sheet_i_know">من اطلاع دارم</string>
+    <string name="memo_sheet_tip">برای موفقیت در واریز دارایی به Aibit، باید Memo/tag و آدرس را وارد
+        کنید
+    </string>
+    <string name="memo_withdraw_dialog_msg">لطفاً مطمئن شوید که آدرس دریافت نیاز به Memo دارد، در
+        غیر این صورت، اشتباه وارد کردن یا وارد نکردن Memo ممکن است باعث از دست رفتن دارایی شود. دیگر
+        صرافی‌ها یا کیف پول‌ها ممکن است Memo را با نام‌های tag، شناسه دیجیتال، برچسب یا یادداشت
+        معرفی کنند.
+    </string>
+    <string name="memo_withdraw_tip">* اشتباه وارد کردن ممکن است باعث از دست رفتن دارایی شود
+    </string>
+    <string name="score_desc">تشویق شما باعث خواهد شد که ما بهتر عمل کنیم</string>
+    <string name="score_feedback">پیشنهاد و بازخورد</string>
+    <string name="score_goto_score">امتیاز دهید</string>
+    <string name="score_later">بعداً امتیاز دهید</string>
+    <string name="score_please_score">لطفاً به Aibit امتیاز دهید!</string>
+    <string name="social_apple_account">حساب Apple</string>
+    <string name="social_bind_success">اتصال موفق</string>
+    <string name="social_google_account">حساب Google</string>
+    <string name="social_unbind_success">اتصال لغو شد</string>
+    <string name="third_bind_bind">اتصال</string>
+    <string name="third_bind_unbind">لغو اتصال</string>
+    <string name="third_login_bind_desc">اگر شما در حال حاضر یک حساب Aibit دارید، می‌توانید آن را به
+        یک حساب ثالث متصل کنید. در غیر این صورت، لطفاً ابتدا یک حساب جدید ایجاد کنید.
+    </string>
+    <string name="third_login_bind_title">حساب Aibit خود را متصل کنید</string>
+    <string name="third_login_btn_bind">حساب Aibit موجود را متصل کنید</string>
+    <string name="third_login_btn_register">ایجاد یک حساب جدید در Aibit</string>
+    <string name="third_login_manage_title">مدیریت حساب‌های شخص ثالث</string>
+    <string name="user_goto_score">به Aibit امتیاز دهید</string>
+    <string name="common_total_new">حجم معاملات</string>
+    <string name="liqprice_margin_insufficient">مقدار وجه الزامی برای باز کردن این موقعیت باید ≥%1$s
+        USDT باشد
+    </string>
+    <string name="common_quantity">مقدار</string>
+    <string name="contact_limit_price">قیمت محدود</string>
+    <string name="contract_condition">وضعیت</string>
+    <string name="common_trading_details">جزئیات معامله</string>
+    <string name="market_last_trade_new">جزئیات معامله</string>
+    <string name="search_no_data">هیچ جستجویی یافت نشد</string>
+    <string name="follow_open_price">قیمت باز کردن موقعیت</string>
+    <string name="common_search_crypto">جستجوی جفت ارز</string>
+    <string name="spot_market_price">قیمت بازار</string>
+    <string name="trade_market_btn">قیمت بازار</string>
+    <string name="follow_users_day">روز</string>
+    <string name="time_unit_d">روز</string>
+    <string name="transaction">بازار</string>
+    <string name="market_buy_new">خرید</string>
+    <string name="market_sell_new">فروش</string>
+    <string name="common_market_volume">حجم معاملات</string>
+    <string name="Available_funds_account">موجودی (حساب سرمایه)</string>
+    <string name="Available_network">شبکه‌های موجود</string>
+    <string name="Back_to_login_page">بازگشت به صفحه ورود</string>
+    <string name="Buy_close_new">خرید پوشش فروش</string>
+    <string name="Cancel_partial_self_traded_orders">لغو بخشی از معامله</string>
+    <string name="Cancel_self_trade">لغو معامله</string>
+    <string name="Changes_24H">تغییرات 24 ساعته</string>
+    <string name="Check_the_withdrawal">مشاهده جزئیات برداشت</string>
+    <string name="Choose_deposit_network">انتخاب شبکه واریز</string>
+    <string name="Choose_the_deposit_network">شبکه‌ای که با پلتفرم برداشت مطابقت دارد را انتخاب
+        کنید، در غیر این صورت واریز انجام نخواهد شد یا بازگردانده می‌شود.
+    </string>
+    <string name="Choose_withdrawal_network">انتخاب شبکه برداشت</string>
+    <string name="Copied">کپی موفق</string>
+    <string name="Decrease_self_trade">کاهش معامله</string>
+    <string name="Deposit_amount">مقدار واریز</string>
+    <string name="Deposit_confirmation">تأیید واریز</string>
+    <string name="Deposit_credited">واریز انجام شد</string>
+    <string name="Deposit_network">شبکه واریز</string>
+    <string name="Deposit_suspended">توقف واریز</string>
+    <string name="Deposit_tips1">* شما فقط می‌توانید به این آدرس %s واریز کنید، واریز دارایی‌های
+        دیگر قابل بازیابی نیست
+    </string>
+    <string name="Deposit_tips2">کیف پول در حال نگهداری است، به منظور افزایش امنیت</string>
+    <string name="Deposit_tips3">لطفاً صبور باشید تا پس از پایان نگهداری واریز را ادامه دهید
+    </string>
+    <string name="Deposited">وارد شده</string>
+    <string name="verification_email">تأیید ایمیل</string>
+    <string name="Fall">کاهش</string>
+    <string name="deposit_memo_need">این شبکه نیاز به Memo دارد</string>
+    <string name="Memo_needed_for">این ارز نیاز به وارد کردن Memo دارد</string>
+    <string name="Minimum_amount">کمترین مقدار برداشت</string>
+    <string name="Minimum_deposit_amount">کمترین مقدار واریز</string>
+    <string name="No_data">به انتها رسیدید</string>
+    <string name="No_deposit_record">هیچ رکورد واریزی یافت نشد</string>
+    <string name="No_deposit_record_last">شما در 90 روز گذشته هیچ رکورد واریزی ندارید</string>
+    <string name="No_premission">دسترسی محدود</string>
+    <string name="Pattern_error">رمز اشتباه وارد شد، شما %s بار دیگر فرصت دارید</string>
+    <string name="Picture_saved">ذخیره تصویر موفق بود</string>
+    <string name="Please_correct_email">لطفاً ایمیل صحیح وارد کنید</string>
+    <string name="Please_ensure_that">لطفاً اطمینان حاصل کنید که اطلاعات زیر کاملاً صحیح است
+    </string>
+    <string name="Please_enter_GA_code">کد تأیید Google را وارد کنید</string>
+    <string name="Please_enter_Memo">Memo را وارد کنید</string>
+    <string name="Please_enter_SMS_code">کد تأیید پیامک را وارد کنید</string>
+    <string name="Please_enter_address">آدرس را وارد کنید</string>
+    <string name="Please_enter_email_verification_code">کد تأیید ایمیل را وارد کنید</string>
+    <string name="Process">پیشرفت</string>
+    <string name="Referral_rebate">دعوت به بازگشت کمیسیون</string>
+    <string name="Request_submitted">درخواست ارسال شده است</string>
+    <string name="Rise">افزایش</string>
+    <string name="Selective_network">شبکه را انتخاب کنید</string>
+    <string name="Sell_to_long">فروش پوشش خرید</string>
+    <string name="The_amount_you_entered">مقدار وارد شده شما از حد برداشت بیشتر است</string>
+    <string name="To_know_withdrawal">برای بررسی وضعیت برداشت، لطفاً بر روی جزئیات برداشت در پایین
+        کلیک کنید
+    </string>
+    <string name="Trading_pairs">جفت معاملاتی</string>
+    <string name="TxID">TxID</string>
+    <string name="Update_password">به‌روزرسانی رمز عبور</string>
+    <string name="User_is_not_logged_in">برای ورود کلیک کنید</string>
+    <string name="Volume">حجم معاملات</string>
+    <string name="Wait_for_confirmation">در انتظار تأیید</string>
+    <string name="Welcome_to_Aibit_login">خوش آمدید به Aibit</string>
+    <string name="Welcome_to_Aibit_register">خوش آمدید به ثبت‌نام Aibit</string>
+    <string name="Withdraw_TXID">شناسه معامله بلوکی</string>
+    <string name="Withdraw_all">برداشت همه</string>
+    <string name="Withdrawal_confirmation">تأیید برداشت</string>
+    <string name="You_have_no_withdrawal">شما در 90 روز گذشته هیچ رکورد برداشتی ندارید</string>
+    <string name="about">درباره</string>
+    <string name="activities_balance_tips1">موجودی قابل استفاده در بازار = موجودی قابل استفاده در
+        حساب معاملاتی - اعتبار آزمایشی
+    </string>
+    <string name="activities_experience_asset_tips4">انتقال وجه از حساب قرارداد تمام اعتبار آزمایشی
+        موجود شما (شامل اعتبار آزمایشی دائمی) را برداشت خواهد کرد، آیا تأیید می‌کنید؟
+    </string>
+    <string name="activities_experience_contract_tips1">شامل اعتبار آزمایشی قرارداد %s، که %s پس از
+        %s منقضی خواهد شد و به‌طور خودکار بازیابی می‌شود، می‌توانید با معاملات قرارداد فعال کنید و
+        پس از فعال‌سازی دائمی خواهد بود.
+    </string>
+    <string name="activities_experience_contract_tips2">شامل اعتبار آزمایشی قرارداد %s</string>
+    <string name="address_error">خطای فرمت آدرس، لطفاً آدرس صحیح را وارد کنید</string>
+    <string name="aibit_home_bb">اسپات</string>
+    <string name="aibit_home_coin_type">ارز</string>
+    <string name="aibit_home_contact">فیوچرز</string>
+    <string name="all">همه</string>
+    <string name="common_realized_pnl_title">PnL واقعی</string>
+    <string name="common_realized_profit">دستاوردهای متوجه شده است</string>
+    <string name="all_coin">همه ارزها</string>
+    <string name="all_time_high">بالاترین قیمت تاریخ</string>
+    <string name="all_time_low">پایین‌ترین قیمت تاریخ</string>
+    <string name="all_type">همه نوع‌ها</string>
+    <string name="allready_set">تنظیم شده است</string>
+    <string name="asset_allocation">توزیع دارایی</string>
+    <string name="asset_balance">موجودی</string>
+    <string name="asset_bill_type">نوع صورت‌حساب</string>
+    <string name="asset_business_type">کسب‌وکار</string>
+    <string name="asset_buy_sell">خرید/فروش</string>
+    <string name="asset_coin_balance">موجودی ارز</string>
+    <string name="asset_coin_rights">حقوق ارز</string>
+    <string name="asset_deposit_withdraw">واریز و برداشت</string>
+    <string name="withdraw_number">مقدار برداشت</string>
+    <string name="asset_details_experience_content">فعال شده: %s USDT</string>
+    <string name="asset_details_experience_content1">در حال فعال‌سازی: %1$s USDT (که از آن %2$s USDT
+        پس از %3$s روز منقضی خواهد شد)
+    </string>
+    <string name="asset_details_fee">کارمزد شبکه</string>
+    <string name="asset_details_no_position">هیچ موقعیتی موجود نیست</string>
+    <string name="asset_details_status0">در انتظار تأیید</string>
+    <string name="asset_details_status1">تأیید شده</string>
+    <string name="asset_details_status2">رد شده</string>
+    <string name="asset_details_verify_hash">هش معامله</string>
+    <string name="asset_empty_desc">واریز یا خرید ارز دیجیتال\nسفر رمزنگاری خود را آغاز کنید
+    </string>
+    <string name="asset_freeze">مسدود شده</string>
+    <string name="asset_funds_bill">صورت‌حساب مالی</string>
+    <string name="asset_future_available_title">موجودی قابل استفاده</string>
+    <string name="asset_future_position_title">موقعیت‌های نگهداری</string>
+    <string name="asset_future_tips1">موجودی حاشیه = موجودی کیف + سود و زیان تحقق‌نیافته.</string>
+    <string name="asset_future_wallet_title">موجودی کیف</string>
+    <string name="asset_hide_min">پنهان کردن دارایی‌های کوچک</string>
+    <string name="asset_hide_0">پنهان کردن دارایی‌های 0.</string>
+    <string name="asset_memo">Memo</string>
+    <string name="asset_min_withdraw_amount">حداقل مقدار برداشت %s</string>
+    <string name="asset_overview">بررسی اجمالی</string>
+    <string name="asset_spot_account">حساب اسپات</string>
+    <string name="asset_spot_trade">معاملات اسپات</string>
+    <string name="asset_sub_type_100008">دریافت کارمزد مالی</string>
+    <string name="asset_sub_type_100009">پرداخت کارمزد مالی</string>
+    <string name="asset_sub_type_100014">فروش اجباری پوشش خرید</string>
+    <string name="asset_sub_type_100015">فروش اجباری پوشش فروش</string>
+    <string name="asset_sub_type_100016">کاهش خودکار پوشش خرید</string>
+    <string name="asset_sub_type_100017">کاهش خودکار پوشش فروش</string>
+    <string name="asset_sub_type_120003">لغو برداشت</string>
+    <string name="asset_sub_type_180001">انتقال از حساب معاملاتی</string>
+    <string name="asset_sub_type_180002">انتقال به حساب معاملاتی</string>
+    <string name="asset_sub_type_180003">انتقال از حساب مالی</string>
+    <string name="asset_sub_type_180004">انتقال به حساب مالی</string>
+    <string name="asset_sub_type_190003">خرید C2C</string>
+    <string name="asset_sub_type_190004">فروش C2C</string>
+    <string name="asset_swap_account">حساب قرارداد</string>
+    <string name="asset_total_amount">مجموع</string>
+    <string name="asset_trade">معامله</string>
+    <string name="asset_trade_bill">صورت‌حساب معاملات</string>
+    <string name="asset_transaction_history">صورت‌حساب اسپات</string>
+    <string name="asset_transfer_in">انتقال به داخل</string>
+    <string name="asset_transfer_out">انتقال به خارج</string>
+    <string name="asset_vol_insufficient">مقدار ناکافی</string>
+    <string name="assets_active_experiencia">فعال شده: %1$s %2$s</string>
+    <string name="assets_experiencia_desc_new">اعتبار آزمایشی قرارداد می‌تواند برای حاشیه معاملات
+        قرارداد استفاده شود و اولویت با پوشش زیان‌های موقعیتی، کارمزدهای معاملاتی و هزینه‌های مالی
+        است.
+    </string>
+    <string name="assets_experiencia_new">آزمایشی</string>
+    <string name="assets_experiencia_tip_new">* هر معامله‌ای در طول اعتبار می‌تواند اعتبار آزمایشی
+        را فعال کند
+    </string>
+    <string name="assets_inactive_experiencia">در حال فعال‌سازی: %1$s %2$s (که از آن %3$s %4$s پس از
+        %5$s روز منقضی خواهد شد)
+    </string>
+    <string name="common_contine">ادامه</string>
+    <string name="auth_complete_status3">دلایل:</string>
+    <string name="auth_complete_status4">احراز هویت مجدد</string>
+    <string name="auth_complete_status5">شناسایی تأیید شده</string>
+    <string name="auth_complete_status6">فعلاً پشتیبانی نمی‌شود</string>
+    <string name="auth_country_nonsupport">چرا باید احراز هویت کنم؟</string>
+    <string name="auth_edit_country_label1">احراز هویت واقعی برای رعایت قوانین مالی محلی یا
+        سیاست‌های مربوطه است. احراز هویت همچنین به حفاظت از امنیت حساب شما کمک می‌کند و از برخی
+        شیوه‌های کلاهبرداری جلوگیری می‌کند. ما اطلاعات شما را به‌طور جدی محرمانه نگه می‌داریم.
+    </string>
+    <string name="auth_edit_country_label2">کدام کشورها و مناطق فعلاً پشتیبانی نمی‌شوند؟</string>
+    <string name="auth_edit_country_label3">به دلیل الزامات انطباق و نظارت، فعلاً از کشورهای و مناطق
+        زیر پشتیبانی نمی‌شود: %s
+    </string>
+    <string name="auth_edit_country_label4">منطقه سکونت</string>
+    <string name="auth_edit_country_subtitle">نام خانوادگی</string>
+    <string name="auth_edit_info_family_name">نام</string>
+    <string name="auth_edit_info_name">نام کوچک</string>
+    <string name="balance24">مقدار ۲۴ ساعته (%s)</string>
+    <string name="basec_account_input">لطفاً شماره حساب صحیح را وارد کنید</string>
+    <string name="basec_account_labe37">لطفاً کد تأیید صحیح را وارد کنید</string>
+    <string name="basec_account_labe38">آیا حسابی ندارید؟</string>
+    <string name="basec_account_label1">آیا حساب دارید؟</string>
+    <string name="basec_account_label10">همین حالا وارد شوید</string>
+    <string name="basec_account_label11">ادامه ثبت‌نام به معنای موافقت با</string>
+    <string name="basec_account_label12">و</string>
+    <string name="basec_account_label14">تأیید رمز عبور</string>
+    <string name="basec_account_label18">حداقل 8 کاراکتر، شامل حروف بزرگ و کوچک و عدد</string>
+    <string name="basec_account_label19">همین حالا ثبت‌نام کنید</string>
+    <string name="basec_account_label2">تکمیل شد</string>
+    <string name="common_complete">لطفاً آدرس ایمیل صحیح وارد کنید</string>
+    <string name="basec_account_label23">مرحله بعد</string>
+    <string name="basec_account_label25">رمز عبور جدید</string>
+    <string name="basec_account_label32">نسخه جدیدی پیدا شد</string>
+    <string name="basec_account_label34">همین حالا به‌روزرسانی کنید</string>
+    <string name="basec_account_label35">بعداً به‌روزرسانی کنید</string>
+    <string name="basec_account_label36">نام کاربری یا رمز عبور اشتباه است</string>
+    <string name="basec_account_label4">لطفاً دوباره رمز مالی را وارد کنید</string>
+    <string name="basec_account_label41">ثبت‌نام با ایمیل</string>
+    <string name="basec_account_label42">خطای شبکه، لطفاً بعداً دوباره تلاش کنید</string>
+    <string name="basec_account_label43">ثبت‌نام با موبایل</string>
+    <string name="basec_account_label44">%ss پس از دریافت مجدد کد تأیید</string>
+    <string name="basec_account_label45">پیوند موفق</string>
+    <string name="basec_account_label46">کد تأیید را دریافت نمی‌کنید؟</string>
+    <string name="basec_account_label48">از %s</string>
+    <string name="basec_account_label49">لطفاً مقدار انتقال را وارد کنید</string>
+    <string name="basec_account_label50">حساب انتقال را انتخاب کنید</string>
+    <string name="basec_account_label51">لطفاً مبلغ را وارد کنید</string>
+    <string name="basec_account_label52">لطفاً کد تأیید را وارد کنید</string>
+    <string name="basec_account_label8">کد تأیید به</string>
+    <string name="basec_code_send">ارسال شده است</string>
+    <string name="basec_code_send_again">ارسال مجدد</string>
+    <string name="basec_country">کشور/منطقه</string>
+    <string name="basec_mobile">شماره موبایل</string>
+    <string name="basec_mobile_email">شماره موبایل/ایمیل</string>
+    <string name="basec_mobile_input">لطفاً شماره موبایل را وارد کنید</string>
+    <string name="basec_mobile_new_code">کد تأیید شماره موبایل جدید</string>
+    <string name="basec_password">رمز عبور</string>
+    <string name="basec_password_input">لطفاً رمز عبور را وارد کنید</string>
+    <string name="basec_recomend">کد دعوت</string>
+    <string name="basec_recomend_input">لطفاً کد دعوت را وارد کنید</string>
+    <string name="common_withdraw_record">سوابق برداشت</string>
+    <string name="bind">پیوند</string>
+    <string name="c2c_appeal_cancle_sure">تأیید لغو</string>
+    <string name="c2c_currency_input">ارز را انتخاب کنید</string>
+    <string name="c2c_fund_psw_success">تنظیمات موفق</string>
+    <string name="c2c_home_pay">پرداخت</string>
+    <string name="c2c_home_pay_way">روش پرداخت</string>
+    <string name="c2c_limit">حد مجاز</string>
+    <string name="c2c_order_id">شماره سفارش</string>
+    <string name="c2c_order_trade_time">زمان معامله</string>
+    <string name="c2c_pay_way_close">بستن موفق</string>
+    <string name="c2c_price">قیمت واحد</string>
+    <string name="c2c_trade">خرید C2C</string>
+    <string name="cal_base_price">محاسبه قیمت پایه</string>
+    <string name="calculate">محاسبه</string>
+    <string name="calculation_result">نتیجه محاسبه</string>
+    <string name="calculation_result_reference">نتیجه محاسبه فقط برای مرجع است</string>
+    <string name="calculator">محاسبه‌گر</string>
+    <string name="calender_fri">پنج</string>
+    <string name="calender_mon">یک</string>
+    <string name="calender_sat">شش</string>
+    <string name="calender_sun">روز</string>
+    <string name="calender_thu">چهار</string>
+    <string name="calender_tue">دو</string>
+    <string name="calender_wed">سه</string>
+    <string name="cancel_entrust">آیا می‌خواهید سفارش فعلی را لغو کنید؟</string>
+    <string name="cancle_order">لغو</string>
+    <string name="ccy_desc">نرخ ارز فیات مورد نیاز خود را انتخاب کنید</string>
+    <string name="ccy_title">نرخ ارز</string>
+    <string name="center_about">درباره ما</string>
+    <string name="center_authentication">احراز هویت</string>
+    <string name="center_binded">متصل شده</string>
+    <string name="center_certificate_type">نوع مدارک</string>
+    <string name="center_customer">پشتیبانی آنلاین</string>
+    <string name="center_email">ایمیل</string>
+    <string name="center_email_bind">ایمیل متصل</string>
+    <string name="center_email_new">ایمیل جدید</string>
+    <string name="center_email_new_code">تأیید ایمیل جدید</string>
+    <string name="center_exit">خروج ایمن</string>
+    <string name="center_google_bind">پیوند Google Authenticator</string>
+    <string name="center_google_label1">1. کلید Google را کپی کنید و در Google Authenticator برای
+        ایجاد کد تأیید جدید از آن استفاده کنید.
+    </string>
+    <string name="center_google_label2">2. لطفاً این کلید را به‌خوبی نگه‌دارید، وقتی Google
+        Authenticator را دوباره نصب کنید یا گوشی جدیدی بگیرید، به این کلید برای تنظیم مجدد نیاز
+        دارید.
+    </string>
+    <string name="center_google_label3">3. ما این کلید را ذخیره نمی‌کنیم و نمی‌توانیم دوباره به شما
+        ارائه دهیم. اگر این کلید را گم کنید و نتوانید آن را بازیابی کنید، باید مدارک شناسایی مربوطه
+        را برای لغو پیوند و تنظیم مجدد ارائه دهید.
+    </string>
+    <string name="center_google_label4">آیا هنوز Google Authenticator را نصب نکرده‌اید؟</string>
+    <string name="center_google_label5"> اینجا کلیک کنید تا دانلود کنید.</string>
+    <string name="center_google_label6">یا در بازار اپلیکیشن‌ها "Google Authenticator" را جستجو کنید
+        و خودتان دانلود کنید
+    </string>
+    <string name="center_google_label7">آخرین کد تأیید دینامیک را از Google Authenticator خود دریافت
+        کنید
+    </string>
+    <string name="center_google_next">من این کلید را به‌خوبی نگه‌داشته‌ام، مرحله بعد</string>
+    <string name="center_google_token">کلید Google</string>
+    <string name="center_hand_password">رمز عبور الگو</string>
+    <string name="center_help">مرکز کمک</string>
+    <string name="center_invite">دعوت دوست</string>
+    <string name="center_label1">لطفاً انتخاب کنید</string>
+    <string name="common_take_photo">عکس بگیرید</string>
+    <string name="withdraw_reviewing">در حال بررسی</string>
+    <string name="center_label12">تأیید نشد</string>
+    <string name="center_label13">ارسال</string>
+    <string name="center_label14">تأیید شده</string>
+    <string name="center_label15">کارت شناسایی</string>
+    <string name="center_label16">پاسپورت</string>
+    <string name="center_label18">احراز هویت مجدد</string>
+    <string name="center_label19">دو بار کشیدن متفاوت است، لطفاً دوباره بکشید</string>
+    <string name="center_label2">لطفاً وارد کنید</string>
+    <string name="center_label20">لطفاً حداقل 4 نقطه تنظیم کنید</string>
+    <string name="center_label21">دوباره رمز عبور الگو را بکشید</string>
+    <string name="center_label22">تنظیم رمز عبور الگو</string>
+    <string name="center_label23">لطفاً الگوی قفل را بکشید</string>
+    <string name="center_label26">تأیید رمز عبور الگو</string>
+    <string name="center_label27">تغییر به ورود با رمز عبور</string>
+    <string name="center_label9">آلبوم</string>
+    <string name="center_language">زبان</string>
+    <string name="center_language_set">تنظیمات زبان</string>
+    <string name="center_modify_assets_password">تنظیم مجدد رمز مالی</string>
+    <string name="center_modify_email">تعویض ایمیل</string>
+    <string name="center_modify_password">تغییر رمز عبور ورود</string>
+    <string name="center_modify_phone">تعویض شماره موبایل</string>
+    <string name="center_name">نام</string>
+    <string name="center_new_version">آخرین نسخه است</string>
+    <string name="center_not_certified">تأیید نشده</string>
+    <string name="center_old_password">رمز قدیمی</string>
+    <string name="center_password_assets">رمز مالی</string>
+    <string name="center_password_login">رمز ورود</string>
+    <string name="center_security">مرکز امنیت</string>
+    <string name="center_set_password_assets">تنظیم رمز مالی</string>
+    <string name="center_trans_account_label">رمز مالی 6 رقمی</string>
+    <string name="center_unbind">هنوز متصل نشده</string>
+    <string name="center_update_version">به‌روزرسانی نسخه</string>
+    <string name="center_work">ارسال تیکت</string>
+    <string name="change_pw_suc">تغییر رمز موفق بود</string>
+    <string name="circulating_supply_value">ارزش بازار</string>
+    <string name="claim_package">می‌توانید از بسته خوش‌آمدگویی برای تازه‌واردان بهره‌مند شوید
+    </string>
+    <string name="close_google_auth">بستن Google Authenticator</string>
+    <string name="closed_profit">سود از بستن موقعیت</string>
+    <string name="closing_price">قیمت بستن</string>
+    <string name="code_sent_successfully">کد تأیید با موفقیت ارسال شد</string>
+    <string name="common_adl">کاهش خودکار</string>
+    <string name="common_amount">مقدار</string>
+    <string name="common_application_criteria">شرایط درخواست</string>
+    <string name="common_asset_total_new">مارجین</string>
+    <string name="common_assets">دارایی</string>
+    <string name="common_available_assets">دارایی قابل استفاده</string>
+    <string name="common_average_entry_price">میانگین قیمت باز کردن</string>
+    <string name="common_avg_closing_price">میانگین قیمت بستن</string>
+    <string name="common_avg_price">میانگین قیمت معامله</string>
+    <string name="common_basec_password_forget">رمز عبور را فراموش کرده‌ام</string>
+    <string name="common_bill_other">سوابق دیگر</string>
+    <string name="common_cancel">لغو</string>
+    <string name="common_cancel_all">لغو گروهی</string>
+    <string name="common_cancel_all_orders">آیا می‌خواهید تمام سفارش‌ها را لغو کنید؟</string>
+    <string name="common_cancel_order">لغو سفارش</string>
+    <string name="common_canceled_content">لغو شده</string>
+    <string name="common_changed_success">تغییر موفق بود</string>
+    <string name="common_char_length_tip">طول باید بین 8 تا 30 کاراکتر باشد</string>
+    <string name="common_choose_service_provider">انتخاب ارائه‌دهنده خدمات</string>
+    <string name="common_closed_vol_title">مقدار بسته شده</string>
+    <string name="common_closing_time">زمان بستن</string>
+    <string name="common_symbol_list">لیست ارزها</string>
+    <string name="common_completed_content">تکمیل شده</string>
+    <string name="common_conditional_order">سفارش شرطی</string>
+    <string name="common_confirm">تأیید</string>
+    <string name="common_contact_long">خرید</string>
+    <string name="common_contract_canceled">لغو شده</string>
+    <string name="common_contract_cant_switch_position">در صورت داشتن هر موقعیت قراردادی یا
+        سفارش‌های معلق، نوع موقعیت قابل تغییر نیست
+    </string>
+    <string name="common_contract_close">بستن</string>
+    <string name="common_contract_index_price">قیمت شاخص</string>
+    <string name="common_contract_order_stop_tis">به دلیل تغییرات سریع بازار، قیمت فعال‌سازی توقف
+        ضرر نباید نزدیک به قیمت تخمینی بستن اجباری باشد تا از شکست فعال‌سازی جلوگیری شود
+    </string>
+    <string name="common_contracts_piece">دستگاه</string>
+    <string name="common_copy_position">موقعیت دنبال کردن</string>
+    <string name="common_copy_trading">دنبال کردن</string>
+    <string name="common_copy_trading_settings">تنظیمات دنبال کردن</string>
+    <string name="common_copy_trading_title">دنبال کردن قرارداد</string>
+    <string name="common_deposit">واریز</string>
+    <string name="common_deposit_address">آدرس واریز</string>
+    <string name="common_deposit_details">جزئیات واریز</string>
+    <string name="common_deposit_record">سوابق واریز</string>
+    <string name="common_desc_average_price">میانگین قیمت معامله در زمان باز کردن</string>
+    <string name="common_edit">ویرایش</string>
+    <string name="common_email_verification_code">کد تأیید ایمیل</string>
+    <string name="common_enter_correct_mobile">لطفاً شماره موبایل صحیح را وارد کنید</string>
+    <string name="common_enter_email">لطفاً ایمیل را وارد کنید</string>
+    <string name="common_estimated_liquidation_price">قیمت تخمینی بستن اجباری</string>
+    <string name="common_exceeds_maximum_order_limit">از حد مجاز برای سفارش بیشتر است</string>
+    <string name="common_faild">شکست</string>
+    <string name="common_filled_volume_title">حجم معامله شده</string>
+    <string name="common_follow_roi">بازده</string>
+    <string name="common_full_position">کراس</string>
+    <string name="common_funding_account">حساب مالی</string>
+    <string name="common_funding_fee">هزینه‌های مالی</string>
+    <string name="common_future_unrealized">سود و زیان تحقق‌نیافته</string>
+    <string name="common_ga">تأیید Google</string>
+    <string name="common_ga_code">کد تأیید Google</string>
+    <string name="common_get_code">دریافت کد تأیید</string>
+    <string name="common_history_record">سوابق تاریخی</string>
+    <string name="common_holdings">سفارش‌های باز</string>
+    <string name="common_hot_symbol">ارزهای محبوب</string>
+    <string name="common_id_no">شماره مدارک</string>
+    <string name="common_input_not_match">دو بار ورود رمز عبور یکسان نیست</string>
+    <string name="common_input_withdrawal_address">لطفاً آدرس برداشت را وارد کنید</string>
+    <string name="common_isolated">ایزوله</string>
+    <string name="common_last_price">آخرین قیمت</string>
+    <string name="common_leverage_multiple">ضریب اهرم</string>
+    <string name="common_limit_market_new">قیمت محدود | قیمت بازار</string>
+    <string name="common_limit_price_new">قیمت محدود</string>
+    <string name="common_link_mobile">پیوند شماره موبایل</string>
+    <string name="common_liquidation_price">قیمت اجباری</string>
+    <string name="common_loading">در حال بارگذاری...</string>
+    <string name="common_market_price">بهترین قیمت بازار</string>
+    <string name="common_maybe_later">من دوباره فکر می‌کنم</string>
+    <string name="common_money_total">مقدار</string>
+    <string name="common_must_be_an_integer_multiple">باید مضرب %s باشد، به‌طور خودکار به %s تنظیم
+        می‌شود
+    </string>
+    <string name="common_my_copy_trading">معاملات من</string>
+    <string name="common_my_lead_traders">معامله‌گران من</string>
+    <string name="common_net_profit">سود خالص (USDT)</string>
+    <string name="common_nickname">نام مستعار</string>
+    <string name="common_no_asset">هیچ دارایی موجود نیست</string>
+    <string name="common_no_data_yet">هیچ داده‌ای موجود نیست</string>
+    <string name="common_no_result">نتیجه‌ای وجود ندارد.</string>
+    <string name="common_no_opponent_price">قیمت پیشنهادی دریافت نشد</string>
+    <string name="common_notes">توضیحات</string>
+    <string name="common_number_copy_traders">دنبالنده</string>
+    <string name="common_occupied_margin">حاشیه مورد استفاده</string>
+    <string name="common_ongoing">سفارش جاری</string>
+    <string name="common_opening_price">قیمت باز کردن</string>
+    <string name="common_opening_time">زمان باز کردن</string>
+    <string name="common_order_book">سفارش‌های معلق</string>
+    <string name="common_order_status">وضعیت سفارش</string>
+    <string name="common_password_confirm">تأیید رمز مالی</string>
+    <string name="common_paste">چسباندن</string>
+    <string name="common_payment_method">روش دریافت</string>
+    <string name="common_perpetual">ابدی</string>
+    <string name="common_perpetual_futures">قرارداد ابدی</string>
+    <string name="common_phone_number_verification">تأیید شماره موبایل</string>
+    <string name="common_phone_number_verification_code">کد تأیید شماره موبایل</string>
+    <string name="common_privacy_policy">حریم خصوصی</string>
+    <string name="common_reduction_margin">کاهش حاشیه</string>
+    <string name="common_reset">تنظیم مجدد</string>
+    <string name="common_search">جستجو</string>
+    <string name="common_search_coin">جستجوی جفت ارز</string>
+    <string name="common_security_verification">تأیید امنیتی</string>
+    <string name="common_select_coin">انتخاب ارز واریز</string>
+    <string name="common_select_coin_pairs">انتخاب جفت ارز</string>
+    <string name="common_short">خالی</string>
+    <string name="common_sms_code">کد تأیید پیامکی</string>
+    <string name="common_statement">صورت‌حساب</string>
+    <string name="common_stop_loss_price">قیمت توقف ضرر</string>
+    <string name="common_stop_profit_price">قیمت توقف سود</string>
+    <string name="common_successful">موفق</string>
+    <string name="common_swap_desc_assets">دارایی‌های ضمانت‌کننده این موقعیت</string>
+    <string name="common_swap_desc_close_tips">اگر قیمت نشانه‌گذاری موقعیت خرید بالاتر از این قیمت
+        اجباری باشد یا قیمت نشانه‌گذاری موقعیت فروش پایین‌تر از این قیمت اجباری باشد، موقعیت شما
+        بسته خواهد شد
+    </string>
+    <string name="common_swap_desc_mark_price_tips">قیمت نشانه‌گذاری زنده این قرارداد. این قیمت برای
+        محاسبه سود و زیان تحقق‌نیافته و حاشیه استفاده می‌شود و ممکن است با قیمت آخرین معامله قرارداد
+        تفاوت داشته باشد تا از دستکاری قیمت جلوگیری شود
+    </string>
+    <string name="common_swap_desc_pnl_closed">سود یا زیان موجودی جزئی بسته شده</string>
+    <string name="common_third_party_payment">پرداخت شخص ثالث</string>
+    <string name="common_third_pay_will_receive">من دریافت خواهم کرد</string>
+    <string name="common_time">زمان</string>
+    <string name="common_tip">پیام</string>
+    <string name="common_to_auth">به تأیید بروید</string>
+    <string name="common_to_deposit">به واریز بروید</string>
+    <string name="common_to_setting">به تنظیمات بروید</string>
+    <string name="common_to_trade">به معامله بروید</string>
+    <string name="common_total_balance">حقوق حساب (USDT)</string>
+    <string name="common_total_pnl">PnL کپی‌کنندگان</string>
+    <string name="common_trade_position">موقعیت‌ها</string>
+    <string name="common_trade_stop">توقف سود و ضرر</string>
+    <string name="common_trade_symbol">محصولات معاملاتی فعلی</string>
+    <string name="common_trader_apply_waitting">درخواست شما ارسال شده است، لطفاً صبور باشید</string>
+    <string name="common_trader_capital">سرمایه اصلی (USDT)</string>
+    <string name="common_trading_rules">قوانین معاملاتی</string>
+    <string name="common_transfer">انتقال مالی</string>
+    <string name="common_transfer_network">شبکه انتقال</string>
+    <string name="common_trigger_price">قیمت فعال‌سازی</string>
+    <string name="common_understand">می‌دانم</string>
+    <string name="common_unfollow">لغو پیروی</string>
+    <string name="common_user_agreement">توافق کاربر</string>
+    <string name="common_wallet_withdraw">برداشت</string>
+    <string name="common_wallet_withdraw_address">آدرس برداشت</string>
+    <string name="common_wallet_withdraw_net">شبکه برداشت</string>
+    <string name="common_welcome_aibit">به Aibit خوش آمدید</string>
+    <string name="common_withdraw_amount">مقدار (%s)</string>
+    <string name="common_withdrawal_details">جزئیات برداشت</string>
+    <string name="contact_add_margin_v2">افزایش حاشیه</string>
+    <string name="contact_adjust_margin">تنظیم حاشیه</string>
+    <string name="contact_buy_long">خرید برای افزایش موقعیت خرید</string>
+    <string name="contact_edit_level_error1">در حال حاضر سفارش‌های معلق تکی در این جهت وجود دارد،
+        لطفاً قبل از تغییر ضریب اهرم، تمام سفارش‌های معلق تکی در این جهت را لغو کنید
+    </string>
+    <string name="contact_edit_level_error2">ضریب اهرم از حداکثر ضریب اهرم بیشتر است، لطفاً ضریب
+        اهرم را کاهش دهید
+    </string>
+    <string name="contact_edit_level_error3">پس از تنظیم، %s به عنوان حاشیه جدید به حساب معاملاتی
+        منتقل خواهد شد (مبلغ واقعی منتقل‌شده معتبر است)
+    </string>
+    <string name="contact_edit_level_error4">ضریب اهرم خیلی پایین است، در حساب شما حاشیه کافی برای
+        اضافه کردن وجود ندارد، لطفاً ضریب اهرم را افزایش دهید
+    </string>
+    <string name="contact_edit_level_error5">پس از تنظیم، حاشیه مشغول به کار در موقعیت %s کاهش خواهد
+        یافت، بخش کاهش‌یافته در موقعیت باقی خواهد ماند و می‌توان به موجودی حساب منتقل کرد
+    </string>
+    <string name="contact_flat_empty">بستن موقعیت خالی</string>
+    <string name="contact_flat_long">بستن موقعیت بلند</string>
+    <string name="contact_fun_info_1">نرخ هزینه جاری</string>
+    <string name="contact_fun_info_2">نرخ هزینه پیش‌بینی‌شده</string>
+    <string name="contact_fun_info_3">توضیحات نرخ هزینه</string>
+    <string name="contact_fun_info_4">نرخ هزینه هر ۸ ساعت تسویه می‌شود. اگر نرخ هزینه مثبت باشد، طرف
+        بلند هزینه را به طرف خالی می‌پردازد. اگر نرخ هزینه منفی باشد، طرف خالی هزینه را به طرف بلند
+        می‌پردازد.
+    </string>
+    <string name="contact_fun_info_5">هزینه سرمایه = ارزش موقعیت X نرخ هزینه</string>
+    <string name="contact_funding_rate">نرخ تامین مالی/شمارش معکوس</string>
+    <string name="contact_long">طولانی شدن</string>
+    <string name="contact_maker">سفارش معلق</string>
+    <string name="contact_margin">حاشیه</string>
+    <string name="contact_margin_can_close">قابل تسویه</string>
+    <string name="contact_margin_rate">نسبت حاشیه</string>
+    <string name="contact_most_can_add_margin">حداکثر می‌توان افزایش داد</string>
+    <string name="contact_most_can_add_margin_price">پس از افزایش، قیمت تسویه اجباری</string>
+    <string name="contact_most_can_sub_margin">حداکثر می‌توان کاهش داد</string>
+    <string name="contact_most_can_sub_margin_price">پس از کاهش، قیمت تسویه اجباری</string>
+    <string name="contact_no_order">سفارشی وجود ندارد</string>
+    <string name="contact_open">باز کردن شورت</string>
+    <string name="contact_open_more"> بازکردن لانگ</string>
+    <string name="contact_order_confirm">تأیید سفارش</string>
+    <string name="contact_sell_short">فروش برای باز کردن موقعیت خالی</string>
+    <string name="contact_short">فروش کوتاه</string>
+    <string name="contact_taker">پذیرش سفارش</string>
+    <string name="contract_14_day">۱۴ روز</string>
+    <string name="contract_24_h">۲۴ ساعت</string>
+    <string name="contract_24h_volume">حجم معاملات ۲۴ ساعت</string>
+    <string name="contract_30_day">۳۰ روز</string>
+    <string name="contract_7_day">۷ روز</string>
+    <string name="contract_add_order_suc">سفارش با موفقیت انجام شد</string>
+    <string name="contract_billing_cycle">دوره تسویه</string>
+    <string name="contract_can_close_buy">قابل تسویه بلند</string>
+    <string name="contract_can_close_sell">قابل تسویه خالی</string>
+    <string name="contract_can_open_buy">قابل باز کردن بلند</string>
+    <string name="contract_can_open_sell">قابل باز کردن خالی</string>
+    <string name="contract_position_amount">مقدار موقعیت</string>
+    <string name="contract_can_position_warn">مقدار قابل تسویه کافی نیست</string>
+    <string name="contract_cancel_all_loss_order">لغو همه سفارشات حد ضرر</string>
+    <string name="contract_cancel_all_profit_order">لغو همه سفارشات حد سود</string>
+    <string name="contract_cancel_order">لغو سفارش</string>
+    <string name="contract_cancel_time">زمان لغو سفارش</string>
+    <string name="contract_cant_switch_margin">این قرارداد در حال حاضر دارای سفارش/موقعیت است،
+        نمی‌توان نوع موقعیت را تنظیم کرد
+    </string>
+    <string name="contract_condition_order">سفارش شرطی</string>
+    <string name="contract_contract_code">کد قرارداد</string>
+    <string name="contract_contract_sign">موضوع قرارداد</string>
+    <string name="contract_contract_unit">واحد قرارداد</string>
+    <string name="contract_cost">هزینه</string>
+    <string name="contract_cost_price">قیمت تمام‌شده</string>
+    <string name="contract_cur_use_margin">حاشیه مشغول به کار در موقعیت جاری</string>
+    <string name="contract_current_funds_rate">نرخ هزینه فعلی/۱ ساعت</string>
+    <string name="contract_delivery_date">تاریخ تحویل</string>
+    <string name="contract_double_desc">در حالت موقعیت دوطرفه، یک قرارداد می‌تواند به طور همزمان
+        دارای موقعیت‌های بلند و خالی باشد، این دو جهت می‌توانند ریسک را همدیگر پوشش دهند.
+    </string>
+    <string name="contract_double_position">موقعیت دوطرفه</string>
+    <string name="contract_double_side">دوطرفه</string>
+    <string name="contract_edit_level">تنظیم ضریب اهرم</string>
+    <string name="contract_entrust_amount">مقدار سفارش</string>
+    <string name="contract_entrust_num">تعداد سفارش</string>
+    <string name="contract_entrust_time">زمان سفارش</string>
+    <string name="contract_entrust_type">نوع سفارش</string>
+    <string name="contract_entrust_value">ارزش سفارش</string>
+    <string name="contract_error_amount">مقدار نمی‌تواند صفر باشد</string>
+    <string name="contract_error_price">قیمت نمی‌تواند صفر باشد</string>
+    <string name="contract_force">کاهش اجباری موقعیت</string>
+    <string name="contract_full_desc">مدل حاشیه کل: تمام موقعیت‌ها از حاشیه موجود در حساب قرارداد
+        برای جلوگیری از تسویه اجباری استفاده می‌کنند. در صورت وقوع تسویه اجباری، معامله‌گر ممکن است
+        تمام حاشیه و موقعیت خود را از دست بدهد.
+    </string>
+    <string name="contract_future_order_details_position">جهت نقدینگی</string>
+    <string name="contract_greatest_market">بستن موقعیت بر اساس بهترین قیمت بازار</string>
+    <string name="contract_i_know">متوجه شدم</string>
+    <string name="contract_in_force">فعال شد</string>
+    <string name="contract_income">درآمد</string>
+    <string name="contract_index_value">شاخص</string>
+    <string name="contract_input_open_value">لطفاً ارزش باز کردن موقعیت را وارد کنید</string>
+    <string name="contract_input_trigger_price">لطفاً قیمت فعال‌سازی را وارد کنید</string>
+    <string name="contract_insufficient_balance">موجودی قابل استفاده کافی نیست</string>
+    <string name="contract_insufficient_quantity_for_reduction">مقدار کاهش قابل قبول کافی نیست
+    </string>
+    <string name="contract_isolated_desc">مدل حاشیه جداگانه: مقدار مشخصی از حاشیه به هر موقعیت
+        اختصاص می‌یابد. اگر حاشیه موقعیت به سطح حاشیه نگهداری کاهش یابد، موقعیت تسویه خواهد شد. در
+        مدل حاشیه جداگانه، شما می‌توانید به این موقعیت حاشیه اضافه یا کم کنید.
+    </string>
+    <string name="contract_level_max_hold">حداکثر اهرم %1$s</string>
+    <string name="contract_limit_order">سفارش قیمت دلخواه</string>
+    <string name="contract_long_position">موقعیت طولانی: ارزش اسمی x تعداد x (میانگین قیمت تسویه -
+        میانگین قیمت باز کردن)
+    </string>
+    <string name="contract_loss_tip">قیمت حد ضرر باید بیشتر از قیمت اخیر و کمتر از قیمت تسویه اجباری
+        باشد
+    </string>
+    <string name="contract_loss_tip_2">قیمت حد ضرر باید کمتر از قیمت اخیر و بیشتر از قیمت تسویه
+        اجباری باشد
+    </string>
+    <string name="contract_margin_coin">ارز حاشیه</string>
+    <string name="contract_margin_desc">حاشیه پیش‌بینی‌شده مورد نیاز برای این سفارش، مقدار دقیق به
+        موقعیت واقعی بستگی دارد.
+    </string>
+    <string name="contract_margin_model">مدل حاشیه</string>
+    <string name="contract_margin_txt">حاشیه پیش‌بینی‌شده مورد نیاز برای باز کردن موقعیت، مقدار دقیق
+        به سفارش واقعی بستگی دارد
+    </string>
+    <string name="contract_mark_price_desc">قیمت علامت برای محاسبه سود و زیان غیرتحقق‌یافته و قیمت
+        تسویه استفاده می‌شود
+    </string>
+    <string name="contract_mark_value">بازار</string>
+    <string name="contract_market">قیمت بازار</string>
+    <string name="contract_market_order">سفارش قیمت بازار</string>
+    <string name="contract_market_price">قیمت بازار در آن زمان</string>
+    <string name="contract_max_level_to_open">حداکثر ضریب اهرم فعلی قابل باز کردن</string>
+    <string name="contract_merge_position">ادغام موقعیت</string>
+    <string name="contract_min_keep_margin_rate">حداقل نسبت حاشیه نگهداری</string>
+    <string name="contract_min_price_change_unit">حداقل واحد تغییر قیمت</string>
+    <string name="contract_new_value">اخرین</string>
+    <string name="contract_next_funds_rate">نرخ هزینه دوره آینده پیش‌بینی‌شده</string>
+    <string name="contract_num_not_null">مقدار نمی‌تواند خالی باشد</string>
+    <string name="contract_only_maker">Post-Only</string>
+    <string name="contract_only_reduce_position">فقط کاهش موقعیت</string>
+    <string name="contract_open_high_first">قیمت خرید فعلی شما ۱% بالاتر از قیمت فروش یک است، آیا
+        تأیید می‌کنید که سفارش بدهید؟
+    </string>
+    <string name="contract_open_limit_buy">قیمت سفارش شما حد سفارش را فعال کرده است، لطفاً تأیید
+        کنید که با حداکثر قیمت خرید مجاز %1$s%2$s سفارش بدهید.
+    </string>
+    <string name="contract_open_limit_sell">قیمت سفارش شما حد سفارش را فعال کرده است، لطفاً تأیید
+        کنید که با حداقل قیمت فروش مجاز %1$s%2$s سفارش بدهید.
+    </string>
+    <string name="contract_open_low_first">قیمت فروش فعلی شما ۱% پایین‌تر از قیمت خرید یک است، آیا
+        تأیید می‌کنید که سفارش بدهید؟
+    </string>
+    <string name="contract_open_position">باز کردن موقعیت</string>
+    <string name="contract_open_value">ارزش باز کردن موقعیت</string>
+    <string name="contract_oppener_price">قیمت مقابله‌ای</string>
+    <string name="contract_order_can_close">مقدار قابل تسویه</string>
+    <string name="contract_order_validity_period">مدت اعتبار سفارش شرطی/حد سود و ضرر</string>
+    <string name="contract_out_limit">خارج از دامنه قیمت</string>
+    <string name="contract_over_close_number">خارج از مقدار قابل تسویه</string>
+    <string name="contract_pk_buy">نمایش خرید</string>
+    <string name="contract_pk_default">پیش‌فرض</string>
+    <string name="contract_pk_sell">نمایش فروش</string>
+    <string name="contract_position_type">نوع موقعیت</string>
+    <string name="contract_predict_income">درآمد پیش‌بینی شده</string>
+    <string name="contract_price_not_null">قیمت نمی‌تواند خالی باشد</string>
+    <string name="contract_profit_loss_estimate">هنگامی که قیمت علامت به %1$s برسد، سفارش %2$s فعال
+        می‌شود، درآمد پیش‌بینی شده %3$s و نرخ بازده پیش‌بینی شده %4$s است
+    </string>
+    <string name="contract_profit_loss_estimate_blue">هنگامی که قیمت علامت به &lt;font
+        color="#040809"&gt;%1$s&lt;/font&gt; برسد، سفارش %2$s فعال می‌شود، درآمد پیش‌بینی شده &lt;font
+        color="#16BD75"&gt;%3$s&lt;/font&gt; و نرخ بازده پیش‌بینی شده &lt;font color="#16BD75"&gt;%4$s&lt;/font&gt;
+        است
+    </string>
+    <string name="contract_profit_loss_estimate_red">هنگامی که قیمت علامت به &lt;font
+        color="#040809"&gt;%1$s&lt;/font&gt; برسد، سفارش %2$s فعال می‌شود، درآمد پیش‌بینی شده &lt;font
+        color="#F0515C"&gt;%3$s&lt;/font&gt; و نرخ بازده پیش‌بینی شده &lt;font color="#F0515C"&gt;%4$s&lt;/font&gt;
+        است
+    </string>
+    <string name="contract_profit_loss_position">موقعیت/قابل تسویه</string>
+    <string name="contract_profit_tip">قیمت حد سود باید کمتر از قیمت اخیر باشد</string>
+    <string name="contract_profit_tip_2">قیمت حد سود باید بیشتر از قیمت اخیر باشد</string>
+    <string name="contract_real_entrust_count">مقدار واقعی سفارش</string>
+    <string name="contract_real_entrust_price">قیمت واقعی سفارش</string>
+    <string name="contract_select_at_most_input">بیش از حداکثر مقدار سفارش در یک بار، حداکثر
+        می‌توانید وارد کنید
+    </string>
+    <string name="contract_select_at_most_input_amount">بیش از حداکثر مبلغ سفارش در یک بار، حداکثر
+        می‌توانید وارد کنید
+    </string>
+    <string name="contract_select_at_most_order">حداکثر می‌توانید هنوز سفارش بدهید</string>
+    <string name="contract_select_minimum_input">بیش از حداقل مقدار سفارش در یک بار، حداقل باید وارد
+        کنید
+    </string>
+    <string name="contract_select_minimum_input_amount">بیش از حداقل مبلغ سفارش در یک بار، حداقل
+        باید وارد کنید
+    </string>
+    <string name="contract_select_price_too_large">اختلاف قیمت خیلی زیاد است!</string>
+    <string name="contract_short_position">موقعیت خالی: ارزش اسمی x تعداد x (میانگین قیمت باز کردن -
+        میانگین قیمت تسویه)
+    </string>
+    <string name="contract_side_type">مدل یک‌طرفه/دو طرفه</string>
+    <string name="contract_single_desc">در مدل موقعیت یک‌طرفه، یک قرارداد فقط اجازه دارد یک موقعیت
+        در یک جهت داشته باشد.
+    </string>
+    <string name="contract_single_position">موقعیت یک‌طرفه</string>
+    <string name="contract_single_side">یک‌طرفه</string>
+    <string name="contract_stop_decline">کاهش قیمت</string>
+    <string name="contract_stop_entrust">سفارش حد سود و ضرر</string>
+    <string name="contract_stop_formmat_tips1">قیمت فعال‌سازی حد ضرر نمی‌تواند کمتر از قیمت اخیر
+        باشد
+    </string>
+    <string name="contract_stop_formmat_tips10">قیمت فعال‌سازی حد ضرر نمی‌تواند کمتر از قیمت اخیر
+        باشد
+    </string>
+    <string name="contract_stop_formmat_tips11">قیمت حد ضرر نمی‌تواند کمتر از قیمت شاخص باشد
+    </string>
+    <string name="contract_stop_formmat_tips12">قیمت حد ضرر نمی‌تواند کمتر از قیمت علامت باشد
+    </string>
+    <string name="contract_stop_formmat_tips13">قیمت فعال‌سازی حد سود نمی‌تواند بیشتر از قیمت فروش
+        یک باشد
+    </string>
+    <string name="contract_stop_formmat_tips14">قیمت فعال‌سازی حد سود نمی‌تواند بیشتر از قیمت خرید
+        یک باشد
+    </string>
+    <string name="contract_stop_formmat_tips2">قیمت حد سود نمی‌تواند کمتر از قیمت شاخص باشد</string>
+    <string name="contract_stop_formmat_tips3">قیمت حد سود نمی‌تواند کمتر از قیمت علامت باشد
+    </string>
+    <string name="contract_stop_formmat_tips4">قیمت فعال‌سازی حد سود نمی‌تواند بیشتر از قیمت اخیر
+        باشد
+    </string>
+    <string name="contract_stop_formmat_tips5">قیمت حد سود نمی‌تواند بیشتر از قیمت شاخص باشد
+    </string>
+    <string name="contract_stop_formmat_tips6">قیمت حد سود نمی‌تواند بیشتر از قیمت علامت باشد
+    </string>
+    <string name="contract_stop_formmat_tips7">قیمت فعال‌سازی حد ضرر نمی‌تواند کمتر از قیمت اخیر
+        باشد
+    </string>
+    <string name="contract_stop_formmat_tips8">قیمت حد ضرر نمی‌تواند بیشتر از قیمت شاخص باشد
+    </string>
+    <string name="contract_stop_formmat_tips9">قیمت حد ضرر نمی‌تواند بیشتر از قیمت علامت باشد
+    </string>
+    <string name="contract_stop_increase">افزایش قیمت</string>
+    <string name="contract_stop_level_senior">پیشرفته</string>
+    <string name="contract_stop_loss">حد ضرر</string>
+    <string name="contract_stop_loss_limit">سفارش حد ضرر</string>
+    <string name="contract_stop_loss_limit_price">قیمت سفارش حد ضرر</string>
+    <string name="contract_stop_loss_tips1">هنگامی که قیمت به %s برسد، سفارش بازار فعال می‌شود، ضرر
+        پیش‌بینی شده %s است
+    </string>
+    <string name="contract_stop_loss_tips2">هنگامی که قیمت به %s برسد، سفارش حد فعال می‌شود، ضرر
+        پیش‌بینی شده %s است
+    </string>
+    <string name="contract_stop_loss_trigger">فعال‌سازی حد ضرر</string>
+    <string name="contract_stop_loss_trigger_price">قیمت فعال‌سازی حد ضرر</string>
+    <string name="contract_stop_profit">حد سود</string>
+    <string name="contract_stop_profit_limit">سفارش حد سود</string>
+    <string name="contract_stop_profit_limit_price">قیمت سفارش حد سود</string>
+    <string name="contract_stop_profit_tips1">هنگامی که قیمت به %s برسد، سفارش بازار فعال می‌شود،
+        سود پیش‌بینی شده %s است
+    </string>
+    <string name="contract_stop_profit_tips2">هنگامی که قیمت به %s برسد، سفارش حد فعال می‌شود، سود
+        پیش‌بینی شده %s است
+    </string>
+    <string name="contract_stop_profit_trigger">فعال‌سازی حد سود</string>
+    <string name="contract_stop_profit_trigger_price">قیمت فعال‌سازی حد سود</string>
+    <string name="contract_stop_tips1">شما می‌توانید برای سفارش فعلی خود حد سود و ضرر تعیین کنید، پس
+        از باز کردن موقعیت حد سود و ضرر فعال می‌شود
+    </string>
+    <string name="contract_sustainable_format">%s دائمی</string>
+    <string name="contract_to_login">تجارت پس از ورود</string>
+    <string name="contract_to_take_effect">در حال انتظار</string>
+    <string name="contract_toast_tips1">مقدار باید مضربی از %s باشد</string>
+    <string name="contract_trade_price_max">قیمت نمی‌تواند از ۱۰۰۰۰۰۰۰۰ بیشتر شود</string>
+    <string name="contract_trigger_side">جهت واقعی فعال‌سازی</string>
+    <string name="currency_overview">خلاصه ارز</string>
+    <string name="daily_lucky_draw">قرعه‌کشی روزانه</string>
+    <string name="common_day">روز</string>
+    <string name="day_count_down">%1$sروز%2$s:%3$s:%4$s</string>
+    <string name="deposit_address_to">آدرس</string>
+    <string name="deposit_chain_name">شبکه</string>
+    <string name="deposit_memo_need_text">برای واریز به شما باید در پلتفرم برداشت Memo (برچسب) را پر
+        کنید، در غیر این صورت واریز به حساب نمی‌رسد یا بازگشت نمی‌شود
+    </string>
+    <string name="deposit_share_to">به اشتراک بگذارید</string>
+    <string name="deposit_status_unavailable">مکث</string>
+    <string name="deposit_verify_hash">شناسه معامله</string>
+    <string name="depth_price_margin">دامنه قیمت</string>
+    <string name="depth_total_amount">مجموع سفارشات معلق</string>
+    <string name="enter_6_email_code">لطفاً کد تأیید ۶ رقمی ایمیل را وارد کنید</string>
+    <string name="enter_6_ga_code">لطفاً کد تأیید ۶ رقمی Google را وارد کنید</string>
+    <string name="enter_6_sms_code">لطفاً کد تأیید ۶ رقمی پیامکی را وارد کنید</string>
+    <string name="errorCode5">موجودی شما کافی نیست</string>
+    <string name="experiencia_desc_new">توضیحات تجربه سرمایه</string>
+    <string name="follow_apply_status1">درخواست شما ارسال شده است، لطفاً صبر کنید.</string>
+    <string name="follow_apply_status2">درخواست تأیید شده است.</string>
+    <string name="follow_apply_trader">درخواست تاجر</string>
+    <string name="follow_apply_trader_btn">ارسال درخواست</string>
+    <string name="follow_close_volume">مقدار تسویه</string>
+    <string name="follow_dialog_cancel_content">پیگیری این تاجر را متوقف کنید، موقعیت‌های باز شده با
+        این تاجر فوراً تسویه نخواهند شد، شما می‌توانید به صفحه قرارداد برای تسویه دستی مراجعه کنید.
+    </string>
+    <string name="follow_follow_users">کاربر دنبال‌کننده</string>
+    <string name="follow_message_history">در زیر پیام‌های تاریخی آمده است</string>
+    <string name="follow_message_title">پیام‌های دنبال کردن</string>
+    <string name="follow_now_price">قیمت</string>
+    <string name="follow_orders_now_history">تاریخچه دنبال کردن</string>
+    <string name="follow_orders_now_order">دنبال کردن فعلی</string>
+    <string name="follow_orders_realized_amount_new">سود و زیان موقعیت</string>
+    <string name="follow_orders_traders_follow_amount">مجموع مقدار کپی (USDT)</string>
+    <string name="follow_orders_traders_profit_amount">سود (USDT)</string>
+    <string name="follow_orders_volume">(عدد)</string>
+    <string name="follow_regist_term_1">موجودی حساب قرارداد &gt;= ۱۰۰ USDT.</string>
+    <string name="follow_regist_term_2">تأیید هویت LV1 کامل شد.</string>
+    <string name="follow_regist_term_3">در حال حاضر هیچ موقعیت دنبال کردنی وجود ندارد.</string>
+    <string name="follow_regist_term_4">قرارداد فعلی در حالت حاشیه جداگانه است.</string>
+    <string name="follow_right_now">دنبال کردن فوری</string>
+    <string name="follow_setting_amount">مقدار</string>
+    <string name="follow_setting_amount_to_rate">تغییر به نسبت ثابت</string>
+    <string name="follow_setting_amount_to_rate_tips">زمانی که تاجر هر بار سفارشی بدهد، شما با مقدار
+        ثابت در جهت معامله تاجر دنبال خواهید کرد. هر معامله دنبال شده = مقدار ثابت.
+    </string>
+    <string name="follow_setting_follow_contact_type">قرارداد دنبال کردن</string>
+    <string name="follow_setting_follow_type">روش دنبال کردن</string>
+    <string name="follow_setting_input_error1">لطفاً مقدار دنبال کردن را وارد کنید</string>
+    <string name="follow_setting_input_error2">لطفاً نسبت دنبال کردن را وارد کنید</string>
+    <string name="follow_setting_input_error3">لطفاً حداکثر دنبال کردن را وارد کنید</string>
+    <string name="follow_setting_leverage_multiple_trader">اهرم تاجر دنبال شده</string>
+    <string name="follow_setting_loss_ratio">نسبت حد ضرر</string>
+    <string name="follow_setting_loss_ratio_tips">پس از پیکربندی شما، همه موقعیت‌هایی که شما در جهت
+        تاجر باز می‌کنید، به طور خودکار با نسبت حد ضرر تنظیم می‌شود. پس از باز کردن موقعیت،
+        می‌توانید در حد سود و ضرر موقعیت، حد ضرر را ویرایش کنید.
+    </string>
+    <string name="follow_setting_max_follow_amount">حداکثر دنبال کردن</string>
+    <string name="follow_setting_max_follow_amount_tips">حداکثر حاشیه‌ای که می‌توانید در این قرارداد
+        برای دنبال کردن تاجر باز کنید. زمانی که حاشیه مورد نیاز برای یک موقعیت جدید با مجموع
+        حاشیه‌های موقعیت‌های باز شده از حداکثر دنبال کردن تجاوز کند، موفق به باز کردن موقعیت نخواهید
+        شد.
+    </string>
+    <string name="follow_setting_off_ratio">نسبت حد سود</string>
+    <string name="follow_setting_off_ratio_tips">پس از پیکربندی شما، همه موقعیت‌هایی که شما در جهت
+        تاجر باز می‌کنید، به طور خودکار با نسبت حد سود تنظیم می‌شود. پس از باز کردن موقعیت،
+        می‌توانید در حد سود و ضرر موقعیت، حد سود را ویرایش کنید.
+    </string>
+    <string name="follow_setting_rate_to_amount">تغییر به مقدار ثابت</string>
+    <string name="follow_setting_rate_to_amount_tips">زمانی که تاجر هر بار سفارشی بدهد، شما با نسبت
+        ثابت در جهت معامله تاجر دنبال خواهید کرد. هر تعداد دنبال شده = تعداد باز شده توسط تاجر *
+        نسبت ثابت.
+    </string>
+    <string name="follow_setting_risk_control">کنترل ریسک</string>
+    <string name="follow_setting_trader_asset_amount">قدرت مالی (USDT)</string>
+    <string name="follow_setting_trader_bonus_rate">نسبت تقسیم سود</string>
+    <string name="follow_taum">AUM</string>
+    <string name="follow_term_1">من به دقت خوانده‌ام و موافقم</string>
+    <string name="follow_term_2">«توافق‌نامه تاجر»</string>
+    <string name="follow_total_close_time">زمان کل بستن موقعیت</string>
+    <string name="follow_trader_checkin_day">به مدت %s روز در اینجا اقامت داشته‌ام</string>
+    <string name="follow_trader_follower">دنبال‌کننده</string>
+    <string name="follow_trader_go_change">برای انتقال بروید</string>
+    <string name="follow_trader_go_close">برای بستن موقعیت بروید</string>
+    <string name="follow_trader_go_setting_new">تنظیم به حالت حاشیه جداگانه</string>
+    <string name="follow_trader_history_bring">تاریخچه معاملات</string>
+    <string name="follow_trader_intro">معرفی شخصی</string>
+    <string name="follow_trader_intro_condition">الزامات معرفی شخصی</string>
+    <string name="follow_trader_message_intro">این فرد بسیار تنبل است و فعلاً هیچ معرفی شخصی پرنکرده است.</string>
+    <string name="contract_position_profit_desc">سود و زیان یک موقعیت، مجموع سود و زیان هر موقعیت است که بر اساس میانگین قیمت موقعیت قبل از بسته شدن موقعیت و میانگین قیمت موقعیت محاسبه می شود.</string>
+    <string name="contract_realized_profit_desc">سود تحقق یافته شامل تمام سودهای انباشته این موقعیت = سود و زیان موقعیت - کارمزد رسیدگی + کارمزد سرمایه</string>
+    <string name="follow_trader_new">تاجر</string>
+    <string name="follow_traders_list_follow_limit">پر شده</string>
+    <string name="follow_traders_list_follow_profit_amount">مقدار سود</string>
+    <string name="follow_traders_list_key2">مجموع سود</string>
+    <string name="follow_traders_list_key4">MDD</string>
+    <string name="follow_traders_message_no_data">هیچ یادآوری دنبال کردن وجود ندارد</string>
+    <string name="follow_users_follow">دنبال کردن</string>
+    <string name="follow_users_following">در حال دنبال کردن</string>
+    <string name="follow_users_profit_total">سود/مجموع مبلغ دنبال کردن (USDT)</string>
+    <string name="follow_users_rank">رتبه‌بندی</string>
+    <string name="follow_users_roi_close">نرخ سود (بسته شده)</string>
+    <string name="follow_users_roi_open">نرخ سود (در حال حاضر)</string>
+    <string name="follow_users_top10">فقط ۱۰ کاربر برتر دنبال‌کننده نمایش داده می‌شود</string>
+    <string name="follow_users_trades">عدد</string>
+    <string name="follow_users_users">شخص</string>
+    <string name="follower_times">برابر</string>
+    <string name="forceClose">تسویه اجباری</string>
+    <string name="funding_rate_history">سابقه نرخ هزینه</string>
+    <string name="funding_rate_settled">زمان تسویه نرخ هزینه</string>
+    <string name="ga_explanation">راهنمای استفاده</string>
+    <string name="hight24">بیشترین در ۲۴ ساعت</string>
+    <string name="home_affiliate">شریک</string>
+    <string name="home_aibit_academy">آکادمی Aibit</string>
+    <string name="home_bulletin">اطلاعیه</string>
+    <string name="home_buy_crypto">خرید ارز</string>
+    <string name="home_c2c_desc">انتخاب انعطاف‌پذیر، قیمت بهتر</string>
+    <string name="home_chat">چت</string>
+    <string name="home_customer_service">پشتیبانی</string>
+    <string name="home_deposit">واریز روی زنجیره</string>
+    <string name="home_dialog_register_button">به ثبت‌نام بروید</string>
+    <string name="home_dialog_register_slogan">همین حالا ثبت‌نام کنید و بسته خوش‌آمدگویی $%1$s را
+        دریافت کنید
+    </string>
+    <string name="home_event">فعالیت</string>
+    <string name="home_futures_trading">قرارداد</string>
+    <string name="home_gif_dialog_desc">شما یک بسته بزرگ اختصاصی برای کاربران جدید دارید</string>
+    <string name="home_gift_signup">همین حالا ثبت‌نام کنید</string>
+    <string name="home_gold_card_collecting">بازی شکار</string>
+    <string name="home_more_bulletin">بیشتر ببینید</string>
+    <string name="home_new_user_bonuses">بونوس</string>
+    <string name="home_others">سایر</string>
+    <string name="home_quick_desc">روش‌های بیشتر، معاملات سریع</string>
+    <string name="home_quick_pay">پرداخت سریع</string>
+    <string name="home_rank_add_optional">اضافه کردن به موارد دلخواه</string>
+    <string name="home_register_tip">ثبت‌نام برای باز کردن تا\n %1$s USDT بسته خوش‌آمدگویی</string>
+    <string name="home_to_login">ورود / ثبت‌نام</string>
+    <string name="home_total_balance">ارزیابی کل دارایی</string>
+    <string name="hour">ساعت</string>
+    <string name="idx_price">قیمت علامت فعال‌سازی</string>
+    <string name="ieo_price">قیمت عرضه اولیه</string>
+    <string name="ieo_time">زمان عرضه اولیه</string>
+    <string name="information">اطلاعات قرارداد</string>
+    <string name="invite_friend_desc_2">دریافت %1$s USDT پاداش معاملاتی</string>
+    <string name="k_12h">۱۲ ساعت</string>
+    <string name="k_15m">۱۵ دقیقه</string>
+    <string name="k_1d">۱ روز</string>
+    <string name="k_1h">۱ ساعت</string>
+    <string name="k_1m">۱ دقیقه</string>
+    <string name="k_1mon">۱ ماه</string>
+    <string name="k_1week">۱ هفته</string>
+    <string name="k_2h">۲ ساعت</string>
+    <string name="k_30m">۳۰ دقیقه</string>
+    <string name="k_3m">۳ دقیقه</string>
+    <string name="k_4h">۴ ساعت</string>
+    <string name="k_5m">۵ دقیقه</string>
+    <string name="k_6h">۶ ساعت</string>
+    <string name="k_8h">۸ ساعت</string>
+    <string name="k_time_sharing">دقیقه</string>
+    <string name="kline_a">مقدار</string>
+    <string name="kline_c">جمع</string>
+    <string name="kline_chart">بازار</string>
+    <string name="kline_comming_soon">به زودی راه‌اندازی می‌شود</string>
+    <string name="kline_h">بالا</string>
+    <string name="kline_l">پایین</string>
+    <string name="kline_new_spot_desc">لطفاً به اطلاعیه‌های رسمی توجه کنید</string>
+    <string name="kline_o">باز</string>
+    <string name="kline_online_delay">به زودی منتظر باشید!</string>
+    <string name="kline_online_warn">زمان معامله این پروژه به تأخیر افتاده است. لطفاً به اطلاعیه‌های
+        Aibit برای آخرین زمان‌های معامله توجه کنید.
+    </string>
+    <string name="kline_p">عرض</string>
+    <string name="kline_percent_180">۱۸۰ روز</string>
+    <string name="kline_percent_365">۳۶۵ روز</string>
+    <string name="kline_percent_90">۹۰ روز</string>
+    <string name="kline_percent_today">امروز</string>
+    <string name="kline_time">زمان</string>
+    <string name="kline_v">مقدار افزایش و کاهش</string>
+    <string name="kline_value">حجم</string>
+    <string name="kline_will_online">به زودی باز می‌شود!</string>
+    <string name="kyc1_county_desc">کشور یا منطقه‌ای که در حال حاضر در آن زندگی می‌کنید را انتخاب
+        کنید. شما فقط باید به سوالات مربوط به قوانین محلی پاسخ دهید.
+    </string>
+    <string name="kyc1_driver_card">گواهینامه رانندگی</string>
+    <string name="kyc1_edit_info_title">تأیید هویت شخصی</string>
+    <string name="kyc1_success">تأیید موفق</string>
+    <string name="kyc1_success_desc">تأیید اطلاعات شخصی شما به پایان رسید\nادامه به تأیید Lv 2
+        پیشرفته برای افزایش محدودیت‌های معاملاتی
+    </string>
+    <string name="kyc2_dialog_limit">اطلاعات تأیید شده قبلی شما برگشت داده خواهد شد و از «Lv 1»
+        دوباره شروع می‌شود، در حال حاضر %s فرصت باقی‌مانده است و پس از آن نمی‌توانید دوباره تأیید
+        کنید.
+    </string>
+    <string name="kyc2_dialog_limit_warn">اطلاعات تأیید پیشرفته باید با اطلاعات تأیید اولیه همخوانی
+        داشته باشد، شما فقط می‌توانید ۳ بار تأیید کنید
+    </string>
+    <string name="kyc2_exceed_times">شما از تعداد تأیید بیشتر شده‌اید، لطفاً با پشتیبانی انسانی تماس
+        بگیرید
+    </string>
+    <string name="kyc2_limit_title">از Lv 1 دوباره تأیید خواهید کرد</string>
+    <string name="kyc_advanced">تأیید پیشرفته</string>
+    <string name="kyc_again_lv1">تأیید دوباره Lv 1</string>
+    <string name="kyc_base_auth">تأیید اولیه</string>
+    <string name="kyc_chose_card_hint">نوع مدرک را انتخاب کنید</string>
+    <string name="kyc_kyc2_review_warn">تأیید هویت شما در حال بررسی است و بیشتر درخواست‌ها در کمتر
+        از ۱ دقیقه تأیید می‌شود.
+    </string>
+    <string name="kyc_kyc2_start_title">قبل از شروع، لطفاً اطلاعات را بررسی کنید</string>
+    <string name="kyc_msg_is_right">آیا اطلاعات با مدرک شما مطابقت ندارد؟</string>
+    <string name="kyc_nationality">ملیت</string>
+    <string name="kyc_otc">معاملات OTC</string>
+    <string name="kyc_start_high">انجام تأیید پیشرفته</string>
+    <string name="kyc_start_kyc2">بررسی صحیح، شروع تأیید</string>
+    <string name="kyc_title_1">پس از تأیید می‌توانید انجام دهید</string>
+    <string name="kyc_title_2">تأیید اطلاعات هویتی شخصی</string>
+    <string name="kyc_verify_tip_1">لطفاً تأیید کنید که اطلاعات «تأیید اولیه Lv 1» شما با اطلاعات
+        مدرک شما مطابقت دارد، در غیر این صورت تأیید نخواهید شد
+    </string>
+    <string name="limit_ip_desc">به دلیل قوانین و الزامات مربوطه، کشور یا منطقه شما نمی‌تواند از
+        محصولات و خدمات این وب‌سایت استفاده کند. از بابت این مشکل معذرت می‌خواهیم!
+    </string>
+    <string name="limit_tips_trade">سفارش محدود می‌تواند تعداد سفارش و بالاترین قیمت خرید یا
+        پایین‌ترین قیمت فروش را توسط کاربر تنظیم کند.\nزمانی که قیمت بازار با انتظارات کاربر مطابقت
+        دارد، سیستم به بهترین قیمت در محدوده محدود معامله خواهد کرد.
+    </string>
+    <string name="liquidation_price_calculation">محاسبه قیمت تسویه اجباری</string>
+    <string name="load_more">بیشتر بارگذاری کنید</string>
+    <string name="login_bind_account">حساب‌های موجود را مرتبط کنید</string>
+    <string name="login_bind_desc">این ایمیل قبلاً ثبت شده است. شما می‌توانید تأیید ایمیل انجام دهید
+        و آن را با حساب شخص ثالث مرتبط کنید
+    </string>
+    <string name="login_create_account">ایجاد حساب</string>
+    <string name="login_error_pwd">۸-۳۰ کاراکتر، باید شامل حروف بزرگ و کوچک و اعداد باشد</string>
+    <string name="login_forget_pwd">رمز عبور را فراموش کرده‌اید؟</string>
+    <string name="login_please_input_pwd">لطفاً رمز عبور خود را وارد کنید</string>
+    <string name="login_scan_device">دستگاه</string>
+    <string name="login_scan_error_30001">QR کد نامعتبر است</string>
+    <string name="login_scan_error_30002">QR کد منقضی شده است</string>
+    <string name="login_scan_error_expired">QR کد منقضی شده است، لطفاً صفحه را تازه کنید و دوباره
+        دریافت کنید
+    </string>
+    <string name="login_scan_ip_address">آدرس IP</string>
+    <string name="login_scan_location">محل</string>
+    <string name="login_scan_login">ورود با مجوز</string>
+    <string name="login_scan_pc_confirmation">تأیید ورود به PC</string>
+    <string name="login_scan_success">ورود با موفقیت</string>
+    <string name="login_scan_tips">در حال ورود به حساب Aibit شما در PC هستید، لطفاً تأیید کنید که
+        خود شما در حال اقدام هستید. توجه داشته باشید که از خطرات کلاهبرداری جلوگیری کنید تا از ضرر
+        مالی جلوگیری شود
+    </string>
+    <string name="login_term_all">با ادامه ثبت‌نام، شما با توافق کاربر و سیاست حفظ حریم خصوصی موافقت می‌کنید.</string>
+    <string name="login_third_title">یا از طریق روش‌های زیر وارد شوید</string>
+    <string name="lottery_title">قرعه‌کشی روزانه، جوایز «تبدیل» ادامه دارد</string>
+    <string name="low24">حداقل در ۲۴ ساعت</string>
+    <string name="main_bottom_home">صفحه اصلی</string>
+    <string name="maker_fee">هزینه خدمات سازنده</string>
+    <string name="market_buy">خرید</string>
+    <string name="market_cap">ارزش بازار</string>
+    <string name="market_currency">واحد تسویه</string>
+    <string name="market_currency_swap">ارزش اسمی قرارداد</string>
+    <string name="market_depth">نقشه عمق</string>
+    <string name="market_price">قیمت</string>
+    <string name="market_mark_price">قیمت علامت</string>
+    <string name="market_min_price">حداقل واحد تغییر قیمت</string>
+    <string name="market_name">نام</string>
+    <string name="market_sell">فروش</string>
+    <string name="market_tips_trade">سفارش قیمت بازار به کاربران اجازه می‌دهد که با بهترین قیمت
+        بازار فعلی سفارش دهند تا به هدف معامله سریع برسند.\nبا توجه به مقدار یا مبلغ مورد انتظار خود
+        سفارش قیمت بازار را قرار دهید، مقدار و قیمت نهایی بستگی به نتیجه واقعی معامله خواهد داشت.
+    </string>
+    <string name="memo_tips2">لطفاً تأیید کنید که آیا دریافت‌کننده نیاز به پر کردن memo (یا نام دیگر
+        tag/برچسب) دارد. اگر نیاز به پر کردن است، لطفاً اطمینان حاصل کنید که اطلاعات صحیح است تا از
+        گم شدن دارایی جلوگیری شود.
+    </string>
+    <string name="min_amount_to_order">حداقل مبلغ سفارش %s است</string>
+    <string name="min_num_to_order">حداقل تعداد سفارش %s است</string>
+    <string name="minute">دقیقه</string>
+    <string name="mobile_or_email_error_tip">لطفاً ایمیل یا شماره تلفن معتبر وارد کنید</string>
+    <string name="modify_condition_title">تغییر سفارش شرطی</string>
+    <string name="modify_limit_title">تغییر سفارش محدود</string>
+    <string name="modify_modification_completed">موفقیت در تغییر</string>
+    <string name="modify_number_less_than_traded_coin">تعداد سفارش باید بیشتر از تعداد انجام شده
+        %1$s باشد
+    </string>
+    <string name="modify_number_less_than_traded_piece">تعداد سفارش باید بیشتر از %1$s برگه انجام
+        شده باشد
+    </string>
+    <string name="more">بیشتر</string>
+    <string name="more_functions">بیشتر امکانات</string>
+    <string name="msg_center_title">مرکز پیام</string>
+    <string name="msg_empty">هیچ اعلانی جدید نیست</string>
+    <string name="msg_open">جزئیات</string>
+    <string name="msg_read_all">آیا می‌خواهید تمام پیام‌ها را به‌عنوان خوانده شده علامت‌گذاری
+        کنید؟
+    </string>
+    <string name="network_android_version">سیستم‌عامل</string>
+    <string name="network_api_speed">سرعت API</string>
+    <string name="network_api_ws_speed">سرعت پاسخ API ws</string>
+    <string name="network_app_version">نسخه برنامه</string>
+    <string name="network_confirmation">%s بار تأیید شبکه</string>
+    <string name="network_connect_error">اتصال ناموفق</string>
+    <string name="network_connect_success">اتصال موفق</string>
+    <string name="network_mobile_info">اطلاعات تلفن</string>
+    <string name="network_title">بررسی شبکه</string>
+    <string name="network_ws_speed">سرعت WS</string>
+    <string name="new_year_desc"> جمع‌آوری کارت‌ها و تقسیم $%s</string>
+    <string name="new_year_title">بازگشت قدردانی Aibit در روز شکرگزاری</string>
+    <string name="no_set">تنظیم نشده</string>
+    <string name="no_withdrawal_record">سوابق برداشت وجود ندارد</string>
+    <string name="not_allow_permission">لطفاً مجوزهای مرتبط را فعال کنید</string>
+    <string name="nua_first_deposit">شارژ اولیه</string>
+    <string name="nua_first_deposit_desc">با تکمیل اولین شارژ به میزان ≥%1$s USDT، می‌توانید %2$s
+        USDT را دریافت کنید!
+    </string>
+    <string name="nua_first_trade">معامله اولیه</string>
+    <string name="nua_first_trade_desc">با تکمیل حجم معاملات قرارداد اولیه ≥%1$s USDT</string>
+    <string name="nua_first_trade_desc_plus">با تکمیل حجم معاملات قرارداد اولیه ≥%1$s USDT یا حجم
+        معاملات نقدی اولیه ≥%2$s USDT
+    </string>
+    <string name="nua_kyc_verification">تأیید KYC</string>
+    <string name="nua_kyc_verification_desc">با تکمیل تأیید KYC، می‌توانید %1$s USDT را دریافت
+        کنید!
+    </string>
+    <string name="nua_kye_verification_do">هم‌اکنون تأیید کنید</string>
+    <string name="one_lowercase_letter">1 حرف کوچک</string>
+    <string name="one_number">1 عدد</string>
+    <string name="one_uppercase_letter">1 حرف بزرگ</string>
+    <string name="optional">(اختیاری)</string>
+    <string name="order_cancel_time">زمان انصراف</string>
+    <string name="order_confirm_tips">با فعال کردن تأیید سفارش، هر بار که سفارشی را ارسال می‌کنید،
+        یک پنجره تأیید باز می‌شود
+    </string>
+    <string name="order_create_time">زمان ایجاد</string>
+    <string name="order_deal_numb">تعداد انجام شده</string>
+    <string name="order_effective">معتبر</string>
+    <string name="order_expire_time">زمان انقضا</string>
+    <string name="order_filter_side">جهت: %s</string>
+    <string name="order_filter_swap">قرارداد: %s</string>
+    <string name="order_filter_type">نوع: %s</string>
+    <string name="order_force_entrust">سفارش اجبار</string>
+    <string name="order_placed">سفارش موفق</string>
+    <string name="order_preset_price">قیمت سفارش</string>
+    <string name="order_reduce_no">خیر</string>
+    <string name="order_reduce_yes">بله</string>
+    <string name="order_role">نقش</string>
+    <string name="order_trigger_complete">تحریک شده</string>
+    <string name="order_trigger_fail">شکست تحریک</string>
+    <string name="order_trigger_time">زمان تحریک</string>
+    <string name="per_day">هر روز</string>
+    <string name="personal_invite_des">دریافت %s جایزه معامله</string>
+    <string name="personal_invite_title">دوستان خود را برای کمک به معاملات دعوت کنید،</string>
+    <string name="personal_my_feerate">نرخ من</string>
+    <string name="personal_newcomer_des">بسته ویژه مختص کاربران جدید</string>
+    <string name="personal_register">ثبت‌نام</string>
+    <string name="personal_setting">تنظیمات</string>
+    <string name="personal_welcome_des">وارد کردن حساب، دنیای Web3 شما از اینجا آغاز می‌شود!
+    </string>
+    <string name="please_input_psw">لطفاً رمز عبور ورود را وارد کنید</string>
+    <string name="position_margin">ضمانت‌نامه موقعیت</string>
+    <string name="position_realize_amount">PnL تسویه‌شده</string>
+    <string name="position_size">تعداد باز کردن</string>
+    <string name="preset_order_total">مجموع سفارش</string>
+    <string name="profit_calculation">محاسبه سود</string>
+    <string name="profit_loss_estimated_pl">سود و زیان تخمینی</string>
+    <string name="profit_loss_estimated_pl_desc">سود و زیان تخمینی برای بسته شدن برآورد شده است،
+        هزینه‌های معامله و تفاوت قیمت واقعی با قیمت تحریک ممکن است باعث تفاوت قابل توجهی بین ارزش
+        تخمینی و واقعی شود، لطفاً فقط برای مرجع استفاده شود.\n\n
+        سفارش‌های توقف سود و ضرر با قیمت تحریک بر اساس تخمین سود و زیان انجام می‌شوند. توقف سود و
+        ضرر با قیمت محدود بر اساس قیمت محدود تخمین زده می‌شود.
+    </string>
+    <string name="profit_loss_exceed_max">توقف سود و ضرر بالاتر از بالاترین قیمت محدود</string>
+    <string name="profit_loss_exceed_min">توقف سود و ضرر پایین‌تر از پایین‌ترین قیمت محدود</string>
+    <string name="profit_loss_order_price">قیمت سفارش</string>
+    <string name="profit_loss_price_change">نرخ افزایش و کاهش</string>
+    <string name="profit_loss_tip">به‌دلیل تغییرات سریع بازار، قیمت تحریک نباید خیلی نزدیک به قیمت
+        تسویه تخمینی باشد تا از شکست تحریک جلوگیری شود.
+    </string>
+    <string name="profit_loss_trigger_price">قیمت تحریک</string>
+    <string name="profit_loss_trigger_type">نوع تحریک</string>
+    <string name="quote_add_optional">اضافه کردن ارزهای انتخابی</string>
+    <string name="quote_add_optional_btn">اضافه کردن انتخابی با یک کلیک</string>
+    <string name="quote_add_optional_faile">حذف انتخابی موفق</string>
+    <string name="quote_add_optional_suc">اضافه کردن انتخابی موفق</string>
+    <string name="quote_no_optional">هیچ انتخاب بازار وجود ندارد</string>
+    <string name="quote_optional">انتخابی</string>
+    <string name="follow_select_all">انتخاب همه</string>
+    <string name="quote_optional_del_choose">حذف انتخاب‌شده</string>
+    <string name="quote_optional_edit">ویرایش انتخابی</string>
+    <string name="quote_optional_market">بازار</string>
+    <string name="quote_optional_move">کشیدن</string>
+    <string name="quote_optional_top">بالا بردن</string>
+    <string name="rechage_filter_confirming">در حال تأیید</string>
+    <string name="rechage_filter_failed">شکست شارژ</string>
+    <string name="rechage_filter_received">واریز شده</string>
+    <string name="rechage_tip1">لطفاً مطمئن شوید که شبکه برداشت با</string>
+    <string name="rechage_tip3">لطفاً شبکه‌ای را انتخاب کنید که با شبکه برداشت مطابقت داشته باشد، در
+        غیر این صورت واریز انجام نخواهد شد
+    </string>
+    <string name="recharge_select_network">لطفاً شبکه را انتخاب کنید</string>
+    <string name="recharge_share_save_address">ذخیره آدرس اشتراک‌گذاری</string>
+    <string name="return_home">بازگشت به صفحه اصلی</string>
+    <string name="reverse_collapse">بسته</string>
+    <string name="reverse_confirm_no_tips">شما می‌توانید در بخش 【تنظیمات معامله】 پنجره تأیید معکوس
+        را غیرفعال کنید.
+    </string>
+    <string name="reverse_confirm_tips">با فعال کردن تأیید معکوس، هر بار که معکوس ارسال می‌کنید، یک
+        پنجره تأیید باز می‌شود
+    </string>
+    <string name="reverse_estimated_open">تعداد پیش‌بینی‌شده باز کردن موقعیت‌ها</string>
+    <string name="reverse_estimated_open_tip">تعداد پیش‌بینی‌شده باز کردن موقعیت‌های معکوس. تعداد
+        واقعی باز کردن موقعیت‌های معکوس به موجودی قابل استفاده در زمان باز کردن موقعیت بستگی دارد و
+        ممکن است با تعداد پیش‌بینی‌شده متفاوت باشد. به دلیل تأثیر شرایط بازار و الزامات مارجین،
+        نمی‌توان تضمین کرد که باز کردن موقعیت‌ها 100٪ موفقیت‌آمیز باشد.
+    </string>
+    <string name="reverse_expand">گسترش</string>
+    <string name="reverse_last_price">آخرین قیمت</string>
+    <string name="reverse_long_to_short">خرید علیه فروش</string>
+    <string name="reverse_market_close_long">تسویه خرید به قیمت بازار</string>
+    <string name="reverse_market_close_short">تسویه فروش به قیمت بازار</string>
+    <string name="reverse_market_open_long">خرید به قیمت بازار</string>
+    <string name="reverse_market_open_short">فروش به قیمت بازار</string>
+    <string name="reverse_note">توجه: باز کردن موقعیت معکوس تحت تأثیر شرایط بازار و الزامات حاشیه
+        قرار دارد، بنابراین نمی‌توانیم این عمل را 100% تضمین کنیم.
+    </string>
+    <string name="reverse_reverse">معکوس</string>
+    <string name="reverse_reverse_confirmation">تأیید معکوس</string>
+    <string name="reverse_reverse_successful">باز کردن موقعیت معکوس موفق</string>
+    <string name="reverse_reverse_to_long">باز کردن موقعیت بلند معکوس</string>
+    <string name="reverse_reverse_to_short">باز کردن موقعیت کوتاه معکوس</string>
+    <string name="reverse_short_to_long">کوتاه کردن موقعیت بلند</string>
+    <string name="reverse_buy_to_sell">تغییر به پوزیشن فروش</string>
+    <string name="reverse_sell_to_buy">تغییر به پوزیشن خرید</string>
+    <string name="reverse_tip">عملکرد معکوس تمام موقعیت‌های موجود را با قیمت بازار بسته و با همان
+        الگو، اهرم و تعداد به‌صورت معکوس باز می‌کند. اگر حاشیه کافی نباشد، تعداد کمتری از موقعیت
+        معکوس با توجه به حاشیه موجود باز خواهد شد. علاوه بر این، اندازه موقعیت معکوس محدود به حداکثر
+        تعداد سفارشات تک‌قیمت بازار مربوطه خواهد بود.
+    </string>
+    <string name="risk_reserve_fund">صندوق تضمین ریسک</string>
+    <string name="save_picture">ذخیره تصویر</string>
+    <string name="saved_album">ذخیره شد در آلبوم</string>
+    <string name="scan_qr_code_down">بارکد را اسکن کنید و اپلیکیشن Aibit را دانلود و ثبت‌نام کنید
+    </string>
+    <string name="search_his_market">جستجوی تاریخی</string>
+    <string name="search_hot">محبوب</string>
+    <string name="search_perpetual">USDT دائمی</string>
+    <string name="set_new_password">تنظیم رمز عبور جدید</string>
+    <string name="share_bottom_desc">بارکد را اسکن کنید و ثبت‌نام و ورود کنید، سفر Web3 شما از اینجا
+        آغاز می‌شود
+    </string>
+    <string name="share_time">به اشتراک گذاشته شده در %1$s</string>
+    <string name="share_bottom_desc_not_login">بارکد را اسکن کنید و ثبت‌نام و ورود کنید\nسفر Web3
+        شما از اینجا آغاز می‌شود
+    </string>
+    <string name="share_download_pic">دانلود پوستر</string>
+    <string name="share_share_pic">کپی لینک</string>
+    <string name="sign_in">ورود</string>
+    <string name="spl_number_error">تعداد بستن نمی‌تواند از مقدار قابل بستن بیشتر باشد</string>
+    <string name="spl_price_tip1">قیمت سفارش توقف ضرر باید بیشتر از قیمت تسویه اجباری باشد</string>
+    <string name="spl_price_tip2">قیمت سفارش توقف ضرر باید کمتر از قیمت تسویه اجباری باشد</string>
+    <string name="sport_open_high_first">قیمت خرید شما 5% بالاتر از قیمت فروش اول است، آیا تأیید
+        می‌کنید؟
+    </string>
+    <string name="sport_open_low_first">قیمت فروش شما 5% پایین‌تر از قیمت خرید اول است، آیا تأیید
+        می‌کنید؟
+    </string>
+    <string name="spot_20_item">20 مورد</string>
+    <string name="spot_available">قابل استفاده</string>
+    <string name="spot_cancel_all">لغو تمام سفارشات</string>
+    <string name="spot_cancel_reason">دلیل لغو</string>
+    <string name="spot_common_function">ویژگی‌های پرکاربرد</string>
+    <string name="spot_delegate_confirm">تأیید سفارش</string>
+    <string name="spot_fee">هزینه معامله</string>
+    <string name="spot_full_deal">کامل انجام شد</string>
+    <string name="spot_history_order">تاریخچه سفارشات</string>
+    <string name="spot_input_number">لطفاً تعداد را وارد کنید</string>
+    <string name="spot_input_price">لطفاً قیمت را وارد کنید</string>
+    <string name="spot_limit_order">سفارش قیمت دلخواه</string>
+    <string name="spot_market_order">سفارش بازار</string>
+    <string name="spot_max_buy">قابل خرید</string>
+    <string name="spot_max_cancel_numb">حداکثر تعداد قابل لغو</string>
+    <string name="spot_max_sell">قابل فروش</string>
+    <string name="spot_min_amount">حداقل حجم سفارش %1$s%2$s است</string>
+    <string name="spot_money_need_less">مجموع مبلغ سفارش باید کمتر از %1$s%2$s باشد</string>
+    <string name="spot_money_need_more">مجموع مبلغ سفارش باید بیشتر از %1$s%2$s باشد</string>
+    <string name="spot_not_empty">نباید خالی باشد</string>
+    <string name="spot_not_enough_amount">تعداد قابل فروش کافی نیست</string>
+    <string name="spot_offline_title">جفت ارز غیر فعال شده است</string>
+    <string name="spot_online_warn">جفت ارز موقتاً قابل معامله نیست، لطفاً به اطلاعیه‌های رسمی توجه
+        کنید.
+    </string>
+    <string name="spot_only_show_now">فقط نمایش گونه‌های جاری</string>
+    <string name="spot_over_price">خارج از دامنه محافظت قیمت</string>
+    <string name="spot_partial_deal">جزئیات انجام شده</string>
+    <string name="spot_second_confirm">دیگر هشدار ندهید. شما می‌توانید در 【تنظیمات نقدی】 دوباره
+        تنظیم کنید.
+    </string>
+    <string name="spot_to">به</string>
+    <string name="spot_trade_assets">دارایی‌های نگه‌داری</string>
+    <string name="spot_trade_fee_desc">هزینه: سفارش معلق %1$s%%، سفارش انجام شده %2$s%%</string>
+    <string name="spot_trade_pair">محصولات معاملاتی: %s</string>
+    <string name="spot_trade_record">سابقه معاملات</string>
+    <string name="spot_trade_setting">تنظیمات نقدی</string>
+    <string name="spot_type">نوع</string>
+    <string name="spot_update_time">زمان آخرین بروزرسانی</string>
+    <string name="srl_footer_failed">بارگذاری ناموفق</string>
+    <string name="srl_footer_finish">بارگذاری کامل شد</string>
+    <string name="srl_footer_nothing">دیگر داده‌ای وجود ندارد</string>
+    <string name="srl_footer_pulling">بیشتر بارگذاری کنید</string>
+    <string name="srl_footer_release">بلافاصله بارگذاری را آزاد کنید</string>
+    <string name="swap_close_position_vol_limit">خارج از حداقل حجم سفارش یکباره، حداقل باید %1$s%2$s
+        وارد کنید!
+    </string>
+    <string name="swap_experiencia_tip">%1$s %2$s اعتبار آزمایشی در حال انتظار برای فعال‌سازی،
+        معامله به‌معنی فعال‌سازی است
+    </string>
+    <string name="swap_normal_entrust">سفارش عادی</string>
+    <string name="swap_open_swap_btn">تأیید و فعال‌سازی معاملات قرارداد</string>
+    <string name="swap_open_swap_dialog">یک، هنگامی که شما در بازار قرارداد معامله می‌کنید، اگر
+        به‌دلیل روند بازار متضرر شوید و حاشیه موجودی شما ناکافی باشد، این صرافی به‌صورت سیستماتیک در
+        مورد موقعیت شما سفارش تسویه اجباری صادر خواهد کرد و جزئیات تسویه اجباری را منتشر می‌کند،
+        لطفاً توجه داشته باشید.
+        دو، لطفاً حتماً به دقت مطالعه و از قوانین این صرافی پیروی کنید. با مکانیزم و اصول عملکرد
+        قرارداد آشنا شوید و از خطرات مختلف بازار مطلع شوید و منابع مالی را به‌طور معقول برای معامله
+        برنامه‌ریزی کنید.
+        سه، در برخی شرایط بازار شدید، ممکن است شما نتوانید یا نتوانید موقعیت‌های غیر تسویه شده خود
+        را ببندید. به‌عنوان مثال، زمانی که سود شما در کل بازار قرارداد در رده اول PnL اهرم موثر باشد
+        و صندوق بیمه برای پوشش ضرر طرف زیان‌ده کافی نباشد.
+        چهار، به‌دلیل تغییرات قانونی، مقررات، سیاست‌ها، تغییرات در قوانین صرافی معاملات قرارداد،
+        ظهور اقدامات اضطراری و غیره، این صرافی اعلامیه‌ای منتشر خواهد کرد و ممکن است موقعیت‌های غیر
+        تسویه شده شما نتوانند ادامه یابند، اما موجودی حاشیه و سود باقی‌مانده همچنان در این پلتفرم
+        قابل نقد خواهد بود!
+        پنج، به‌دلیل عواملی که در کنترل این صرافی نیستند، مانند زلزله، سیل، آتش‌سوزی و غیره، یا نقص
+        در سیستم‌های کامپیوتری و ارتباطی، ممکن است دستور شما نتواند انجام شود یا نتواند به‌طور کامل
+        انجام شود و شما ممکن است متحمل خسارات ناشی از این موضوع شوید.
+        شش، معاملات "پوشش ریسک" نیز همانند معاملات سفته‌بازی با خطرات ناشی از نوسانات قیمت مواجه
+        هستند. لطفاً پیشاپیش با مکانیزم‌های مرتبط آشنا شوید.
+        هفت، اگر حساب شما به شخصی غیر از خودتان قرض داده شود، ممکن است امنیت حاشیه قرارداد شما تحت
+        تأثیر قرار گیرد. لطفاً اطمینان حاصل کنید که حساب شخصی شما ایمن است.
+    </string>
+    <string name="swap_open_swap_title">قرارداد تأیید ریسک معامله</string>
+    <string name="swap_order_abnormal_order">سفارشات غیر عادی</string>
+    <string name="swap_order_all_condition">همه</string>
+    <string name="swap_order_center">معاملات من</string>
+    <string name="swap_order_deal_title">معاملات تاریخی</string>
+    <string name="swap_order_init_order">سفارش اولیه</string>
+    <string name="swap_order_new_order">سفارش جدید</string>
+    <string name="swap_order_pl_title">موقعیت‌های تاریخی</string>
+    <string name="swap_order_stop_loss">سفارش توقف ضرر</string>
+    <string name="swap_order_stop_profit">سفارش توقف سود</string>
+    <string name="swap_order_wait_cancle">سفارشات در انتظار لغو</string>
+    <string name="swap_position_amount">تعداد موقعیت</string>
+    <string name="swap_position_desc_2">تعداد فعلی موقعیت‌های نگه‌داری، ارسال سفارشات بستن یا فقط
+        کاهش موقعیت باعث کاهش تعداد قابل بستن می‌شود
+    </string>
+    <string name="swap_position_desc_new">هرچه نسبت حاشیه بیشتر باشد، ریسک موقعیت نسبتاً کمتر است.
+        وقتی نسبت حاشیه به 100% برسد، موقعیت تسویه اجباری خواهد شد
+    </string>
+    <string name="swap_position_vol">تعداد: %1$s %2$s\nقابل بستن: %3$s %4$s</string>
+    <string name="switch_pnl">تغییر بازده</string>
+    <string name="switching_gains">تغییر سود</string>
+    <string name="taker_fee">هزینه معامله‌گر</string>
+    <string name="target_price_calculation">محاسبه قیمت هدف</string>
+    <string name="third_pay_addr_warn">آدرس حساب Aibit</string>
+    <string name="third_pay_date_filter">تاریخ</string>
+    <string name="third_pay_detail">جزئیات سفارش</string>
+    <string name="third_pay_expected">%1s-%2s دقیقه</string>
+    <string name="third_pay_expected_time">زمان مورد انتظار برای واریز</string>
+    <string name="third_pay_expired">منقضی شده</string>
+    <string name="third_pay_fialure">ناکام مانده</string>
+    <string name="third_pay_guid_title">لطفاً تنظیمات زیر را کامل کنید</string>
+    <string name="third_pay_introduction">معرفی</string>
+    <string name="third_pay_kyc">تکمیل تأییدیه KYC2</string>
+    <string name="third_pay_laoding">به صفحه پرداخت شخص ثالث منتقل می‌شوید</string>
+    <string name="third_pay_not_network">این شبکه در حال حاضر پشتیبانی نمی‌شود</string>
+    <string name="third_pay_order_list">سفارشات تاریخی</string>
+    <string name="third_pay_pay_warn">شامل هزینه خدمات‌دهنده</string>
+    <string name="third_pay_price_warn">نوسانات قیمت ممکن است با قیمت واقعی در زمان ثبت سفارش اختلاف
+        داشته باشد، قیمت نهایی برای انجام سفارش معتبر است
+    </string>
+    <string name="third_pay_progressing">در حال انجام</string>
+    <string name="third_pay_provider">سرویس‌دهنده</string>
+    <string name="third_pay_receive_addr">آدرس دریافت ارز</string>
+    <string name="third_pay_receive_warn">نوسانات قیمت ممکن است با قیمت واقعی در زمان ثبت سفارش
+        اختلاف داشته باشد، تعداد واقعی ارز دیجیتال دریافتی معتبر است
+    </string>
+    <string name="third_pay_side_buy">خرید</string>
+    <string name="third_pay_side_sell">فروش</string>
+    <string name="third_pay_state_filter">همه وضعیت‌ها</string>
+    <string name="third_pay_support">پشتیبانی:</string>
+    <string name="third_pay_terms">من می‌دانم که %s یک ارائه‌دهنده خدمات شخص ثالث است. Aibit
+        مسئولیتی در قبال هرگونه خسارت یا آسیب ناشی از استفاده از خدمات آنها ندارد.
+    </string>
+    <string name="third_pay_time">%1$s سال %2$s ماه</string>
+    <string name="third_pay_total_price">مجموع مبلغ</string>
+    <string name="trade_type">نوع معامله</string>
+    <string name="third_pay_wait_pay">در انتظار پرداخت</string>
+    <string name="third_pay_will_pay">من پرداخت خواهم کرد</string>
+    <string name="third_search_ccy_empty">ارز فیات پیدا نشد</string>
+    <string name="third_search_coin_empty">ارز پیدا نشد</string>
+    <string name="time_unit_h">ساعت</string>
+    <string name="time_unit_m">دقیقه</string>
+    <string name="time_unit_s">ثانیه</string>
+    <string name="tologin">برای ورود به سیستم بروید</string>
+    <string name="total_circulating_supply">مجموع در گردش</string>
+    <string name="tpsl_modify_order">تغییر توقف سود و ضرر</string>
+    <string name="tpsl_modify_profit">برداشت سود را اصلاح کنید</string>
+    <string name="tpsl_modify_loss">توقف ضرر را اصلاح کنید</string>
+    <string name="trade_7day">7 روز</string>
+    <string name="trade_90day">90 روز</string>
+    <string name="trade_adl_details">جزئیات کاهش خودکار موقعیت</string>
+    <string name="trade_adl_details_txt">موقعیت %1$s شما به ADL (کاهش خودکار) رسیده است، %2$s در
+        موقعیت با قیمت معامله %3$s به ADL تبدیل شده است.
+    </string>
+    <string name="trade_asset_float_income">سود و ضرر شناور</string>
+    <string name="trade_asset_occupy">اشغال</string>
+    <string name="trade_calendar_date_title">%1$s-%2$s</string>
+    <string name="trade_cancle_fail">لغو سفارش ناموفق</string>
+    <string name="trade_cancle_suc">لغو سفارش موفق</string>
+    <string name="trade_chose_date">انتخاب تاریخ</string>
+    <string name="trade_cur_asset">دارایی‌های معاملاتی جاری</string>
+    <string name="trade_date_hide">پنهان کردن لغو شده‌ها</string>
+    <string name="trade_deal_price">قیمت انجام شده</string>
+    <string name="trade_deal_time">زمان انجام معامله</string>
+    <string name="trade_foce_details_txt">زمانی که قیمت علامت‌گذاری قرارداد دائمی %1$s به %2$s برسد،
+        نسبت حاشیه موقعیت %3$s شما کمتر از یا برابر با 100%% خواهد بود و تسویه اجباری فعال خواهد شد.
+        موقعیت با قیمت علامت‌گذاری %4$s به موتور تسویه اجباری سپرده می‌شود.
+    </string>
+    <string name="trade_force_details">جزئیات تسویه اجباری</string>
+    <string name="trade_order_adl_txt">موقعیت %s شما به ADL (کاهش خودکار) رسیده است، %s در موقعیت با
+        قیمت معامله %s به ADL تبدیل شده است.
+    </string>
+    <string name="trade_order_force_txt">زمانی که قیمت علامت‌گذاری قرارداد %s به %s برسد، نسبت حاشیه
+        موقعیت %s شما کمتر از 100%% خواهد بود و تسویه اجباری فعال خواهد شد. موقعیت با قیمت ورشکستگی
+        %s به موتور تسویه اجباری سپرده می‌شود تا خسارات کاهش یابد. قیمت ورشکستگی قیمت علامت‌گذاری
+        است که حاشیه را به 100%% می‌رساند.
+    </string>
+    <string name="trade_other_asset">دارایی‌های دیگر</string>
+    <string name="trade_position_amount">تعداد موقعیت‌ها</string>
+    <string name="trade_proxy">سفارش</string>
+    <string name="trade_set_date">تنظیم محدوده زمانی</string>
+    <string name="trade_sort1">بر اساس آخرین بسته شدن</string>
+    <string name="trade_sort2">بیشترین بازده</string>
+    <string name="trade_sort3">کمترین بازده</string>
+    <string name="trade_sport_order_confirm">تأیید سفارش نقدی</string>
+    <string name="trade_symbol">محصولات معاملاتی</string>
+    <string name="trade_trade_set">تنظیمات معامله</string>
+    <string name="trade_trade_set_no_tips">دیگر هشدار ندهید. شما می‌توانید در 【تنظیمات معامله】
+        دوباره تنظیم کنید.
+    </string>
+    <string name="trade_wait_deal">در انتظار انجام</string>
+    <string name="trader_14_deal">تعداد معاملات 14 روز</string>
+    <string name="trader_14_income_rate">بازده 14 روز</string>
+    <string name="trader_14_must_cancel">بیشترین افت 14 روز</string>
+    <string name="trader_14_win_rate">نرخ موفقیت 14 روز</string>
+    <string name="trader_30_income_rate">بازده 30 روز</string>
+    <string name="trader_apply_cancel_trader">درخواست لغو معامله‌گر</string>
+    <string name="trader_cancle_msg">1. برای لغو معامله‌گر، شما ابتدا باید تمام دنبال‌کنندگان را حذف
+        کنید.\n2. پس از لغو معامله‌گر، شما نخواهید توانست اطلاعات مربوط به سودهای معوق و سایر
+        اطلاعات معامله‌گر را مشاهده کنید، اما این بر تسویه واقعی سود شما در این دوره تأثیری نخواهد
+        داشت. شما همچنین می‌توانید پس از تسویه سود، هویت معامله‌گر خود را لغو کنید.
+    </string>
+    <string name="trader_cancle_title">تأیید لغو معامله‌گر</string>
+    <string name="trader_desc_warn_1">پر کردن اطلاعات تماس شخصی ممنوع است.</string>
+    <string name="trader_desc_warn_2">پر کردن نمادهای خاص ممنوع است.</string>
+    <string name="trader_desc_warn_3">انتشار محتوای نقض قوانین و مقررات ملی ممنوع است.</string>
+    <string name="trader_details">جزئیات معامله‌گر</string>
+    <string name="trader_estimate_income">سود معوق پیش‌بینی شده (USDT)</string>
+    <string name="trader_follower_time">مدت زمان دنبال کردن</string>
+    <string name="trader_follower_total_income">مجموع مبلغ سود (USDT)</string>
+    <string name="trader_follower_will_income">مبلغ سود معوق (USDT)</string>
+    <string name="trader_info_setting_title">تنظیمات شخصی</string>
+    <string name="trader_position_id">شناسه قرارداد: %s</string>
+    <string name="trader_remove_fail">حذف ناموفق</string>
+    <string name="trader_remove_follow_msg">این کاربر دارای موقعیت‌های دنبال‌شده است، لطفاً پس از
+        بستن موقعیت، دوباره تلاش کنید
+    </string>
+    <string name="trader_remove_follower">حذف</string>
+    <string name="trader_total_deal_day">مجموع روزهای معاملاتی</string>
+    <string name="trader_total_follow_person">مجموع تعداد دنبال‌کنندگان</string>
+    <string name="trader_total_income">مجموع درآمد سود (USDT)</string>
+    <string name="trader_total_income_day">مجموع روزهای سودآور</string>
+    <string name="trading_volume_24_hour">حجم معاملات 24 ساعت گذشته</string>
+    <string name="transfer_deposit">همین حالا شارژ کنید</string>
+    <string name="transfer_deposit_tip">موجودی قابل استفاده شما در %1$s از %2$s برابر با 0 است،
+        لطفاً ابتدا شارژ کنید\n
+    </string>
+    <string name="transfer_excluding_trial_amount">مجموع اعتبار تجربه شامل نمی‌شود</string>
+    <string name="transfer_insufficient_balance">موجودی ناکافی</string>
+    <string name="transfer_min">حداقل</string>
+    <string name="transfer_not_open_futures">کاربر معاملات قرارداد را فعال نکرده است</string>
+    <string name="transfer_select_currency">انتخاب ارز</string>
+    <string name="uc_email_ban_withdraw_tip">برای حفظ امنیت دارایی‌های شما، پس از تغییر ایمیل،
+        قابلیت برداشت به مدت 24 ساعت غیرفعال خواهد شد.
+    </string>
+    <string name="uc_phone_ban_withdraw_tip">به منظور حفظ امنیت دارایی‌های شما، پس از تعویض گوشی،
+        امکان برداشت به مدت 24 ساعت غیرفعال خواهد بود.
+    </string>
+    <string name="use_new_pw_tologin">لطفاً با رمز جدید به حساب خود وارد شوید.</string>
+    <string name="user_center_bind_phone">لطفاً شماره موبایل خود را ثبت کنید.</string>
+    <string name="user_countdown">زمان باقی‌مانده تا پایان رویداد:</string>
+    <string name="user_details_account">حساب</string>
+    <string name="user_details_available_avatars">به دلایل امنیتی، شما فقط می‌توانید سالی 3 بار
+        تصویر پروفایل خود را آپلود کنید. شما می‌توانید یکی از تصاویر پروفایل جایگزین که ما ارائه
+        داده‌ایم را انتخاب کنید.
+    </string>
+    <string name="user_details_change_picture">تغییر تصویر پروفایل</string>
+    <string name="user_details_choose_album">انتخاب از گالری</string>
+    <string name="user_details_crop_back">بازگشت</string>
+    <string name="user_details_crop_confirm">تأیید</string>
+    <string name="user_details_edit_avatar">ویرایش تصویر پروفایل</string>
+    <string name="user_details_edit_nickname">ویرایش نام مستعار</string>
+    <string name="user_details_edit_nickname_tips">1. شما تنها می‌توانید هر 24 ساعت یک بار نام
+        مستعار خود را تغییر دهید، لطفاً با احتیاط پر کنید.
+        2. هنگام ایجاد نام مستعار، از به کار بردن کلمات نامناسب، نام رسمی Aibit (مانند نام محصولات)
+        و نام‌های دیگر در پلتفرم‌های معاملاتی خودداری کنید.
+    </string>
+    <string name="user_details_image_size">حجم تصویر نمی‌تواند بیشتر از 10 مگابایت باشد.</string>
+    <string name="user_details_input_nickname">لطفاً نام مستعار را وارد کنید.</string>
+    <string name="user_details_nickname_limit">تنها می‌توانید هر 24 ساعت یک بار نام مستعار خود را
+        تغییر دهید.
+    </string>
+    <string name="user_details_select_avatar">انتخاب تصویر پروفایل</string>
+    <string name="user_details_times_tips">شما امسال می‌توانید %s بار تصویر پروفایل عمومی آپلود
+        کنید؛ همچنین می‌توانید یکی از تصاویر پروفایل جایگزین که ما ارائه داده‌ایم را انتخاب کنید،
+        بدون محدودیت در تعداد تغییرات.
+    </string>
+    <string name="user_details_tittle">پروفایل شخصی</string>
+    <string name="user_details_under_review">در حال بررسی، لطفاً صبور باشید.</string>
+    <string name="user_details_unsupported_image">این فرمت تصویر پشتیبانی نمی‌شود.</string>
+    <string name="user_details_upload_limit">از حد مجاز آپلود عبور کرده‌اید.</string>
+    <string name="user_details_upload_picture">بارگذاری تصویر پروفایل</string>
+    <string name="user_gift_pack">بسته هدیه مبتدی</string>
+    <string name="user_join_now">هم‌اکنون شرکت کنید.</string>
+    <string name="user_vip_fee">نرخ کارمزد:</string>
+    <string name="user_vip_level">سطح کارمزد:</string>
+    <string name="user_vip_level_more">مشاهده سطوح بیشتر</string>
+    <string name="valuation_desc">این قیمت مبنای محاسبه سود و زیان تحقق‌نیافته و نرخ بازده سود و
+        زیان تحقق‌نیافته است. تغییر مبنای قیمت بر سطح مارجین تأثیری نخواهد داشت و مواردی مانند تسویه
+        اجباری و کاهش خودکار به قیمت علامت‌گذاری شده بستگی دارد.
+    </string>
+    <string name="valuation_sub_title">می‌توانید مبنای قیمت محاسبه سود و زیان تحقق‌نیافته و نرخ
+        بازده را انتخاب کنید:
+    </string>
+    <string name="valuation_title">انتخاب مبنای قیمت</string>
+    <string name="verification_change_verification">تغییر به روش تأیید دیگر</string>
+    <string name="verification_google_authenticator">تأیید کننده Google</string>
+    <string name="verification_google_create_date">اضافه شده در: %s</string>
+    <string name="verification_google_del_msg">پس از لغو تأیید Google، به منظور حفظ امنیت دارایی
+        شما، امکان برداشت به مدت 24 ساعت غیرفعال خواهد شد.
+    </string>
+    <string name="verification_google_del_title">آیا مطمئن هستید که می‌خواهید تأیید Google را لغو
+        کنید؟
+    </string>
+    <string name="verification_google_edit_msg">به منظور حفظ امنیت دارایی شما، پس از تغییر تأیید
+        Google، امکان برداشت به مدت 24 ساعت غیرفعال خواهد شد.
+    </string>
+    <string name="verification_google_edit_title">آیا مطمئن هستید که می‌خواهید تأیید Google را تغییر
+        دهید؟
+    </string>
+    <string name="verification_google_title">تأیید تأیید Google</string>
+    <string name="verification_phone">تأیید تلفن همراه</string>
+    <string name="verification_select_verification">انتخاب روش تأیید</string>
+    <string name="vol24">حجم 24 ساعت (%s)</string>
+    <string name="waiting_deal">در انتظار انجام</string>
+    <string name="wallet_account_banking">حساب مالی</string>
+    <string name="wallet_copy">کپی</string>
+    <string name="wallet_from">از</string>
+    <string name="wallet_go_bind">برای اتصال</string>
+    <string name="wallet_success">عملیات با موفقیت انجام شد</string>
+    <string name="wallet_trans_account">حساب معاملاتی</string>
+    <string name="wallet_trans_out_account">حساب انتقال</string>
+    <string name="wallet_trans_to_account">حساب ورود</string>
+    <string name="wallet_transfer">انتقال</string>
+    <string name="wallet_transfer_record">سابقه انتقال</string>
+    <string name="wallet_withdraw_notice_new">به منظور امنیت حساب شما، باید تلفن همراه و تأیید
+        Google را متصل کرده و احراز هویت را کامل کنید تا بتوانید برداشت کنید.
+    </string>
+    <string name="wallet_withdraw_record_label">لطفاً به سابقه برداشت برای مشاهده وضعیت برداشت
+        مراجعه کنید.
+    </string>
+    <string name="withdraw_actual_received">مبلغ واقعی واریز شده</string>
+    <string name="withdraw_add">اضافه کردن</string>
+    <string name="withdraw_add_address">اضافه کردن آدرس</string>
+    <string name="withdraw_address_book">دفترچه آدرس</string>
+    <string name="withdraw_address_book_manager">مدیریت دفترچه آدرس</string>
+    <string name="withdraw_address_remark">یادداشت آدرس</string>
+    <string name="withdraw_amount_not_cover_fee">مقدار کافی برای پرداخت کارمزد وجود ندارد.</string>
+    <string name="withdraw_change_received_to_input">مقدار دریافتی را به مقدار ورودی تغییر دهید.
+    </string>
+    <string name="withdraw_check_limit">مشاهده محدودیت</string>
+    <string name="withdraw_check_limit_tips">مقدار وارد شده نمی‌تواند از محدودیت برداشت فراتر رود.
+    </string>
+    <string name="withdraw_complete_methods">باید تأییدیه‌های زیر را کامل کنید.</string>
+    <string name="withdraw_confirm_delete_address">آیا از حذف این آدرس اطمینان دارید؟</string>
+    <string name="withdraw_confirm_withdraw">تأیید برداشت</string>
+    <string name="withdraw_continue_withdraw">ادامه برداشت ارز</string>
+    <string name="withdraw_delete">حذف</string>
+    <string name="withdraw_details_tips">توجه: در حال برداشت، مبلغ طی 48 ساعت واریز خواهد شد.
+    </string>
+    <string name="withdraw_edit">تغییر آدرس</string>
+    <string name="withdraw_help">کمک</string>
+    <string name="withdraw_limit_available">مقدار کل محدودیت برداشت شما برای تمامی ارزها در 24 ساعت
+        گذشته برابر با %s است.
+    </string>
+    <string name="withdraw_limit_level">محدودیت سطح برداشت 24 ساعته:</string>
+    <string name="withdraw_limit_text">محدودیت برداشت کل ارزها برای کاربر %1$s در 24 ساعت برابر با
+        %2$s است.
+    </string>
+    <string name="withdraw_limit_title">برداشت 24 ساعته چیست؟</string>
+    <string name="withdraw_manager">مدیریت</string>
+    <string name="withdraw_minimum">حداقل</string>
+    <string name="withdraw_modify">برگشت به ویرایش</string>
+    <string name="withdraw_net_tip">لطفاً اطمینان حاصل کنید که شبکه واریز و برداشت یکسان است؛ در غیر
+        این صورت، دارایی‌ها از بین خواهد رفت.
+    </string>
+    <string name="withdraw_network_confirmations">%s بار تأیید شبکه</string>
+    <string name="withdraw_no_address">آدرس موجود نیست</string>
+    <string name="withdraw_no_coin">حساب سرمایه هیچ ارزی برای برداشت ندارد.</string>
+    <string name="withdraw_no_currency_available">هیچ ارزی برای برداشت موجود نیست.</string>
+    <string name="withdraw_order_confirmation">تأیید سفارش</string>
+    <string name="withdraw_record_status1">در حال پردازش</string>
+    <string name="withdraw_record_status2">در حال تأیید بلوک</string>
+    <string name="withdraw_record_status3">انتقال انجام شده</string>
+    <string name="withdraw_records">سابقه برداشت</string>
+    <string name="withdraw_remark">یادداشت</string>
+    <string name="withdraw_remark_hint">لطفاً یادداشت را وارد کنید.</string>
+    <string name="withdraw_review_failed">بررسی ناموفق</string>
+    <string name="withdraw_risk_warning">هشدار ریسک</string>
+    <string name="withdraw_risk_warning_content">1. به محض انجام عملیات، مالکیت دارایی‌های مربوطه به
+        مالک آدرس هدف منتقل خواهد شد، لطفاً قبل از انجام عملیات برداشت، اطلاعات آدرس برداشت را به
+        دقت بررسی کنید\n\n2. Aibit در هیچ شرایطی از شما نخواهد خواست که به حسابی پول واریز کنید و
+        همچنین از شما کد تأیید نخواهد خواست\n\n3. زمان برداشت در عرض 30 دقیقه انجام می‌شود و زمان
+        نهایی واریز به سرعت شبکه بلاکچین بستگی دارد\n\n4. لطفاً در فعالیت‌های غیرقانونی مانند خرید و
+        فروش واسطه‌ای، پولشویی و جمع‌آوری غیرقانونی مشارکت نکنید و از کلاهبرداری‌های اینترنتی مراقب
+        باشید
+    </string>
+    <string name="withdraw_risk_warning_read">من هشدار ریسک را خوانده‌ام و مایل به ادامه برداشت
+        هستم.
+    </string>
+    <string name="withdraw_save">ذخیره</string>
+    <string name="withdraw_save_address">ذخیره آدرس</string>
+    <string name="withdraw_security_required">الزامات تأیید امنیت</string>
+    <string name="withdraw_select_coin">انتخاب ارز برداشت</string>
+    <string name="withdraw_submited">درخواست برداشت ارز شما ثبت شده است.</string>
+    <string name="withdraw_submited_tip">پس از ارسال، در عرض 48 ساعت بررسی خواهد شد.\nپس از تأیید،
+        مبلغ طی چند دقیقه به حساب مشخص شده واریز خواهد شد.
+    </string>
+    <string name="withdraw_tips">Aibit در هیچ شرایطی از شما نخواهد خواست که به حسابی پول واریز کنید
+        و همچنین از شما کد تأیید نخواهد خواست.
+        لطفاً در فعالیت‌های غیرقانونی مانند خرید و فروش واسطه‌ای، پولشویی و جمع‌آوری غیرقانونی
+        مشارکت نکنید و از کلاهبرداری‌های اینترنتی مراقب باشید.
+    </string>
+    <string name="withdraw_tips2">درخواست برداشت شما در عرض 48 ساعت بررسی خواهد شد. پس از تأیید،
+        Aibit مبلغ را در عرض چند دقیقه واریز خواهد کرد.
+    </string>
+    <string name="withdraw_tips3">ما در روزهای کاری در عرض 48 ساعت درخواست برداشت شما را پردازش
+        خواهیم کرد.
+    </string>
+    <string name="withdraw_tips4">توجه: لطفاً اطمینان حاصل کنید که شبکه برداشت انتخابی شما با شبکه
+        مربوطه در واریز قبلی یکسان باشد و مطمئن شوید که پلتفرم انتخابی شما از این شبکه پشتیبانی
+        می‌کند؛ در غیر این صورت، برداشت امکان‌پذیر نخواهد بود یا مبلغ بازگردانده خواهد شد.
+    </string>
+    <string name="withdraw_transaction_id">شماره پیگیری</string>
+    <string name="withdraw_view_records">مشاهده سابقه برداشت</string>
+    <string name="withdraw_withdraw_coin">نوع ارز برداشت</string>
+    <string name="withdraw_withdraw_credited">مبلغ واریز</string>
+    <string name="withdraw_withdraw_unavailable">امکان برداشت فعلاً در دسترس نیست.</string>
+    <string name="withdraw_withdraw_unavailable_desc">به منظور حفظ امنیت حساب شما، باید ایمیل و
+        تأیید Google را متصل کنید تا بتوانید برداشت انجام دهید.
+    </string>
+    <string name="withdraw_withdrawal_failed">برداشت ناموفق</string>
+    <string name="wk_price">قیمت:</string>
+    <string name="wk_total_amount2">مقدار:</string>
+    <string name="swap_single_pos_force_close_price_tip">بر اساس موجودی مارجین هر موقعیت، قیمت
+        علامت‌گذاری موقعیت زمانی که نرخ مارجین ≤ ۱۰۰٪ باشد محاسبه می‌شود. قیمت تخمینی تصفیه برای هر
+        موقعیت ثابت است.
+    </string>
+    <string name="swap_full_pos_force_close_price_tip">بر اساس موجودی مارجین کل فعلی، قیمت
+        علامت‌گذاری موقعیت کل زمانی که نرخ مارجین ≤ ۱۰۰٪ باشد محاسبه می‌شود. قیمت تخمینی تصفیه برای
+        موقعیت کل به طور مداوم تغییر می‌کند و تنها برای مرجع است. تصفیه واقعی و راه‌اندازی کاهش
+        موقعیت زمانی که نرخ مارجین ≤ ۱۰۰٪ باشد، معتبر است.
+    </string>
+    <string name="wealth_rule_title1">1. جوایز</string>
+    <string name="wealth_regularly">دوره‌ای</string>
+    <string name="wealth_group_title">مدیریت مالی</string>
+    <string name="wealth_term">مدت زمان</string>
+    <string name="wealth_apr">APR</string>
+    <string name="wealth_help_prob">سوالات متداول</string>
+    <string name="wealth_date_apr_title">مدت و نرخ سالیانه (APR)</string>
+    <string name="wealth_step_apr">نرخ سالیانه پلکانی (APR)</string>
+    <string name="wealth_step_apr_desc">نرخ سالیانه (APR) نهایی بر اساس قوانین سود پلکانی زیر محاسبه
+        می‌شود و در محاسبات، تعداد این محصولات مالی در موقعیت فعلی لحاظ می‌شود.
+    </string>
+    <string name="invest_rate_level">درجه %s:</string>
+    <string name="invest_buy_numb">تعداد درخواست</string>
+    <string name="invest_min_buy">حداقل درخواست %s</string>
+    <string name="invest_mastest">حداکثر</string>
+    <string name="wealth_assets_not_enough">موجودی کافی نیست</string>
+    <string name="wealth_canbuy_not_enough">مقدار باقی‌مانده برای درخواست کافی نیست</string>
+    <string name="invest_can_use">موجودی قابل استفاده:</string>
+    <string name="invest_spot_or_funds">حساب نقدی و حساب سرمایه</string>
+    <string name="wealth_self_can_buy">مقدار باقی‌مانده قابل درخواست فردی:</string>
+    <string name="wealth_self_limit">مقدار درخواست فردی:</string>
+    <string name="wealth_leftover_limit">مقدار باقی‌مانده قابل درخواست شما:</string>
+    <string name="wealth_can_buy_limit_desc">مقدار باقی‌مانده قابل سرمایه‌گذاری شما به موجودی
+        باقی‌مانده این محصول بستگی دارد.
+    </string>
+    <string name="invest_return_type">روش سوددهی</string>
+    <string name="interest_every_day">بهره روزانه</string>
+    <string name="interest_total_day">بهره در سررسید</string>
+    <string name="invest_every_interest">سود هر دوره</string>
+    <string name="invest_total_interest">سود کل</string>
+    <string name="invest_start_time">زمان شروع محاسبه سود</string>
+    <string name="invest_next_time">زمان شروع پرداخت سود</string>
+    <string name="invest_last_time">زمان آخرین پرداخت و بازپرداخت اصل</string>
+    <string name="invest_tip_1">• بازخرید زودهنگام منجر به از دست رفتن تمام سود خواهد شد</string>
+    <string name="financial_redemption_early_notify">با انتخاب بازخرید زودهنگام، دارایی به %s به
+        حساب نقدی شما بازگشت داده می‌شود
+    </string>
+    <string name="financial_immediately">فوری</string>
+    <string name="wealth_soldout_tip">این محصول به فروش رسیده است، لطفاً محصول دیگری را انتخاب
+        کنید
+    </string>
+    <string name="wealth_delisted_tip">این محصول از دسترس خارج شده است، لطفاً محصول دیگری را انتخاب
+        کنید
+    </string>
+    <string name="wealt_rule_desc1">نرخ سالیانه (APR) محصولات دوره‌ای پس از درخواست ثابت است. اگر
+        نرخ پلکانی باشد، در زمان درخواست، APR بر اساس مقدار تجمعی درخواست شما محاسبه می‌شود. این
+        پاداش از ساعت 00:00 روز بعد از درخواست محاسبه می‌شود. زمان دقیق پرداخت سود و بازپرداخت اصل
+        را در صفحه درخواست مشاهده کنید.
+    </string>
+    <string name="wealth_rule_desc2">سود روزانه = مقدار درخواست شده * نرخ سالیانه (APR) / 365
+    </string>
+    <string name="wealt_rule_title2">2. بازخرید</string>
+    <string name="invest_success">درخواست با موفقیت انجام شد</string>
+    <string name="invest_prod_type">نوع محصول</string>
+    <string name="invest_interest_coin">سود به ارز</string>
+    <string name="invest_view_hold">مشاهده موقعیت</string>
+    <string name="financial_interest_received">سود دریافتی</string>
+    <string name="financial_state">وضعیت</string>
+    <string name="financial_interest_accrued">در حال محاسبه سود</string>
+    <string name="financial_interest_to_be_accrued">محاسبه</string>
+    <string name="financial_redeeming_on_time">در حال بازخرید به موقع</string>
+    <string name="financial_redeeming_in_advance">در حال بازخرید زودهنگام</string>
+    <string name="financial_redemption_early">بازخرید زودهنگام</string>
+    <string name="financial_subscription">درخواست</string>
+    <string name="financial_order_time">زمان سفارش</string>
+    <string name="financial_coin_type">محصول ارز</string>
+    <string name="financial_redemption_penalty">جریمه بازخرید</string>
+    <string name="financial_redemption_quantity">مقدار بازخرید</string>
+    <string name="financial_redemption_apply">درخواست بازخرید</string>
+    <string name="financial_redemption_success">بازخرید با موفقیت انجام شد</string>
+    <string name="financial_redemption_apply_success">درخواست بازخرید با موفقیت ثبت شد</string>
+    <string name="financial_interst_next_time">زمان پرداخت سود بعدی</string>
+    <string name="financial_redemption_apply_time">زمان درخواست بازخرید</string>
+    <string name="financial_redemption_to_spot_account">بازخرید به حساب نقدی</string>
+    <string name="financial_to">به</string>
+    <string name="financial_interst">سود</string>
+    <string name="financial_account">حساب سرمایه‌گذاری</string>
+    <string name="financial_no_data">فعلاً هیچ محصول سرمایه‌گذاری موجود نیست</string>
+    <string name="financial_bill">صورتحساب سرمایه‌گذاری</string>
+    <string name="invest_asset_from">منبع مالی:</string>
+    <string name="wealth_assets_select_title">انتخاب منبع مالی برای خرید</string>
+    <string name="wealth_rule_desc3">در حین بازخرید نمی‌توان لغو کرد و تمام سود از بین می‌رود. پس از
+        انتخاب بازخرید زودهنگام، دارایی‌ها در عرض ۲۴ ساعت به حساب نقدی انتخابی شما برمی‌گردد.
+    </string>
+    <string name="invest_create_time">زمان خرید</string>
+    <string name="wealth_subscription_balance">مقدار خرید</string>
+    <string name="wealth_subscription">خرید فوری</string>
+    <string name="wealth_overview">بررسی اجمالی</string>
+    <string name="invest_tip_3">• پس از انتخاب بازخرید زودهنگام، دارایی‌ها بلافاصله به حساب نقدی شما
+        برمی‌گردد.
+    </string>
+    <string name="financial_asset">ارزش‌گذاری دارایی‌های سرمایه‌گذاری</string>
+    <string name="financial_arrival_time">زمان دریافت</string>
+    <string name="financial_yesterday_earnings">سود روز گذشته</string>
+    <string name="financial_total_earnings">سود تجمعی</string>
+    <string name="financial_detail_title">جزئیات سرمایه‌گذاری</string>
+    <string name="financial_revenue_model">مدل سود</string>
+    <string name="financial_redemption_early_tips_1">بازخرید زودهنگام منجر به</string>
+    <string name="financial_redemption_early_tips_2">از دست دادن تمام سود می‌شود.</string>
+    <string name="invest_tip_2">• پس از انتخاب بازخرید زودهنگام، دارایی‌ها در عرض %s ساعت به حساب
+        نقدی شما برمی‌گردد.
+    </string>
+    <string name="financial_within_hours">در %s ساعت</string>
+    <string name="back_to_financial_account">برگشت به حساب سرمایه‌گذاری</string>
+    <string name="financial_redemption_on_time">بازخرید به‌موقع</string>
+    <string name="invest_prod_rule">قوانین محصول</string>
+    <string name="wealth_q_1">1. Aibit سرمایه‌گذاری چیست؟</string>
+    <string name="wealth_q_2">2. آیا Aibit سرمایه‌گذاری از بازخرید زودهنگام پشتیبانی می‌کند؟
+    </string>
+    <string name="wealth_q_3">3. مدل سرمایه‌گذاری ثابت - نحوه محاسبه و پرداخت سود روزانه چگونه
+        است؟
+    </string>
+    <string name="wealth_q_4">4. روش محاسبه و پرداخت سود در مدل سرمایه‌گذاری ثابت - تسویه در تاریخ
+        سررسید چگونه است؟
+    </string>
+    <string name="invest_trade_title">%s خرید</string>
+    <string name="invite_friend_desc_1">دعوت از دوستان برای کمک به معاملات</string>
+    <string name="invest_will_arrive">بازخرید به &lt;font color=#040809&gt;حساب نقدی&lt;/font&gt;</string>
+    <string name="invest_will_arrive_dark">بازخرید به &lt;font color=#FAFAFA&gt;حساب نقدی&lt;/font&gt;</string>
+    <string name="wealth_demand">منعطف</string>
+
+    <string name="ai_chat_market_desc">بر اساس داده‌های ۲۴ ساعت گذشته از پلتفرم Aibit</string>
+    <string name="ai_chat_market_title">بررسی بازار</string>
+    <string name="ai_chat_no_chance">حد روزانه سوالات به پایان رسیده است. لطفاً فردا دوباره تلاش کنید.</string>
+    <string name="ai_chat_warn">هشدار ریسک: پاسخ‌ها تنها برای مرجع هستند و مشاوره سرمایه‌گذاری محسوب
+        نمی‌شوند. سرمایه‌گذاری شامل ریسک است؛ لطفاً با احتیاط تصمیم‌گیری کنید. اگر سوالی درباره
+        محصولات و خدمات Aibit دارید، لطفاً با خدمات مشتری Aibit تماس بگیرید.
+    </string>
+    <string name="ai_error">بارگذاری ناموفق، لطفاً دوباره تلاش کنید.</string>
+    <string name="ai_every_num_limit">حد سوالات روزانه:</string>
+    <string name="ai_hot_coin_rank">سکه‌های پرطرفدار</string>
+    <string name="ai_input_hint">هر سوالی درباره ارزهای دیجیتال بپرسید!</string>
+    <string name="ai_loading">ما در حال تجزیه و تحلیل سوال شما هستیم...</string>
+    <string name="ai_market_emotion">احساسات بازار</string>
+    <string name="ai_new_coin_rank">فهرست‌های جدید</string>
+    <string name="ai_tip_ask_limit">شما می‌توانید تا ۴ سوال در روز از AibitChat بپرسید.</string>
+    <string name="ai_tip_login">برای پرسیدن سوالات بیشتر، لطفاً وارد حساب Aibit خود شوید یا ثبت‌نام
+        کنید.
+    </string>
+    <string name="contract_stop_loss_price">قیمت توقف ضرر</string>
+    <string name="contract_stop_profit_price">قیمت توقف سود</string>
+    <string name="contract_stoplp_adv_tip">لطفاً قبل از استفاده از سود بردن پیشرفته و توقف ضرر، قیمت
+        و مقدار را وارد کنید.
+    </string>
+    <string name="contract_stoplp_dialog_desc">شما می‌توانید قبل از باز کردن موقعیت، سود بردن و توقف
+        ضرر را تنظیم کنید؛ این تنظیمات فقط پس از باز شدن موقعیت مؤثر خواهند بود.
+    </string>
+    <string name="contract_stoplp_loss_price_error">قیمت تحریک باید کمتر از قیمت ورود باشد.</string>
+    <string name="contract_stoplp_profit_price_error">قیمت تحریک باید بیشتر از قیمت ورود باشد.
+    </string>
+    <string name="contract_unit_number">بر اساس مقدار</string>
+    <string name="contract_unit_tip">پس از تغییر واحد مقدار، واحد مورد استفاده برای وارد کردن مقادیر
+        سفارش، همچنین واحدهای نمایش داده شده در دفتر سفارش، سفارشات باز و موقعیت‌ها به‌طور مناسب
+        به‌روز خواهد شد.
+    </string>
+    <string name="contract_unit_title">تنظیمات واحد مقدار معاملات آتی</string>
+    <string name="contract_unit_value">بر اساس ارزش</string>
+    <string name="contract_base_entrust">سفارش‌های پایه</string>
+    <string name="contract_adv_entrust">سفارش‌های پیشرفته</string>
+    <string name="contract_limit_desc">خرید یا فروش با قیمت مشخص یا بهتر.</string>
+    <string name="contract_market_desc">به‌سرعت خرید یا فروش با بهترین قیمت موجود در بازار فعلی.</string>
+    <string name="contract_condition_desc">سفارش به‌صورت خودکار زمانی که قیمت هدف از پیش تعیین‌شده برسد، فعال می‌شود.</string>
+    <string name="contract_adv_limit_order">سفارش محدود پیشرفته</string>
+    <string name="contract_adv_limit_desc">شامل سه مکانیزم: Post-Only، FOK و IOC.</string>
+    <string name="contract_adv_post_only">Post-Only</string>
+    <string name="contract_adv_fok">Fill-or-Kill (FOK)</string>
+    <string name="contract_adv_ioc">Immediate-or-Cancel (IOC)</string>
+    <string name="contract_adv_post_only_desc">سفارش شما همیشه به‌عنوان Maker اجرا می‌شود. اگر به‌عنوان Taker اجرا شود، به‌صورت خودکار لغو می‌شود.</string>
+    <string name="contract_adv_fok_desc">سفارش فوراً به‌طور کامل اجرا می‌شود یا به‌طور کامل لغو می‌گردد.</string>
+    <string name="contract_adv_ioc_desc">سفارش به اندازه ممکن فوراً اجرا می‌شود و بخش اجرا نشده به‌صورت خودکار لغو می‌شود.</string>
+
+    <string name="financial_24h_can_redemption">محدودیت قابل تسویه در ۲۴ ساعت آینده</string>
+    <string name="financial_can_redemption">قابل تسویه:</string>
+    <string name="financial_current_auto_subscription_tip">دارایی‌های موجود در کیف پول اسپات شما
+        به‌طور خودکار به این محصول Earns انعطاف‌پذیر روزانه با %1$s مشترک خواهند شد.
+    </string>
+    <string name="financial_current_number">مقدار فعلی</string>
+    <string name="financial_every_24h_redemption_amount">محدودیت قابل تسویه روزانه:</string>
+    <string name="financial_group_coin">بر اساس ارز دیجیتال</string>
+    <string name="financial_group_prod">بر اساس محصول</string>
+    <string name="financial_input_coin_number">وارد کردن مقدار ارز دیجیتال</string>
+    <string name="financial_now_rate">نرخ بهره آنی</string>
+    <string name="financial_off_auto_subscribe">اشتراک خودکار خاموش شده است.</string>
+    <string name="financial_on_auto_subscribe">اشتراک خودکار روشن شده است.</string>
+    <string name="financial_positions">%d موقعیت باز</string>
+    <string name="financial_redemption_amount">محدودیت تسویه</string>
+    <string name="financial_redemption_number_error_1">مقدار قابل تسویه کافی نیست؛ لطفاً دوباره وارد
+        کنید.
+    </string>
+    <string name="financial_redemption_number_error_2">محدودیت قابل تسویه ۲۴ ساعته باقی‌مانده کافی
+        نیست؛ لطفاً دوباره وارد کنید.
+    </string>
+    <string name="financial_redemption_to">تسویه به</string>
+    <string name="financial_total_interest">بهره انباشته</string>
+    <string name="financial_total_redemption">کل تسویه‌ها</string>
+    <string name="financial_total_subscription">کل اشتراک‌ها</string>
+    <string name="financial_your_24h_redemption_amount">محدودیت قابل تسویه ۲۴ ساعته باقی‌مانده
+        شما:
+    </string>
+    <string name="stoplp_block_desc_1">قیمت تحریک سود بردن باید بیشتر از قیمت باز باشد، در غیر این
+        صورت بلافاصله فعال خواهد شد. لطفاً آن را دوباره تنظیم کنید.
+    </string>
+    <string name="stoplp_block_desc_2">قیمت تحریک سود بردن باید کمتر از قیمت باز باشد، در غیر این
+        صورت بلافاصله فعال خواهد شد. لطفاً آن را دوباره تنظیم کنید.
+    </string>
+    <string name="stoplp_block_desc_3">قیمت تحریک توقف ضرر باید کمتر از قیمت باز باشد، در غیر این
+        صورت بلافاصله فعال خواهد شد. لطفاً آن را دوباره تنظیم کنید.
+    </string>
+    <string name="stoplp_block_desc_4">قیمت تحریک توقف ضرر باید بیشتر از قیمت باز باشد، در غیر این
+        صورت بلافاصله فعال خواهد شد. لطفاً آن را دوباره تنظیم کنید.
+    </string>
+    <string name="stoplp_expected_lp_market">زمانی که قیمت &lt;font color="%6$s"&gt;%1$s&lt;/font&gt;
+        برابر با &lt;font color="%6$s"&gt;%2$s%3$sUSDT&lt;/font&gt; باشد، یک سفارش &lt;font
+        color="%6$s"&gt;بازار&lt;/font&gt; فعال خواهد شد که انتظار می‌رود ضرری به میزان &lt;font
+        color="%5$s"&gt;%4$sUSDT&lt;/font&gt; داشته باشد.
+    </string>
+    <string name="stoplp_expected_lp_price">زمانی که قیمت &lt;font color="%7$s"&gt;%1$s&lt;/font&gt;
+        برابر با &lt;font color="%7$s"&gt;%2$s%3$sUSDT&lt;/font&gt; باشد، یک سفارش &lt;font
+        color="%7$s"&gt;محدود&lt;/font&gt; فعال خواهد شد (قیمت سفارش: &lt;font color="%7$s"&gt;%4$sUSDT&lt;/font&gt;)
+        که انتظار می‌رود ضرری به میزان &lt;font color="%6$s"&gt;%5$sUSDT&lt;/font&gt; داشته باشد.
+    </string>
+    <string name="swap_fok_desc">پر کردن یا لغو (FOK)</string>
+    <string name="swap_ioc_desc">فوری یا لغو (IOC)</string>
+    <string name="swap_only_maker_desc">سفارش به‌عنوان یک سفارش Taker در بازار به‌طور فوری پر نخواهد
+        شد؛ در غیر این صورت، لغو خواهد شد.
+    </string>
+    <string name="wealth_auto_buy">اشتراک خودکار</string>
+    <string name="wealth_auto_desc">دارایی‌های موجود در کیف پول اسپات شما به‌طور خودکار به این محصول
+        Earns انعطاف‌پذیر روزانه با %1$s (%2$s) مشترک خواهند شد.
+    </string>
+    <string name="wealth_demand_desc1">نرخ بهره سالانه (APR) برای پس‌انداز قابل انعطاف ممکن است بر اساس تغییرات نرخ بهره بازار نوسان کند و مطابق با APR نمایش داده‌شده در صفحه محصول خواهد بود. بهره هر ساعت محاسبه و به موجودی پس‌انداز قابل انعطاف شما افزوده می‌شود، و نرخ بازده سالانه به‌صورت زنده هر ساعت به‌روزرسانی می‌گردد.</string>
+    <string name="wealth_demand_desc2">بهره در هر ساعت = موجودی قابل انعطاف * APR / (365 * 24)</string>
+    <string name="wealth_demand_desc3">بهره حاصل از Earns انعطاف‌پذیر به حساب اسپات تسویه نخواهد شد،بهره پس‌انداز قابل انعطاف به حساب اسپات شما واریز نمی‌شود، بلکه در موجودی پس‌انداز قابل انعطاف شما باقی می‌ماند تا به‌صورت مرکب محاسبه شود. زمانی که اشتراک‌های اضافی یا بازخریدها انجام شود، تغییرات موجودی باعث تسویه اضافی برای اطمینان از محاسبه دقیق بهره می‌شود.</string>
+    <string name="wealth_demand_desc4">پس از اتمام عملیات تسویه، دارایی‌های موجود در محصول Earns
+        انعطاف‌پذیر به‌طور فوری به کیف پول اسپات شما بازگشت داده می‌شود. لطفاً توجه داشته باشید که
+        هر محصول Earns انعطاف‌پذیر دارای محدودیت تسویه روزانه است و این محدودیت ممکن است تنظیم شود.
+    </string>
+    <string name="wealth_demand_desc5">هنگامی که اشتراک خودکار فعال است، محصول با مدت زمان ثابت
+        به‌طور خودکار در تاریخ سررسید به همان محصول با مدت زمان ثابت تمدید می‌شود. در صورت غیرفعال
+        بودن، دارایی‌های شما در تاریخ سررسید تسویه خواهد شد.
+    </string>
+    <string name="wealth_demand_rule_title1">۱. بازده سالانه آنی</string>
+    <string name="wealth_demand_rule_title2">۲. روش درآمدزایی</string>
+    <string name="wealth_demand_rule_title3">۳. تسویه</string>
+    <string name="wealth_demand_tip1">• تسویه هیچ بهره‌ای که قبلاً به‌دست آمده است را کسر نخواهد
+        کرد.
+    </string>
+    <string name="wealth_invest_auto_desc">هنگامی که اشتراک خودکار فعال است، محصول با مدت زمان ثابت
+        به‌طور خودکار در تاریخ سررسید به همان محصول با مدت زمان ثابت تمدید می‌شود. در صورت غیرفعال
+        بودن، دارایی‌های شما در تاریخ سررسید تسویه خواهد شد.
+    </string>
+    <string name="wealth_is_auto">اشتراک خودکار یا خیر</string>
+    <string name="wealth_q_5">۵. بهره چگونه محاسبه و پرداخت می‌شود برای محصولات Earns انعطاف‌پذیر؟
+    </string>
+    <string name="wealth_real_time_apr">نرخ بهره سالانه آنی</string>
+    <string name="common_retry">تلاش مجدد</string>
+    <string name="common_not_network">بدون شبکه</string>
+    <string name="common_feedback">بازخورد</string>
+    <string name="financial_redemption">بازخرید</string>
+    <string name="third_login_exist">این ایمیل قبلاً ثبت شده است. شما می‌توانید ایمیل را تأیید کرده و آن را به یک حساب کاربری شخص ثالث مرتبط کنید.</string>
+    <string name="follow_level_type">حالت اهرم و موقعیت</string>
+    <string name="follow_only_follow_trader">فقط تنظیمات معامله‌گر حرفه‌ای را کپی کنید.</string>
+    <string name="kline_hollow">توخالی</string>
+    <string name="kline_solid">جامد</string>
+    <string name="kline_index_line">خط نشانگر</string>
+    <string name="kline_cycle">مقدار پارامتر</string>
+    <string name="kline_line_width">عرض خط</string>
+    <string name="kline_line_color">رنگ</string>
+    <string name="kline_calc_cycle">چرخه محاسبه</string>
+    <string name="kline_bandwidth">پهنای باند</string>
+    <string name="kline_move_avg_cycle1">دوره میانگین متحرک 1</string>
+    <string name="kline_move_avg_cycle2">دوره میانگین متحرک 2</string>
+    <string name="kline_setting">تنظیمات نشانگر</string>
+    <string name="kline_main_chart">نشانگر نمودار اصلی</string>
+    <string name="kline_ma_index">میانگین متحرک</string>
+    <string name="kline_ema_index">میانگین متحرک وزنی</string>
+    <string name="kline_boll_index">باندهای بولینگر</string>
+    <string name="kline_sub_chart">نشانگر تصویر فرعی</string>
+    <string name="kline_vol_index">نشانگر حجم</string>
+    <string name="kline_macd_index">همگرایی هموارسازی نمایی و میانگین متحرک واگرایی</string>
+    <string name="kline_kdj_index">تصادفی</string>
+    <string name="kline_short_cycle">چرخه کوتاه</string>
+    <string name="kline_long_cycle">چرخه طولانی</string>
+    <string name="kline_move_avg_cycle">دوره متوسط ​​متحرک</string>
+    <string name="kline_type">استایل</string>
+    <string name="kline_long_increase">طولانی (افزایش)</string>
+    <string name="kline_long_decrease">طولانی (منهای)</string>
+    <string name="kline_short_increase">کوتاه (افزایش)</string>
+    <string name="kline_short_decrease">کوتاه (منهای)</string>
+    <string name="kline_vol_column_setting">تنظیمات ستون VOL</string>
+    <string name="kline_up">بالا آمدن</string>
+    <string name="kline_down">سقوط</string>
+    <string name="kline_vol_ma_desc">میانگین متحرک MA حجم معاملات به این صورت است که حجم معاملات یک دوره معین را جمع می کند و میانگین را می گیرد و منحنی صاف تری را در هیستوگرام حجم معاملات تشکیل می دهد، یعنی خط میانگین حجم معاملات.</string>
+    <string name="new_tp_open_time">"سطح کارمزد.  "</string>
+    <string name="force_limit_ip">"آدرس IP شما (%s) نشان می‌دهد که در کشوری/منطقه‌ای با محدودیت‌های خدمات Aibit قرار دارید. سیستم به‌طور خودکار شما را خارج کرده است. در صورت داشتن هرگونه سوال، لطفاً با تیم خدمات مشتریان ما تماس بگیرید. "</string>
+    <string name="login_failure">ورود ناموفق بود</string>
+
+
+    <!--    币种信息 start-->
+    <string name="coininfo_price">قیمت</string>
+    <string name="coininfo_info">اطلاعات</string>
+    <string name="coininfo_cap_rank">رتبه</string>
+    <string name="coininfo_circulating_supply">حجم در گردش</string>
+    <string name="coininfo_ico_price">قیمت انتشار</string>
+    <string name="coininfo_max_supply">حداکثر عرضه</string>
+    <string name="coininfo_max_cap">حداکثر ارزش بازار عرضه</string>
+    <string name="coininfo_circulation_rate">نرخ گردش</string>
+    <string name="common_depth">"عمق  "</string>
+    <string name="swap_u_tp">USDT-M</string>
+    <string name="common_funds">صندوق</string>
+    <!--    币种信息 end-->
+
+    <!--  k线改版 start-->
+    <string name="commont_full_screen">تمام صفحه</string>
+    <string name="commont_countdown">شمارش معکوس</string>
+    <string name="commont_y_axis_coordinate">محور Y</string>
+    <string name="commont_chart_display">نمایش آیکون</string>
+    <string name="commont_order_display">نمایش سفارش</string>
+    <!--  k线改版 end-->
+
+    <string name="home_welcome_title">پاداش خوش‌آمدگویی</string>
+    <string name="coupon_center">مرکز کوپن‌ها</string>
+    <string name="coupon_contract_experience">کوپن آزمایشی برای معاملات آتی</string>
+    <string name="coupon_financial_interest">کوپن تقویت‌کننده</string>
+    <string name="coupon_contract_experience_tip">شما فقط می‌توانید یک کوپن را همزمان استفاده کنید. برای ادامه، موقعیت‌های فعلی با کوپن جایزه آزمایشی را ببندید.</string>
+    <string name="coupon_financial_interest_tip">از کوپن‌های تقویت‌کننده برای کسب درآمد بیشتر استفاده کنید!</string>
+    <string name="coupon_wait_active">در انتظار فعال‌سازی</string>
+    <string name="coupon_wait_use">در انتظار استفاده</string>
+    <string name="coupon_used">استفاده شده</string>
+    <string name="coupon_expired">باطل شده</string>
+    <string name="coupon_empty_msg">کوپن جایزه آزمایشی موجود نیست</string>
+    <string name="coupon_activity_award">جوایز فعالیت.</string>
+    <string name="coupon_airdrop">پاداش ایردراپ</string>
+    <string name="coupon_info_1">بسته شدن خودکار در %1$s ساعت | حداکثر اهرم: %2$sx | شرط فعال‌سازی: %3$s باید به %4$s USDT برسد</string>
+    <string name="coupon_info_2">بسته شدن خودکار در %1$s ساعت | حداکثر اهرم: %2$sx</string>
+    <string name="coupon_contract_amount">مقدار معاملات قرارداد</string>
+    <string name="coupon_spot_amount">مقدار معاملات نقدی</string>
+    <string name="coupon_deposit_amount">مبلغ واریز</string>
+    <string name="coupon_wealth_amount">مبلغ Earn</string>
+    <string name="coupon_empty_amount">بدون شرط</string>
+    <string name="coupon_support_variety">پشتیبانی‌شده:</string>
+    <string name="coupon_active_validity">مدت اعتبار برای فعال‌سازی</string>
+    <string name="coupon_use_validity">مدت اعتبار</string>
+    <string name="coupon_auto_close_time">بسته شدن خودکار در %1$s</string>
+    <string name="coupon_auto_close_time_2">پوزیشن در %1$s بسته شد</string>
+    <string name="coupon_expired_time">در %1$s منقضی شد</string>
+    <string name="coupon_to_active">اکنون فعال کنید</string>
+    <string name="coupon_support_title">معاملات آتی پشتیبانی‌شده:</string>
+    <string name="coupon_active_coupon">فعال‌سازی کوپن</string>
+    <string name="coupon_active_condition_title">کوپن را پس از برآورده شدن شرایط فعال کنید</string>
+    <string name="coupon_active_condition_contract">حجم کل معاملات فیوچرز به %1$s USDT برای فعال‌سازی می‌رسد</string>
+    <string name="coupon_active_condition_spot">حجم کل معاملات اسپات به %1$s USDT برای فعال‌سازی می‌رسد</string>
+    <string name="coupon_active_condition_wealth">مجموع مبلغ اشتراک Earn به %1$s USDT (معادل) رسیده است</string>
+    <string name="coupon_active_condition_deposit">مبلغ کل واریز به %1$s USDT (معادل) برای فعال‌سازی می‌رسد</string>
+    <string name="coupon_active_condition_wealth_comp">مبلغ کل اشتراک Earn به %1$s USDT (معادل) رسیده و فعال شد</string>
+    <string name="coupon_active_condition_contract_comp">حجم کل معاملات فیوچرز به %1$s USDT رسیده و فعال شد</string>
+    <string name="coupon_active_condition_spot_comp">حجم کل معاملات اسپات به %1$s USDT رسیده و فعال شد</string>
+    <string name="coupon_active_condition_deposit_comp">مبلغ کل واریز به %1$s USDT (معادل) رسیده و فعال شد</string>
+    <string name="coupon_current_progress">پیشرفت فعلی: </string>
+    <string name="coupon_total_trade">حجم کل معاملات:</string>
+    <string name="coupon_total_deposit">کل سپرده:</string>
+    <string name="coupon_total_wealth">مجموع اشتراک Earn:</string>
+    <string name="coupon_can_use">در دسترس</string>
+    <string name="coupon_to_trade">اکنون معامله کنید</string>
+    <string name="coupon_to_deposit">اکنون واریز کنید</string>
+    <string name="coupon_to_wealth">اکنون اشتراک کنید</string>
+    <string name="coupon_to_use">اکنون استفاده کنید</string>
+    <string name="coupon_useing">در حال استفاده</string>
+    <string name="coupon_select_contract">معاملات آتی را برای باز کردن موقعیت انتخاب کنید</string>
+    <string name="coupon_select_contract_warn">فقط معاملات آتی پشتیبانی‌شده توسط کوپن جایزه آزمایشی نمایش داده می‌شوند.</string>
+    <string name="coupon_experience">آزمایشی</string>
+    <string name="coupon_exper_enter_sign">آزم</string>
+
+    <string name="coupon_experience_open">کوپن</string>
+    <string name="coupon_back_order">تغییر به حالت استاندارد</string>
+    <string name="coupon_experience_coupon">کوپن آزمایشی</string>
+    <string name="coupon_can_use_count">%s موجود</string>
+    <string name="coupon_no_can_use">موجود نیست</string>
+    <string name="coupon_contract_experience_gold">جایزه آزمایشی برای معاملات آتی</string>
+    <string name="coupon_no_coupon">کوپن آزمایشی موجود نیست</string>
+    <string name="coupon_how_get">چگونه می‌توان آن را دریافت کرد؟</string>
+    <string name="coupon_no_coupon_tip">کوپن جایزه آزمایشی موجود نیست~</string>
+    <string name="coupon_active_tip">ووچر موجود نیست، فعال کنید~</string>
+    <string name="coupon_hold_coupon_position">یک موقعیت آزمایشی فعال موجود است، نمی‌توان کوپن جدیدی را استفاده کرد.</string>
+    <string name="coupon_hold_coupon_position_tip">یک موقعیت آزمایشی در حال حاضر فعال است. لطفاً برای استفاده از یک کوپن پاداش آزمایشی جدید، آن را ببندید.</string>
+    <string name="coupon_not_support_coin">این کوپن آزمایشی از این نوع ابزار پشتیبانی نمی‌کند.</string>
+    <string name="coupon_not_support_coin_tip">این کوپن آزمایشی از این نوع ابزار پشتیبانی نمی‌کند. لطفاً تغییر دهید و دوباره تلاش کنید~</string>
+    <string name="coupon_validity">معتبر تا</string>
+    <string name="coupon_last_use_time">قبل از %1$s استفاده کنید</string>
+    <string name="coupon_last_active_time">فعال‌سازی تا %1$s</string>
+    <string name="coupon_exper_position">موقعیت آزمایشی</string>
+    <string name="coupon_auto_close_position">بستن خودکار بعد از</string>
+    <string name="coupon_manual_close">بستن دستی</string>
+    <string name="coupon_expiry_close">بستن در سررسید</string>
+    <string name="coupon_system_close">بستن سیستمی</string>
+    <string name="coupon_liquidation">تسویه اجباری</string>
+    <string name="clear_cache_title">آیا مطمئن هستید که می‌خواهید کاش را پاک کنید؟</string>
+    <string name="clear_cache">کاش را پاک کردن</string>
+    <string name="interest_rate_coupon">کوپن تقویت‌کننده</string>
+    <string name="common_not_use">کوپنی موجود نیست.</string>
+    <string name="wealth_empty_coupon_tip">محصولات Earn با نرخ‌های ترجیحی پلکانی از کوپن‌های تقویت‌کننده پشتیبانی نمی‌کنند.</string>
+    <string name="wealth_coupon_info"> | مقدار افزایش سود: %1$s %2$s | دوره افزایش سود:  %3$s روز%4$s</string>
+
+    <string name="wealth_coupon_desc">ارز: %1$s | مقدار افزایش سود: %2$s %3$s | دوره افزایش سود: %4$s روز</string>
+    <string name="wealth_coupon_use_time">تاریخ استفاده</string>
+    <string name="wealth_coupon_dead_time">تاریخ انقضا</string>
+    <string name="wealth_add_apr">افزایش</string>
+    <string name="wealth_platform_account">حساب پلتفرم</string>
+    <string name="wealth_coupon">سود (کوپن تقویت‌کننده)</string>
+    <string name="wealth_coupon_retract">سود بازیابی‌شده (کوپن تقویت‌کننده)</string>
+    <string name="wealth_add_apr_amount">مقدار واقعی افزایش</string>
+    <string name="wealth_add_apr_interest">نرخ افزایش سود</string>
+    <string name="wealth_add_apr_cycle">دوره واقعی افزایش سود</string>
+    <string name="wealth_support_coupon_tip">موقعیت‌های انعطاف‌پذیر از استفاده مجدد کوپن‌های تقویت‌کننده پشتیبانی نمی‌کنند.</string>
+    <string name="wealth_plus_rate">سودهای تقویت‌شده</string>
+    <string name="plus_coupon_amount_title">تأیید مبلغ اشتراک</string>
+    <string name="plus_coupon_amount_msg">مبلغ اشتراک شما %3$s %4$s کمتر از حد افزایش %1$s %2$s است. افزایش استفاده‌نشده پس از اشتراک از بین خواهد رفت. لطفاً مبلغ اشتراک خود را تأیید کنید.</string>
+    <string name="plus_coupon_amount_left">ویرایش مبلغ</string>
+    <string name="plus_coupon_amount_right">ادامه اشتراک</string>
+    <string name="wealth_coupon_detail">جزئیات</string>
+    <string name="wealth_coupon_name">نام</string>
+    <string name="wealth_coupon_info_title">اطلاعات</string>
+    <string name="wealth_empty_coupon">هیچ ووچر تقویتی برای %s موجود نیست</string>
+    <string name="invest_tip_4">سود ووچر تقویتی در همان زمان %s پرداخت می‌شود •</string>
+    <string name="plus_inverst_day">مدت زمان</string>
+    <string name="wealth_coupon_tip_swap">شرط: حجم معاملات فیوچرز باید به %1$s %2$s برسد</string>
+    <string name="wealth_coupon_tip_spot">شرط: حجم معاملات اسپات باید به %1$s %2$s برسد</string>
+    <string name="wealth_coupon_tip_wealth">شرط: مجموع مبلغ اشتراک Earn باید به %1$s %2$s (معادل) برسد تا فعال شود.</string>
+    <string name="wealth_coupon_tip_recharge">شرط: مبلغ واریز باید به %1$s %2$s برسد</string>
+    <string name="wealth_coupon_tip_empty">شرط: ندارد</string>
+    <string name="earn_coupon_empty">کوپن تقویت‌کننده‌ای موجود نیست</string>
+    <string name="earn_coupon_recycle">تاریخ بازیابی سیستم</string>
+    <string name="forget_pwd_warn">برای اطمینان از امنیت دارایی‌های شما، امکان برداشت تا ۲۴ ساعت پس از تغییر رمز عبور غیرفعال خواهد شد.</string>
+    <string name="pleace_input_psw_agin">لطفاً رمز عبور جدید خود را دوباره وارد کنید.</string>
+    <string name="device_manager">مدیریت دستگاه</string>
+    <string name="recommend">پیشنهاد</string>
+    <string name="now_device">"دستگاه جاری  "</string>
+    <string name="device_time">آخرین ورود</string>
+    <string name="device_location">موقعیت ورود</string>
+    <string name="delete_device_title">"آیا از حذف این دستگاه مطمئن هستید؟  "</string>
+    <string name="delete_device_desc">دستگاه:%s</string>
+    <string name="delete_logout">"این دستگاه در حال حاضر وارد شده است. حذف آن باعث خروج اجباری می‌شود.  "</string>
+    <string name="account_safe">"امنیت حساب  "</string>
+    <string name="account_manager">"مدیریت حساب  "</string>
+    <string name="warn_edit_mobile">آیا مطمئن هستید که می‌خواهید شماره تلفن خود را تغییر دهید؟</string>
+    <string name="warn_edit_email">"آیا مطمئن هستید که می‌خواهید ایمیل خود را تغییر دهید؟  "</string>
+    <string name="mobile_disable_withdraw">برای اطمینان از امنیت وجوه شما، پس از تغییر شماره تلفن، قابلیت برداشت به مدت ۲۴ ساعت غیرفعال خواهد شد.</string>
+    <string name="email_disable_withdraw">"برای اطمینان از امنیت وجوه شما، پس از تغییر ایمیل، قابلیت برداشت به مدت ۲۴ ساعت غیرفعال خواهد شد.  "</string>
+    <string name="bind_ga_tip1">"دانلود برنامه Google Authenticator  "</string>
+    <string name="goto_download_ga">هنوز Google Authenticator را نصب نکرده‌اید؟ اینجا کلیک کنید تا دانلود کنید.</string>
+    <string name="or_search_download_ga">"همچنین می‌توانید \"Google Authenticator\" را در فروشگاه برنامه جستجو کرده و آن را خودتان دانلود کنید.  "</string>
+    <string name="bind_ga_tip2">"کلید زیر را کپی کنید یا کد QR زیر را اسکن کنید.  "</string>
+    <string name="bind_ga_tip3">"برنامه Google Authenticator را باز کنید، روی + کلیک کنید، گزینه \"وارد کردن کلید تنظیمات\" را انتخاب کنید و کلیدی که اخیراً کپی کرده‌اید را وارد کنید تا احراز هویت جدیدی اضافه کنید.  "</string>
+    <string name="ga_code_warn">"کلید برای بازیابی Google Authenticator در صورت تعویض یا گم شدن تلفن استفاده می‌شود. لطفاً قبل از اتصال، حتماً این کلید را پشتیبان‌گیری و ذخیره کنید.  "</string>
+    <string name="login_time">"زمان ورود  "</string>
+    <string name="login_address">آدرس ورود</string>
+
+    <string name="ai_find_chance">فرصت‌ها را کشف کنید</string>
+    <string name="ai_score">امتیاز</string>
+    <string name="ai_score_desc">یک شاخص ساده و کارآمد برای کمک به شما در شناسایی سریع توکن‌های با
+        پتانسیل بالا.
+    </string>
+    <string name="price_limit_24h">24h تغیی</string>
+    <string name="avg_price">ق. متوسط</string>
+    <string name="address_numb">تعداد آدرس</string>
+    <string name="ai_smart_money">خرید هوشمند</string>
+    <string name="ai_smart_money_desc">توکن‌هایی که بیشترین خرید را توسط پول هوشمند در ۲۴ ساعت گذشته
+        داشته‌اند.
+    </string>
+    <string name="ai_hot_desc">روایت‌های داغ</string>
+    <string name="ai_hot_desc_desc">روایت‌های کریپتو با بیشترین سود در ۲۴ ساعت گذشته.</string>
+    <string name="narrative">روایت‌ها</string>
+    <string name="ai_up_sort_today">رتبه</string>
+    <string name="ai_vc_change">تغییرات VC</string>
+    <string name="ai_vc_change_desc">تغییرات در پرتفوی‌های زنجیره‌ای شرکت‌های سرمایه‌گذاری ریسک‌پذیر
+        (VC) در ۷ روز گذشته.
+    </string>
+    <string name="ai_money_change">تغ. مبلغ</string>
+    <string name="ai_amount_change_7d">تغییر مقدار 7d</string>
+    <string name="ai_vc_numb">تعداد VCها</string>
+    <string name="account_name">نام حساب</string>
+    <string name="subscriber">"دنبال‌کنندگان "</string>
+    <string name="win_rate_24h">نرخ برد 24h</string>
+    <string name="ai_kol_sort">رتبه KOL</string>
+    <string name="ai_kol_sort_desc">بهترین عملکرد KOL بر اساس حرکت قیمت در ۲۴ ساعت گذشته</string>
+    <string name="signal">سیگنال</string>
+    <string name="signal_type">نوع سیگنال</string>
+    <string name="avg_win_rate_1d">نرخ 1d</string>
+    <string name="ai_smart_signal">"سیگنال هوشمند  "</string>
+    <string name="ai_smart_signal_desc">آخرین سیگنال‌های تجاری را مشاهده کنید تا فرصت‌ها را پیدا
+        کنید.
+    </string>
+    <string name="ai_max_increase">"بیشترین رشد  "</string>
+    <string name="ai_max_increase_desc">بیشترین برندگان در بازار ارزهای دیجیتال در 24 ساعت گذشته را
+        مشاهده کنید.
+    </string>
+    <string name="mood_score">امتیاز</string>
+    <string name="view_count_24h">بازدید 24س</string>
+    <string name="ai_hot_kol">تماس KOL</string>
+    <string name="ai_hot_kol_desc">محبوب‌ترین توکن‌ها که توسط KOLs در 24 ساعت گذشته بحث شده‌اند را
+        مشاهده کنید.
+    </string>
+    <string name="ai_search_desc">جستجو برای روایات</string>
+    <string name="please_input_content">لطفاً محتوای جستجو را وارد کنید.</string>
+    <string name="price_change_24h">حرکت قیمت 24 ساعته</string>
+    <string name="ai_score_dialog_1">امتیاز AI بر اساس تحلیل روندهای بازار، عملکرد تاریخی،
+        تراکنش‌های زنجیره‌ای و محتوای رسانه‌های اجتماعی و اخبار است. این امتیاز فرصت‌ها و خطرات
+        سرمایه‌گذاری‌ها را در 24-72 ساعت آینده منعکس می‌کند.
+    </string>
+    <string name="ai_score_dialog_2">یادداشت: امتیاز AI صرفاً برای مرجع است و مشاوره سرمایه‌گذاری
+        محسوب نمی‌شود. بازار ارزهای دیجیتال به شدت نوسان دارد؛ تصمیمات سرمایه‌گذاری باید با اختیار
+        خودتان اتخاذ شوند. این پلتفرم مسئولیتی در قبال نتایج اقدامات انجام شده ندارد.
+    </string>
+    <string name="ai_find_chance_sub">امتیاز AI بر اساس روندهای بازار، عملکرد تاریخی، تراکنش‌های
+        زنجیره‌ای و تحلیل رسانه‌های اجتماعی است.
+    </string>
+    <string name="ai_grate">امتیاز AI</string>
+    <string name="search_coin">جستجوی ارز</string>
+    <string name="side">جهت</string>
+    <string name="exchange_vol_24h">24hحجم</string>
+    <string name="ai_score_title">امتیاز AI</string>
+    <string name="stoplp_part">موقعیت جزئی</string>
+    <string name="stoplp_all">موقعیت کامل</string>
+    <string name="stoplp_part_desc">فقط برای موقعیت‌های جزئی قابل اجرا است. در این حالت، تعداد دستورات TP/SL با اندازه موقعیت تغییر نمی‌کند. چندین دستور TP/SL قابل تنظیم است.</string>
+    <string name="stoplp_all_desc">برای کل موقعیت، تعداد دستورات TP/SL با تغییر اندازه موقعیت تنظیم می‌شود. فقط یک TP یا SL برای هر موقعیت قابل تنظیم است. زمانی که قیمت فعال‌سازی شود، یک سفارش بازار اجرا خواهد شد.</string>
+    <string name="stoplp_profit_error_1">قیمت فعال‌سازی TP باید بیشتر از %1$s باشد.</string>
+    <string name="stoplp_profit_error_2">قیمت فعال‌سازی TP باید کمتر از %1$s باشد.</string>
+    <string name="stoplp_loss_error_1">قیمت فعال‌سازی SL باید کمتر از %1$s باشد.</string>
+    <string name="stoplp_loss_error_2">قیمت فعال‌سازی SL باید بیشتر از %1$s باشد.</string>
+    <string name="stoplp_all_expected_lp"><![CDATA[ زمانی که قیمت <font color="%6$s">%1$s</font> به <font color="%6$s">%2$s%3$sUSDT</font> برسد، یک سفارش با قیمت بازار فعال می‌شود، مقدار برابر با کل موقعیت خواهد بود و سود پیش‌بینی‌شده <font color="%5$s">%4$sUSDT</font> خواهد بود. ]]></string>
+    <string name="stoplp_profit_hint_1">قیمت فعال‌سازی TP باید > %1$s باشد.</string>
+    <string name="stoplp_profit_hint_2">قیمت فعال‌سازی TP باید &lt; %1$s باشد.</string>
+    <string name="stoplp_loss_hint_1">قیمت فعال‌سازی SL باید &lt; %1$s باشد.</string>
+    <string name="stoplp_loss_hint_2">قیمت فعال‌سازی SL باید > %1$s باشد.</string>
+    <string name="stoplp_order_canceled">سفارش لغو شد</string>
+    <string name="stoplp_loss_confirm_tip_1">قیمت فعال‌سازی SL برای موقعیت خرید شما کمتر یا برابر با قیمت تخمینی لیکوئید شدن است و ممکن است قبل از فعال شدن SL لیکوئید شوید. لطفاً قیمت را تنظیم کنید.</string>
+    <string name="stoplp_loss_confirm_tip_2">قیمت فعال‌سازی SL برای موقعیت فروش شما بیشتر یا برابر با قیمت تخمینی لیکوئید شدن است و ممکن است قبل از فعال شدن SL لیکوئید شوید. لطفاً قیمت را تنظیم کنید.</string>
+    <string name="stoplp_loss_confirm_tip_3">قیمت فعال‌سازی حد ضرر (SL) برای موقعیت فروش شما کمتر یا برابر با قیمت تخمینی لیکویید شدن است. این ممکن است باعث لیکویید شدن قبل از فعال شدن حد ضرر شود. لطفاً قیمت فعال‌سازی را تنظیم کنید.</string>
+    <string name="stoplp_loss_confirm_tip_4">قیمت فعال‌سازی حد ضرر (SL) برای موقعیت خرید شما بیشتر یا برابر با قیمت تخمینی لیکویید شدن است. این ممکن است باعث لیکویید شدن قبل از فعال شدن حد ضرر شود. لطفاً قیمت فعال‌سازی را تنظیم کنید.</string>
+    <string name="stoplp_continue_create_order">ادامه</string>
+    <string name="stoplp_mark_price">قیمت شاخص</string>
+    <string name="contract_all_contract">نماد</string>
+    <string name="contract_all_dir">جهت</string>
+    <string name="new_phone_number">"شماره تلفن همراه جدید  "</string>
+
+    <string name="time_picker_desc">فقط از سوابق تاریخی برای ۶ ماه گذشته پشتیبانی می‌کند.</string>
+    <string name="time_picker_day1">1 روز</string>
+    <string name="contract_reduce_repeal_title">سفارش‌های فقط-کاهش لغو شدند.</string>
+    <string name="contract_reduce_repeal_desc">یک سفارش موجود با قیمت بهتر باعث شد سفارش %1$s در %2$s %3$s %4$s به‌طور خودکار لغو شود.</string>
+
+    <string name="swap_fund_rate">نرخ تأمین مالی</string>
+    <string name="fund_rate_his">تاریخچه نرخ تأمین مالی</string>
+    <string name="min_price_change_unit">اندازه تیک</string>
+    <string name="oder_vol">مقدار معامله</string>
+    <string name="min_order_vol">حداقل مقدار معامله</string>
+    <string name="min_order_money">حداقل قیمت سفارش</string>
+    <string name="market_max_order_money">حداکثر مقدار سفارش بازاری</string>
+    <string name="limit_max_order_vol">حداکثر مقدار سفارش محدود</string>
+    <string name="max_condition_order_count">حداکثر تعداد سفارش‌های شرطی</string>
+    <string name="other_basic_info">سایر اطلاعات پایه</string>
+    <string name="leverage_range">دامنه اهرم</string>
+    <string name="swap_forever_time">"معاملات آتی دائمی، بدون تاریخ انقضا "</string>
+    <string name="expiration_cycle">چرخه انقضا</string>
+    <string name="fund_cost_cycle">چرخه نرخ تأمین مالی</string>
+    <string name="common_view">مشاهده</string>
+    <string name="price_input_precision">دقت قیمت</string>
+    <string name="fund_rate_gap">فاصله تأمین مالی</string>
+    <string name="limit_buy_max_rate">نسبت سقف قیمت برای سفارش‌های محدود</string>
+    <string name="limit_buy_max_rate_desc">قیمت سفارش خرید محدود باید کمتر یا مساوی با (1 + نسبت سقف
+        قیمت) × قیمت مارک فعلی قرارداد آتی باشد.
+    </string>
+    <string name="limit_sell_min_rate">نسبت کف قیمت برای سفارش‌های محدود</string>
+    <string name="pnl_analysis">تحلیل سود و زیان (PNL)</string>
+    <string name="limit_sell_min_rate_desc">قیمت سفارش فروش محدود باید بیشتر یا مساوی با (1 - نسبت
+        کف قیمت) × قیمت مارک فعلی قرارداد آتی باشد.
+    </string>
+    <string name="market_sell_min_rate">حداقل قیمت فروش</string>
+    <string name="condition_max_rate">نسبت سقف قیمت برای سفارش‌های شرطی</string>
+    <string name="condition_max_rate_desc">اگر قیمت ماشه بر اساس آخرین قیمت باشد، قیمت ماشه برای
+        سفارش‌های شرطی (شامل TP/SL) باید کمتر یا مساوی با نسبت سقف قیمت × آخرین قیمت باشد.
+        اگر قیمت ماشه بر اساس قیمت مارک باشد، قیمت ماشه برای سفارش‌های شرطی (شامل TP/SL) باید کمتر
+        یا مساوی با نسبت سقف قیمت × قیمت مارک باشد.
+    </string>
+    <string name="condition_min_rate">نسبت کف قیمت برای سفارش‌های شرطی</string>
+    <string name="condition_min_rate_desc">اگر قیمت ماشه بر اساس آخرین قیمت باشد، قیمت ماشه برای
+        سفارش‌های شرطی (شامل TP/SL) باید بیشتر یا مساوی با نسبت کف قیمت × آخرین قیمت باشد.
+        اگر قیمت ماشه بر اساس قیمت مارک باشد، قیمت ماشه برای سفارش‌های شرطی (شامل TP/SL) باید بیشتر
+        یا مساوی با نسبت کف قیمت × قیمت مارک باشد.
+    </string>
+    <string name="max_condition_order_count_desc">حداکثر تعداد سفارش‌های شرطی (شامل TP/SL) برای این
+        قرارداد آتی به %1$s سفارش محدود است و این سفارش‌ها به صورت مستقل برای هر قرارداد مدیریت
+        می‌شوند.
+    </string>
+    <string name="market_buy_max_rate">نسبت سقف قیمت برای سفارش‌های بازار خرید</string>
+    <string name="market_buy_max_rate_desc">در شرایط بازار شدید، اگر قیمت طرف مقابل سفارش خرید بازار
+        به (1 + نسبت سقف قیمت) × قیمت مارک فعلی برسد یا از آن فراتر رود، کل سفارش لغو خواهد شد.
+    </string>
+    <string name="market_sell_min_rate_desc">در شرایط بازار شدید، اگر قیمت طرف مقابل سفارش فروش
+        بازار به (1 - نسبت سقف قیمت) × قیمت مارک فعلی برسد یا کمتر شود، کل سفارش لغو خواهد شد.
+    </string>
+    <string name="closed_profit_desc">لانگ: مقدار × قیمت بسته شدن - مقدار × قیمت ورود\nشورت: مقدار × قیمت ورود - مقدار × قیمت بسته شدن</string>
+    <string name="today_pnl">سود و زیان امروز (PNL)</string>
+    <string name="pnl_30d">سود و زیان ۳۰ روزه(USDT)</string>
+    <string name="pnl_7d">سود و زیان ۷ روزه(USDT)</string>
+    <string name="pnl_total">سود و زیان کل</string>
+    <string name="pnl_everyday">سود و زیان روزانه</string>
+    <string name="account_equity">کل دارایی</string>
+    <string name="asset_asset_value">ارزش دارایی</string>
+    <string name="dont_have_pnl">هیچ سابقه‌ای از سود و زیان وجود ندارد.</string>
+    <string name="pnl_rank">رتبه‌بندی سود و زیان</string>
+    <string name="swap_pnl_analysis">تحلیل سود و زیان (PNL)</string>
+    <string name="funds_pnl_analysis">تحلیل سود و زیان دارایی‌ها</string>
+    <string name="pnl_calendar">تقویم سود و زیان (PNL)</string>
+    <string name="spot_pnl_analysis">سود و زیان اسپات</string>
+    <string name="swap_pnl_tip1">به‌جز سود و زیان روزانه، سایر معیارهای سود و زیان سود و زیان تحقق‌نیافته را شامل نمی‌شوند. فرمول: سود و زیان تحقق‌یافته + هزینه خالص تأمین مالی - کارمزدها + سود پاداش (پاداش آزمایشی).*</string>
+    <string name="swap_pnl_tip2">تمام داده‌های این صفحه بر اساس منطقه زمانی UTC+0 محاسبه می‌شود و تاریخ‌های نشان داده‌شده در نمودارها نیز در منطقه زمانی UTC+0 هستند.*</string>
+    <string name="spot_pnl_tip1">*سود و زیان = ارزش‌گذاری نهایی کل دارایی‌های تأمین مالی - ارزش‌گذاری اولیه کل دارایی‌های تأمین مالی - سپرده‌های خالص</string>
+    <string name="fund_pnl_tip1">سود و زیان = ارزش‌گذاری نهایی کل دارایی‌های اسپات - ارزش‌گذاری اولیه کل دارایی‌های اسپات - سپرده‌های خالص*</string>
+    <string name="swap_total_pnl">سود و زیان کل</string>
+    <string name="pnl_rank_long">سود و زیان موقعیت لانگ</string>
+    <string name="pnl_rank_short">سود و زیان موقعیت شورت</string>
+    <string name="swap_total_pnl_desc">سود و زیان کل از تاریخ فعال‌سازی حساب آتی محاسبه می‌شود. تاریخ فعال‌سازی حساب آتی %s است.</string>
+
+    <string name="guide_title">راهنمای عملیات</string>
+    <string name="guide_exit">رد کردن</string>
+    <string name="guide_step1_desc">برای انتخاب جفت‌های معاملاتی کلیک کنید.</string>
+    <string name="guide_step2_desc">این مارجین موجود را نشان می‌دهد. برای افزودن مارجین کلیک کنید.</string>
+    <string name="guide_step3_desc">اهرم و حالت مارجین را تنظیم کنید.</string>
+    <string name="guide_step4_desc">نوع سفارش را انتخاب کنید، از جمله سفارش‌های محدود، بازاری، شرطی و محدود پیشرفته.</string>
+    <string name="guide_step5_desc">موقعیت‌ها و سفارش‌ها را مشاهده کنید.</string>
+    <string name="guide_step6_desc">داده‌های معاملات تاریخی را اینجا بررسی کنید.</string>
+    <string name="guide_step7_desc">K-Line را اینجا مشاهده کنید.</string>
+    <string name="guide_step8_desc">برای ویژگی‌های بیشتر اینجا کلیک کنید.</string>
+    <string name="guide_finish_desc">راهنما کامل شد!</string>
+    <string name="guide_ok">خوب</string>
+    <string name="asset_today_total_pl">سود و زیان امروز (PNL)</string>
+    <string name="asset_spot_value">کل موجودی</string>
+    <string name="asset_today_profit_desc">سود بر اساس منطقه زمانی UTC+0 محاسبه می‌شود و شامل کل سود قفل‌شده و انعطاف‌پذیری است که در حساب Earn از ساعت ۰۰:۰۰ (UTC+0) تا زمان فعلی دریافت شده است.</string>
+    <string name="asset_position_occupy">مارجین موقعیت</string>
+    <string name="asset_entrust_occupy">مارجین سفارش</string>
+
+    <string name="asset_cal_formula">محاسبه بر اساس منطقه زمانی UTC+0 با فرمول:</string>
+    <string name="asset_today_total_pl_desc">سود و زیان امروز = سود و زیان تأمین مالی + سود و زیان اسپات + سود و زیان آتی + سود Earn</string>
+    <string name="asset_today_pl_contract_desc">سود و زیان امروز = سود و زیان تحقق‌یافته + هزینه خالص تأمین مالی - کارمزد معاملات + سود و زیان تحقق‌نیافته + سود پاداش آزمایشی</string>
+    <string name="asset_today_pl_asset_desc">سود و زیان امروز = ارزش‌گذاری کل دارایی‌های تأمین مالی فعلی - ارزش‌گذاری کل دارایی‌های تأمین مالی در ۰۰:۰۰ - سپرده‌ها + برداشت‌ها</string>
+    <string name="asset_today_pl_spot_desc">سود و زیان امروز = کل دارایی فعلی - کل دارایی اولیه امروز - سپرده‌ها + برداشت‌ها</string>
+    <string name="asset_account_rights_desc">کل دارایی = موجودی کیف پول + سود و زیان تحقق‌نیافته (PNL)</string>
+    <string name="asset_today_profit">سود امروز</string>
+    <string name="asset_enter_finance">برو به Earn</string>
+    <string name="asset_wallet_balance_desc_1">موجودی کیف پول موجودی واقعی حساب آتی است، بدون احتساب سود و زیان تحقق‌نیافته، که به‌صورت زیر محاسبه می‌شود:</string>
+    <string name="asset_wallet_balance_desc_2">موجودی کیف پول = کل سپرده‌ها - کل برداشت‌ها + کل سود و زیان تحقق‌یافته + کل هزینه‌های خالص تأمین مالی - کل کارمزدها</string>
+    <string name="asset_unrealized_pl_desc">کل سود و زیان تحقق‌نیافته برای معاملات آتی USDT-M بر اساس قیمت مرجع محاسبه می‌شود.</string>
+
+    <string name="New">جدید</string>
+    <string name="newrank_countdown">شمارش معکوس</string>
+    <string name="newrank_onlinetime">زمان لیستینگ:</string>
+
+
+    <string name="market_cap_desc">ارزش بازار = عرضه در گردش کنونی × آخرین قیمت</string>
+    <string name="coininfo_circulating_supply_desc">عرضه در گردش کنونی ارز دیجیتال</string>
+    <string name="ieo_price_desc">قیمت عرضه اولیه عمومی (IPO) ارز دیجیتال</string>
+    <string name="coininfo_max_supply_desc">حداکثر عرضه ارز دیجیتال در بازار</string>
+    <string name="coininfo_max_cap_desc">ارزش بازار حداکثری = حداکثر عرضه × آخرین قیمت</string>
+    <string name="coininfo_circulation_rate_desc">نرخ گردش = عرضه در گردش / حداکثر عرضه</string>
+    <string name="coininfo_disclaimer">اطلاعیه: داده‌ها توسط CoinGecko فقط به‌منظور ارجاع ارائه شده‌اند. Aibit هیچ‌گونه تضمینی در مورد دقت، قابلیت اعتماد یا کاربرد اطلاعات ارائه‌شده نمی‌دهد.</string>
+    <string name="swap_pnl_tip3">PNL امروز لحظه‌ای به‌روزرسانی می‌شود؛ باقی هر ۱۰ دقیقه یک‌بار.*</string>
+
+
+    <string name="hispos_revenue_high">سود بالا</string>
+    <string name="hispos_revenue_low">سود پایین</string>
+    <string name="hispos_realized_yield">ROI تحقق‌یافته</string>
+    <string name="hispos_comp_close_time">بسته</string>
+    <string name="hispos_part_close_pos">بسته شدن جزئی</string>
+    <string name="hispos_all_close_pos">بسته شده</string>
+    <string name="hispos_max_pos_volume">بیشترین بهره باز</string>
+    <string name="hispos_trade_fee">کارمزد</string>
+    <string name="hispos_force_close_detail">جزئیات لیکوئید</string>
+    <string name="hispos_pnl">سود/زیان</string>
+    <string name="hispos_force_close_desc_1">هنگامی که قیمت مارک قراردادهای آتی %1$s به %2$s رسید، نسبت مارجین موقعیت %1$s-%3$s-%4$s شما به %6$s یا کمتر کاهش یافت و باعث فعال شدن تسویه شد. موقعیت به طور کامل توسط موتور تسویه در قیمت ورشکستگی %5$s برای به حداقل رساندن ضررها تصاحب شد.</string>
+    <string name="hispos_force_close_desc_2">نسبت حاشیه موقعیت %1$s-%2$s-%3$s شما کمتر یا مساوی %4$s است و باعث انحلال موقعیت می شود. تمام موقعیت ها توسط موتور انحلال با قیمت ورشکستگی برای کاهش زیان تصاحب می شود.</string>
+    <string name="hispos_force_close_desc_3">توجه: قیمت ورشکستگی قیمتی است که در آن نسبت مارجین به 0٪ می‌رسد.</string>
+    <string name="hispos_force_close_pnl_desc">جزئیات لیکوئید فقط شامل سود و زیان تحقق‌یافته از سفارش‌های لیکوئید می‌شود.</string>
+
+    <string name="main_try_again_exit">دوباره تلاش کنید تا از اپلیکیشن خارج شوید</string>
+    <string name="password_not_match">رمز عبور مطابقت ندارد</string>
+    <string name="input_new_password">لطفاً رمز جدید را وارد کنید</string>
+    <string name="input_new_password_again">لطفاً دوباره رمز جدید را وارد کنید</string>
+
+    <string name="share_poster">اشتراک‌گذاری</string>
+
+
+    <string name="lm_title">اهرم و مارجین</string>
+    <string name="lm_level">سطح %s</string>
+    <string name="lm_notional_value">ارزش اسمی (USDT)</string>
+    <string name="lm_keep_margin_rate">نرخ مارجین نگهداری</string>
+    <string name="lm_max_level">حداکثر اهرم</string>
+    <string name="lm_official_explan">تعریف</string>
+    <string name="lm_official_1">حاشیه نگهداری = ارزش موقعیت × نرخ حاشیه نگهداری</string>
+    <string name="lm_official_2">ارزش موقعیت = اندازه موقعیت (مقدار) × قیمت بازار</string>
+    <string name="lm_official_3">* در حالت هج، اندازه موقعیت (مقدار) = اندازه موقعیت بلند (مقدار) + اندازه موقعیت کوتاه (مقدار)</string>
+    <string name="lm_tip_start">لطفاً توجه داشته باشید که در صورت نوسانات غیرعادی قیمت یا شرایط شدید بازار، Aibit اقدامات حفاظتی اضافی انجام خواهد داد که شامل اما محدود به موارد زیر نمی‌شود:</string>
+    <string name="lm_tip_1">1. تنظیم حداکثر اهرم.  </string>
+    <string name="lm_tip_2">2. بازبینی محدودیت‌های ارزش موقعیت.  </string>
+    <string name="lm_tip_3">3. تغییر نرخ‌های حاشیه نگهداری طبقه‌بندی‌شده.</string>
+    <string name="lm_notional_value_desc">شامل مجموع موقعیت‌های بلند و کوتاه شما می‌شود.</string>
+    <string name="lm_max_level_desc">حداکثر اهرم موجود در محدوده ارزش اسمی.</string>
+    <string name="lm_keep_margin_rate_desc">نرخ حاشیه نگهداری برای موقعیت‌ها در محدوده ارزش اسمی.</string>
+
+</resources>

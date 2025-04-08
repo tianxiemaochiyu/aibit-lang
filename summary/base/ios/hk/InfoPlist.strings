@@ -1,0 +1,12 @@
+/* 
+  InfoPlist.strings
+  aibit
+
+  Created by VivianNa on 2022/11/3.
+  
+*/
+
+"NSCameraUsageDescription" = "App需要用相機掃描二維碼";
+"NSPhotoLibraryUsageDescription" = "App需要用相册來保存圖片和上傳圖片";
+"NSPhotoLibraryAddUsageDescription" = "App需要用相册來保存圖片和上傳圖片";
+"NSFaceIDUsageDescription" = "開啟面部識別用於快速訪問App";
