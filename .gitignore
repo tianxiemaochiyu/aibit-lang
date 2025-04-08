@@ -41,7 +41,7 @@ yarn-error.log*
 *.local
 
 # XLSX
-.xlsx
+*.xlsx
 
 summary
 lang
