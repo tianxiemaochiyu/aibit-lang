@@ -1,11 +1,13 @@
 node_modules
 .DS_Store
+.vscode
 dist
 .npmrc
 .cache
 
 tests/server/static
 tests/server/static/upload
+
 
 .history
 .yarn/cache
@@ -43,5 +45,5 @@ yarn-error.log*
 # XLSX
 *.xlsx
 
-summary
-lang
+/summary/
+/lang/
