@@ -122,7 +122,7 @@ class ExcelGenerator {
   static _createWorksheetData(groupedEntries: GroupEntry[], allLanguages: string[]): string[][] {
     // 获取所有平台类型并创建表头
     const platformTypes = Object.keys(PLATFORM);
-    const platformHeaders = platformTypes.map(platform => `${platform}-key`);
+    const platformHeaders = platformTypes.map(platform => `${PLATFORM[platform].KEY?.toUpperCase()}-KEY`);
     
     const header = [
       ...platformHeaders,
