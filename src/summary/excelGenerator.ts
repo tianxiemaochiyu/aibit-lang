@@ -79,8 +79,6 @@ class ExcelGenerator {
           group[platformKeySet] = new Set<string>();
         });
 
-
-        
         // 初始化所有语言的翻译
         allLanguages.forEach(lang => {
           group.translations[lang] = '';

@@ -33,26 +33,48 @@ class BaseParser {
    * @returns 标准化后的值
    */
   static normalizeValue(value: string): string {
-    let normalized = value
-      // 第一步：保护{}内容（先于其他处理）
-      .replace(/\{([^{}]+)\}/g, (match) => `TEMPLATE_VAR_${Buffer.from(match).toString('base64')}`)
-      // 第二步：保护HTML标记
-      .replace(/<[^>]+>/g, (match) => `HTML_TAG_${Buffer.from(match).toString('base64')}`)
-      // 第三步：处理特殊字符和转义
+    if (!value || typeof value !== 'string') {
+      return '';
+    }
+    
+    // 使用唯一标识符作为占位符前缀，避免冲突
+    const templatePrefix = `__TEMPLATE_VAR_${Date.now()}_`;
+    const htmlPrefix = `__HTML_TAG_${Date.now()}_`;
+    
+    // 存储替换的映射
+    const replacements: Record<string, string> = {};
+    let counter = 0;
+    
+    // 第一步：保护{}内容（先于其他处理）
+    let normalized = value.replace(/\{([^{}]+)\}/g, (match) => {
+      const placeholder = `${templatePrefix}${counter++}`;
+      replacements[placeholder] = match;
+      return placeholder;
+    });
+    
+    // 第二步：保护HTML标记
+    normalized = normalized.replace(/<[^>]+>/g, (match) => {
+      const placeholder = `${htmlPrefix}${counter++}`;
+      replacements[placeholder] = match;
+      return placeholder;
+    });
+    
+    // 第三步：处理特殊字符和转义
+    normalized = normalized
       .replace(/(?<!\\)'/g, "\\'")
       .replace(/&apos;/g, "'")
       .replace(/&quot;|\\"/g, '"')
       .replace(/\\n/g, '\n')
       .replace(/&lt;/g, '<')
       .replace(/&gt;/g, '>')
-      .replace(/&amp;/g, '&')
-
-    // 恢复处理顺序：先恢复HTML标记，再恢复模板变量
-    normalized = normalized
-      .replace(/HTML_TAG_([A-Za-z0-9+/=]+)/g, (_, base64) => Buffer.from(base64, 'base64').toString())
-      .replace(/TEMPLATE_VAR_([A-Za-z0-9+/=]+)/g, (_, base64) => Buffer.from(base64, 'base64').toString())
-
-    return normalized.trim()
+      .replace(/&amp;/g, '&');
+    
+    // 恢复所有替换的内容
+    Object.keys(replacements).forEach(placeholder => {
+      normalized = normalized.replace(placeholder, replacements[placeholder]);
+    });
+    
+    return normalized.trim();
   }
 
   /**

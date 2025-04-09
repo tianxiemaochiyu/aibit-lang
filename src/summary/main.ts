@@ -40,7 +40,7 @@ async function processFiles(files: FileInfo[]): Promise<ProcessResult> {
   const keyToClientType: Record<string, string> = {};
   
   await Promise.all(files.map(async (file) => {
-    // try {
+    try {
       let entries: ParseResult;
 
       // 根据文件类型选择对应的解析方法
@@ -71,7 +71,7 @@ async function processFiles(files: FileInfo[]): Promise<ProcessResult> {
         
         entries = prefixedEntries;
       }
-      
+
       if (!langData[file.lang]) {
         langData[file.lang] = {};
       }
@@ -82,9 +82,9 @@ async function processFiles(files: FileInfo[]): Promise<ProcessResult> {
         // 使用project字段(如果存在)，否则回退到type
         keyToClientType[key] = file.project || file.type;
       });
-    // } catch (error) {
-    //   console.warn(`[${file.path}] 解析失败:`, (error as Error).message);
-    // }
+    } catch (error) {
+      console.warn(`[${file.path}] 解析失败:`, (error as Error).message);
+    }
   }));
   
   return { langData, allKeys, keyToClientType };
