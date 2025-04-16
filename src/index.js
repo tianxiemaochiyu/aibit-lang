@@ -251,6 +251,7 @@ const XLSX_ROW_LANG_INDEX_MAP = {
   kr: 14 + 3,
   ru: 15 + 3,
   es: 16 + 3,
+  pt: 17 + 3,
   fa: 18 + 3,
   jp: 19 + 3,
   ja: 19 + 3,

@@ -1,5 +1,7 @@
 import * as XLSX from 'xlsx';
-import { MASTER_LANGUAGE, STRICT_MATCH_LANGUAGES, LANGUAGE_NORMALIZATION, PLATFORM } from './config';
+import * as fs from 'fs';
+import * as path from 'path';
+import { MASTER_LANGUAGE, STRICT_MATCH_LANGUAGES, LANGUAGE_NORMALIZATION, PLATFORM, OUTPUT_LANGUAGES, FileType } from './config';
 
 // 语言数据接口
 interface LangData {
@@ -35,7 +37,9 @@ class ExcelGenerator {
     ]);
 
     const worksheetData = this._createWorksheetData(groupedEntries, allLanguages);
-    return this._createWorkbook(worksheetData, languages);
+    const workbook = this._createWorkbook(worksheetData, languages);
+
+    return workbook;
   }
 
   static _groupEntries(langData: LangData, keyToClientType: KeyToClientType, allLanguages: string[]): GroupResult {
@@ -180,6 +184,93 @@ class ExcelGenerator {
     worksheet['!freeze'] = { xSplit: 0, ySplit: 1, topLeftCell: 'A2' };
 
     return workbook;
+  }
+
+  // 生成各平台的词条内容
+  static generatePlatformFiles(langData: LangData, keyToClientType: KeyToClientType)
+    : Record<string, Record<string, string>> {
+
+    // 根据输出语言配置获取所有需要生成的语言数据
+    const outputLangData = OUTPUT_LANGUAGES.reduce((acc, lang) => {
+      acc[lang] = langData[lang] || {};
+      return acc;
+    }, {} as Record<string, Record<string, string>>);
+
+    // 按平台分组词条
+    const platformEntries: Record<string, Record<string, Record<string, string>>> = {};
+    Object.keys(PLATFORM).forEach(platform => {
+      platformEntries[platform] = {};
+    });
+
+    // 遍历所有输出语言，将词条分配到对应平台
+    Object.entries(outputLangData).forEach(([lang, langEntries]) => {
+      Object.entries(langEntries).forEach(([key, value]) => {
+        const clientType = keyToClientType[key]?.toUpperCase();
+
+        if (clientType && platformEntries[clientType]) {
+          if (!platformEntries[clientType][lang]) {
+            platformEntries[clientType][lang] = {};
+          }
+          platformEntries[clientType][lang][key] = value;
+        }
+      });
+    });
+
+    const result: Record<string, Record<string, string>> = {};
+
+    // 为每个平台生成文件
+    Object.entries(PLATFORM).forEach(([platformName, config]) => {
+      const entries = platformEntries[platformName];
+      if (!entries || Object.keys(entries).length === 0) return;
+      if (!result[platformName]) {
+        result[platformName] = {};
+      }
+      try {
+        if (config.TYPE === FileType.ANDROID) {
+          
+          Object.entries(entries).forEach(([lang, langEntries]) => {
+            // 生成Android strings.xml格式
+            let xmlContent = '<?xml version="1.0" encoding="utf-8"?>\n<resources>\n';
+            Object.entries(langEntries).forEach(([key, value]) => {
+              xmlContent += `  <string name="${key}">${this._escapeXml(value)}</string>\n`;
+            });
+            xmlContent += '</resources>';
+            result[platformName][lang] = xmlContent;
+          });
+        } else if (config.TYPE === FileType.IOS) {
+          Object.entries(entries).forEach(([lang, langEntries]) => {
+            // 生成iOS .strings格式
+            let stringsContent = '';
+            Object.entries(langEntries).forEach(([key, value]) => {
+              stringsContent += `"${key}" = "${this._escapeStrings(value)}";\n`;
+            });
+            result[platformName][lang] = stringsContent;
+          });
+        } else {
+          Object.entries(entries).forEach(([lang, langEntries]) => {
+            // Web平台直接输出JSON格式
+            result[platformName][lang] = JSON.stringify(langEntries, null, 2);
+          })
+        }
+      } catch (error) {
+        console.error(`生成 ${platformName} 词条数据失败:`, error);
+      }
+    });
+
+    return result;
+  }
+
+  private static _escapeXml(str: string): string {
+    return str.replace(/&/g, '&amp;')
+              .replace(/</g, '&lt;')
+              .replace(/>/g, '&gt;')
+              .replace(/"/g, '&quot;')
+              .replace(/'/g, '&apos;');
+  }
+
+  private static _escapeStrings(str: string): string {
+    return str.replace(/"/g, '\\"')
+              .replace(/\n/g, '\\n');
   }
 }
 
