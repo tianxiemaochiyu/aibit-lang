@@ -257,6 +257,7 @@ const XLSX_ROW_LANG_INDEX_MAP = {
   tr: 20 + 3,
   fr: 21 + 3,
   vi: 22 + 3,
+  de: 23 + 3,
 }
 
 // xlsx 中对应的应用端名称索引
