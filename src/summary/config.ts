@@ -4,7 +4,7 @@ export interface PlatformConfig {
   KEY: string;
   TYPE: string;  // 添加 TYPE 字段，用于标识平台类型
   FILE_PATTERN: RegExp;
-  FILE_TYPE: string;
+  FILE_TYPE?: string;
   CLEAN_REGEX?: RegExp;
   CLEAN_REGES?: RegExp[];
 }
@@ -55,20 +55,22 @@ interface Config {
 
 const config: Config = {
   PLATFORM: {
-    // ANDROID: {
-    //   DIR: "android",
-    //   KEY: "android",
-    //   TYPE: FileType.ANDROID, 
-    //   FILE_PATTERN: /strings\.xml$/,
-    //   CLEAN_REGEX: /<!--[\s\S]*?-->/g
-    // },
-    // IOS: {
-    //   DIR: "ios",
-    //   KEY: "ios",
-    //   TYPE: FileType.IOS,
-    //   FILE_PATTERN: /\.strings$/,
-    //   CLEAN_REGES: [/\/\*[\s\S]*?\*\//g, /\/\/.*/g]
-    // },
+    ANDROID: {
+      DIR: "android",
+      KEY: "android",
+      TYPE: FileType.ANDROID, 
+      FILE_PATTERN: /strings\.xml$/,
+      FILE_TYPE: 'xml',
+      CLEAN_REGEX: /<!--[\s\S]*?-->/g
+    },
+    IOS: {
+      DIR: "ios",
+      KEY: "ios",
+      TYPE: FileType.IOS,
+      FILE_TYPE: 'strings',
+      FILE_PATTERN: /\.strings$/,
+      CLEAN_REGES: [/\/\*[\s\S]*?\*\//g, /\/\/.*/g]
+    },
     CO: {
       DIR: "co",
       KEY: "co",
@@ -77,34 +79,38 @@ const config: Config = {
       FILE_TYPE: 'ts',
       CLEAN_REGEX: /\/\/.*|\/\*[\s\S]*?\*\//g
     },
-    // UC: {
-    //   DIR: "uc",
-    //   KEY: "uc",
-    //   TYPE: FileType.WEB, 
-    //   FILE_PATTERN: /\.(js|ts)$/,
-    //   CLEAN_REGEX: /\/\/.*|\/\*[\s\S]*?\*\//g
-    // },
-    // APP_M: {
-    //   DIR: "app-m",
-    //   KEY: "app-m",
-    //   TYPE: FileType.WEB, 
-    //   FILE_PATTERN: /\.(js|ts)$/,
-    //   CLEAN_REGEX: /\/\/.*|\/\*[\s\S]*?\*\//g
-    // },
-    // WEB_M: {
-    //   DIR: "web-m",
-    //   KEY: "web-m",
-    //   TYPE: FileType.WEB, 
-    //   FILE_PATTERN: /\.(js|ts)$/,
-    //   CLEAN_REGEX: /\/\/.*|\/\*[\s\S]*?\*\//g
-    // },
-    // APP_DOWNLOAD: {
-    //   DIR: "app-download",
-    //   KEY: "app-download",
-    //   TYPE: FileType.WEB, 
-    //   FILE_PATTERN: /\.(js|ts)$/,
-    //   CLEAN_REGEX: /\/\/.*|\/\*[\s\S]*?\*\//g
-    // },
+    UC: {
+      DIR: "uc",
+      KEY: "uc",
+      TYPE: FileType.WEB, 
+      FILE_PATTERN: /\.(js|ts)$/,
+      FILE_TYPE: 'js',
+      CLEAN_REGEX: /\/\/.*|\/\*[\s\S]*?\*\//g
+    },
+    APP_M: {
+      DIR: "app-m",
+      KEY: "app-m",
+      TYPE: FileType.WEB, 
+      FILE_PATTERN: /\.(js|ts)$/,
+      FILE_TYPE: 'ts',
+      CLEAN_REGEX: /\/\/.*|\/\*[\s\S]*?\*\//g
+    },
+    WEB_M: {
+      DIR: "web-m",
+      KEY: "web-m",
+      TYPE: FileType.WEB, 
+      FILE_PATTERN: /\.(js|ts)$/,
+      FILE_TYPE: 'ts',
+      CLEAN_REGEX: /\/\/.*|\/\*[\s\S]*?\*\//g
+    },
+    APP_DOWNLOAD: {
+      DIR: "app-download",
+      KEY: "app-download",
+      TYPE: FileType.WEB,
+      FILE_PATTERN: /\.(js|ts)$/,
+      FILE_TYPE: 'ts',
+      CLEAN_REGEX: /\/\/.*|\/\*[\s\S]*?\*\//g
+    },
   },
   // VARIABLE_PATTERNS: [
   //   { regex: /%(\d+\$)?[sdf]/g, replacement: '{var}' },

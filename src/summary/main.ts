@@ -86,7 +86,7 @@ function writePlatformFiles(result: Record<string, Record<string, string>>): voi
 
         // 写入每个模块文件
         Object.entries(moduleMap).forEach(([module, moduleTranslations]) => {
-          const ext = platformConfig.FILE_TYPE.toString();
+          const ext = platformConfig.FILE_TYPE?.toString();
           const filePath = `${path.join(langDir, module)}.${ext}`;
           
           // 处理嵌套的key
@@ -228,8 +228,8 @@ function matchXlsxWithObject(
 }
 
 const baseDir = './target';
-// mergeLocalization(baseDir)
-//   .catch(() => process.exit(1));
-
-generateLcoalizationWithXlsx(baseDir)
+mergeLocalization(baseDir)
   .catch(() => process.exit(1));
+
+// generateLcoalizationWithXlsx(baseDir)
+//   .catch(() => process.exit(1));
