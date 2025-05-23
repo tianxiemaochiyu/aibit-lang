@@ -20,10 +20,10 @@ type ParseResult = Record<string, string>;
 class BaseParser {
   /**
    * 解析内容的主方法，子类必须实现
-   * @param options 解析选项
+   * @param options 解析选项 // 假设 ParserOptions 和 ParseResult 在别处定义
    * @returns 解析结果
    */
-  static parse(options: ParserOptions): ParseResult {
+  static parse(options: any): any {
     throw new Error('子类必须实现parse方法');
   }
 
@@ -61,16 +61,18 @@ class BaseParser {
     
     // 第三步：处理特殊字符和转义
     normalized = normalized
-      .replace(/(?<!\\)'/g, "\\'")
-      .replace(/&apos;/g, "'")
-      .replace(/&quot;|\\"/g, '"')
-      .replace(/\\n/g, '\n')
-      .replace(/&lt;/g, '<')
-      .replace(/&gt;/g, '>')
-      .replace(/&amp;/g, '&');
+      .replace(/(?<!\\)'/g, "\\'") // 将未被转义的单引号转义
+      .replace(/&apos;/g, "'")      // HTML实体：单引号
+      .replace(/&quot;|\\"/g, '"') // HTML实体：双引号 或 已转义的双引号，统一为 "
+      .replace(/\\n/g, '\n')       // 换行符
+      .replace(/&lt;/g, '<')        // HTML实体：小于号
+      .replace(/&gt;/g, '>')        // HTML实体：大于号
+      .replace(/&amp;/g, '&');       // HTML实体：和号 (应最后处理以避免错误转换)
     
     // 恢复所有替换的内容
     Object.keys(replacements).forEach(placeholder => {
+      // 确保占位符本身未被先前的替换更改（如果它包含特殊字符）
+      // 考虑到占位符的格式，这种基本替换应该是可以的。
       normalized = normalized.replace(placeholder, replacements[placeholder]);
     });
     
@@ -86,14 +88,14 @@ class BaseParser {
    */
   static _flattenObject(obj: Record<string, any>, prefix: string = '', result: Record<string, string> = {}): Record<string, string> {
     for (const [key, value] of Object.entries(obj)) {
-      const newKey = prefix ? `${prefix}.${key}` : key
-      if (typeof value === 'object' && value !== null) {
-        this._flattenObject(value, newKey, result)
+      const newKey = prefix ? `${prefix}.${key}` : key;
+      if (typeof value === 'object' && value !== null && !Array.isArray(value)) { // 检查是否为普通对象，而非数组
+        this._flattenObject(value, newKey, result);
       } else {
-        result[newKey] = this.normalizeValue(String(value))
+        result[newKey] = this.normalizeValue(String(value)); // 注意数组在此处如何被字符串化
       }
     }
-    return result
+    return result;
   }
 
   /**
@@ -102,135 +104,235 @@ class BaseParser {
    * @returns JSON字符串
    */
   static parseCustomString(str: string): string {
-    str = str.trim()
-    const result: string[] = []
-    let i = 0
+    str = str.trim();
+    const result: string[] = [];
+    let i = 0; // 主索引，在各解析函数间共享
 
     const parseValue = (): string => {
-      let value = ''
-      let braceCount = 0
-      let inQuote = false
-      let quoteChar = ''
+      let value = '';
+      let braceCount = 0;
+      let inQuote = false;
+      let quoteChar = '';
+
+      const startIndex = i; // 用于调试或复杂的恢复逻辑
 
       while (i < str.length) {
-        const char = str[i]
+        const char = str[i];
+        // console.log(`parseValue char: '${char}', i: ${i}, inQuote: ${inQuote}, quoteChar: '${quoteChar}', braceCount: ${braceCount}, current_value: '${value}'`);
 
         // 处理引号（包括双引号、单引号和反引号）
-        if ((char === '"' || char === "'" || char === '`') && str[i - 1] !== '\\') {
+        // 检查 str[i-1] !== '\\' 以确保它不是一个转义的引号。
+        // 如果值解析可以独立地从字符串中间开始，(i === startIndex || str[i-1] !== '\\') 会更安全。
+        // 考虑到当前的结构，str[i-1] 通常是没问题的。
+        if ((char === '"' || char === "'" || char === '`') && (i === startIndex || str[i-1] !== '\\')) {
           if (!inQuote) {
-            inQuote = true
-            quoteChar = char
-          } else if (char === quoteChar) {
-            inQuote = false
+            inQuote = true;
+            quoteChar = char;
+          } else if (char === quoteChar) { // 只有匹配的引号字符才会关闭它
+            inQuote = false;
           }
-          value += char
-          i++
-          continue
+          value += char;
+          i++;
+          continue;
         }
 
-        // 处理花括号
+        // 仅当不在引号内时才处理结构分隔符
         if (!inQuote) {
-          if (char === '{') braceCount++
-          if (char === '}') braceCount--
-          if (char === '[') braceCount++ // 处理数组开始
-          if (char === ']') braceCount-- // 处理数组结束
-          if (braceCount < 0) break
-          if (char === ',' && braceCount === 0) break
+          if (char === '{') braceCount++;
+          else if (char === '}') braceCount--;
+          else if (char === '[') braceCount++;
+          else if (char === ']') braceCount--;
+          
+          if (braceCount < 0) { // 不匹配的右花括号/方括号
+            // 这意味着当前值在此处结束，可能出乎意料。
+            break;
+          }
+          if (char === ',' && braceCount === 0) { // 键值对或数组成员的分隔符
+            break;
+          }
         }
 
-        value += char
-        i++
+        value += char;
+        i++;
       }
 
-      // 处理不同类型的值
-      let cleanValue = value.trim()
-      if (cleanValue.startsWith('{')) {
-        // 处理对象时显式使用当前类调用
-        return this.parseCustomString(cleanValue.slice(1, -1))
-      } else if (cleanValue.startsWith('[')) {
-        // 处理数组
-        return parseArray(cleanValue)
-      } else if (cleanValue.startsWith('"') || cleanValue.startsWith('`')) {
-        // 处理双引号或反引号包裹的字符串
-        const finalValue = cleanValue.replace(/\\"/g, '"').replace(/\\'/g, "'")
-        return JSON.stringify(finalValue.slice(1, -1))
-      } else if (cleanValue.startsWith("'")) {
-        // 处理单引号包裹的字符串
-        const finalValue = cleanValue.replace(/\\'/g, "'")
-        return JSON.stringify(finalValue.slice(1, -1))
+      let cleanValue = value.trim();
+
+      if (cleanValue.startsWith('{') && cleanValue.endsWith('}')) {
+        // 递归地解析对象内容。
+        // 注意：静态方法中的 `this` 指向类本身。
+        return BaseParser.parseCustomString(cleanValue.slice(1, -1));
+      } else if (cleanValue.startsWith('[') && cleanValue.endsWith(']')) {
+        // 处理数组。
+        return parseArray(cleanValue);
+      } else if (
+        (cleanValue.startsWith('"') && cleanValue.endsWith('"')) ||
+        (cleanValue.startsWith("'") && cleanValue.endsWith("'")) ||
+        (cleanValue.startsWith('`') && cleanValue.endsWith('`'))
+      ) {
+        // 处理带引号的字符串
+        let actualValue = cleanValue.slice(1, -1);
+        const firstQuote = cleanValue[0];
+
+        // 对原始字符串字面量中的字符进行反转义
+        if (firstQuote === '"') {
+          actualValue = actualValue.replace(/\\"/g, '"').replace(/\\'/g, "'").replace(/\\\\/g, '\\');
+        } else if (firstQuote === "'") {
+          actualValue = actualValue.replace(/\\'/g, "'").replace(/\\\\/g, '\\');
+        } else if (firstQuote === '`') { // 反引号字符串可能包含 ${} 表达式；当前解析器将其视为字面量
+          actualValue = actualValue.replace(/\\`/g, '`').replace(/\\\\/g, '\\');
+        }
+        return JSON.stringify(actualValue);
       } else {
-        // 其他情况（未包裹的值）
-        return JSON.stringify(cleanValue)
+        // 处理未加引号的值：数字、布尔值、null 或裸字符串
+        if (cleanValue === 'null') return 'null';
+        if (cleanValue === 'true') return 'true';
+        if (cleanValue === 'false') return 'false';
+        // 检查是否为数值
+        const num = Number(cleanValue);
+        if (!isNaN(num) && isFinite(num) && String(num) === cleanValue) {
+          return cleanValue; // 作为数字字符串返回，JSON.stringify 会处理它
+        }
+        // 否则，视为字符串并确保其被 JSON 转义
+        return JSON.stringify(cleanValue);
       }
-    }
+    };
     
     const parseArray = (arrayStr: string): string => {
-      // 去除外层中括号
-      const content = arrayStr.slice(1, -1).trim()
-      if (!content) return '[]' // 空数组
+      const content = arrayStr.slice(1, -1).trim();
+      if (!content) return '[]';
 
-      const items: string[] = []
-      let start = 0
-      let inQuote = false
-      let quoteChar = ''
+      const items: string[] = [];
+      let start = 0;
+      let arr_inQuote = false; // 重命名以避免与 parseValue 的 inQuote混淆
+      let arr_quoteChar = '';
+      let arr_braceCount = 0; // 用于处理数组成员内部的嵌套结构
 
-      for (let i = 0; i < content.length; i++) {
-        const char = content[i]
+      for (let j = 0; j < content.length; j++) { // 重命名索引为 j
+        const char = content[j];
 
-        // 处理引号
-        if ((char === '"' || char === "'" || char === '`') && content[i - 1] !== '\\') {
-          if (!inQuote) {
-            inQuote = true
-            quoteChar = char
-          } else if (char === quoteChar) {
-            inQuote = false
+        if ((char === '"' || char === "'" || char === '`') && (j === 0 || content[j - 1] !== '\\')) {
+          if (!arr_inQuote) {
+            arr_inQuote = true;
+            arr_quoteChar = char;
+          } else if (char === arr_quoteChar) {
+            arr_inQuote = false;
           }
+        } else if (!arr_inQuote) {
+          if (char === '{' || char === '[') arr_braceCount++;
+          if (char === '}' || char === ']') arr_braceCount--;
         }
 
-        // 处理逗号分隔
-        if (char === ',' && !inQuote) {
-          const item = content.slice(start, i).trim()
-          items.push(item) // 每一项作为字符串处理
-          start = i + 1
+        if (char === ',' && !arr_inQuote && arr_braceCount === 0) {
+          const itemStr = content.slice(start, j).trim();
+          // 关键：每个 itemStr 都需要作为值进行解析，而不仅仅是作为原始字符串推送。
+          // 这需要为 itemStr 调用一个类似 parseValue 的函数。
+          // 例如：items.push(parseValueForItem(itemStr));
+          // 原始的 `items.push(item)` 对于复杂项通常是不正确的。
+          // 为了更健壮的解决方案，每个项都应该被解析：
+          // let temp_i = i; i = 0; let val = parseValue(itemStr_as_main_str_for_parseValue); i = temp_i; items.push(val);
+          // 这是该复杂逻辑的占位符：
+          const parsedItem = BaseParser.parseCustomString(`{ "temp": ${itemStr} }`); // 解析项的取巧方法
+          try {
+            const tempObj = JSON.parse(parsedItem);
+            items.push(JSON.stringify(tempObj.temp));
+          } catch (e) {
+            items.push(JSON.stringify(itemStr)); // 如果取巧的解析失败，则回退
+          }
+          start = j + 1;
         }
       }
 
-      // 添加最后一个元素
-      if (start < content.length) {
-        const item = content.slice(start).trim()
-        items.push(item)
+      const lastItemStr = content.slice(start).trim();
+      if (lastItemStr) {
+        // 最后一个项需要类似的解析逻辑
+        const parsedItem = BaseParser.parseCustomString(`{ "temp": ${lastItemStr} }`);  // 取巧方法
+         try {
+            const tempObj = JSON.parse(parsedItem);
+            items.push(JSON.stringify(tempObj.temp));
+          } catch (e) {
+            items.push(JSON.stringify(lastItemStr)); // 回退
+          }
       }
 
-      return `[${items.join(',')}]`
-    }
+      return `[${items.join(',')}]`;
+    };
 
     while (i < str.length) {
-      // 跳过空白
-      while (i < str.length && /\s/.test(str[i])) i++
-      if (i >= str.length) break
+      while (i < str.length && /\s/.test(str[i])) i++; // 跳过键值对的行首空白
+      if (i >= str.length) break;
 
-      // 解析键
-      let key = ''
-      while (i < str.length && str[i] !== ':') {
-        key += str[i++]
+      let key = '';
+      const keyStartIndex = i;
+      // 更健壮的键解析（允许带引号的键包含冒号）
+      let keyInQuote = false;
+      let keyQuoteChar = '';
+      while(i < str.length) {
+        const char = str[i];
+        if (!keyInQuote && (char === '"' || char === "'" || char === "`") && i === keyStartIndex) { // 键的起始引号
+            keyInQuote = true;
+            keyQuoteChar = char;
+        } else if (keyInQuote && char === keyQuoteChar) { // 带引号键的结束
+            keyInQuote = false; 
+            key += char; // 添加结束引号，以便后续 slice
+            i++;
+            break; 
+        }
+        
+        if (!keyInQuote && char === ':') { // 未带引号键的结束
+            break; 
+        }
+        key += char;
+        i++;
+      }
+      
+      key = key.trim();
+      if ((key.startsWith('"') && key.endsWith('"')) ||
+          (key.startsWith("'") && key.endsWith("'")) ||
+          (key.startsWith('`') && key.endsWith('`'))) {
+        key = key.slice(1, -1); // 移除键两端的引号
+      }
+      
+      if (i < str.length && str[i] === ':') {
+         i++; // 跳过冒号
+      } else {
+        // 错误：键后面没有冒号，或已到字符串末尾
+        if (key.trim() !== "") { // 如果解析了一个键但没有冒号
+             console.error("解析错误：键 '" + key + "' 后面没有冒号。");
+             // 决定如何处理：中断、赋 null 值等。
+        }
+        break; 
       }
 
-      // 清理键名
-      key = key.trim().replace(/^["'`]|["'`]$/g, '')
-      i++ // 跳过冒号
+      while (i < str.length && /\s/.test(str[i])) i++; // 跳过冒号后的空白
 
-      // 跳过冒号后的空白
-      while (i < str.length && /\s/.test(str[i])) i++
+      if (i >= str.length && key.trim() !== "") { // 解析了键，但没有值（字符串末尾）
+        console.error("解析错误：找到键 '" + key + "' 但在字符串末尾没有值。");
+        // result.push(`"${key.replace(/"/g, '\\"')}": null`); // 选项：赋 null 值
+        break;
+      }
 
-      // 解析值
-      const value = parseValue()
-      result.push(`"${key}": ${value}`)
+      const valueStr = parseValue();
+      result.push(`"${key.replace(/"/g, '\\"')}": ${valueStr}`); // 为JSON输出转义键中的引号
 
-      // 跳过逗号和空白
-      while (i < str.length && (str[i] === ',' || /\s/.test(str[i]))) i++
+      // 跳过下一个键值对的逗号和空白
+      let foundNextPairComma = false;
+      while (i < str.length) {
+        if (/\s/.test(str[i])) { // 跳过空白
+          i++;
+          continue;
+        }
+        if (str[i] === ',') { // 遇到逗号
+          i++;
+          foundNextPairComma = true;
+        }
+        break; // 处理完逗号或遇到非空白非逗号字符后退出此循环
+      }
+      // 如果没有找到逗号但仍有内容，则可能是错误或有效块的结尾
+      // 外层的 while (i < str.length) 将处理终止。
     }
 
-    return `{${result.join(',')}}`
+    return `{${result.join(',')}}`;
   }
 }
 

@@ -154,7 +154,14 @@ class ExcelGenerator {
 
         // 添加每种语言的翻译
         allLanguages.forEach((lang) => {
-          row.push(group.translations[lang] || '');
+          const translation = group.translations[lang] || '';
+          let text = translation;
+          // 对超过32767字符的文本进行截断
+          if (translation.length > 3276) {
+            text = translation.substring(0, 32760) + '...';
+            console.log(translation)
+          }
+          row.push(text);
         });
 
         worksheetData.push(row);
