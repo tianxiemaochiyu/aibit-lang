@@ -269,6 +269,7 @@ const XLSX_ROW_APP_INDEX_MAP = {
   H5APP: 9 + 2,
   ANDROID: 6,
   IOS: 7,
+  SERVER: 12,
 }
 
 // xlsx 中对应字段索引
@@ -609,41 +610,55 @@ function writeTsToJS(langObj) {
   Object.keys(langObj).map((v) => {
     const fullKey = v
     const keyList = fullKey?.split('.')
-    const langName = keyList[0]
-    const fileName = keyList[1]
-
+    const langName = keyList.slice(0, 1)
+    const keyString = keyList.slice(1).join(".")
     if (!fileStructObj[langName]) {
       fileStructObj[langName] = {}
     }
-    if (!fileStructObj[langName][fileName]) {
-      fileStructObj[langName][fileName] = {}
-    }
-    const contentKeyList = keyList.slice(2)
-    contentKeyList.reduce((currentObj, value, index) => {
-      if (index < contentKeyList.length - 1) {
-        if (/^\d$/.test(contentKeyList[index + 1])) {
-          if (!currentObj[value]) {
-            currentObj[value] = []
-          }
-          currentObj[value].push(langObj[fullKey])
-        } else if (!currentObj[value]) {
-          currentObj[value] = {}
-        }
-        return currentObj[value]
-      } else {
-        currentObj[value] = langObj[fullKey]
-      }
-    }, fileStructObj[langName][fileName])
+
+    fileStructObj[langName][keyString] = langObj[fullKey]
+
+    // if (!fileStructObj[langName][fileName]) {
+    //   fileStructObj[langName][fileName] = {}
+    // }
+
+    // console.log(fileStructObj[langName][fileName])
+    // throw new Error("debugger")
+
+    // const contentKeyList = keyList.slice(1)
+    // contentKeyList.reduce((currentObj, value, index) => {
+    //   if (index < contentKeyList.length - 1) {
+    //     if (/^\d$/.test(contentKeyList[index + 1])) {
+    //       if (!currentObj[value]) {
+    //         currentObj[value] = []
+    //       }
+    //       currentObj[value].push(langObj[fullKey])
+    //     } else if (!currentObj[value]) {
+    //       currentObj[value] = {}
+    //     }
+    //     return currentObj[value]
+    //   } else {
+
+    //     console.log(fileStructObj, langObj[fullKey])
+    //     throw new Error("debugger")
+    //     currentObj[value] = langObj[fullKey]
+    //   }
+    // }, fileStructObj[langName][fileName])
   })
 
   const fileContentStart = getFileContentStart(fileType);
 
   // 写入目录文件
+  // Object.keys(fileStructObj).forEach((langFile) => {
+  //   Object.keys(fileStructObj[langFile]).forEach((file) => {
+  //     const path = `${langPath}/${langFile}/${file}${fileType}`
+  //     writeContentForPath(path, `${fileContentStart} ${JSON.stringify(fileStructObj[langFile][file], null, 2)}`)
+  //   })
+  // })
   Object.keys(fileStructObj).forEach((langFile) => {
-    Object.keys(fileStructObj[langFile]).forEach((file) => {
-      const path = `${langPath}/${langFile}/${file}${fileType}`
-      writeContentForPath(path, `${fileContentStart} ${JSON.stringify(fileStructObj[langFile][file], null, 2)}`)
-    })
+    const file = "server"
+    const path = `${langPath}/${langFile}/${file}.js`
+    writeContentForPath(path, `${fileContentStart} ${JSON.stringify(fileStructObj[langFile], null, 2)}`)
   })
 }
 
@@ -663,6 +678,8 @@ function getFileContentStart(type) {
   switch(type) {
     case '.ts': return 'export default';break;
     case '.js': return 'module.exports = ';break;
+    default: 
+      return 'module.exports = ';
   }
 }
 
@@ -673,15 +690,16 @@ function generateLangFile() {
     throw new Error('XLSX文件不存在：', xlsxPath)
   }
 
-  let fileNameList = runGetDirName()
-  let baseLangObj = {}
-  fileNameList.map((fileName) => {
-    const jsonData = readJSONForTs(fileName, sourceLang)
-    const result = flattenObject(jsonData, `${sourceLang}.${fileName.replace(fileType, "")}`)
-    baseLangObj = merge(baseLangObj, result)
-  })
+  // let fileNameList = runGetDirName()
+  // let baseLangObj = {}
+  // fileNameList.map((fileName) => {
+  //   const jsonData = readJSONForTs(fileName, sourceLang)
+  //   const result = flattenObject(jsonData, `${sourceLang}.${fileName.replace(fileType, "")}`)
+  //   baseLangObj = merge(baseLangObj, result)
+  // })
 
-  const baseLangObjKeys = Object.keys(baseLangObj)
+  // const baseLangObjKeys = Object.keys(baseLangObj)
+  const baseLangObjKeys = []
 
   const workbook = XLSX.readFile(xlsxPath)
   const sheetName = workbook.SheetNames[0]
@@ -692,7 +710,6 @@ function generateLangFile() {
   const langObj = {}
   const lossKeysObj = {}
   const valueFilterRegex = getClientPlaceHolder(config.clientType);
-
   data.map((item, index) => {
     const entryNameTrim = item[XLSX_ROW_APP_INDEX_MAP[appKey]]?.trim()
     const entryName = entryNameTrim ? entryNameTrim.replaceAll(/\s*,\s*/g, ',')?.split(',') : ''
@@ -711,7 +728,6 @@ function generateLangFile() {
               ? entryKey : entryKey.replaceAll('/', '.')
 
           const key = `${v.toLowerCase()}${fileName ? `.${fileName}` : ''}.${clientKey}`
-          
           langObj[key] = item[indexKey]?.trim().replaceAll(valueFilterRegex.match, valueFilterRegex.placeholder) || ''
         })
       })
@@ -737,7 +753,6 @@ function generateLangFile() {
       })
     }
   })
-  
   writeToFile(langObj)
 
   if (Object.keys(lossKeysObj).length > 0) {
@@ -899,3 +914,5 @@ module.exports = {
   generateLangFile,
   getConfigInfo
 }
+
+generateLangFile()
