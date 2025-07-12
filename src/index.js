@@ -243,22 +243,22 @@ const appKey =
 
 // xlsx 中对应的语言名称索引
 const XLSX_ROW_LANG_INDEX_MAP = {
-  zh: 10,
-  cn: 10, // old version
-  en: 12,
-  hk: 17,
-  tc: 17,
-  kr: 19,
-  ru: 21,
-  es: 15,
-  pt: 20,
-  fa: 16,
-  jp: 18,
-  ja: 18,
-  tr: 22,
-  fr: 13,
+  zh: 14,
+  cn: 14, // old version
+  en: 16,
+  hk: 21,
+  tc: 21,
+  kr: 23,
+  ru: 25,
+  es: 19,
+  pt: 24,
+  fa: 20,
+  jp: 22,
+  ja: 22,
+  tr: 26,
+  fr: 17,
   vi: 23,
-  de: 14,
+  de: 18,
 }
 
 // xlsx 中对应的应用端名称索引
